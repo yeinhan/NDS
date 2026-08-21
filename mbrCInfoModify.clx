@@ -1,0 +1,251 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-deaeae85" version="1.0.6087">
+  <head std:sid="head-8570848a">
+    <screen std:sid="screen-8f3ffeb0" id="default" name="default" width="1020px" height="540px" active="true"/>
+    <screen std:sid="screen-05e8fb8c" id="tablet" name="tablet" width="760px" height="820px"/>
+    <screen std:sid="screen-6af82eba" id="mobile" name="mobile" width="360px" height="525px"/>
+    <cl:model std:sid="model-4b07e39a"/>
+    <cl:appspec title="회원정보 수정"/>
+  </head>
+  <body std:sid="body-0d5a08c2" class="mypage">
+    <cl:group std:sid="group-3e2b53af">
+      <cl:attribute name="rl-mobile-constraint" value="width:100%"/>
+      <cl:attribute name="rl-tablet-constraint" value="width:100%"/>
+      <cl:attribute name="rl-mobile-props" value="topMargin:32;rightMargin:16;bottomMargin:32;leftMargin:16;rows:0px@auto;verticalSpacing:16px"/>
+      <cl:attribute name="rl-tablet-props" value="topMargin:32;rightMargin:16;bottomMargin:32;leftMargin:16;rows:0px@auto;verticalSpacing:16px"/>
+      <cl:attribute name="rl-mobile-columns" value="1"/>
+      <cl:attribute name="rl-tablet-columns" value="1"/>
+      <cl:verticaldata std:sid="v-data-1ee300e0" width="720px" height="1057px" autosize="height"/>
+      <cl:group std:sid="group-07891e06" class="mypage-head">
+        <cl:formdata std:sid="f-data-6515afbe" width="100" height="5" row="0" col="0"/>
+        <cl:button std:sid="button-dee63117" id="btn2" class="btn-back-mypage" value="마이페이지로 돌아가기" icon="0">
+          <cl:verticaldata std:sid="v-data-b8790fc2" width="100px" height="20px" autosize="height"/>
+          <cl:iconstyle class="ri-arrow-left-line"/>
+        </cl:button>
+        <cl:group std:sid="group-ca3ed7e2">
+          <cl:verticaldata std:sid="v-data-1b2979d7" width="960px" height="48px" autosize="height"/>
+          <cl:output std:sid="output-ebd95398" class="tit" value="회원 정보 수정">
+            <cl:verticaldata std:sid="v-data-dccbc99d" width="100px" height="20px" autosize="height"/>
+          </cl:output>
+          <cl:output std:sid="output-1cb5829f" class="sub-tit" value="회원가입 시 등록한 정보를 수정할 수 있습니다.">
+            <cl:verticaldata std:sid="v-data-b5f884b3" width="960px" height="20px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-f1b7ba23" spacing="8"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-69ff1829" spacing="12"/>
+      </cl:group>
+      <cl:group std:sid="group-55029e73" class="txt-box" clipcontent="false">
+        <cl:formdata std:sid="f-data-ad473ddd" width="100" height="-108" row="1" col="0"/>
+        <cl:group std:sid="group-b96ad74d" class="separate" clipcontent="false">
+          <cl:verticaldata std:sid="v-data-fa476e34" width="654px" height="611px" autosize="height"/>
+          <cl:group std:sid="group-2c313503" class="form-field" clipcontent="false">
+            <cl:verticaldata std:sid="v-data-a9af1e20" width="654px" height="136px" autosize="height"/>
+            <cl:output std:sid="output-b082ca3d" class="cont-tit" value="기본정보">
+              <cl:verticaldata std:sid="v-data-5d5ba124" width="1214px" height="20px" autosize="height"/>
+            </cl:output>
+            <cl:group std:sid="group-82bb7b11" class="row" clipcontent="false">
+              <cl:attribute name="rl-mobile-columns" value="1"/>
+              <cl:attribute name="rl-mobile-props" value="rows:0px@auto"/>
+              <cl:verticaldata std:sid="v-data-6639d316" width="654px" height="96px" autosize="height"/>
+              <cl:group std:sid="group-9bf73d81" class="form-group">
+                <cl:formdata std:sid="f-data-9bd57366" width="100" height="-1" row="0" col="0"/>
+                <cl:output std:sid="output-2fd3b3bd" class="label required" value="이름">
+                  <cl:verticaldata std:sid="v-data-74e6ae35" width="100px" height="20px" autosize="height"/>
+                </cl:output>
+                <cl:inputbox std:sid="i-box-865b83df" id="ipb2" class="xlarge" fieldLabel="성명" placeholder="홍길동">
+                  <cl:verticaldata std:sid="v-data-b71b5aca" width="437px" height="44px" autosize="none"/>
+                </cl:inputbox>
+                <cl:output std:sid="output-95b2019b" class="form-hint invalid" value="성명을 입력해주세요">
+                  <cl:verticaldata std:sid="v-data-8bd16070" width="581px" height="20px" autosize="height"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-ce7fb185" scrollable="false" spacing="6"/>
+              </cl:group>
+              <cl:group std:sid="group-22465656" class="form-group">
+                <cl:formdata std:sid="f-data-cc85ba54" width="100" height="51" row="0" col="1"/>
+                <cl:output std:sid="output-09e2ce2a" class="label" value="이메일">
+                  <cl:verticaldata std:sid="v-data-9750d80c" width="100px" height="20px" autosize="height"/>
+                </cl:output>
+                <cl:inputbox std:sid="i-box-a9c08e20" id="ipb1" class="xlarge" fieldLabel="아이디" enabled="false" placeholder="name@company.com">
+                  <cl:verticaldata std:sid="v-data-08a02e32" width="329px" height="44px" autosize="none"/>
+                </cl:inputbox>
+                <cl:output std:sid="output-1f1173e0" class="form-hint" value="이메일 변경은 고객센터로 문의해 주세요.">
+                  <cl:verticaldata std:sid="v-data-35ca1d81" width="654px" height="20px" autosize="height"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-979f10fa" scrollable="false" spacing="6"/>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-9f31ff68" scrollable="false" hspace="20px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-b737928d" scrollable="false" spacing="20"/>
+          </cl:group>
+          <cl:group std:sid="group-9ee3e39d" class="form-field" clipcontent="false">
+            <cl:verticaldata std:sid="v-data-871bdf99" width="654px" height="158px" autosize="height"/>
+            <cl:output std:sid="output-defffcfd" class="cont-tit" value="연락처 정보">
+              <cl:verticaldata std:sid="v-data-d41ca820" width="1214px" height="20px" autosize="height"/>
+            </cl:output>
+            <cl:group std:sid="group-b98207a4" class="row" clipcontent="false">
+              <cl:attribute name="rl-mobile-columns" value="1"/>
+              <cl:attribute name="rl-mobile-props" value="rows:0px@auto"/>
+              <cl:verticaldata std:sid="v-data-c3afaa3d" width="654px" height="122px" autosize="height"/>
+              <cl:group std:sid="group-8501f252" class="form-group">
+                <cl:formdata std:sid="f-data-ee10bef9" width="100" height="25" row="0" col="0"/>
+                <cl:output std:sid="output-376ae74c" class="label required" value="휴대전화">
+                  <cl:verticaldata std:sid="v-data-547f3091" width="100px" height="20px" autosize="height"/>
+                </cl:output>
+                <cl:inputbox std:sid="i-box-c079483f" id="ipb3" class="xlarge" fieldLabel="휴대전화" placeholder="01012345678" inputfilter="[0-9]">
+                  <cl:verticaldata std:sid="v-data-5ec0d98a" width="489px" height="44px" autosize="none"/>
+                </cl:inputbox>
+                <cl:output std:sid="output-fa2d4f71" class="form-hint" value="하이픈(-)을 빼고 입력해주세요.">
+                  <cl:verticaldata std:sid="v-data-fc34fe1d" width="100px" height="20px" autosize="height"/>
+                </cl:output>
+                <cl:output std:sid="output-b25e1370" class="form-hint invalid" value="휴대전화 번호를 입력해주세요">
+                  <cl:verticaldata std:sid="v-data-3c22989f" width="581px" height="20px" autosize="height"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-e8bbcdc8" scrollable="false" spacing="6"/>
+              </cl:group>
+              <cl:group std:sid="group-a1e0e386" class="form-group">
+                <cl:formdata std:sid="f-data-8cb9b96e" row="0" col="1"/>
+                <cl:output std:sid="output-6a15c3ff" class="label" value="회사 전화번호">
+                  <cl:verticaldata std:sid="v-data-6968a992" width="100px" height="20px" autosize="height"/>
+                </cl:output>
+                <cl:inputbox std:sid="i-box-bce4b122" id="ipb4" class="xlarge" fieldLabel="회사 전화번호" placeholder="0212345678" inputfilter="[0-9]">
+                  <cl:verticaldata std:sid="v-data-46d6d944" width="489px" height="44px" autosize="none"/>
+                </cl:inputbox>
+                <cl:output std:sid="output-9f122e72" class="form-hint" value="하이픈(-)을 빼고 입력해주세요.">
+                  <cl:verticaldata std:sid="v-data-ed5a039d" width="100px" height="20px" autosize="height"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-09e7d25c" scrollable="false" spacing="6"/>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-f690683a" scrollable="false" hspace="20px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-56d6198c" scrollable="false" spacing="16"/>
+          </cl:group>
+          <cl:group std:sid="group-94d670cf" class="form-field" clipcontent="false">
+            <cl:verticaldata std:sid="v-data-816e6be2" width="654px" height="244px" autosize="height"/>
+            <cl:output std:sid="output-e0cafefe" class="cont-tit" value="회사정보">
+              <cl:verticaldata std:sid="v-data-b33c7323" width="1214px" height="20px" autosize="height"/>
+            </cl:output>
+            <cl:group std:sid="group-a8d2352f">
+              <cl:verticaldata std:sid="v-data-819c19d6" width="654px" height="208px" autosize="height"/>
+              <cl:group std:sid="group-f564cc03" class="row" clipcontent="false">
+                <cl:attribute name="rl-mobile-columns" value="1"/>
+                <cl:attribute name="rl-mobile-props" value="rows:0px@auto"/>
+                <cl:verticaldata std:sid="v-data-67635397" width="654px" height="96px" autosize="height"/>
+                <cl:group std:sid="group-5fddc8ff" class="form-group">
+                  <cl:formdata std:sid="f-data-0de53d2c" width="100" height="-1" row="0" col="0"/>
+                  <cl:output std:sid="output-c396e1bc" class="label required" value="회사명">
+                    <cl:verticaldata std:sid="v-data-9dcf11ac" width="100px" height="20px" autosize="height"/>
+                  </cl:output>
+                  <cl:inputbox std:sid="i-box-1cc7c516" id="ipb5" class="xlarge" fieldLabel="회사명" placeholder="회사명 입력">
+                    <cl:verticaldata std:sid="v-data-491cc616" width="489px" height="44px" autosize="none"/>
+                  </cl:inputbox>
+                  <cl:output std:sid="output-49382186" class="form-hint invalid" value="회사명을 입력해주세요">
+                    <cl:verticaldata std:sid="v-data-3306ad7f" width="581px" height="20px" autosize="height"/>
+                  </cl:output>
+                  <cl:verticallayout std:sid="v-layout-0c4dfc57" scrollable="false" spacing="6"/>
+                </cl:group>
+                <cl:group std:sid="group-64f373bb" class="form-group">
+                  <cl:formdata std:sid="f-data-17ab24de" row="0" col="1"/>
+                  <cl:output std:sid="output-a5cd6089" class="label" value="부서명">
+                    <cl:verticaldata std:sid="v-data-09b74d92" width="100px" height="20px" autosize="height"/>
+                  </cl:output>
+                  <cl:inputbox std:sid="i-box-175a85be" id="ipb6" class="xlarge" fieldLabel="부서명" placeholder="부서명 입력">
+                    <cl:verticaldata std:sid="v-data-6c39fedf" width="489px" height="44px" autosize="none"/>
+                  </cl:inputbox>
+                  <cl:verticallayout std:sid="v-layout-b808d565" scrollable="false" spacing="6"/>
+                </cl:group>
+                <cl:formlayout std:sid="f-layout-a10c9663" scrollable="false" hspace="20px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:group std:sid="group-9772d581" class="row" clipcontent="false">
+                <cl:attribute name="rl-mobile-columns" value="1"/>
+                <cl:attribute name="rl-mobile-props" value="rows:0px@auto"/>
+                <cl:verticaldata std:sid="v-data-4fc83501" width="654px" height="96px" autosize="height"/>
+                <cl:group std:sid="group-cdf3e713" class="form-group">
+                  <cl:formdata std:sid="f-data-d0838b65" row="0" col="0"/>
+                  <cl:output std:sid="output-7e610719" class="label" value="직급명">
+                    <cl:verticaldata std:sid="v-data-e6fdfed9" width="100px" height="20px" autosize="height"/>
+                  </cl:output>
+                  <cl:inputbox std:sid="i-box-78d19770" id="ipb7" class="xlarge" fieldLabel="직급명" placeholder="직급명 입력">
+                    <cl:verticaldata std:sid="v-data-ec8ab181" width="489px" height="44px" autosize="none"/>
+                  </cl:inputbox>
+                  <cl:verticallayout std:sid="v-layout-e3af4d85" scrollable="false" spacing="6"/>
+                </cl:group>
+                <cl:group std:sid="group-9c314d65" class="form-group">
+                  <cl:formdata std:sid="f-data-bbc537f9" width="100" height="-1" row="0" col="1"/>
+                  <cl:output std:sid="output-cb6f868c" class="label" value="사이트명">
+                    <cl:verticaldata std:sid="v-data-ebfd9ca6" width="100px" height="20px" autosize="height"/>
+                  </cl:output>
+                  <cl:group std:sid="group-898ebd07">
+                    <cl:attribute name="rl-mobile-columns" value="1"/>
+                    <cl:attribute name="rl-mobile-props" value="rows:44px"/>
+                    <cl:verticaldata std:sid="v-data-e816285c" width="597px" height="44px" autosize="height"/>
+                    <cl:combobox std:sid="c-box-de4fce73" id="cmb1" class="xlarge" fieldLabel="제품 선택">
+                      <cl:formdata std:sid="f-data-a921dca3" row="0" col="0"/>
+                    </cl:combobox>
+                    <cl:inputbox std:sid="i-box-6ed8b104" id="ipb8" class="xlarge" fieldLabel="사이트명" placeholder="직접 입력">
+                      <cl:formdata std:sid="f-data-d003ff30" row="0" col="1"/>
+                    </cl:inputbox>
+                    <cl:formlayout std:sid="f-layout-3ed6d661" scrollable="false" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="44" unit="PIXEL"/>
+                      <cl:columns length="120" unit="PIXEL"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:output std:sid="output-ed20ad39" class="form-hint" value="기타로 선택하시면 직접 입력하실 수 있습니다.">
+                    <cl:verticaldata std:sid="v-data-a3440c2a" width="597px" height="20px" autosize="height"/>
+                  </cl:output>
+                  <cl:verticallayout std:sid="v-layout-e37271cd" scrollable="false" spacing="6"/>
+                </cl:group>
+                <cl:formlayout std:sid="f-layout-3bfce013" scrollable="false" hspace="20px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:verticallayout std:sid="v-layout-44b80043" scrollable="false" spacing="16"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-3b3c4611" scrollable="false" spacing="16"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-e78c469f" scrollable="false" spacing="24"/>
+        </cl:group>
+        <cl:group std:sid="group-eb07cd29" class="btn-wrap">
+          <cl:attribute name="rl-mobile-layout" value="vertical"/>
+          <cl:attribute name="rl-mobile-props" value="spacing:12"/>
+          <cl:verticaldata std:sid="v-data-5196cef0" width="654px" height="44px" autosize="height"/>
+          <cl:button std:sid="button-8aa6cc96" id="btn3" class="btn tertiary xlarge" value="취소">
+            <cl:attribute name="rl-mobile-constraint" value="height:44"/>
+            <cl:flowlayoutdata std:sid="f-data-ce4b3f00" width="66px" height="44px" autosize="width"/>
+          </cl:button>
+          <cl:button std:sid="button-373069ca" id="btn6" class="btn primary xlarge" value="저장하기" icon="0" iconalign="left">
+            <cl:attribute name="rl-mobile-constraint" value="height:44"/>
+            <cl:flowlayoutdata std:sid="f-data-02434da3" width="120px" height="44px" autosize="width"/>
+            <cl:iconstyle class="ri-check-line"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-73e44140" scrollable="false" hspacing="12" vspacing="0" halign="right"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-5d71c945" scrollable="true" spacing="24"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-f7c1d544" scrollable="false" hspace="0px" vspace="40px" top-margin="96px" bottom-margin="96px">
+        <cl:rows length="80" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+        <cl:rows length="745" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+        <cl:columns length="720" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-9b8d5d36" distribution="center"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
