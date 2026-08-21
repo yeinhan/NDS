@@ -1,0 +1,186 @@
+@import "../../custom-settings.part.less";
+.high-contrast{
+	
+.cl-menu {
+	font: @font-base;
+
+	&.cl-popup {
+		box-shadow: @list-box-shadow;
+	}
+
+	/* 메뉴 리스트 */
+	.cl-menu-list {
+		// 메뉴 배경색이 disable 여부와 상관 없이 회색처리되어있음. 논의 후 적용 예정 (23.08.10 ksk1908)
+		background-color: @list-background-color;
+//		background-color: #f2f2f2; //@list-background-color;
+		border: @list-border-contrast;
+		border-radius: @list-border-radius;
+		min-width: 140px !important;
+		padding: @list-padding-y @list-padding-x;
+		
+		/* 서브 메뉴 */
+		&.cl-sub {
+//			 메뉴 배경색이 disable 여부와 상관 없이 회색처리되어있음. 논의 후 적용 예정 (23.08.10 ksk1908)
+			background-color: @list-background-color;
+			border: @list-border-contrast;
+		}
+
+		.cl-arrow-up,
+		.cl-arrow-down {
+			background-size: auto;
+			&:hover, &.cl-disabled {
+				background-color: @transparent;
+			}			
+		}
+	
+		.cl-arrow-up {
+			background-image: url("../../images/controls/numbereditor/ic_spin_up.png");
+			background-position: center top;
+			
+			&:hover {
+				background-image: url("../../images/controls/numbereditor/ic_spin_up_h.png");
+			}
+
+			&.cl-disabled {
+				background-image: url("../../images/controls/numbereditor/ic_spin_up_d.png");
+			}
+		}
+
+		.cl-arrow-down {
+			background-image: url("../../images/controls/numbereditor/ic_spin_down.png");
+			background-position: center bottom;
+
+			&:hover {
+				background-image: url("../../images/controls/numbereditor/ic_spin_down_h.png");
+			}
+
+			&.cl-disabled {
+				background-image: url("../../images/controls/numbereditor/ic_spin_down_d.png");
+			}
+		}
+
+		/* 메뉴 아이템 */
+		.cl-menu-item {
+			color: @list-item-text-color-contrast;
+			font-size: 13px;
+			min-height: @list-item-height - 10px;
+			padding: @list-item-padding-y @list-item-padding-x;
+			
+			/* 메뉴 아이템 아이콘 */
+			.cl-menu-icon {
+				display: none !important;
+				background-image: none;
+				width: 0px;
+			}
+
+			/* 메뉴 아이템 텍스트 */
+			.cl-text {}
+
+			/* 메뉴 아이템 단축키 */
+			.cl-menu-accesskey {}
+
+			/* 메뉴 아이템 드릴다운 아이콘 */
+			.cl-menu-arrow {
+				background-size: auto;
+				width: 6px;
+			}
+
+			/* 폴더 아이템 방향 이미지 */
+			&.cl-folder {
+
+				>.cl-menu-arrow,
+				>.cl-menu-arrow-wrapper .cl-menu-arrow {
+					background-image: url("../../images/controls/menu/ic_arrow_right.png");
+				}
+			}
+
+			/* 메뉴 아이템 - 호버 */
+			&.cl-hover {
+				background-color: @transparent; //@list-item-hover-background-color;
+				color: @list-item-hover-text-color-contrast;
+				
+				&.cl-folder {
+					>.cl-menu-arrow,
+					>.cl-menu-arrow-wrapper>.cl-menu-arrow {
+						background-image: url("../../images/controls/menu/ic_arrow_right.png");
+					}
+				}
+			}
+
+			/* 메뉴 아이템 - disabled */
+			&.cl-disabled {
+				color: @list-item-disabled-text-color-contrast;
+
+				/* 메뉴 아이템 - 선택됨, disabled */
+				&.cl-selected {
+					background-color: @list-item-disabled-selected-background-color-contrast;
+					color: @list-item-disabled-selected-text-color-contrast;
+				}
+			}
+
+			/* 메뉴 아이템 - 활성화 */
+			&:not(.cl-disabled) {
+
+				/* 메뉴 아이템 - 호버 */
+				&:not(.cl-selected):hover,
+				&.cl-hover {
+					background-color: @primary-contrast; //@list-item-selected-background-color;
+					color: @white; //@list-item-selected-text-color;
+				}
+			}
+
+			/* 메뉴 아이템 - 선택됨 */
+			&.cl-selected {
+				background-color: @primary-contrast; //@list-item-selected-background-color;
+				color: @white; //@list-item-selected-text-color;
+
+				&.cl-folder {
+					>.cl-menu-arrow,
+					>.cl-menu-arrow-wrapper>.cl-menu-arrow {
+						background-image: url("../../images/controls/menu/ic_arrow_right_on.png");
+					}
+				}
+			}
+			
+			// 선택된 아이템에 호버했을 때
+			&.cl-hover,
+			&:not(.cl-disabled) &.cl-hover {
+				&.cl-selected {
+					background-color: @primary-contrast;
+					color: @white;
+				}
+			}
+		}
+	}
+
+	&.cl-focus {
+
+		/* 메뉴 리스트 - 포커스 */
+		.cl-menu-list {
+			border-color: @list-focus-border-color-contrast;
+		}
+	}
+
+	&.cl-disabled {
+		.cl-menu-list{
+			background-color: @list-disabled-background-color-contrast;
+		}
+		/* 메뉴 아이템 - disabled */
+		.cl-menu-item {
+			color: @list-item-disabled-text-color-contrast;
+
+			/* 메뉴 아이템 - disabled, 선택됨 */
+			&.cl-selected {
+				background-color: @list-item-disabled-selected-background-color-contrast;
+				color: @list-item-disabled-selected-text-color-contrast;
+
+				/* 메뉴 아이템 드릴다운 아이콘 - disabled */
+				>.cl-menu-arrow,
+				>.cl-menu-arrow-wrapper>.cl-menu-arrow {
+					background-image: url("../../images/controls/menu/ic_arrow_right.png");
+				}
+			}
+		}
+	}
+}
+}

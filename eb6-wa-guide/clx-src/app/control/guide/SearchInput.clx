@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-daaca914" id="default" name="default" width="1280px" height="760px" useCustomHeight="true" customHeight="1600" customWidth="800"/>
+    <screen std:sid="screen-c009862c" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-c5aea84c" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-90321062"/>
+    <cl:appspec title="[웹접근성가이드] 서치 인풋"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="pb-body">
+    <cl:group std:sid="group-b655417b" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1644px" height="242px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="서치 인풋" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-75a1799d" class="text-red" value="※ 기타 지시문 작성">
+        <cl:verticaldata std:sid="v-data-c42713a6" width="100px" height="20px" syncminheight="true" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-4f00ff31" id="grp1" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-6d77e5b7" width="1280px" height="970px" autosize="height"/>
+      <cl:group std:sid="group-ad00495f" id="grp2">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-3ed7c833" width="1544px" height="870px" autosize="height"/>
+        <cl:udc std:sid="ud-control-392b571a" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-4508bfac" width="1544px" height="29px"/>
+          <cl:property name="title" value="서치 인풋 – fieldLabel" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-bedd990d" id="grp3" class="pb-table wa-table">
+          <cl:verticaldata std:sid="v-data-2e6e8d4c" width="1544px" height="827px" autosize="height"/>
+          <cl:output std:sid="output-320c8d70" class="pb-label" value="1. fieldLabel 속성에 서치인풋에 입력될 내용의 설명이 작성되어야 한다.&#xD;&#xA;">
+            <cl:formdata std:sid="f-data-f4fce933" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-fe39a97e" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-a5011ccb" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-6bac81bf" value="fieldLabel" unselectable="false">
+            <cl:formdata std:sid="f-data-705476ed" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-6834a164" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-4098967f" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-05f938b4" value="1.0.1754" unselectable="false">
+            <cl:formdata std:sid="f-data-10f77d72" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-667fd02b" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-5170d53c" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-d30cf35f" value="항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-ae3a19e0" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-90bf151d" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-bf4d6266" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-b50def24" value="시각 장애 (전맹)&#xD;&#xA;사용 환경으로 인해 시각 기능 일시적 사용 불능 및 저하 (운전중, 조명 등)" unselectable="false">
+            <cl:formdata std:sid="f-data-e43a9b8b" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-16382fbb" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-614165d4" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ab56ca87" value="서치인풋에 대응하는 레이블을 aria-label 에 제공합니다.&#xD;&#xA;&#xD;&#xA;※ 필수입력 항목인 경우 fieldLabel에 &quot;필수입력&quot;을 함께 입력해야합니다. &#xD;&#xA;" displayexp="text+sstr(&quot;ex) fieldLabel = '부서 필수입력'&quot;, [&quot;text-primary&quot;])" unselectable="false">
+            <cl:formdata std:sid="f-data-cc8a39c3" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-5eedc64a" class="pb-label" value="서치 인풋 속성 지정">
+            <cl:formdata std:sid="f-data-efab8be5" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-df25052d" id="grp11">
+            <cl:formdata std:sid="f-data-49c449b0" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-fdb91c59" id="img1" src="../웹접근성 캡쳐 이미지/4. 인풋 계열/4.1.4.5_서치인풋-fieldLabel_Properties.png" alt="서치 인풋 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-59be6bf0" width="506px" height="271px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-9d21dbae" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-91207f15" class="pb-label" value="DOM 내용 확인">
+            <cl:formdata std:sid="f-data-15a4bdfb" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-5fbebbe2" id="grp12">
+            <cl:formdata std:sid="f-data-c0dfd1f6" row="7" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-60a1269d" id="img2" src="../웹접근성 캡쳐 이미지/4. 인풋 계열/4.1.4.5_서치인풋-fieldLabel_DOM.png" alt="DOM 내용 확인">
+              <cl:flowlayoutdata std:sid="f-data-76b70efe" width="551px" height="163px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-f78c54e5" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-bc3c0650" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-f8bf149f" row="8" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-8dbb6592" id="grp4">
+            <cl:formdata std:sid="f-data-a4eb9310" row="8" col="1"/>
+            <cl:searchinput std:sid="s-input-5085b006" fieldLabel="주소 검색">
+              <cl:flowlayoutdata std:sid="f-data-10f59eb6" width="160px" height="30px"/>
+            </cl:searchinput>
+            <cl:flowlayout std:sid="f-layout-f6b0298b" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-51ff4709" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-683247c0" row="8" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-10c4d9b1" id="grp8">
+            <cl:formdata std:sid="f-data-dacfd59f" row="8" col="3"/>
+            <cl:searchinput std:sid="s-input-aec14a7d">
+              <cl:flowlayoutdata std:sid="f-data-506400eb" width="160px" height="30px" autosize="none"/>
+            </cl:searchinput>
+            <cl:flowlayout std:sid="f-layout-57a19a21" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-a8d12b64" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="284" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="180" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8fa8b39c" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-44042cc3" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-f94da6ca" id="grp5" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-8f86127f" width="1280px" height="766px" autosize="height"/>
+      <cl:group std:sid="group-3519d513" id="grp6">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-efaa8712" width="1544px" height="666px" autosize="height"/>
+        <cl:udc std:sid="ud-control-241cde19" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-2e5e751a" width="1544px" height="29px"/>
+          <cl:property name="title" value="서치 인풋 – buttonFocusable" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-54e26295" id="grp7" class="pb-table wa-table">
+          <cl:verticaldata std:sid="v-data-9cfd67f5" width="1544px" height="623px" autosize="height"/>
+          <cl:output std:sid="output-5ecd6262" class="pb-label" value="2. buttonFocusable=true 인 경우, TAB 키를 통해 clear 버튼, 서치버튼으로 초점을 이동 할 수 있다.">
+            <cl:formdata std:sid="f-data-b3a95f5b" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-17ffd5b3" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-7b091f40" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-147072aa" value="buttonFocusable" unselectable="false">
+            <cl:formdata std:sid="f-data-9961be69" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-720cc40a" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-b86fff43" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-147329d3" value="1.0.2474" unselectable="false">
+            <cl:formdata std:sid="f-data-8ab1fdb4" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-667f8b11" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-fef5ee08" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-da8df821" value="항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다.&#xD;&#xA;항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-a9c75c26" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-46224f38" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-dc025fa8" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-7273b0f9" value="지체 장애, 고령자" unselectable="false">
+            <cl:formdata std:sid="f-data-7068e098" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-e1e9494d" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-ff9721da" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-063d30eb" value="서치인풋에서 탭 키를 눌러 clear 버튼과 서치 버튼으로 초점을 이동 할 수 있습니다.&#xD;&#xA;포커스된 버튼들은 모두 space 키 또는 enter 키를 눌러 동작합니다.&#xD;" unselectable="false">
+            <cl:formdata std:sid="f-data-8ea4a187" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-98d675fa" class="pb-label" value="서치 인풋 속성 지정">
+            <cl:formdata std:sid="f-data-1d357d19" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-378b41a6" id="grp13">
+            <cl:formdata std:sid="f-data-ae711359" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-31aa3205" id="img3" src="../웹접근성 캡쳐 이미지/4. 인풋 계열/4.1.4.5_서치인풋-buttonFocusable_Properties.png" alt="서치 인풋 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-f1244f6f" width="506px" height="271px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-3a501506" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-3b160622" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-c9afcccc" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-765c7c6d" id="grp9">
+            <cl:formdata std:sid="f-data-08e6ed35" row="7" col="1"/>
+            <cl:searchinput std:sid="s-input-12a593f8" fieldLabel="적용" buttonfocusable="true">
+              <cl:flowlayoutdata std:sid="f-data-8cad55f7" width="160px" height="30px"/>
+            </cl:searchinput>
+            <cl:flowlayout std:sid="f-layout-83a91cee" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-aadadff1" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-00dd5407" row="7" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-757b3bab" id="grp10">
+            <cl:formdata std:sid="f-data-77bc97a0" row="7" col="3"/>
+            <cl:searchinput std:sid="s-input-39b3a775" fieldLabel="미적용" buttonfocusable="false">
+              <cl:flowlayoutdata std:sid="f-data-447540d7" width="160px" height="30px" autosize="none"/>
+            </cl:searchinput>
+            <cl:flowlayout std:sid="f-layout-5aa07531" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-5676d940" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="276" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-33b28794" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-e1899a67" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

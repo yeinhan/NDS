@@ -1,0 +1,290 @@
+@import "../../custom-settings.part.less";
+
+/************************************************
+ * 메인
+ ************************************************/
+.high-contrast{
+	
+.pb-body {
+	background-color: @gray-400
+}
+
+/************************************************
+ * 버튼
+ ************************************************/
+
+.cl-button.btn.btn-at {
+	padding: 0px 15px;
+	border: 1px solid @gray-900;
+}
+
+.cl-button.btn {
+	background-image: none;
+	background-color: @white;
+	border: 1px solid @gray-900;
+	border-radius: 4px;
+	color: #1d1d1d;
+	font-size: 15px;
+	text-shadow: none;
+	
+	&:not(.cl-disabled):hover,
+	&:focus, &.cl-focus {
+		background-color: #f0f0f0;
+		border-color: #888888;
+		color: #1d1d1d;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: none;
+		background-color: #d6d6d6;
+		border-color: #888888;
+		color: #1d1d1d;
+	}
+	
+	&.cl-disabled {
+		background-color: #e6e6e6;
+		border-color: #d6d6d6;
+		color: #999999;
+	}
+}
+
+.cl-button.btn.btn-primary {
+	background-color: #3387ff;
+	border-color: #3387ff;
+	color: #ffffff;
+	
+	&:not(.cl-disabled):hover,
+	&:focus, &.cl-focus {
+		background-color: #0c57c1;
+		border-color: #0c57c1;
+		color: #ffffff;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color: #0c3672;
+		border-color: #0c3672;
+		color: #ffffff;
+	}
+}
+
+.cl-button.btn.btn-secondary {
+	background-color: #0c3672;
+	border-color: #0c3672;
+	color: #ffffff;
+	
+	&:not(.cl-disabled):hover,
+	&:focus, &.cl-focus {
+		background-color: #0c57c1;
+		border-color: #0c57c1;
+		color: #ffffff;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color: #2372e3;
+		border-color: #2372e3;
+		color: #ffffff;
+	}
+}
+
+
+/************************************************
+ * 체크박스
+ ************************************************/
+.cl-checkbox.bookmark {
+		padding: 0px;
+		
+		.cl-icon-wrapper {
+			vertical-align: middle;
+		}
+		
+		.cl-checkbox-icon {
+			background-image: url("../images/ext/ext/ico_bookmark.png");
+			width: 20px;
+			height: 20px;
+		}
+		
+		&.cl-hover, &:hover {
+			.cl-checkbox-icon {
+				background-image: url("../images/ext/ext/ico_bookmark.png");
+			}
+		}
+		
+		&.cl-checked {
+			.cl-checkbox-icon {
+				background-image: url("../images/ext/ext/ico_bookmark_on.png");
+			}
+			
+			&.cl-hover, &:hover {
+				.cl-checkbox-icon {
+					background-image: url("../images/ext/ext/ico_bookmark_on.png");
+				}
+			}
+		}
+	}
+
+/************************************************
+ * 카드
+ ************************************************/
+
+.cl-container.pb-content {
+	background-color: #ffffff;
+}
+
+/************************************************
+ * 폼
+ ************************************************/
+ 
+.cl-container.pb-form {
+	background-color: #ffffff;
+	border-top: 1px solid #666666;
+	
+	.cl-output.pb-label {
+		color: #1d1d1d;
+		font-size: 15px;
+		font-weight: 500;
+		
+//		&:not(.cl-first-column) {
+//			padding-left: 32px;
+//		}
+	}
+}
+
+.cl-container.pb-table {
+	background-color: #ffffff;
+	border: 1px solid @gray-900;
+	border-top-color: @gray-900;
+	
+	.cl-output.pb-label {
+		color: #1d1d1d;
+		font-weight: 500;
+		text-align: center;
+	}
+	
+	.cl-image {
+		max-width: 550px;
+	}
+	
+	.cl-formlayout-column-shade,
+	.cl-formlayout-row-shade {
+		background-color: @gray-400;
+	}
+	
+	.cl-formlayout-horizontal-separator,
+	.cl-formlayout-vertical-separator {
+		background-color: @gray-800;
+	}
+}
+ 
+/************************************************
+ * [UDC] Breadcrumbs
+ ************************************************/
+ 
+.cl-container.pb-breadcrumbs {
+	border-bottom: 1px solid #666666;
+	
+	.cl-container.breadcrumb {
+		.cl-output.breadcrumb-item {
+			color: #999999;
+			font-size: 13px;
+		}
+		
+		.cl-layout-wrap:not(:last-child) {
+			.cl-output {
+				.cl-text:after {
+					content: ">";
+					color: #bfc2c7;
+					width: 18px;
+					margin: 0px 6px;
+				}
+			}
+		}
+		
+		.cl-layout-wrap:last-child {
+			.cl-output.breadcrumb-item {
+				color: #333333;
+			}
+		}
+	}
+	
+	.cl-checkbox.bookmark {
+		padding: 0px;
+		
+		.cl-icon-wrapper {
+			vertical-align: middle;
+		}
+		
+		.cl-checkbox-icon {
+			background-image: url("../images/ext/ext/ico_bookmark.png");
+			width: 20px;
+			height: 20px;
+		}
+		
+		&.cl-hover, &:hover {
+			.cl-checkbox-icon {
+				background-image: url("../images/ext/ext/ico_bookmark.png");
+			}
+		}
+		
+		&.cl-checked {
+			.cl-checkbox-icon {
+				background-image: url("../images/ext/ext/ico_bookmark_on.png");
+			}
+			
+			&.cl-hover, &:hover {
+				.cl-checkbox-icon {
+					background-image: url("../images/ext/ext/ico_bookmark_on.png");
+				}
+			}
+		}
+	}
+	
+	.cl-output.tit {
+		font-size: 26px;
+		font-weight: 700;
+	}
+	
+	.cl-container.section-nav {
+		.cl-button {
+			
+			border:1px solid @gray-900;
+			border-radius: 0px;
+			
+			&:not(.cl-disabled):hover,
+			&:focus, &.cl-focus {
+				background-color: @primary-contrast;
+				border-color: @gray-900;
+				color: #ffffff;
+			}
+			
+			&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+				background-color: @primary;
+				border-color: @gray-900;
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+/************************************************
+ * [UDC] SectionTitle
+ ************************************************/
+ 
+.cl-container.pb-section {
+	.cl-output.tit {
+		color: #000000;
+		font-size: 20px;
+		font-weight: 700;
+	}
+	
+	.cl-output.subtxt {
+		color: #666666;
+		font-size: 13px;
+		&.text-blue {
+			color: #3387ff;
+		}
+		&.text-red {
+			color: #ff2a2a;
+		}
+	}
+}
+}

@@ -1,0 +1,417 @@
+@import "../custom-settings.part.less";
+
+/************************************************
+ * 그리드 유틸
+ ************************************************/
+
+.cl-grid {
+	.cl-grid-header {
+		.cl-grid-cell {
+		    .cl-text {
+		    	text-overflow: initial;
+		    	white-space: pre-line;
+		    	word-break: break-all;
+		    	line-height: 1.2;
+		    }
+		    
+			&.required {
+				background-image: url("../images/controls/grid/red-triangle-left-top-corner.png");
+				background-repeat: no-repeat;
+				background-position: 0% 0%;
+				background-size: 7px;
+				content: "　";
+			}
+			
+			.cl-sortable-cell {
+				padding-left: 14px;
+				
+//				&.cl-sort-asc {
+//					background-color: #dfe7f7;					
+//				}
+//				
+//				&.cl-sort-desc {
+//					background-color: #b6cced;
+//				}
+			}
+			
+			.cl-filter + .cl-sortable-cell {
+				padding-left: 30px;
+			}
+		}
+	}
+	
+	.cl-grid-detail {
+		.cl-grid-row {
+			// 선택 색상
+			&.cl-selected, &.cl-editing {
+				.cl-grid-cell {
+					background-color: @transparent !important;
+				}
+			}	
+		}
+		
+		.cl-default-cell {
+			.cl-text {
+				padding: @input-padding-0 @input-padding-x;
+			}
+		}
+		
+		.cl-grid-cell {
+			&:not(.cl-border-none) {
+				.cl-inputbox, .cl-searchinput, .cl-maskeditor, .cl-numbereditor, .cl-dateinput, .cl-combobox, cl-textarea {
+					background-color: @component-background-color;
+				}
+			}
+				
+			.cl-control {
+				&.cl-output {
+					.cl-text {
+						padding: @input-padding-0 @input-padding-x;
+					}
+				}
+			}
+		}
+	}
+	
+	.cl-grid-footer {
+		.cl-grid-cell.sub-footer {
+			background-color: #b6cced;
+		}
+	}
+}
+
+/************************************************
+ * 그리드 상태
+ ************************************************/
+ 
+.cl-output.state {
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	
+	&.insert {
+		background-image: url("../images/controls/grid/ic_insert.png") !important;
+	}
+	
+	&.update {
+		background-image: url("../images/controls/grid/ic_update.png") !important;
+	}
+	
+	&.delete {
+		background-image: url("../images/controls/grid/ic_delete.png") !important;
+	}
+}
+
+
+.cl-container.table-utils {
+	background-color: #f8f8f8;
+	border: @component-border-base;
+	border-top: none;
+}
+
+
+/************************************************
+ * 그리드 호버
+ ************************************************/
+ 
+.cl-grid.table-hoverable {
+	.cl-grid-detail {
+		.cl-grid-row {
+			&:hover, &.cl-hover {
+				background-color: @table-row-hover-background-color;
+				color: @table-row-hover-text-color;
+				
+				.cl-grid-cell {
+					background-color: @transparent;
+				}
+			}
+		}
+	}
+}
+
+/************************************************
+ * 그리드 보더없음
+ ************************************************/
+ 
+.cl-grid.table-borderless {
+	.cl-grid-header, .cl-grid-detail {
+		.cl-grid-cell {
+			border: none;
+		}
+	}
+}
+
+/************************************************
+ * 그리드 짝수행
+ ************************************************/
+ 
+.cl-grid.table-striped {
+	.cl-grid-detail {
+		.cl-grid-row {
+			&.cl-even-row {
+				.cl-grid-cell {
+					background-color: @table-row-even-background-color;
+					color: @table-row-even-text-color;
+				}
+			}
+		}
+	}
+}
+
+
+/************************************************
+ * 그리드 자동 높이 (폼/버티컬 레이아웃)
+ ************************************************/
+ 
+.cl-grid.table-at {
+	border-bottom: none;
+}
+
+/************************************************
+ * 강조 셀
+ ************************************************/
+ 
+.highlight-cell-01 {
+  background-color: @lighter;
+}
+.highlight-cell-02 {
+  background-color: @danger-dim;
+}
+.highlight-cell-03 {
+  background-color: @warning-dim;
+}
+.highlight-cell-04 {
+  background-color: @success-dim;
+}
+.highlight-cell-05 {
+  background-color: @info-dim;
+}
+.highlight-cell-06 {
+  background-color: #f7f1fb;
+}
+
+/************************************************
+ * 프로퍼티 테이블
+ ************************************************/
+
+.cl-grid.table-prop {
+	border-top-color : @table-cell-border-color;
+	min-height: 0px;
+	
+	.cl-grid-header {
+		background-image: none;
+		background-color: white;
+		
+		.cl-grid-cell {
+			text-align: left;
+			padding: 0px 6px;
+			
+			.cl-control {
+				text-align: left;
+			}
+		}
+	}
+	
+	.cl-grid-detail {
+		.cl-grid-row {
+			background-color: transparent;
+			
+			&.cl-selected {
+				background-color: transparent;
+				color: #4E5154;
+			}
+			
+			&:hover:not(.cl-selected) {
+				background-color: transparent;
+				color: #4E5154;
+			}
+		}
+	}
+	
+	.cl-grid-cell {
+		&:last-child {
+			border-right: none;
+		}
+	}
+	
+	.cl-output {
+		.cl-text {
+			padding: 0px 6px;
+		}
+	}
+	
+	/* 속성 테이블 내 트리셀 스타일 */
+	.cl-treecell {
+		.cl-treecell-item {
+			.cl-treecell-itemicon {
+				background-image: none;
+				width: 0px;	
+			}
+			
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}
+
+/************************************************
+ * 게시판 테이블 (CMS)
+ ************************************************/
+ .cl-grid.table-board {
+ 	border-top: 1px solid black;
+ 	border-left: 0px;
+ 	border-right: 0px;
+ 	
+	.cl-grid-header {
+	    background-color: white;
+	    border-bottom: 1px solid black;
+		.cl-grid-cell .cl-text:before {
+		    content: '';
+		    position: absolute;
+		    top: 50%;
+		    left: 0;
+		    transform: translateY(-50%);
+		    display: inline-block;
+		    width: 1px;
+		    height: 15px;
+		    background-color: #dddddd;
+		}
+		.cl-grid-cell.cl-first-column .cl-text:before {
+		    display: none !important;
+		}
+	    
+	    .cl-grid-cell .cl-text {
+	    	font-weight: bold;
+	    }
+	}
+	.cl-grid-detail {
+		.cl-grid-row:hover{
+			.cl-grid-cell {
+				color : @component-selected-text-color;
+				cursor: pointer;
+			}
+		}
+		.cl-control.cl-button {
+			&.btn-release{
+				border-radius: 20px;
+				background-color: @primary-contrast;
+			    border-color:   @primary-contrast;
+			    color: #fff ;
+			}
+			&.btn-notice{
+				border-radius: 20px;
+				background-color: @secondary;
+			    border-color: @secondary;
+			    color: #fff;
+			}
+		}
+	}
+	.cl-grid-cell {
+		&.cl-output{
+			text-align: ;
+		}
+		border-right: 0px;
+		.cl-output.ic-opt-file{
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url("../images/controls/output/ico_file.png");
+			background-size: auto;
+		}
+		.cl-image.ic-img-file{
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url("../images/controls/output/ico_file.png");
+			background-size: auto;
+		}
+	} 	
+ }
+ 
+ /*****************************************
+  * 폼 레이아웃 게시판 테이블 (table-board-group)
+  ****************************************/
+ .cl-container.form-table {
+ 	border-top: 1px solid black;
+ 	border-left: 0px;
+ 	border-right: 0px;
+ 	
+ 	.form-table-header{
+ 		background-color: white;
+	    border-bottom: 1px solid black;
+	    .cl-output .cl-text:before {
+		    content: '';
+		    position: absolute;
+		    top: 50%;
+		    left: 0;
+		    transform: translateY(-50%);
+		    display: inline-block;
+		    width: 1px;
+		    height: 15px;
+		    background-color: #dddddd;
+		}
+		.cl-output.form-first-column .cl-text:before {
+		    display: none !important;
+		}
+	    
+	    .cl-output .cl-text {
+	    	font-weight: bold;
+	    }
+ 	}
+ 	
+ 	.form-table-detail {
+ 		border-bottom: 1px solid @gray-300;
+ 		.form-table-row{
+ 			.cl-output{
+				text-align: center;
+			}
+ 			.form-row-title {
+				.cl-output {
+					text-align: left;
+				}
+				.cl-button.post-title{
+					background-color: @transparent;
+					border: none;
+					border-radius: @component-border-radius-0;
+					color: @gray-900;
+					text-align: left;
+					font-weight: @font-weight-bold;
+					font-size: @font-size-lg;
+					padding: 0px;
+					
+					&:hover{
+						color : @component-selected-text-color;
+						cursor: pointer;
+						text-decoration: underline;
+					}
+				}
+			}
+ 		}
+ 		
+		.form-table-row:hover {
+//			.cl-output {
+//				color : @component-selected-text-color;
+//				cursor: pointer;
+//			}
+		}
+		
+	}
+	
+	.form-table-row {
+		border-bottom: 1px solid @gray-300;
+		
+		.cl-output{
+			text-align: center;
+		}
+		.cl-output.ic-opt-file{
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url("../images/controls/output/ico_file.png");
+			background-size: auto;
+		}
+		.cl-image.ic-img-file{
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url("../images/controls/output/ico_file.png");
+			background-size: auto;
+		}
+	} 
+ }

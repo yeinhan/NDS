@@ -1,0 +1,106 @@
+@import "../../custom-settings.part.less";
+.high-contrast{
+ /* 슬라이더 */
+.cl-slider {
+
+	&.cl-horizontal{
+		// min-width: 40px;
+		// min-height: 20px;
+	}
+	&.cl-vertical{
+		// min-width: 20px;
+		// min-height: 40px;
+	}
+
+	/* 슬라이더 바 */
+	.cl-slider-bar {
+		border: none;
+//		background-color: @gray-500;
+		background-color: @component-border-color-contrast;
+		
+		/* 슬라이더 가로 바 */
+		&.cl-horizontal {
+			background-image: @component-background-image;
+			height: 1px;
+			top: calc(50% - 1px);
+			right: 10px;
+			left: 10px;
+		}
+
+		/* 슬라이더 세로 바*/
+		&.cl-vertical {
+			background-image: @component-background-image;
+			width: 1px;
+			top: 10px;
+			bottom: 10px;
+			left: calc(50% - 1px);
+		}
+
+
+		/* 슬라이더 핸들 */
+		.cl-slider-handle {
+			background-image: @component-background-image;
+			background-color: @component-background-color;
+			border: 1px solid @component-border-color-contrast;
+			border-radius: @border-radius-circle;
+			width: 18px;
+			height: 18px;
+			
+			/* 슬라이더 가로바 핸들 */
+			&.cl-horizontal {
+				top: -8px;
+				transform: translateX(-10px);
+			}
+
+			/* 슬라이더 세로바 핸들 */
+			&.cl-vertical {
+				left: -8px;
+				transform: translateY(-10px);
+			}
+		}
+
+		/* 슬라이더 선택 영역 표시 바 */
+		.cl-slider-range {
+			background-color: @primary-contrast;
+		}
+	}
+
+	&.cl-focus{
+		/* 슬라이더 바 - focus */
+		.cl-slider-bar {
+		}
+		
+		.cl-slider-handle {
+			border-color: @primary-contrast;
+		}
+	}
+
+	&.cl-disabled {
+		.cl-slider-bar {
+			background-color: @component-disabled-border-color-contrast;
+		}
+		
+		/* 슬라이더 바 핸들 - disabled */
+		.cl-slider-handle {
+			background-image: @component-background-image;
+			border-color: @component-disabled-border-color-contrast;
+		}
+
+		/* 슬라이더 바 선택 영역 - disabled */
+		.cl-slider-range {
+			background-color: @component-disabled-border-color-contrast;
+		}
+	}
+}
+
+.cl-slider:not(.cl-disabled){
+	.cl-slider-bar {
+		.cl-slider-handle{
+			/* 슬라이더 바 핸들 - hover */
+			&:hover, &.cl-hover {
+				background-image: @component-background-image;
+			}
+		}
+	}
+}
+}

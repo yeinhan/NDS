@@ -1,0 +1,56 @@
+@import "../../custom-settings.part.less";
+.high-contrast {
+	
+/* 버튼 */
+.cl-button {
+	font: @font-base-contrast;
+	background-color: @btn-background-color;
+	background-image: @btn-background-image;
+	border-radius: @btn-border-radius;
+	border: @btn-border-contrast;
+	color: @btn-text-color;
+	padding: @btn-padding-y @btn-padding-x;
+	text-shadow: @btn-text-shadow;
+
+	/* 텍스트 스타일 */
+	.cl-text {
+		// text-overflow:ellipsis;
+		// overflow:hidden;
+	}
+	/* 아이콘 스타일 */
+	.cl-icon {
+		background-size: auto;
+		width: 20px;
+		height: 20px;
+	}
+	
+	/* 버튼위에 마우스를 올렸을 때의 스타일 */
+	&:not(.cl-disabled):hover {
+		background-color: @btn-hover-background-color;
+		border-color: @btn-hover-border-color-contrast;
+		color: @btn-hover-text-color;
+	}
+	
+	/* 버튼이 포커스를 가졌을 때의 스타일 */
+	&:focus, &.cl-focus {
+		background-color: @btn-focus-background-color;
+		border-color: @primary-contrast;
+		color: @btn-focus-text-color;
+	}
+
+	/* 버튼을 클릭했을 때의 스타일 */
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: @btn-background-image;
+		background-color: @btn-active-background-color;
+		border-color: @btn-active-border-color-contrast;
+		color: @btn-active-text-color;
+	}
+}
+
+/* Disable 상태의 버튼 */
+.cl-button.cl-disabled {
+	background-color: @btn-disabled-background-color;
+	border-color: @component-border-color-contrast;
+	color: @component-text-color;
+}
+}

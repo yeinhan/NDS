@@ -1,0 +1,58 @@
+@import "../../custom-settings.part.less";
+.high-contrast{
+	
+/* 인풋 박스 루트 */
+.cl-inputbox {
+	font: @font-base;
+	background-image: @input-background-image;
+	background-color: @input-background-color;
+	border: @input-border-contrast;
+	border-radius: @input-border-radius;
+	color: @input-text-color-contrast;
+
+	/* 인풋 박스 텍스트 */
+	.cl-text {
+		padding: @input-padding-0 @input-padding-x;
+		
+		&.cl-placeholder {
+			color: @input-placeholder-text-color-contrast !important;
+			font-style: @input-placeholder-text-style;
+			font-weight: @input-placeholder-text-weight;
+		}
+	}
+
+	/* 인풋 박스 - 포커스 상태 */
+	&.cl-focus {
+		border-color: @input-focus-border-color-contrast;
+	}
+
+	/* 인풋 박스 - 클리어 버튼 */
+	.cl-inputbox-clear {
+		background-image: url("../../images/controls/inputbox/ic_text_clear.png");
+		background-size: auto;
+		background-position: left center;
+		width: 22px;
+	}
+
+	/* 인풋 박스 - disabled 상태 */
+	&.cl-disabled {
+		background-color: @input-disabled-background-color-contrast;
+		border-color: @input-disabled-border-color-contrast;
+		color: @input-disabled-text-color-contrast;
+
+		.cl-inputbox-clear {
+			background-image: url("../../images/controls/inputbox/ic_text_clear.png");
+		}
+	}
+
+	&:not(.cl-disabled) {
+
+		/* 클리어 버튼 hover 및 active 상태 */
+		.cl-inputbox-clear:hover,
+		.cl-inputbox-clear:active {
+			background-image: url("../../images/controls/inputbox/ic_text_clear.png");
+			opacity: 1;
+		}
+	}
+}
+}

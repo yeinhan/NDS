@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-3ac596f2" id="default" name="default" width="1280px" height="760px" useCustomHeight="true" customHeight="1200" customWidth="800"/>
+    <screen std:sid="screen-9d489874" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-79b8dd7b" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-90321062">
+      <cl:dataset std:sid="d-set-6285c103" id="dsNavMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-3d326809" name="label"/>
+          <cl:datacolumn std:sid="d-column-93c9b373" name="value"/>
+          <cl:datacolumn std:sid="d-column-67b5abda" name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴A</cl:datavalue>
+            <cl:datavalue columnname="value">1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴B</cl:datavalue>
+            <cl:datavalue columnname="value">2</cl:datavalue>
+            <cl:datavalue columnname="parent"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴C</cl:datavalue>
+            <cl:datavalue columnname="value">3</cl:datavalue>
+            <cl:datavalue columnname="parent"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴D</cl:datavalue>
+            <cl:datavalue columnname="value">4</cl:datavalue>
+            <cl:datavalue columnname="parent"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴E</cl:datavalue>
+            <cl:datavalue columnname="value">5</cl:datavalue>
+            <cl:datavalue columnname="parent"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴A-1</cl:datavalue>
+            <cl:datavalue columnname="value">6</cl:datavalue>
+            <cl:datavalue columnname="parent">1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴A-2</cl:datavalue>
+            <cl:datavalue columnname="value">8</cl:datavalue>
+            <cl:datavalue columnname="parent">1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴A-3</cl:datavalue>
+            <cl:datavalue columnname="value">9</cl:datavalue>
+            <cl:datavalue columnname="parent">1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴B-1</cl:datavalue>
+            <cl:datavalue columnname="value">10</cl:datavalue>
+            <cl:datavalue columnname="parent">2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴B-2</cl:datavalue>
+            <cl:datavalue columnname="value">11</cl:datavalue>
+            <cl:datavalue columnname="parent">2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴A-1-1</cl:datavalue>
+            <cl:datavalue columnname="value">12</cl:datavalue>
+            <cl:datavalue columnname="parent">6</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴A-1-1-1</cl:datavalue>
+            <cl:datavalue columnname="value">13</cl:datavalue>
+            <cl:datavalue columnname="parent">12</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴B-1-1</cl:datavalue>
+            <cl:datavalue columnname="value">14</cl:datavalue>
+            <cl:datavalue columnname="parent">10</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="[웹접근성가이드] 내비게이션바"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="pb-body" clipcontent="false">
+    <cl:listener std:sid="listener-b84b42a4" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-b655417b" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1644px" height="242px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="내비게이션바" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-75a1799d" class="text-red" value="※ 기타 지시문 작성">
+        <cl:verticaldata std:sid="v-data-c42713a6" width="100px" height="20px" syncminheight="true" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-b8879c42" id="grp1" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="fdbcc0d6-39a3-42c8-844c-8837962272e7"/>
+        <std:property key="template-rev" value="3"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-df0613a7" width="984px" height="781px" autosize="height"/>
+      <cl:group std:sid="group-f4743aa1" id="grp2">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-789483db" width="984px" height="681px" autosize="height"/>
+        <cl:udc std:sid="ud-control-985b4d15" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-a72f53c7" width="1544px" height="29px"/>
+          <cl:property name="title" value="내비게이션바 - expandTrigger" type="string"/>
+          <cl:property name="subText" value="※ 해당 항목은 웹 접근성 심사 시 필요한 사항일 경우에만 추가하십시오." type="string"/>
+          <cl:property name="subTextStyle" value="text-red" type="enumeration"/>
+        </cl:udc>
+        <cl:group std:sid="group-27e14332" id="grp3" class="pb-table wa-table z-index-1">
+          <std:metadata>
+            <std:property key="template-uuid" value="12fd52d0-2f82-49b7-b410-9c01fde5e26f"/>
+            <std:property key="template-rev" value="2"/>
+          </std:metadata>
+          <cl:verticaldata std:sid="v-data-68c19e2b" width="984px" height="638px" autosize="height"/>
+          <cl:output std:sid="output-d7ff99bf" class="pb-label" value="1. expandTrigger=click 으로 설정하여 바 아이템에서 click으로 하위 메뉴를 열 수 있도록 설정한다.">
+            <cl:formdata std:sid="f-data-a1bba191" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-c54fbd69" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-dfeb8602" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-a3f8e106" value="expandTrigger" unselectable="false">
+            <cl:formdata std:sid="f-data-4e85e7bd" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-9e57b7a4" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-089b8a8e" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-bd2a22b7" value=" -" unselectable="false">
+            <cl:formdata std:sid="f-data-b2d64425" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-41c39f20" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-c91fa6d5" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-1fac1fea" value="항목 26. (사용자 요구에 따른 실행) 사용자가 의도하지 않은 기능(새 창, 초점 변화 등)은 실행되지 않아야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-1ee047cc" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-ba8f23e4" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-e50061c2" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-13bfbb8a" value="전체" unselectable="false">
+            <cl:formdata std:sid="f-data-720355d2" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-fc95f6dd" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-c36c1b80" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-32675f13" value="하위 아이템이 존재 할 경우, click을 통해 하위 메뉴에 접근 할 수 있도록 보장합니다." unselectable="false">
+            <cl:formdata std:sid="f-data-1250f26a" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-5eedc64a" class="pb-label" value="내비게이션바 속성 지정">
+            <cl:formdata std:sid="f-data-c4795c0b" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-76d4b862" id="grp21">
+            <cl:formdata std:sid="f-data-2ece2371" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-fdb91c59" id="img3" src="../웹접근성 캡쳐 이미지/3. 셀렉션 계열/4.1.3.1_내비게이션바-expandTrigger_Properties.png" alt="내비게이션바 expandTrigger 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-fad69517" width="506px" height="271px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-c3092928" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-bc3c0650" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-9424b0e7" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-8dbb6592" id="grp7">
+            <cl:formdata std:sid="f-data-d23097fe" row="7" col="1"/>
+            <cl:navigationbar std:sid="n-bar-af3c9f6b" expandtrigger="click">
+              <cl:flowlayoutdata std:sid="f-data-2639a5cf" width="403px" height="30px"/>
+              <cl:menuitemset datasetid="dsNavMenu" label="label" value="value" parent="parent"/>
+            </cl:navigationbar>
+            <cl:flowlayout std:sid="f-layout-f6b0298b" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-51ff4709" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-c39c5541" row="7" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-5c03e638" id="grp8">
+            <cl:formdata std:sid="f-data-7ed87c9d" row="7" col="3"/>
+            <cl:navigationbar std:sid="n-bar-c45d9cb3" expandtrigger="hover">
+              <cl:flowlayoutdata std:sid="f-data-3596a303" width="403px" height="30px" autosize="none"/>
+              <cl:menuitemset datasetid="dsNavMenu" label="label" value="value" parent="parent"/>
+            </cl:navigationbar>
+            <cl:flowlayout std:sid="f-layout-307ab631" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-f9f70412" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="287" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="54" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-d91a18c4" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-5dd205db" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-17ad9874" id="grp4" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="fdbcc0d6-39a3-42c8-844c-8837962272e7"/>
+        <std:property key="template-rev" value="4"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-f86e680e" width="984px" height="788px" autosize="height"/>
+      <cl:group std:sid="group-75307058" id="grp5">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-93b047c1" width="984px" height="688px" autosize="height"/>
+        <cl:udc std:sid="ud-control-600be1dd" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-79b6ecd9" width="1544px" height="29px"/>
+          <cl:property name="title" value="내비게이션바 – tabTraversal" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-3cb8bd30" id="grp6" class="pb-table wa-table z-index-1">
+          <std:metadata>
+            <std:property key="template-uuid" value="12fd52d0-2f82-49b7-b410-9c01fde5e26f"/>
+            <std:property key="template-rev" value="2"/>
+          </std:metadata>
+          <cl:verticaldata std:sid="v-data-dc36b905" width="984px" height="645px" autosize="height"/>
+          <cl:output std:sid="output-0001a5ae" class="pb-label" value="2. 내비게이션의 메가 메뉴를 사이트 맵 형태로 사용 할 경우 TAB 키로 이동한다.">
+            <cl:formdata std:sid="f-data-176c0cf5" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-f806276e" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-80185a57" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-52920c2e" value="tabTraversal" unselectable="false">
+            <cl:formdata std:sid="f-data-50f53061" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-8ddc790d" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-8c7fd465" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-bb1040ae" value="1.0.3462" unselectable="false">
+            <cl:formdata std:sid="f-data-553b60dd" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-c6c721be" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-e1244f20" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-e4c36fee" value="항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다" unselectable="false">
+            <cl:formdata std:sid="f-data-a2744802" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-84cc75e7" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-81e8de67" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-0d61c8bf" value="시각 장애, 저시력자, 지체 장애, 고령자" unselectable="false">
+            <cl:formdata std:sid="f-data-c8657fe2" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-ab6759ef" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-86b98605" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-f4a862e9" value="GNB 영역의 사이트맵 성격을 가진 메뉴로 사용 할 경우, 모든 메뉴는 TAB 키를 통해 이동이 가능해야 합니다.&#xD;&#xA;tabTraversal=true 로 설정하게 될 경우, 내비게이션 바의 모든 메뉴를 TAB 키를 통해 이동 할 수 있습니다." unselectable="false">
+            <cl:formdata std:sid="f-data-07641468" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-3959ddb8" class="pb-label" value="내비게이션바 속성 지정">
+            <cl:formdata std:sid="f-data-27a008dd" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-9ed345eb" id="grp22">
+            <cl:formdata std:sid="f-data-b28dbc1d" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-cf50304e" id="img4" src="../웹접근성 캡쳐 이미지/3. 셀렉션 계열/4.1.3.1_내비게이션바-tabTraversal_Properties.png" alt="내비게이션바 tabTraversal 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-64c44bc9" width="506px" height="271px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-d7f26357" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-2b848dec" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-abdcd81a" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-773e6718" id="grp9">
+            <cl:formdata std:sid="f-data-40d1621b" row="7" col="1"/>
+            <cl:navigationbar std:sid="n-bar-b5d76ce6" tabtraversal="true">
+              <cl:flowlayoutdata std:sid="f-data-930a8a51" width="403px" height="30px"/>
+              <cl:menuitemset datasetid="dsNavMenu" label="label" value="value" parent="parent"/>
+            </cl:navigationbar>
+            <cl:flowlayout std:sid="f-layout-6e53737c" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-e1af4752" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-e8f9ced3" row="7" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-0931b295" id="grp10">
+            <cl:formdata std:sid="f-data-58582fab" row="7" col="3"/>
+            <cl:navigationbar std:sid="n-bar-09c8d981" tabtraversal="false">
+              <cl:flowlayoutdata std:sid="f-data-28ba97b0" width="403px" height="30px" autosize="none"/>
+              <cl:menuitemset datasetid="dsNavMenu" label="label" value="value" parent="parent"/>
+            </cl:navigationbar>
+            <cl:flowlayout std:sid="f-layout-dfc76921" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-726e747d" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="281" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="67" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-045cb14e" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-31d0bd6e" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-af4560be" id="grp11" class="pb-content" clipcontent="false">
+      <std:metadata>
+        <std:property key="template-uuid" value="fdbcc0d6-39a3-42c8-844c-8837962272e7"/>
+        <std:property key="template-rev" value="4"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-eb39ee88" width="1280px" height="805px" autosize="height"/>
+      <cl:group std:sid="group-986658c6" id="grp12" clipcontent="false">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-2e72a5ff" width="1180px" height="722px" autosize="height"/>
+        <cl:udc std:sid="ud-control-90d30ffa" id="sectiontitle1" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-0bc2e5ac" width="1544px" height="29px"/>
+          <cl:property name="title" value="내비게이션바 – menuType" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-c594f3d2" id="grp13" class="pb-table wa-table z-index-1" clipcontent="false">
+          <std:metadata>
+            <std:property key="template-uuid" value="12fd52d0-2f82-49b7-b410-9c01fde5e26f"/>
+            <std:property key="template-rev" value="2"/>
+          </std:metadata>
+          <cl:verticaldata std:sid="v-data-9b82121a" width="1180px" height="679px" autosize="height"/>
+          <cl:output std:sid="output-99424b5b" class="pb-label" value="3. 내비게이션의 용도와 목적에 따라 menuType을 설정한다.">
+            <cl:formdata std:sid="f-data-06fdcde2" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-fcc5f12a" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-c9892e80" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-9fda0ceb" value="menuType" unselectable="false">
+            <cl:formdata std:sid="f-data-6525d508" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-d6c9c654" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-8991f4d1" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-29ed3486" value="1.0.4427" unselectable="false">
+            <cl:formdata std:sid="f-data-0c680294" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-15c45826" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-4d70909a" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-3a988bac" value="항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다" unselectable="false">
+            <cl:formdata std:sid="f-data-cbab50d9" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-c5c2d4c0" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-2e526442" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-d63cb298" value="시각 장애, 저시력자, 지체 장애, 고령자" unselectable="false">
+            <cl:formdata std:sid="f-data-c6ea9689" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-e480b8bb" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-423df829" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-08014a91" value="accessiblemegamenu : megamenu와 동일한 형태이나, 웹접근성 친화적인 내비게이션바 모드를 설정합니다. (ul,li와 같은 목록형 태그로 생성된 메뉴)&#xD;&#xA;" unselectable="false">
+            <cl:formdata std:sid="f-data-8585047a" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-b35b73a2" class="pb-label" value="내비게이션바 속성 지정">
+            <cl:formdata std:sid="f-data-9980380d" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-6d9ec30b" id="grp23">
+            <cl:formdata std:sid="f-data-959f1e12" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-3eaff17f" id="img1" src="../웹접근성 캡쳐 이미지/3. 셀렉션 계열/4.1.3.1_내비게이션바-menuType_Properties.png" alt="내비게이션바 menuType 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-ca201d01" width="506px" height="271px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-5a843c3c" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-f3ef5724" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-2e83585b" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-cb067e12" id="grp17" clipcontent="false">
+            <cl:formdata std:sid="f-data-c87d4bfe" row="7" col="1" rowspan="1" colspan="3"/>
+            <cl:navigationbar std:sid="n-bar-023cdfde" menutype="accessiblemegamenu">
+              <cl:flowlayoutdata std:sid="f-data-b93912ef" width="403px" height="30px" autosize="width"/>
+              <cl:menuitemset datasetid="dsNavMenu" label="label" value="value" parent="parent"/>
+            </cl:navigationbar>
+            <cl:flowlayout std:sid="f-layout-e7eafb90" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-1b805465" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="282" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-ca00c449" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-9d4e3aba" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-87f4ad56" id="grp14" class="pb-content" clipcontent="false">
+      <std:metadata>
+        <std:property key="template-uuid" value="fdbcc0d6-39a3-42c8-844c-8837962272e7"/>
+        <std:property key="template-rev" value="4"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-bb3d3ba8" width="1280px" height="855px" autosize="height"/>
+      <cl:group std:sid="group-910ff878" id="grp16" clipcontent="false">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-8cb351d8" width="1180px" height="755px" autosize="height"/>
+        <cl:udc std:sid="ud-control-4b483ae7" id="sectiontitle2" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-1712597c" width="1544px" height="29px"/>
+          <cl:property name="title" value="내비게이션바 – displayExp" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-4c6475c5" id="grp18" class="pb-table wa-table z-index-1" clipcontent="false">
+          <std:metadata>
+            <std:property key="template-uuid" value="12fd52d0-2f82-49b7-b410-9c01fde5e26f"/>
+            <std:property key="template-rev" value="2"/>
+          </std:metadata>
+          <cl:verticaldata std:sid="v-data-96206285" width="1180px" height="712px" autosize="height"/>
+          <cl:output std:sid="output-acfd2b5b" class="pb-label" value="4. 아이템의 텍스트와 Depth 정보, 새창열기 여부를 제공한다.\">
+            <cl:formdata std:sid="f-data-230d59af" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-3e13d5f3" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-f38e1c20" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-5f232c8d" value="displayExp" unselectable="false">
+            <cl:formdata std:sid="f-data-e317c01d" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-f4a6793f" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-22c39f0a" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-f8079e3a" value="1.0.4427" unselectable="false">
+            <cl:formdata std:sid="f-data-88572d07" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-1a5d81cb" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-7c63c4e8" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-228a46d4" value="항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-ab24d35e" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-7681468e" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-ce8b4a86" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-e3480195" value="시각 장애, 저시력자" unselectable="false">
+            <cl:formdata std:sid="f-data-e90f8f40" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-4e2f818b" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-820d33f8" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-3e79b9d6" displayexp="&quot;menuType=accessiblemegamenu 형태의 내비게이션바에서는 각 아이템 간 종속관계를 알 수 있도록 제공합니다.\n&quot;&#xD;&#xA;+&quot;단, 현재 아이템의 depth 를 좀 더 쉽게 파악하기 위해 displayExp 를 통해  추가적인 정보를 제공합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+&quot;displayExp 속성에 텍스트와 더불어 depth 정보를 함께 작성하며, depth 정보는 시각적으로 보이지 않고, 스크린리더를 통해서만 확인이 가능합니다. (cl-sound-only 클래스)\n&quot;&#xD;&#xA;+sstr(&quot;ex) label + sstr(depth + '단계', ['cl-sound-only'])\n\n&quot;, [&quot;text-primary&quot;])&#xD;&#xA;&#xD;&#xA;+&quot;추가적으로 아이템 클릭 시 새 창이 열릴 경우에는 조건을 덧붙혀 새 창 열기 여부를 함께 제공해야 합니다.\n&quot;&#xD;&#xA;+&quot;displayExp 속성에 메뉴의 depth과 새창열기 여부를 확인하는 낭독 전용 텍스트를 추가해줍니다. (cl-sound-only 클래스)\n&quot;&#xD;&#xA;+ sstr(&quot;ex) label + sstr(depth + '단계' + ((CALL_PAGE !='' &amp;&amp; CALL_PAGE.indexOf('.clx') == -1) ? ' 새창 열기' : ''), ['cl-sound-only'])&quot;, [&quot;text-primary&quot;])" unselectable="false">
+            <cl:formdata std:sid="f-data-7cb07972" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-7221ad45" class="pb-label" value="내비게이션바 속성 지정">
+            <cl:formdata std:sid="f-data-6ececf02" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-73e68ed4" id="grp24">
+            <cl:formdata std:sid="f-data-4a6cf848" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-397747a0" id="img2" src="../웹접근성 캡쳐 이미지/3. 셀렉션 계열/4.1.3.1_내비게이션바-displayExp_Properties.png" alt="내비게이션바 displayExp 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-66793630" width="506px" height="271px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-96bf9c92" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-b1ab3421" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-9c2a5dc2" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-4ac9f5b9" id="grp20" clipcontent="false">
+            <cl:formdata std:sid="f-data-0254671f" row="7" col="1" rowspan="1" colspan="1"/>
+            <cl:navigationbar std:sid="n-bar-28904ad5" displayexp="label + sstr(depth + &quot;단계&quot;, [&quot;cl-sound-only&quot;])">
+              <cl:flowlayoutdata std:sid="f-data-46b93983" width="400px" height="30px" autosize="width"/>
+              <cl:menuitemset datasetid="dsNavMenu" label="label" value="value" parent="parent"/>
+            </cl:navigationbar>
+            <cl:flowlayout std:sid="f-layout-3d02e40d" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-940a084a" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-93138a19" row="7" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-23f7c23e" id="grp15" clipcontent="false">
+            <cl:formdata std:sid="f-data-7e67e03b" row="7" col="3"/>
+            <cl:navigationbar std:sid="n-bar-27daf05c" displayexp="label">
+              <cl:flowlayoutdata std:sid="f-data-fc050ee2" width="400px" height="30px" autosize="width"/>
+              <cl:menuitemset datasetid="dsNavMenu" label="label" value="value" parent="parent"/>
+            </cl:navigationbar>
+            <cl:flowlayout std:sid="f-layout-e628098a" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-1efcdc84" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="49" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="294" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-a361a51a" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-33310f30" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

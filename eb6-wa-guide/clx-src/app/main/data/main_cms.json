@@ -1,0 +1,644 @@
+{
+  "dsAllMenu": [
+  	{
+      "MENU_ID": "LEVEL00-00",
+      "MENU_NM": "문서",
+      "CALL_PAGE": null,
+      "UP_MENU_ID": null,
+      "MENU_LVL": 0,
+      "DESC": null,
+      "TAG": null,
+      "CLASS": "talk"
+    },
+    {
+      "MENU_ID": "guide",
+      "MENU_NM": "웹 표준 준수/웹 접근성 가이드",
+      "CALL_PAGE": "app/com/1.guideLine/comDownloadGuide.clx",
+      "UP_MENU_ID": "LEVEL00-00",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "eXBuilder6에서 제공하는 웹 접근성 관련 가이드 문서 입니다.",
+      "TAG": "eXBuilder6,웹 접근성,가이드,문서,공통,퍼블,기획"
+    },
+    {
+      "MENU_ID": "LEVEL00-05",
+      "MENU_NM": "웹 접근성",
+      "CALL_PAGE": null,
+      "UP_MENU_ID": null,
+      "MENU_LVL": 0,
+      "DESC": null,
+      "TAG": null,
+      "CLASS": "monitor"
+    },
+    {
+      "MENU_ID": "WAGuideLine",
+      "MENU_NM": "웹 접근성 지침",
+      "CALL_PAGE": "app/com/1.guideLine/comGuideLine.clx",
+      "UP_MENU_ID": "LEVEL00-05",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "웹 접근성 품질인증 표준심사 지침(2022 개정) 문서에서 제공하는 총 24 개의 웹 접근성 준수 지침입니다.",
+      "TAG": "웹 접근성, 지침, 표준"
+    },
+    {
+      "MENU_ID": "waSelfAssessment",
+      "MENU_NM": "웹 접근성 자가 진단 도구",
+      "CALL_PAGE": "app/com/1.guideLine/comWaSelfAccessment.clx",
+      "UP_MENU_ID": "LEVEL00-05",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "웹 접근성 준수여부를 확인하기 위해 자가 진단을 할 수 있는 도구에 대해 설명합니다.",
+      "TAG": "웹 접근성,자가 진단,도구"
+    },
+    {
+      "MENU_ID": "waShortKey",
+      "MENU_NM": "웹 접근성 단축키 안내",
+      "CALL_PAGE": "app/com/comGuideWaShortKey.clx",
+      "UP_MENU_ID": "LEVEL00-05",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "웹 접근성 준수 화면에서 사용할 수 있는 단축키 조합을 안내합니다.",
+      "TAG": "웹 접근성,단축키"
+    },
+ 	{
+      "MENU_ID": "LEVEL00-01",
+      "MENU_NM": "공통항목",
+      "CALL_PAGE": null,
+      "UP_MENU_ID": null,
+      "MENU_LVL": 0,
+      "DESC": null,
+      "TAG": null,
+      "CLASS": "application"
+    },
+    {
+      "MENU_ID": "LEVEL00-01-01",
+      "MENU_NM": "공통 설정",
+      "CALL_PAGE": "",
+      "UP_MENU_ID": "LEVEL00-01",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "extensionFunction",
+      "MENU_NM": "웹 접근성 관련 공통 모듈",
+      "CALL_PAGE": "app/com/2.common/extFunc.clx",
+      "UP_MENU_ID": "LEVEL00-01-01",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "웹 접근성을 준수하기 위해 공통모듈에서 제공하는 기능에 대한 샘플화면 입니다.",
+      "TAG": "웹 접근성, 공통모듈, 공통기능"
+    },
+    {
+      "MENU_ID": "defaults",
+      "MENU_NM": "defaults.js 설정",
+      "CALL_PAGE": "app/com/2.common/settingDefaults.clx",
+      "UP_MENU_ID": "LEVEL00-01-01",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "웹 접근성을 준수하기 위해 공통모듈에서 제공하는 기능에 대한 샘플화면 입니다.",
+      "TAG": "웹 접근성, 공통모듈, 공통기능"
+    },
+    {
+      "MENU_ID": "LEVEL00-01-03",
+      "MENU_NM": "퍼블리싱",
+      "CALL_PAGE": "",
+      "UP_MENU_ID": "LEVEL00-01",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "PublishingGuide",
+      "MENU_NM": "퍼블리싱 가이드(개발자)",
+      "CALL_PAGE": "app/com/3.publishing/publishingGuide.clx",
+      "UP_MENU_ID": "LEVEL00-01-03",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "퍼블리싱 단계에서 접근성을 준수하기 위한 가이드입니다.",
+      "TAG": "웹 접근성, 퍼블리싱"
+    },
+    {
+      "MENU_ID": "PublishingGuide-Arch",
+      "MENU_NM": "퍼블리싱 가이드(기획)",
+      "CALL_PAGE": "app/com/3.publishing/publishingGuide-arch.clx",
+      "UP_MENU_ID": "LEVEL00-01-03",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "기획 단계에서 접근성을 준수하기 위한 가이드입니다.",
+      "TAG": "웹 접근성, 퍼블리싱"
+    },
+    {
+      "MENU_ID": "LEVEL00-01-04",
+      "MENU_NM": "개발자",
+      "CALL_PAGE": "",
+      "UP_MENU_ID": "LEVEL00-01",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "DevelopmentGuide",
+      "MENU_NM": "개발 가이드(개발자)",
+      "CALL_PAGE": "app/com/4.development/developmentGuide.clx",
+      "UP_MENU_ID": "LEVEL00-01-04",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "개발자가 개발 시 접근성 준수를 위해 필요한 가이드입니다.",
+      "TAG": "웹 접근성, 개발, 이벤트, 동적, 컨트롤"
+    },
+  	{
+      "MENU_ID": "LEVEL01-01",
+      "MENU_NM": "컨트롤 가이드",
+      "CALL_PAGE": null,
+      "UP_MENU_ID": null,
+      "MENU_LVL": 0,
+      "DESC": null,
+      "TAG": null,
+      "CLASS": "control"
+    },
+    {
+      "MENU_ID": "LEVEL01-01-01",
+      "MENU_NM": "그룹",
+      "CALL_PAGE": "",
+      "UP_MENU_ID": "LEVEL01-01",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "tabfolder",
+      "MENU_NM": "탭폴더",
+      "CALL_PAGE": "app/control/guide/Tabfolder.clx",
+      "UP_MENU_ID": "LEVEL01-01-01",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "mdifolder",
+      "MENU_NM": "MDI폴더",
+      "CALL_PAGE": "app/control/guide/MdiFolder.clx",
+      "UP_MENU_ID": "LEVEL01-01-01",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "accordion",
+      "MENU_NM": "아코디언",
+      "CALL_PAGE": "app/control/guide/Accordion.clx",
+      "UP_MENU_ID": "LEVEL01-01-01",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "LEVEL01-01-02",
+      "MENU_NM": "그리드",
+      "CALL_PAGE": "",
+      "UP_MENU_ID": "LEVEL01-01",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "grid",
+      "MENU_NM": "그리드",
+      "CALL_PAGE": "app/control/guide/Grid.clx",
+      "UP_MENU_ID": "LEVEL01-01-02",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "LEVEL01-01-03",
+      "MENU_NM": "셀렉션 계열",
+      "CALL_PAGE": "",
+      "UP_MENU_ID": "LEVEL01-01",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "navigationbar",
+      "MENU_NM": "내비게이션바",
+      "CALL_PAGE": "app/control/guide/Nav-bar.clx",
+      "UP_MENU_ID": "LEVEL01-01-03",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "menu",
+      "MENU_NM": "메뉴",
+      "CALL_PAGE": "app/control/guide/Menu.clx",
+      "UP_MENU_ID": "LEVEL01-01-03",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+     {
+      "MENU_ID": "combobox",
+      "MENU_NM": "콤보박스",
+      "CALL_PAGE": "app/control/guide/ComboBox.clx",
+      "UP_MENU_ID": "LEVEL01-01-03",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+     {
+      "MENU_ID": "listbox",
+      "MENU_NM": "리스트박스",
+      "CALL_PAGE": "app/control/guide/Listbox.clx",
+      "UP_MENU_ID": "LEVEL01-01-03",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+     {
+      "MENU_ID": "checkbox",
+      "MENU_NM": "체크박스",
+      "CALL_PAGE": "app/control/guide/CheckBox.clx",
+      "UP_MENU_ID": "LEVEL01-01-03",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+     {
+      "MENU_ID": "tree",
+      "MENU_NM": "트리",
+      "CALL_PAGE": "app/control/guide/Tree.clx",
+      "UP_MENU_ID": "LEVEL01-01-03",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "sidenavigation",
+      "MENU_NM": "사이드 내비게이션",
+      "CALL_PAGE": "app/control/guide/Side-nav.clx",
+      "UP_MENU_ID": "LEVEL01-01-03",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "linkedcombobox",
+      "MENU_NM": "링크드 콤보박스",
+      "CALL_PAGE": "app/control/guide/Linked-comboBox.clx",
+      "UP_MENU_ID": "LEVEL01-01-03",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "linkedlistbox",
+      "MENU_NM": "링크드 리스트박스",
+      "CALL_PAGE": "app/control/guide/Linked-listbox.clx",
+      "UP_MENU_ID": "LEVEL01-01-03",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "LEVEL01-01-04",
+      "MENU_NM": "인풋 계열",
+      "CALL_PAGE": "",
+      "UP_MENU_ID": "LEVEL01-01",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "inputbox",
+      "MENU_NM": "인풋박스",
+      "CALL_PAGE": "app/control/guide/InputBox.clx",
+      "UP_MENU_ID": "LEVEL01-01-04",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "dateinput",
+      "MENU_NM": "데이트인풋",
+      "CALL_PAGE": "app/control/guide/Dateinput.clx",
+      "UP_MENU_ID": "LEVEL01-01-04",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "numbereditor",
+      "MENU_NM": "넘버에디터",
+      "CALL_PAGE": "app/control/guide/NumberEditor.clx",
+      "UP_MENU_ID": "LEVEL01-01-04",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "maskeditor",
+      "MENU_NM": "마스크에디터",
+      "CALL_PAGE": "app/control/guide/MaskEditor.clx",
+      "UP_MENU_ID": "LEVEL01-01-04",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "searchinput",
+      "MENU_NM": "서치인풋",
+      "CALL_PAGE": "app/control/guide/SearchInput.clx",
+      "UP_MENU_ID": "LEVEL01-01-04",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "textarea",
+      "MENU_NM": "텍스트에리어",
+      "CALL_PAGE": "app/control/guide/TextArea.clx",
+      "UP_MENU_ID": "LEVEL01-01-04",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "fileinput",
+      "MENU_NM": "파일인풋",
+      "CALL_PAGE": "app/control/guide/FileInput.clx",
+      "UP_MENU_ID": "LEVEL01-01-04",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "button",
+      "MENU_NM": "버튼",
+      "CALL_PAGE": "app/control/guide/Button.clx",
+      "UP_MENU_ID": "LEVEL01-01-04",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "LEVEL01-01-05",
+      "MENU_NM": "아웃풋 계열",
+      "CALL_PAGE": "",
+      "UP_MENU_ID": "LEVEL01-01",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "output",
+      "MENU_NM": "아웃풋",
+      "CALL_PAGE": "app/control/guide/Output.clx",
+      "UP_MENU_ID": "LEVEL01-01-05",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "notifier",
+      "MENU_NM": "알림",
+      "CALL_PAGE": "app/control/guide/Notifier.clx",
+      "UP_MENU_ID": "LEVEL01-01-05",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "video",
+      "MENU_NM": "비디오",
+      "CALL_PAGE": "app/control/guide/Video.clx",
+      "UP_MENU_ID": "LEVEL01-01-05",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "audio",
+      "MENU_NM": "오디오",
+      "CALL_PAGE": "app/control/guide/Audio.clx",
+      "UP_MENU_ID": "LEVEL01-01-05",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "image",
+      "MENU_NM": "이미지",
+      "CALL_PAGE": "app/control/guide/Image.clx",
+      "UP_MENU_ID": "LEVEL01-01-05",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "progress",
+      "MENU_NM": "프로그레스",
+      "CALL_PAGE": "app/control/guide/ProgressBar.clx",
+      "UP_MENU_ID": "LEVEL01-01-05",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "slider",
+      "MENU_NM": "슬라이더",
+      "CALL_PAGE": "app/control/guide/Slider.clx",
+      "UP_MENU_ID": "LEVEL01-01-05",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "LEVEL01-01-06",
+      "MENU_NM": "기타",
+      "CALL_PAGE": "",
+      "UP_MENU_ID": "LEVEL01-01",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "embeddedpage",
+      "MENU_NM": "임베디드 페이지",
+      "CALL_PAGE": "app/control/guide/EmbeddedPage.clx",
+      "UP_MENU_ID": "LEVEL01-01-06",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "LEVEL01-01-07",
+      "MENU_NM": "다이얼로그",
+      "CALL_PAGE": "",
+      "UP_MENU_ID": "LEVEL01-01",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "dialog",
+      "MENU_NM": "다이얼로그",
+      "CALL_PAGE": "app/control/guide/Dialog.clx",
+      "UP_MENU_ID": "LEVEL01-01-07",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "LEVEL01-02",
+      "MENU_NM": "샘플 화면",
+      "CALL_PAGE": null,
+      "UP_MENU_ID": null,
+      "MENU_LVL": 0,
+      "DESC": null,
+      "TAG": null,
+      "CLASS": "page"
+    },
+    {
+      "MENU_ID": "LEVEL02-02-01",
+      "MENU_NM": "업무화면",
+      "CALL_PAGE": "app/main/Main",
+      "UP_MENU_ID": "LEVEL01-02",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": null,
+      "TAG": null
+    },
+    {
+      "MENU_ID": "LEVEL02-02-02",
+      "MENU_NM": "CMS",
+      "CALL_PAGE": "",
+      "UP_MENU_ID": "LEVEL01-02",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": null,
+      "TAG": null
+    },
+    {
+      "MENU_ID": "dashboard",
+      "MENU_NM": "대시보드",
+      "CALL_PAGE": "app/exam/cms/waCmsSample06.clx",
+      "UP_MENU_ID": "LEVEL02-02-02",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "joinInfo",
+      "MENU_NM": "회원가입_약관동의",
+      "CALL_PAGE": "app/exam/cms/waCmsSample03.clx",
+      "UP_MENU_ID": "LEVEL02-02-02",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "join",
+      "MENU_NM": "회원가입_회원정보입력",
+      "CALL_PAGE": "app/exam/cms/waCmsSample04.clx",
+      "UP_MENU_ID": "LEVEL02-02-02",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "board",
+      "MENU_NM": "게시판_그리드",
+      "CALL_PAGE": "app/exam/cms/waCmsSample05.clx",
+      "UP_MENU_ID": "LEVEL02-02-02",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "boardForm",
+      "MENU_NM": "게시판_폼레이아웃",
+      "CALL_PAGE": "app/exam/cms/waCmsSample07.clx",
+      "UP_MENU_ID": "LEVEL02-02-02",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "sitemap",
+      "MENU_NM": "사이트맵",
+      "CALL_PAGE": "app/exam/cms/waCmsSample02.clx",
+      "UP_MENU_ID": "LEVEL02-02-02",
+      "CLASS": "",
+      "MENU_LVL": 3,
+      "DESC": "",
+      "TAG": ""
+    },
+    {
+      "MENU_ID": "LEVEL01-03",
+      "MENU_NM": "설정",
+      "CALL_PAGE": null,
+      "UP_MENU_ID": null,
+      "MENU_LVL": 0,
+      "DESC": null,
+      "TAG": null,
+      "CLASS": "global"
+    },
+    {
+      "MENU_ID": "theme",
+      "MENU_NM": "테마설정",
+      "CALL_PAGE": "app/setting/comThemeSetting.clx",
+      "UP_MENU_ID": "LEVEL01-03",
+      "CLASS": "",
+      "MENU_LVL": 2,
+      "DESC": "웹 접근성 준수를 위해 다크모드, 고대비 모드를 설정 할 수 있는 테마 설정 페이지 입니다.",
+      "TAG": "theme,dark,contrast,accessibility"
+    }
+  ]
+}

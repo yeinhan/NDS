@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9eb58a23" version="1.0.0.0">
+  <head std:sid="head-be08e94e">
+    <title>waCmsSample06</title>
+    <screen std:sid="screen-e93b0602" id="default" name="default" width="1280px" height="768px"/>
+    <cl:model std:sid="model-eefc4cd3">
+      <cl:dataset std:sid="d-set-2f0441ce" id="dsNotice">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="분류" std:sid="d-column-3ecfb2e1" name="category"/>
+          <cl:datacolumn comment="게시글 제목" std:sid="d-column-603cf1ea" name="title"/>
+          <cl:datacolumn comment="작성일자" std:sid="d-column-b2bb0bb3" name="write_dt"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="category">Release</cl:datavalue>
+            <cl:datavalue columnname="title">2023-08-11 릴리즈 노트</cl:datavalue>
+            <cl:datavalue columnname="write_dt">20230811</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="category">Release</cl:datavalue>
+            <cl:datavalue columnname="title">2023-07-14 릴리즈 노트</cl:datavalue>
+            <cl:datavalue columnname="write_dt">20230714</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="category">안내</cl:datavalue>
+            <cl:datavalue columnname="title">토마토시스템 기술지원 사이트 리뉴얼</cl:datavalue>
+            <cl:datavalue columnname="write_dt">20230701</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="category">안내</cl:datavalue>
+            <cl:datavalue columnname="title">토마토시스템 eXBuilder6 기술지원 사이트 이용 안내</cl:datavalue>
+            <cl:datavalue columnname="write_dt">20230628</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="category">Release</cl:datavalue>
+            <cl:datavalue columnname="title">2023-06-16 릴리즈 노트</cl:datavalue>
+            <cl:datavalue columnname="write_dt">20230616</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="category">Release</cl:datavalue>
+            <cl:datavalue columnname="title">2023-05-19 릴리즈 노트</cl:datavalue>
+            <cl:datavalue columnname="write_dt">20230519</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="category">안내</cl:datavalue>
+            <cl:datavalue columnname="title">[당첨자 발표] 기술지원사이트 리뉴얼 이벤트 당첨자 발표</cl:datavalue>
+            <cl:datavalue columnname="write_dt">20230430</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-267d742b" id="dsPropView">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="필터조건(같은 숫자에 대해서만 필터하여 내용을 보여준다)" std:sid="d-column-5941843b" name="keyNum" datatype="string"/>
+          <cl:datacolumn comment="컨트롤명(영문)" std:sid="d-column-4cd817ad" name="control"/>
+          <cl:datacolumn comment="속성명" std:sid="d-column-a67ff141" name="propNm"/>
+          <cl:datacolumn comment="속성값" std:sid="d-column-309a35a3" name="propVal"/>
+          <cl:datacolumn comment="관련 웹접근성 지침" std:sid="d-column-d6e23689" name="relatedWaInst"/>
+          <cl:datacolumn std:sid="d-column-4a5e554b" name="code"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">imgBanner1</cl:datavalue>
+            <cl:datavalue columnname="control">image</cl:datavalue>
+            <cl:datavalue columnname="propNm">alt</cl:datavalue>
+            <cl:datavalue columnname="propVal">eXPortal 협업 및 업무향상을 위한 사용자 맞춤 통합 포탈
+효율적인 업무 구성을 위한 GateWay 사용자 권한과 역할에 따른 그룹별 맞춤 서비스 제공</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">imgBanner2</cl:datavalue>
+            <cl:datavalue columnname="control">image</cl:datavalue>
+            <cl:datavalue columnname="propNm">alt</cl:datavalue>
+            <cl:datavalue columnname="propVal">eXSignOn 국제 표준 SAML 기반 SSO 단 한번의 로그인으로 다양한 서비스 이용
+기업의 각종 시스템이나 인터넷 서비스에 접속 가능한 보안 응용 솔루션</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">imgBanner3</cl:datavalue>
+            <cl:datavalue columnname="control">image</cl:datavalue>
+            <cl:datavalue columnname="propNm">alt</cl:datavalue>
+            <cl:datavalue columnname="propVal">eXERD 쉽고 빠른 이클립스 기반의 지능형 E-R 모델링 툴
+사용자 편의성과 개발자 설계역량 향상에 초점을 맞춘 DB모델링 툴</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">imgBanner4</cl:datavalue>
+            <cl:datavalue columnname="control">image</cl:datavalue>
+            <cl:datavalue columnname="propNm">alt</cl:datavalue>
+            <cl:datavalue columnname="propVal">eXCampus
+급변하는 대학을 위한
+맞춤형 전문 패키지
+표준 업무 프로세스 및 데이터 구조 제공
+안전성과 확장성을 보장하는 대학 맞춤 패키지</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">imgBanner5</cl:datavalue>
+            <cl:datavalue columnname="control">image</cl:datavalue>
+            <cl:datavalue columnname="propNm">alt</cl:datavalue>
+            <cl:datavalue columnname="propVal">격이 다른 프리미엄 UI
+eXBuilder6
+코드의 투명성, 이클립스 기반의 통합환경, 파워풀한 팀관리로 업무 효율성 향상</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">imgBanner6</cl:datavalue>
+            <cl:datavalue columnname="control">image</cl:datavalue>
+            <cl:datavalue columnname="propNm">alt</cl:datavalue>
+            <cl:datavalue columnname="propVal">토마토시스템 소프트웨어
+합리적인 가격과 편리한 소프트웨어로 풍요로운 세상을 만드는 기업
+토마토시스템 소프트웨어로 가치를 엮어나갑니다.</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnPrev</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[tooltip]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[이전 배너]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnNext</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[tooltip]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[다음 배너]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">cbxPlayPause</cl:datavalue>
+            <cl:datavalue columnname="control">checkbox</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">exp://checked ? &quot;슬라이드 일시정지&quot; : &quot;슬라이드 자동재생&quot;</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">optBullet</cl:datavalue>
+            <cl:datavalue columnname="control">output</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[n번째 배너]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">optH1</cl:datavalue>
+            <cl:datavalue columnname="control">output</cl:datavalue>
+            <cl:datavalue columnname="propNm">outputType</cl:datavalue>
+            <cl:datavalue columnname="propVal">h1</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 18. (제목 제공) 페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnShowMore</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">link</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">grdNotice</cl:datavalue>
+            <cl:datavalue columnname="control">grid</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">공지사항</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnCategory</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">link</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnCategory</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">분류</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">optTitle</cl:datavalue>
+            <cl:datavalue columnname="control">output</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">제목</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">optWriDt</cl:datavalue>
+            <cl:datavalue columnname="control">output</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">작성일자</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="대시보드"/>
+  </head>
+  <body std:sid="body-bc3b0ed4" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-be512802" name="init" handler="onBodyInit"/>
+    <cl:listener std:sid="listener-6eff379c" name="load" handler="onBodyLoad"/>
+    <cl:attribute name="ignore-common-settings" value="true"/>
+    <cl:group std:sid="group-02a1e922" id="grpRt" class="dashboard">
+      <cl:attribute name="ignore-initialize" value="true"/>
+      <cl:verticaldata std:sid="v-data-9240204f" width="1280px" height="1247px" autosize="height"/>
+      <cl:group std:sid="group-4139b17e" id="grp4" class="easylink-cont">
+        <cl:verticaldata std:sid="v-data-f90d382d" width="1280px" height="425px" autosize="height"/>
+        <cl:group std:sid="group-85f97e73" id="grp5" class="easylink-group" clipcontent="false">
+          <cl:verticaldata std:sid="v-data-53c763eb" width="1218px" height="360px" autosize="none"/>
+          <cl:group std:sid="group-cb7d6524" id="grp3" clipcontent="false">
+            <cl:formdata std:sid="f-data-fff8ec85" row="0" col="0" rowspan="1" colspan="1"/>
+            <cl:group std:sid="group-cbc6b50a" id="grpBnr">
+              <cl:xylayoutdata std:sid="xyl-data-4976080a" right="0px" left="0px" height="360px" horizontalAnchor="BOTH" verticalAnchor="CENTER"/>
+              <cl:group std:sid="group-da109853" id="grpSlide1">
+                <cl:flowlayoutdata std:sid="f-data-720c3c1f" width="1218px" height="360px"/>
+                <cl:img std:sid="image-b6f7cfba" id="imgBanner1" src="../../../theme/images/com/slide/banner_tmt1_content.png" alt="eXPortal 협업 및 업무향상을 위한 사용자 맞춤 통합 포탈&#xD;&#xA;효율적인 업무 구성을 위한 GateWay 사용자 권한과 역할에 따른 그룹별 맞춤 서비스 제공">
+                  <cl:attribute name="wa-prop-key" value="imgBanner1"/>
+                  <cl:xylayoutdata std:sid="xyl-data-d3cce852" top="0px" left="0px" width="1218px" height="360px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:img>
+                <cl:xylayout std:sid="xylayout-aaea8522"/>
+              </cl:group>
+              <cl:group std:sid="group-b4f699c8" id="grpSlide2">
+                <cl:flowlayoutdata std:sid="f-data-26d044e4" width="1218px" height="360px"/>
+                <cl:img std:sid="image-b025e1c6" id="imgBanner2" src="../../../theme/images/com/slide/banner_tmt2_content.png" alt="eXSignOn 국제 표준 SAML 기반 SSO 단 한번의 로그인으로 다양한 서비스 이용&#xD;&#xA;기업의 각종 시스템이나 인터넷 서비스에 접속 가능한 보안 응용 솔루션">
+                  <cl:attribute name="wa-prop-key" value="imgBanner2"/>
+                  <cl:xylayoutdata std:sid="xyl-data-f1bd579a" top="0px" left="0px" width="1218px" height="360px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:img>
+                <cl:xylayout std:sid="xylayout-41bf29ee"/>
+              </cl:group>
+              <cl:group std:sid="group-0c830b9c" id="grpSlide3">
+                <cl:flowlayoutdata std:sid="f-data-0babb2e5" width="1218px" height="360px"/>
+                <cl:img std:sid="image-048b74a3" id="imgBanner3" src="../../../theme/images/com/slide/banner_tmt3_content.png" alt="eXERD 쉽고 빠른 이클립스 기반의 지능형 E-R 모델링 툴&#xD;&#xA;사용자 편의성과 개발자 설계역량 향상에 초점을 맞춘 DB모델링 툴">
+                  <cl:attribute name="wa-prop-key" value="imgBanner3"/>
+                  <cl:xylayoutdata std:sid="xyl-data-445e7090" top="0px" left="0px" width="1218px" height="360px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:img>
+                <cl:xylayout std:sid="xylayout-ab14055f"/>
+              </cl:group>
+              <cl:group std:sid="group-4f35b20d" id="grpSlide4">
+                <cl:flowlayoutdata std:sid="f-data-ba7ee205" width="1218px" height="360px"/>
+                <cl:img std:sid="image-0f7a6872" id="imgBanner4" src="../../../theme/images/com/slide/banner_tmt4_content.png" alt="eXCampus &#xD;&#xA;급변하는 대학을 위한&#xD;&#xA;맞춤형 전문 패키지&#xD;&#xA;표준 업무 프로세스 및 데이터 구조 제공&#xD;&#xA;안전성과 확장성을 보장하는 대학 맞춤 패키지">
+                  <cl:attribute name="wa-prop-key" value="imgBanner4"/>
+                  <cl:xylayoutdata std:sid="xyl-data-90c98e88" top="0px" left="0px" width="1218px" height="360px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:img>
+                <cl:xylayout std:sid="xylayout-5cb23a99"/>
+              </cl:group>
+              <cl:group std:sid="group-14a2bd28" id="grpSlide5">
+                <cl:flowlayoutdata std:sid="f-data-2ce944e1" width="1218px" height="360px"/>
+                <cl:img std:sid="image-f8f111d8" id="imgBanner5" src="../../../theme/images/com/slide/banner_tmt5_content.png" alt="격이 다른 프리미엄 UI &#xD;&#xA;eXBuilder6&#xD;&#xA;코드의 투명성, 이클립스 기반의 통합환경, 파워풀한 팀관리로 업무 효율성 향상">
+                  <cl:attribute name="wa-prop-key" value="imgBanner5"/>
+                  <cl:xylayoutdata std:sid="xyl-data-1a1499ac" top="0px" left="0px" width="1218px" height="360px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:img>
+                <cl:xylayout std:sid="xylayout-c4f86ac1"/>
+              </cl:group>
+              <cl:group std:sid="group-b46740a9" id="grpSlide6">
+                <cl:flowlayoutdata std:sid="f-data-64affc74" width="1218px" height="360px"/>
+                <cl:img std:sid="image-1030ed6a" id="imgBanner6" src="../../../theme/images/com/slide/banner_tmt6_content.png" alt="토마토시스템 소프트웨어 &#xD;&#xA;합리적인 가격과 편리한 소프트웨어로 풍요로운 세상을 만드는 기업&#xD;&#xA;토마토시스템 소프트웨어로 가치를 엮어나갑니다.">
+                  <cl:attribute name="wa-prop-key" value="imgBanner6"/>
+                  <cl:xylayoutdata std:sid="xyl-data-a6951b7c" top="0px" left="0px" width="1218px" height="360px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:img>
+                <cl:xylayout std:sid="xylayout-7c5a7f5c"/>
+              </cl:group>
+              <cl:flowlayout std:sid="f-layout-c2fde51b" scrollable="false" hspacing="0" vspacing="0" linewrap="false"/>
+            </cl:group>
+            <cl:button std:sid="button-5efe8163" id="btnPrev" class="btn-transparent" tooltip="이전 슬라이드" icon="../../../theme/images/com/slide/ico_btn_arrow_left.png">
+              <cl:attribute name="wa-prop-key" value="btnPrev"/>
+              <cl:xylayoutdata std:sid="xyl-data-36fcda76" left="0px" width="80px" height="60px" horizontalAnchor="LEFT" verticalAnchor="CENTER"/>
+              <cl:iconstyle style="background-size:50% 100%;"/>
+            </cl:button>
+            <cl:button std:sid="button-ec4a4c29" id="btnNext" class="btn-transparent" tooltip="다음 배너" icon="../../../theme/images/com/slide/ico_btn_arrow_right.png">
+              <cl:listener std:sid="listener-b7e77792" name="click" handler="onBtnNextClick"/>
+              <cl:attribute name="wa-prop-key" value="btnNext"/>
+              <cl:xylayoutdata std:sid="xyl-data-227be0ad" right="0px" width="80px" height="60px" horizontalAnchor="RIGHT" verticalAnchor="CENTER"/>
+              <cl:iconstyle style="background-size:50% 100%;"/>
+            </cl:button>
+            <cl:group std:sid="group-d3787499" id="grpPgCtrls" class="paginations">
+              <cl:xylayoutdata std:sid="xyl-data-b84c5788" bottom="20px" left="20px" width="512px" height="24px" horizontalAnchor="LEFT" verticalAnchor="BOTTOM"/>
+              <cl:group std:sid="group-70326696" id="grp97">
+                <cl:flowlayoutdata std:sid="f-data-0bb9b51f" width="250px" height="24px" autosize="width"/>
+                <cl:checkbox std:sid="c-box-5ae0ef21" id="cbxPlayPause" style="padding-right:12px;" class="slide-play" value="true" falsevalue="false" text="">
+                  <cl:attribute name="wa-prop-key" value="cbxPlayPause"/>
+                  <cl:expbind property="fieldLabel" category="PROPERTY" expression="checked ? &quot;슬라이드 일시정지&quot; : &quot;슬라이드 자동재생&quot;"/>
+                  <cl:flowlayoutdata std:sid="f-data-5e289cba" width="14px" height="14px" autosize="both"/>
+                </cl:checkbox>
+                <cl:group std:sid="group-092c6cfb" id="grpPgBlt">
+                  <cl:attribute name="wa-prop-key" value="optBullet"/>
+                  <cl:flowlayoutdata std:sid="f-data-2a77c05a" width="203px" height="100%" autosize="width"/>
+                  <cl:output std:sid="output-ff9b240b" id="optBullet">
+                    <cl:flowlayoutdata std:sid="f-data-1dd6f95b" width="6px" height="6px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-93822dc4">
+                    <cl:flowlayoutdata std:sid="f-data-807746e1" width="6px" height="6px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-93890648">
+                    <cl:flowlayoutdata std:sid="f-data-41e4e155" width="6px" height="6px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-0260cb13">
+                    <cl:flowlayoutdata std:sid="f-data-25f9bd7c" width="6px" height="6px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-238fa0f2">
+                    <cl:flowlayoutdata std:sid="f-data-45ee566f" width="6px" height="6px" autosize="none"/>
+                  </cl:output>
+                  <cl:output std:sid="output-2f890787">
+                    <cl:flowlayoutdata std:sid="f-data-1c7b11c7" width="6px" height="6px" autosize="none"/>
+                  </cl:output>
+                  <cl:flowlayout std:sid="f-layout-e1a2161a" scrollable="false" hspacing="12" vspacing="12" valign="middle" linewrap="false"/>
+                </cl:group>
+                <cl:flowlayout std:sid="f-layout-4dea10eb" scrollable="false" hspacing="12" vspacing="12" valign="middle" linewrap="false"/>
+              </cl:group>
+              <cl:output std:sid="output-105439b2" id="lblPgTxt" class="pagination-txt" value="1 / 6">
+                <cl:flowlayoutdata std:sid="f-data-2cae4794" width="36px" height="24px" autosize="width"/>
+              </cl:output>
+              <cl:flowlayout std:sid="f-layout-097090a4" scrollable="false" hspacing="21" vspacing="21" valign="middle" linewrap="false"/>
+            </cl:group>
+            <cl:xylayout std:sid="xylayout-7155bcf6" scrollable="false"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-6ed8fc1e" scrollable="false" hspace="33px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-d4fe15d2" distribution="center" leftmargin="30" rightmargin="30" topmargin="30" bottommargin="30"/>
+      </cl:group>
+      <cl:group std:sid="group-2ade7bf9" id="grp1">
+        <cl:verticaldata std:sid="v-data-95c05721" width="1218px" height="777px" autosize="height"/>
+        <cl:group std:sid="group-ba6ebd07" id="grp10">
+          <cl:formdata std:sid="f-data-35144d4e" row="0" col="0" rowspan="1" colspan="1"/>
+          <cl:group comment="표시순 정렬 X" std:sid="group-0944acf7" id="grp2" class="card card-notice">
+            <cl:formdata std:sid="f-data-36fe9f5c" row="0" col="0"/>
+            <cl:group std:sid="group-665e6df3" id="grpTitleWrap">
+              <cl:formdata std:sid="f-data-8c3c5bb1" row="0" col="0"/>
+              <cl:output std:sid="output-eb7710a7" id="optNotice" class="main-title" value="Notice" outputtype="h1">
+                <cl:attribute name="wa-prop-key" value="optH1"/>
+                <cl:verticaldata std:sid="v-data-bbd3ffaf" width="1280px" height="38px" autosize="height"/>
+              </cl:output>
+              <cl:output std:sid="output-9fb1718e" style="font-size:16px;" value="새로운 소식을 가장 빠르게 만나보세요.">
+                <cl:verticaldata std:sid="v-data-07d634ab" width="1144px" height="30px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-948195ce" spacing="10" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0"/>
+            </cl:group>
+            <cl:group std:sid="group-20bb2617" id="grp14">
+              <cl:formdata std:sid="f-data-32789e39" row="1" col="0" rowspan="1" colspan="2"/>
+              <cl:grid std:sid="grid-58e05c6c" id="grdNotice" class="table-board" fieldLabel="공지사항" datasetid="dsNotice" autofit="1">
+                <cl:listener std:sid="listener-dfcf637a" name="cell-mouseover" handler="onGrd1CellMouseover"/>
+                <cl:attribute name="wa-prop-key" value="grdNotice"/>
+                <cl:formdata std:sid="f-data-d6132f7d" row="0" col="0" rowspan="1" colspan="2"/>
+                <cl:gridcolumn std:sid="g-column-28385781" width="120px"/>
+                <cl:gridcolumn std:sid="g-column-d28b7ded" width="120px"/>
+                <cl:gridcolumn std:sid="g-column-edc96c19" width="120px"/>
+                <cl:griddetail std:sid="gd-band-ca0925ef">
+                  <cl:gridrow std:sid="g-row-359c2e90" height="60px"/>
+                  <cl:gridcell std:sid="gd-cell-79bf949c" rowindex="0" colindex="0" columnname="category">
+                    <cl:button std:sid="button-33286ccd" id="btnCategory" fieldLabel="카테고리" value="Button" ariabuttontype="link">
+                      <cl:attribute name="wa-prop-key" value="btnCategory"/>
+                      <cl:expbind property="class" category="CLASS" expression="category == &quot;Release&quot; ? &quot;btn-release&quot; : &quot;btn-notice&quot;"/>
+                      <cl:celldata std:sid="c-data-1006b8c9" topSpacing="15" bottomSpacing="15" leftSpacing="15" rightSpacing="15"/>
+                    </cl:button>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-92bfeea6" rowindex="0" colindex="1" fieldLabel="제목" columnname="title">
+                    <cl:output std:sid="output-2048db19" id="optTitle" style="font-size:16px;" fieldLabel="제목" value="Output">
+                      <cl:attribute name="wa-prop-key" value="optTitle"/>
+                      <cl:celldata std:sid="c-data-9ba4828a"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-01044c0c" rowindex="0" colindex="2" columnname="write_dt">
+                    <cl:output std:sid="output-1348d77a" id="optWriDt" fieldLabel="작성일자" value="Output" datatype="date" dateValueFormat="YYYYMMDD" format="YYYY-MM-DD">
+                      <cl:attribute name="wa-prop-key" value="optWriDt"/>
+                      <cl:celldata std:sid="c-data-8fb6a121"/>
+                    </cl:output>
+                  </cl:gridcell>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:formlayout std:sid="f-layout-520434a9" scrollable="false" hspace="5px" vspace="5px">
+                <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+                <cl:columns length="1" unit="FRACTION"/>
+                <cl:columns length="30" unit="PIXEL" autoSizing="true"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:button comment="제목-내용-더보기 순서" std:sid="button-ba798b97" id="btnShowMore1" style="font-size:16px; text-align:right;" class="btn-transparent btn-link" value="더보기" ariabuttontype="link">
+              <cl:attribute name="wa-prop-key" value="btnShowMore"/>
+              <cl:formdata std:sid="f-data-5a321227" valign="TOP" height="57" row="0" col="1"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-2e139a1d" scrollable="false" hspace="5px" vspace="5px" top-margin="30px" right-margin="30px" bottom-margin="30px" left-margin="30px">
+              <cl:rows length="64" unit="PIXEL" autoSizing="true"/>
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="30" unit="PIXEL" autoSizing="true"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-325fd48d" scrollable="false" hspace="50px" vspace="30px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-adc335c6" scrollable="false" hspace="50px" vspace="5px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="2" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-7bd774a7" distribution="center" spacing="0" leftmargin="30" rightmargin="30" topmargin="30" bottommargin="30"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-f8649bc0" spacing="0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

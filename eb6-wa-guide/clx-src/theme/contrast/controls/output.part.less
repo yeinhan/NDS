@@ -1,0 +1,18 @@
+@import "../../custom-settings.part.less";
+.high-contrast{
+	
+	/* 아웃풋 */	
+	.cl-output {
+		font: @font-base;
+		background-position: left center;
+		background-repeat: no-repeat;
+		color: @component-text-color-contrast;
+		&.cl-disabled{
+			color: @component-disabled-text-color-contrast;
+		}
+		
+		&.h1, &.h2, &.h3, &.h4, &.h5, &.h6, &.h{
+			font-weight: @headings-font-weight !important;
+		}
+	}
+}

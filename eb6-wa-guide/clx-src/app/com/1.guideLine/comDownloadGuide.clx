@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/0-1.프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-f2dc98dc" id="default" name="default" width="1280px" height="760px"/>
+    <screen std:sid="screen-7e62588a" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-27e31d1a" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-90321062"/>
+    <cl:appspec title="웹 접근성 가이드 문서 제공"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="pb-body">
+    <cl:listener std:sid="listener-ded77bbb" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-b655417b" id="grpHeader" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1280px" height="319px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" id="breadcrumbs" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="웹 표준 준수 / 웹 접근성 가이드" type="string"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-2e7f0865" id="grpData3" class="pb-content wa-guideline">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-fde2fe0c" width="1280px" height="219px" autosize="height"/>
+      <cl:udc std:sid="ud-control-998e759c" id="sectiontitle2" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-cb951857" width="1220px" height="24px" autosize="height"/>
+        <cl:property name="title" value="소프트웨어 접근성 준수" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-8349ee90" style="line-height:1.5;" displayexp="sstr(&quot;eXBuilder6&quot;, [&quot;text-underline&quot;, &quot;text-primary&quot;, &quot;fw-bold&quot;]) + &quot;는 매년 외부 기관을 통해 &quot;+sstr(&quot;웹 접근성 인증&quot;, [&quot;text-underline&quot;, &quot;text-primary&quot;, &quot;fw-bold&quot;])+&quot;을 받고 있으며, alt, label, aria 속성 및 키보드 내비게이션을 포함한 접근성 항목을 반영하고 있습니다.&quot;">
+        <cl:verticaldata std:sid="v-data-cd403cec" width="1160px" height="85px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-c3fc562f" scrollable="false" spacing="10" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-b69440c6" id="grpData2" class="pb-content wa-guideline">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-4fd2fe77" width="1280px" height="239px" autosize="height"/>
+      <cl:udc std:sid="ud-control-ed685909" id="sectiontitle3" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-f1001728" width="1220px" height="24px" autosize="height"/>
+        <cl:property name="title" value="웹표준 준수" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-119e058c" style="line-height:1.5;" displayexp="&quot;eXBuilder6는 HTML5, CSS3, ECMAScript, WAI-ARIA 등 &quot;+sstr(&quot;웹표준을 준수하여 개발&quot;, [&quot;text-underline&quot;, &quot;text-primary&quot;, &quot;fw-bold&quot;])+&quot; 되었으며,\n&quot;&#xD;&#xA;+ &quot;외부 검증 및 인증을 통해 웹 접근성과 기술 적합성을 지속적으로 확보하고 있습니다.\n&quot;&#xD;&#xA;+ &quot;이를 통해 모든 사용자에게 &quot;+sstr(&quot;일관된 UX와 웹 호환성을 제공&quot;, [&quot;text-underline&quot;, &quot;text-primary&quot;, &quot;fw-bold&quot;])+&quot;합니다.&quot;">
+        <cl:verticaldata std:sid="v-data-8a4ba938" width="1160px" height="85px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-ac27f4a5" scrollable="false" spacing="10" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-4f00ff31" id="grpData1" class="pb-content wa-guideline">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-6d77e5b7" width="1280px" height="629px" autosize="height"/>
+      <cl:udc std:sid="ud-control-392b571a" id="sectiontitle1" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-93c294e5" width="1220px" height="24px" autosize="height"/>
+        <cl:property name="title" value="웹 접근성 가이드" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-a5bbbbb2" style="line-height:1.5;" value="eXBuilder6 를 통해 웹 접근성을 준수하기 위한 가이드 문서를 제공합니다.&#xD;&#xA;아래 제공하는 문서는 [공통항목, 컨트롤 가이드] 메뉴에서 제공하고 있는 내용을 담고 있습니다.">
+        <cl:verticaldata std:sid="v-data-9b27c9b3" width="1160px" height="85px" autosize="height"/>
+      </cl:output>
+      <cl:group std:sid="group-57d912b3" id="grp54" class="form-base">
+        <cl:verticaldata std:sid="v-data-4b095695" width="1180px" height="380px" autosize="height"/>
+        <cl:output std:sid="output-52a14a85" class="label" value="컨트롤 가이드">
+          <cl:formdata std:sid="f-data-20d4a0d4" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-7038287b" class="label" value="퍼블리싱 가이드">
+          <cl:formdata std:sid="f-data-a06197d8" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-0d4a2353" class="label" value="공통설정 가이드">
+          <cl:formdata std:sid="f-data-0fb7bf56" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-70559954" class="label" value="개발자 가이드">
+          <cl:formdata std:sid="f-data-2ce27d8d" row="3" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-bbd0c137" id="grp1">
+          <cl:formdata std:sid="f-data-fb50dc70" width="100" height="-30" row="0" col="1" rowspan="1" colspan="1"/>
+          <cl:output std:sid="output-f21cdd6c" class="text-gray-800" value="컨트롤 별 웹 접근성을 준수하기 위한 방법을 제공하는 가이드 문서">
+            <cl:verticaldata std:sid="v-data-ee61ccd2" width="100%" height="30px" autosize="height"/>
+          </cl:output>
+          <cl:button std:sid="button-1d4a5494" id="btn1" class="btn-i-download" fieldLabel="컨트롤 가이드" value="다운로드" icon="0">
+            <cl:listener std:sid="listener-d6a39737" name="click" handler="onBtn1Click"/>
+            <cl:verticaldata std:sid="v-data-f8cb2034" width="100px" height="30px" autosize="width"/>
+          </cl:button>
+          <cl:verticallayout std:sid="v-layout-ad292137" distribution="leading"/>
+        </cl:group>
+        <cl:group std:sid="group-95770703" id="grp2">
+          <cl:formdata std:sid="f-data-47212164" width="100" height="0" row="1" col="1" rowspan="1" colspan="1"/>
+          <cl:output std:sid="output-107f2efb" class="text-gray-800" value="퍼블리싱 진행 시 주의사항에 관한 가이드 문서.&#xD;&#xA;기획/퍼블리싱 단계 각각 확인사항이 나누어 작성되었으므로, 반드시 확인하는 것을 권장합니다.">
+            <cl:verticaldata std:sid="v-data-b31ca8d9" width="1016px" height="60px" autosize="height"/>
+          </cl:output>
+          <cl:button std:sid="button-9157e256" id="btn2" class="btn-i-download" fieldLabel="퍼블리싱 가이드" value="다운로드" icon="0">
+            <cl:listener std:sid="listener-a702ee35" name="click" handler="onBtn2Click"/>
+            <cl:verticaldata std:sid="v-data-9221d63e" width="100px" height="30px" autosize="width"/>
+          </cl:button>
+          <cl:verticallayout std:sid="v-layout-df450718" distribution="leading"/>
+        </cl:group>
+        <cl:group std:sid="group-45b11922" id="grp3">
+          <cl:formdata std:sid="f-data-09040cba" width="100" height="10" row="2" col="1" rowspan="1" colspan="1"/>
+          <cl:output std:sid="output-00f0d4b2" class="text-gray-800" value="프로젝트 공통적으로 웹 접근성 준수 및 사용자 편의성 확장을 위한 가이드 문서.&#xD;&#xA;컨트롤 별 표준 속성을 제시하며, 프로젝트의 공통 담당자는 반드시 본 가이드에서 안내하는 내용을 프로젝트에 반영할 것을 권장합니다.">
+            <cl:verticaldata std:sid="v-data-ab132527" width="1016px" height="70px" autosize="height"/>
+          </cl:output>
+          <cl:button std:sid="button-924644b4" id="btn3" class="btn-i-download" fieldLabel="공통설정 가이드" value="다운로드" icon="0">
+            <cl:listener std:sid="listener-7a227dab" name="click" handler="onBtn3Click"/>
+            <cl:verticaldata std:sid="v-data-f6182d07" width="100px" height="30px" autosize="width"/>
+          </cl:button>
+          <cl:verticallayout std:sid="v-layout-29d5b368" distribution="leading"/>
+        </cl:group>
+        <cl:group std:sid="group-ab286740" id="grp4">
+          <cl:formdata std:sid="f-data-4805fb1c" width="100" height="-30" row="3" col="1" rowspan="1" colspan="1"/>
+          <cl:output std:sid="output-dde580c5" class="text-gray-800" value="컨트롤 속성 및 이벤트 등, 개발자가 주의해야 할 내용을 제공하는 가이드 문서">
+            <cl:verticaldata std:sid="v-data-a1f0e2f5" width="1016px" height="30px" autosize="height"/>
+          </cl:output>
+          <cl:button std:sid="button-056a6c23" id="btn4" class="btn-i-download" fieldLabel="공통설정 가이드" value="다운로드" icon="0">
+            <cl:listener std:sid="listener-45ced5f2" name="click" handler="onBtn4Click"/>
+            <cl:verticaldata std:sid="v-data-6b026b3a" width="100px" height="30px" autosize="width"/>
+          </cl:button>
+          <cl:verticallayout std:sid="v-layout-81cfb071" distribution="leading"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-98631523" scrollable="false" hspace="12px" vspace="12px" top-margin="6px" right-margin="6px" bottom-margin="6px" left-margin="6px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+          <cl:rows length="65" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:rows length="95" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:rows length="105" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:rows length="65" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="140" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-44042cc3" scrollable="false" spacing="10" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

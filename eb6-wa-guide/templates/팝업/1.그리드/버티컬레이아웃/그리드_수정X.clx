@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-563d0a92" version="1.0.4034">
+  <head std:sid="head-1ccdf3b0">
+    <screen std:sid="screen-f7912687" id="default" name="default" minwidth="1280px" width="1280px" height="760px" useCustomWidth="true" useCustomHeight="true" customHeight="600" customWidth="1200"/>
+    <screen std:sid="screen-f58c0ad3" id="tablet" name="tablet" minwidth="800px" maxwidth="1279px" width="800px" height="760px"/>
+    <screen std:sid="screen-165e4d14" id="mobile" name="mobile" maxwidth="799px" width="360px" height="760px"/>
+    <cl:model std:sid="model-46b7ef7e"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-62411317">
+    <cl:udc std:sid="ud-control-8c71e0ab" type="udc.com.udcComAppHeader">
+      <cl:verticaldata std:sid="v-data-0a4d14f9" width="1160px" height="30px" autosize="height"/>
+    </cl:udc>
+    <cl:group std:sid="group-b94520f6" id="grpSearch" class="search-box">
+      <std:metadata>
+        <std:property key="template-uuid" value="3d167b88-7c12-4a1c-955d-1190b26b1c13"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-c97a7018" width="1170px" height="54px" autosize="none"/>
+      <cl:output std:sid="output-44268c18" class="label require" value="라벨">
+        <cl:formdata std:sid="f-data-f7958592" row="0" col="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-327a6da7" id="cmb1">
+        <cl:formdata std:sid="f-data-d253d085" halign="FILL" width="200" row="0" col="1"/>
+      </cl:combobox>
+      <cl:output std:sid="output-16f79281" class="label" value="라벨">
+        <cl:formdata std:sid="f-data-e648fb56" row="0" col="2"/>
+      </cl:output>
+      <cl:dateinput std:sid="d-input-57ae0cb8" id="dti1">
+        <cl:formdata std:sid="f-data-b1ecc72f" row="0" col="3"/>
+      </cl:dateinput>
+      <cl:output std:sid="output-ee14fc02" class="label" value="라벨">
+        <cl:formdata std:sid="f-data-73d135f1" row="0" col="4"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-6e41d6da" id="ipb1">
+        <cl:formdata std:sid="f-data-940796b2" row="0" col="5"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-d98d0cdc" id="btn1" class="btn-secondary btn-i-search" value="조회" icon="../../theme/images/controls/button/ic_btn.png">
+        <cl:formdata std:sid="f-data-a8fb5ea9" row="0" col="6"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-69ebd4e0" scrollable="false" hspace="8px" vspace="4px" top-margin="12px" right-margin="20px" bottom-margin="12px" left-margin="20px">
+        <cl:rows length="30"/>
+        <cl:columns length="35" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="26" autoSizing="true" syncminlength="false"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="26" autoSizing="true" syncminlength="false"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="77" unit="PIXEL" autoSizing="true"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-661a7c03" id="grpData" class="data-box">
+      <cl:verticaldata std:sid="v-data-411e1604" width="1280px" height="297px" autosize="height"/>
+      <cl:udc std:sid="ud-control-0ae2fc61" type="udc.com.udcComGridTitle">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:verticaldata std:sid="v-data-83ea8278" width="300px" height="24px" autosize="height"/>
+        <cl:property name="title" value="" type="string"/>
+      </cl:udc>
+      <cl:grid std:sid="grid-a9f6bd1d">
+        <cl:verticaldata std:sid="v-data-75ed6470" width="1240px" height="223px" autosize="none"/>
+        <cl:gridcolumn std:sid="g-column-7c552da4" width="120px"/>
+        <cl:gridcolumn std:sid="g-column-3691a615" width="120px"/>
+        <cl:gridcolumn std:sid="g-column-a4480bdf" width="120px"/>
+        <cl:gridcolumn std:sid="g-column-9efde93a" width="120px"/>
+        <cl:gridcolumn std:sid="g-column-2de24634" width="120px"/>
+        <cl:gridheader std:sid="gh-band-49eca229">
+          <cl:gridrow std:sid="g-row-1a2b43a5" height="36px"/>
+          <cl:gridcell std:sid="gh-cell-a047b193" rowindex="0" colindex="0"/>
+          <cl:gridcell std:sid="gh-cell-6f0583cd" rowindex="0" colindex="1"/>
+          <cl:gridcell std:sid="gh-cell-c6ce995a" rowindex="0" colindex="2"/>
+          <cl:gridcell std:sid="gh-cell-6cd22b5f" rowindex="0" colindex="3"/>
+          <cl:gridcell std:sid="gh-cell-4c316bc0" rowindex="0" colindex="4"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-32ae71e4">
+          <cl:gridrow std:sid="g-row-b0b0a2f2" height="37px"/>
+          <cl:gridcell std:sid="gd-cell-c07b26c8" rowindex="0" colindex="0"/>
+          <cl:gridcell std:sid="gd-cell-aeb41261" rowindex="0" colindex="1"/>
+          <cl:gridcell std:sid="gd-cell-3690c6fd" rowindex="0" colindex="2"/>
+          <cl:gridcell std:sid="gd-cell-4f1d4587" rowindex="0" colindex="3"/>
+          <cl:gridcell std:sid="gd-cell-1ac0b1ba" rowindex="0" colindex="4"/>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:verticallayout std:sid="v-layout-0285f01e" scrollable="false" spacing="10"/>
+    </cl:group>
+    <cl:group std:sid="group-f3d7a659" id="grpFooter" class="footer-box">
+      <cl:verticaldata std:sid="v-data-64feab66" width="1158px" height="30px" autosize="height"/>
+      <cl:button std:sid="button-e610e9e9" value="닫기">
+        <cl:flowlayoutdata std:sid="f-data-b4ec3581" width="74px" height="30px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-c4f815fe" class="btn-primary" value="선택">
+        <cl:flowlayoutdata std:sid="f-data-1c88303c" width="74px" height="30px" autosize="none"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-1364edba" scrollable="false" hspacing="6" vspacing="6" halign="right"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-b08694bf" spacing="10" leftmargin="15" rightmargin="15" topmargin="15" bottommargin="15"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-3dad05b4" version="1.0.3795">
+  <head std:sid="head-5361141a">
+    <screen std:sid="screen-b3f97bbf" id="default" name="default" width="1644px" height="903px" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-9462a8e7"/>
+    <cl:appspec title="브래드크럼블">
+      <cl:property name="title" type="string" default="타이틀"/>
+      <cl:property name="navigation" type="string"/>
+      <cl:property name="bookmark" type="boolean" default="false" std:desc="북마크 여부"/>
+      <cl:property name="exportPdfGrpIds" type="string" std:desc="pdf로 export할 그룹 ID, pdf다운로드시 컨텐츠가 너무길어 빈페이지로 나올 경우 그룹을 나누어 사용 ex)grp1,grp2"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-6d79595d" style="top:0px; left:0px; width:1644px; height:174px;" class="pb-breadcrumbs" clipcontent="false">
+    <cl:listener std:sid="listener-97cf0f5b" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:listener std:sid="listener-ea76b90f" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-59d03978">
+      <cl:verticaldata std:sid="v-data-52ef6686" width="400px" height="20px"/>
+      <cl:group std:sid="group-b9f545b5" id="grpBc" class="breadcrumb">
+        <cl:formdata std:sid="f-data-f13e157f" row="0" col="0"/>
+        <cl:output std:sid="output-7ad8de2b" class="breadcrumb-item" removeOnBuild="true" value="1뎁스메뉴">
+          <cl:flowlayoutdata std:sid="f-data-548419e3" width="65px" height="20px" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-bf2363d3" class="breadcrumb-item" removeOnBuild="true" value="2뎁스메뉴">
+          <cl:flowlayoutdata std:sid="f-data-72a6deea" width="65px" height="20px" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-7e253a09" class="breadcrumb-item" removeOnBuild="true" value="3뎁스메뉴">
+          <cl:flowlayoutdata std:sid="f-data-e070922a" width="65px" height="20px" autosize="width"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-02f6b68e" scrollable="false" hspacing="0" vspacing="0" linewrap="false"/>
+      </cl:group>
+      <cl:checkbox std:sid="c-box-e705fff8" id="cbxBkmrk" class="bookmark" fieldLabel="북마크" value="false" falsevalue="false" text="">
+        <cl:listener std:sid="listener-9885b611" name="value-change" handler="onCbxBkmrkValueChange"/>
+        <cl:formdata std:sid="f-data-2a6495db" row="0" col="1"/>
+      </cl:checkbox>
+      <cl:formlayout std:sid="f-layout-536afc4a" scrollable="false" hspace="6px" vspace="6px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="20"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-dc4c98bc" id="grpTitleWrap">
+      <cl:verticaldata std:sid="v-data-48047c38" width="400px" height="38px" autosize="none"/>
+      <cl:button std:sid="button-e239c0cc" id="btnHtml" class="btn-outline-primary btn-i-add" value="HTML파일 생성" icon="/theme/images/controls/button/ic_btn.png">
+        <cl:listener std:sid="listener-bdc8d5ba" name="click" handler="onBtnHtmlClick"/>
+        <cl:formdata std:sid="f-data-2a3316ec" row="0" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-5e830452" id="btnPdfDown" class="btn-outline-primary btn-i-docs" value="PDF" icon="/theme/images/controls/button/ic_btn.png">
+        <cl:listener std:sid="listener-7c069206" name="click" handler="onBtnPdfDownClick"/>
+        <cl:formdata std:sid="f-data-c947b9d8" row="0" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-d17e64f6" id="btnPrvw" class="btn btn-primary" value="앱열기">
+        <cl:listener std:sid="listener-09a4b426" name="click" handler="onBtnPrvwClick"/>
+        <cl:formdata std:sid="f-data-54e83ee8" valign="CENTER" height="36" row="0" col="3"/>
+      </cl:button>
+      <cl:group std:sid="group-6325ed9b" id="grp1">
+        <cl:formdata std:sid="f-data-01f2e7fe" row="0" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-b2c9b5e6" class="tit" value="타이틀" outputtype="h1">
+          <cl:apppropbind property="value" app-property="title"/>
+          <cl:flowlayoutdata std:sid="f-data-1b892b80" width="200px" height="100%" autosize="width"/>
+        </cl:output>
+        <cl:button std:sid="button-0cb31cc9" id="btn1" class="btn-transparent btn-i-auto" tooltip="단독 창 띄우기" icon="../../theme/images/controls/button/ic_btn_link.svg">
+          <cl:listener std:sid="listener-e01cd0d5" name="click" handler="onBtn1Click"/>
+          <cl:flowlayoutdata std:sid="f-data-1ccc70da" width="25px" height="25px" autosize="none"/>
+          <cl:iconstyle style="background-size:cover;"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-bd9d5565" scrollable="false" valign="middle"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-34c8fb8b" scrollable="false" hspace="8px" vspace="6px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="159" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="transparent" minlength="0" syncminlength="false"/>
+        <cl:columns length="65" unit="PIXEL" autoSizing="true" hidden="false" minlength="0"/>
+        <cl:columns length="83" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-59f37718" id="grpSctNav" class="section-nav" clipcontent="false">
+      <cl:verticaldata std:sid="v-data-0cb07efb" width="400px" height="34px" autosize="height"/>
+      <cl:button std:sid="button-83a3b654" class="btn" removeOnBuild="true" value="Section">
+        <cl:flowlayoutdata std:sid="f-data-3d2c9f0e" width="100px" height="34px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-ac3f2023" class="btn" removeOnBuild="true" value="Section">
+        <cl:flowlayoutdata std:sid="f-data-618a9254" width="100px" height="34px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-70c390a5" class="btn" removeOnBuild="true" value="Section">
+        <cl:flowlayoutdata std:sid="f-data-3aae1412" width="100px" height="34px" autosize="width"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-2922625f" scrollable="false" hspacing="-1" vspacing="0" leftmargin="5" rightmargin="5" topmargin="0" bottommargin="0"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-cc1ee77f" scrollable="false" spacing="22" topmargin="20" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

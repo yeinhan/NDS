@@ -1,0 +1,263 @@
+@import "../custom-settings.part.less";
+
+/************************************************
+ * 슬라이드
+ ************************************************/
+ 
+//.cl-container.slides {
+//	.cl-container.slide-inner {
+//		
+//	}
+//	
+//	/* 이전 슬라이드 버튼 스타일 */
+//	.cl-button.btn-prev {
+//		background-color: #ffffff;
+//		background-image: url("../images/com/slide/ico_btn_arrow_left.png");
+//		background-repeat: no-repeat;
+//		background-position: center;
+//		border: none;
+//		box-shadow: 0px 5px 15px 0px rgba(42, 55, 98, 0.15);
+//		border-radius: 48px;
+//		
+//		&:not(.cl-disabled):hover,
+//		&:focus, &.cl-focus,
+//		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+//			background-image: url("../images/com/slide/ico_btn_arrow_left_b.png");
+//			background-color: #ffffff;
+//		}
+//		
+//		&.cl-disabled {
+//			background-image: url("../images/com/slide/ico_btn_arrow_left_g.png");
+//		}
+//	}
+//	
+//	/* 이후 슬라이드 버튼 스타일 */
+//	.cl-button.btn-next {
+//		background-color: #ffffff;
+//		background-image: url("../images/com/slide/ico_btn_arrow_right.png");
+//		background-repeat: no-repeat;
+//		background-position: center;
+//		border: none;
+//		box-shadow: 0px 5px 15px 0px rgba(42, 55, 98, 0.15);
+//		border-radius: 48px;
+//		
+//		&:not(.cl-disabled):hover,
+//		&:focus, &.cl-focus,
+//		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+//			background-image: url("../images/com/slide/ico_btn_arrow_right_b.png");
+//			background-color: #ffffff;
+//		}
+//		
+//		&.cl-disabled {
+//			background-image: url("../images/com/slide/ico_btn_arrow_right_g.png");
+//		}
+//	}
+//	
+//	/* 페이지네이션 스타일 */
+//	.cl-container.paginations {
+//		.cl-output.pagination-blt {
+//			background-color: #c8cbcd;
+//			border-radius: 12px;
+//			
+//			&.active {
+//				background-color: #3e61d7;
+//			}
+//		}
+//		
+//		/* 페이지네이션 숫자 스타일 */
+//		.cl-output.pagination-txt {
+//			color: #222222;
+//			font-family: @font-family-num;
+//			font-size: @font-size-base;
+//			font-weight: @font-weight-bold;
+//		}
+//	}
+//}
+
+.cl-button.slide-button {
+	/* 이전 슬라이드 버튼 스타일 */
+	&.slide-prev-button {
+		background-color: #ffffff;
+		background-image: url("../images/com/slide/ico_btn_arrow_left.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		border: none;
+		box-shadow: 0px 5px 15px 0px rgba(42, 55, 98, 0.15);
+		border-radius: 48px;
+		z-index : 2;
+		&:not(.cl-disabled):hover,
+		&:focus, &.cl-focus,
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			background-image: url("../images/com/slide/ico_btn_arrow_left_b.png");
+			background-color: #ffffff;
+		}
+		
+		&.cl-disabled {
+			background-image: url("../images/com/slide/ico_btn_arrow_left_g.png");
+		}
+	}
+	
+	/* 이후 슬라이드 버튼 스타일 */
+	&.slide-next-button {
+		background-color: #ffffff;
+		background-image: url("../images/com/slide/ico_btn_arrow_right.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		border: none;
+		box-shadow: 0px 5px 15px 0px rgba(42, 55, 98, 0.15);
+		border-radius: 48px;
+		
+		&:not(.cl-disabled):hover,
+		&:focus, &.cl-focus,
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			background-image: url("../images/com/slide/ico_btn_arrow_right_b.png");
+			background-color: #ffffff;
+		}
+		
+		&.cl-disabled {
+			background-image: url("../images/com/slide/ico_btn_arrow_right_g.png");
+		}
+	}
+}
+
+
+/* 페이지네이션 스타일 */
+.cl-container.paginations {
+	.cl-layout-content {
+		font-size: 0px;
+	}
+	
+	.cl-output.pagination-blt {
+		background-color: white;
+		border: 1px solid @gray-700;
+		border-radius: 12px;
+		min-width: 8px;
+		min-height: 8px;
+		cursor: pointer;
+		
+		&.active {
+			background-color: #3e61d7;
+			min-width: 12px;
+			min-height: 12px;
+		}
+	}
+	
+	/* 페이지네이션 숫자 스타일 */
+	.cl-output.pagination-txt {
+		color: #222222;
+		font-family: @font-family-sans-serif;
+		font-size: @font-size-base;
+		font-weight: @font-weight-bold;
+	}
+	
+	/* 슬라이드 재생 및 중지 컨트롤 스타일 */
+	.cl-checkbox.slide-play {
+		padding: 0px;
+		
+		.cl-checkbox-icon {
+			background-image: url("../images/com/slide/play-bordered-blue.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 16px;
+			height: 16px;
+			min-height: 16px;
+			
+		}
+		
+		.cl-text {
+			padding: 0px;
+		}
+		
+		&.cl-checked {
+			.cl-checkbox-icon {
+				background-image: url("../images/com/slide/pause-bordered-blue.png");
+			}
+		}
+		
+		&.cl-focus {
+			.cl-checkbox-icon {
+				outline: none;
+			}
+		}
+	}
+}
+
+
+.cl-button.slide-s-button {
+	/* 이전 슬라이드 버튼 스타일 */
+	&.slide-prev-button {
+		background-color: #ffffff;
+		background-image: url("../images/mobile/com/main2/das/ico_m_sld_prev.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		border: none;
+		box-shadow: 0px 5px 15px 0px rgba(42, 55, 98, 0.15);
+		border-radius: 48px;
+		
+		&:not(.cl-disabled):hover,
+		&:focus,
+		&.cl-focus,
+		&:not(.cl-disabled).cl-activated,
+		&:not(.cl-disabled):active {
+			background-image: url("../images/mobile/com/main2/das/ico_m_sld_prev.png");
+			background-color: #ffffff;
+		}
+		
+		&.cl-disabled {
+			background-image: url("../images/mobile/com/main2/das/ico_m_sld_prev_g.png");
+		}
+	}
+	
+	/* 이후 슬라이드 버튼 스타일 */
+	&.slide-next-button {
+		background-color: #ffffff;
+		background-image: url("../images/mobile/com/main2/das/ico_m_sld_next.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		border: none;
+		box-shadow: 0px 5px 15px 0px rgba(42, 55, 98, 0.15);
+		border-radius: 48px;
+		
+		&:not(.cl-disabled):hover,
+		&:focus,
+		&.cl-focus,
+		&:not(.cl-disabled).cl-activated,
+		&:not(.cl-disabled):active {
+			background-image: url("../images/mobile/com/main2/das/ico_m_sld_next.png");
+			background-color: #ffffff;
+		}
+		
+		&.cl-disabled {
+			background-image: url("../images/mobile/com/main2/das/ico_m_sld_next_g.png");
+		}
+	}
+}
+
+/* 페이지네이션 스타일 */
+.cl-container.paginations_m {
+	.cl-layout-content {
+		font-size: 0px;
+	}
+	
+	.cl-output.pagination-blt {
+		background-color: #c8cbcd;
+		border-radius: 12px;
+		min-width: 6px;
+		min-height: 6px;
+		cursor: pointer;
+		
+		&.active {
+			background-color: #504DFE;
+			min-width: 14px;
+			min-height: 14px;
+		}
+	}
+	
+	/* 페이지네이션 숫자 스타일 */
+	.cl-output.pagination-txt {
+		color: #222222;
+		font-family: @font-family-sans-serif;
+		font-size: @font-size-base;
+		font-weight: @font-weight-bold;
+	}
+}

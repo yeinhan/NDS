@@ -1,0 +1,105 @@
+@import "../../custom-settings.part.less";
+.high-contrast{
+
+.cl-sidenavigation {
+	font: @font-base;
+	background-color: @list-background-color;
+	border: @list-border-contrast;
+	border-radius: @list-border-radius;
+	color: @list-text-color-contrast;
+
+	&.cl-focus {
+		border-color: @list-focus-border-color-contrast;
+	}
+
+	.cl-sidenavigation-item {
+		min-height: @list-item-height;
+		height: auto;
+		padding: @list-item-padding-y @list-item-padding-x;
+		
+		.cl-icon {
+			background-size: auto;
+			width: 18px;
+			height: 18px;
+		}
+
+		.cl-text {
+			padding: 0px 0px 0px @list-item-padding-x;
+			white-space: normal;
+			text-overflow: initial;
+			word-break: break-all;
+		}
+
+		.cl-badge {
+		}
+
+		.cl-expand-icon {
+			background-size: auto;
+			width: 19px;
+			height: 19px;
+		}
+		
+		&.cl-folder {
+			.cl-icon {
+			}
+			&.cl-expanded .cl-expand-icon {
+			}
+	
+			&.cl-collapsed .cl-expand-icon {
+			}
+		}
+
+		&:hover, &.cl-hover,&:focus {
+			background-color: @list-item-hover-background-color-contrast;
+			color: @list-item-hover-text-color-contrast;
+		}
+
+		&.cl-selected {
+			background-color: @list-item-selected-background-color-contrast;
+			color: @list-item-selected-text-color-contrast;
+
+			&.cl-folder{
+				&.cl-expanded .cl-expand-icon {
+					// background-image:url(icons/expanded-selected.png);
+				}
+		
+				&.cl-collapsed .cl-expand-icon {
+					// background-image:url(icons/collapsed-selected.png);
+				}
+			}
+		}
+
+		&.cl-disabled {
+			color: @list-item-disabled-text-color-contrast;
+
+			&:hover, &.cl-hover, &:focus {
+				// background-color: transparent;
+			}
+			
+			&.cl-selected {
+				background-color:  @list-item-disabled-selected-background-color-contrast;
+				color: @list-item-disabled-selected-text-color-contrast;
+			}
+		}
+	
+	}
+
+	&.cl-disabled {
+		background-color: @list-disabled-background-color-contrast;
+		border-color: @list-disabled-border-color-contrast;
+		color: @list-disabled-text-color-contrast;
+		
+		.cl-sidenavigation-item {
+
+			&:hover, &.cl-hover, &:focus {
+				// background-color: transparent;
+			}
+			
+			&.cl-selected {
+				background-color:  @list-item-disabled-selected-background-color-contrast;
+				color: @list-item-disabled-selected-text-color-contrast;
+			}
+		}
+	}
+}
+}

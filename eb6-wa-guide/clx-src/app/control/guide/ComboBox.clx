@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-f2dc98dc" id="default" name="default" width="1280px" height="760px"/>
+    <screen std:sid="screen-7e62588a" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-27e31d1a" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-90321062"/>
+    <cl:appspec title="[웹접근성가이드] 콤보박스"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="pb-body">
+    <cl:group std:sid="group-b655417b" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1644px" height="242px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="콤보박스" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-75a1799d" class="text-red" value="※ 기타 지시문 작성">
+        <cl:verticaldata std:sid="v-data-c42713a6" width="100px" height="20px" syncminheight="true" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-5a2d7dbc" id="grp3" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-a0b21ce9" width="1280px" height="806px" autosize="height"/>
+      <cl:group std:sid="group-0dc4dd6d" id="grp4">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-47c07f24" width="1544px" height="706px" autosize="height"/>
+        <cl:udc std:sid="ud-control-eb5d3a2b" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-f3728107" width="1544px" height="29px"/>
+          <cl:property name="title" value="콤보박스 – fieldLabel" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-a92e5d26" id="grp5" class="pb-table wa-table">
+          <cl:verticaldata std:sid="v-data-bc3d34de" width="1544px" height="663px" autosize="height"/>
+          <cl:output std:sid="output-1bc4dd5a" class="pb-label" value="1. fieldLabel 속성에 콤보박스에 입력될 내용에 관련된 설명이 작성되어야 한다.">
+            <cl:formdata std:sid="f-data-2f337a01" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-ec8b31f2" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-b6095fcf" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-6a661c31" value="fieldLabel" unselectable="false">
+            <cl:formdata std:sid="f-data-7e914a3d" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-238b28e5" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-3d19cb7c" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-45f65cb4" value="-" unselectable="false">
+            <cl:formdata std:sid="f-data-b368183f" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-82b4c3c1" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-7058d8ae" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-9241e477" value="항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-98baee06" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-b863ce87" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-38df2575" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-39eefa51" value="시각 장애 (전맹)&#xD;&#xA;사용 환경으로 인해 시각 기능 일시적 사용 불능 및 저하 (운전중, 조명등)" unselectable="false">
+            <cl:formdata std:sid="f-data-7d00cab6" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-88a33a51" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-f3c03170" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-bce4ef50" value="콤보박스에 대응하는 레이블을 aria-label 에 제공합니다.&#xD;&#xA;&#xD;&#xA;※ 필수입력 항목인 경우 fieldLabel에 &quot;필수입력&quot;을 함께 입력해야합니다. &#xD;&#xA;" displayexp="text+sstr(&quot;ex) fieldLabel = '부서 필수입력'&quot;, [&quot;text-primary&quot;])" unselectable="false">
+            <cl:formdata std:sid="f-data-3efeaa76" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-2749515f" class="pb-label" value="콤보박스 속성 지정">
+            <cl:formdata std:sid="f-data-8146824c" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-76d4b862" id="grp21">
+            <cl:formdata std:sid="f-data-deb78fab" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-fdb91c59" id="img5" src="../웹접근성 캡쳐 이미지/3. 셀렉션 계열/4.1.3.3_콤보박스-fieldLabel_Properties.png" alt="콤보박스 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-fad69517" width="506px" height="272px" autosize="both"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-c3092928" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-c0fd7459" class="pb-label" value="DOM 내용 확인">
+            <cl:formdata std:sid="f-data-2833ce08" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-9d3066f8" id="grp10">
+            <cl:formdata std:sid="f-data-af3078b3" row="7" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-7fd75a2e" id="img3" src="../웹접근성 캡쳐 이미지/3. 셀렉션 계열/4.1.3.3_콤보박스-fieldLabel_DOM.png" alt="DOM 내용 확인">
+              <cl:flowlayoutdata std:sid="f-data-678cb1b8" width="658px" height="277px" autosize="none"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-db2e965d" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-ea9a986e" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-3c2f0c89" row="8" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-6028f150" id="grp6">
+            <cl:formdata std:sid="f-data-8e2be484" row="8" col="1"/>
+            <cl:combobox std:sid="c-box-35c663f2" id="cmb3" fieldLabel="부서명">
+              <cl:flowlayoutdata std:sid="f-data-c346edc9" width="160px" height="30px"/>
+              <cl:item std:sid="t-item-3ae9d2b9" label="영업부" value="value1"/>
+              <cl:item std:sid="t-item-94f27bb1" label="총무부" value="value2"/>
+              <cl:item std:sid="t-item-8564abbb" label="연구개발전담부" value="value3"/>
+              <cl:item std:sid="t-item-2a383a10" label="기술설비부" value="value4"/>
+            </cl:combobox>
+            <cl:flowlayout std:sid="f-layout-85d7a956" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-b32c567e" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-00aaa006" row="8" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-8499ee27" id="grp7">
+            <cl:formdata std:sid="f-data-92540e07" row="8" col="3"/>
+            <cl:combobox std:sid="c-box-57536b3e" id="cmb4">
+              <cl:flowlayoutdata std:sid="f-data-df1fb623" width="160px" height="30px" autosize="none"/>
+              <cl:item std:sid="t-item-44b69881" label="영업부" value="value1"/>
+              <cl:item std:sid="t-item-2667776f" label="총무부" value="value2"/>
+              <cl:item std:sid="t-item-fdf225a3" label="연구개발전담부" value="value3"/>
+              <cl:item std:sid="t-item-2acecba9" label="기술설비부" value="value4"/>
+            </cl:combobox>
+            <cl:flowlayout std:sid="f-layout-dbc4cd42" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-05802781" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="200" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-9224879c" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-8f861e76" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-4f00ff31" id="grp1" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-6d77e5b7" width="1280px" height="762px" autosize="height"/>
+      <cl:group std:sid="group-ad00495f" id="grp2">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-3ed7c833" width="1544px" height="662px" autosize="height"/>
+        <cl:udc std:sid="ud-control-392b571a" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-4508bfac" width="1544px" height="29px"/>
+          <cl:property name="title" value="콤보박스 – preventInput=true 일 때 동작 설정" type="string"/>
+          <cl:property name="subText" value="※ 해당 항목은 웹 접근성 심사 시 필요한 사항일 경우에만 추가하십시오." type="string"/>
+          <cl:property name="subTextStyle" value="text-red" type="enumeration"/>
+        </cl:udc>
+        <cl:group std:sid="group-bedd990d" id="grp13" class="pb-table wa-table">
+          <cl:verticaldata std:sid="v-data-2e6e8d4c" width="1544px" height="619px" autosize="height"/>
+          <cl:output std:sid="output-320c8d70" class="pb-label" value="2. preventInput = true 설정한 경우 방향키 상/하 기본동작을 방지하고 리스트 팝업하여 선택하도록 변경한다.">
+            <cl:formdata std:sid="f-data-f4fce933" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-fe39a97e" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-a5011ccb" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-6bac81bf" value="preventInput" unselectable="false">
+            <cl:formdata std:sid="f-data-705476ed" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-6834a164" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-4098967f" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-05f938b4" value="1.0.3738" unselectable="false">
+            <cl:formdata std:sid="f-data-10f77d72" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-667fd02b" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-5170d53c" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-d30cf35f" value="항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-ae3a19e0" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-90bf151d" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-bf4d6266" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-b50def24" value="시각 장애&#xD;" unselectable="false">
+            <cl:formdata std:sid="f-data-e43a9b8b" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-16382fbb" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-614165d4" row="5" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-c1edec01" id="grp8">
+            <cl:formdata std:sid="f-data-9fbbcf6a" row="5" col="1" rowspan="1" colspan="3"/>
+            <cl:output std:sid="output-ab56ca87" value="콤보박스가 포커스 되있을 때, 아래 방향키를 눌러 리스트 팝업을 띄울 수 있습니다.&#xD;&#xA;해당 동작은 콤보박스의 keydown 이벤트를 통해 작성 할 수 있으며, 아래 스크립트를 사용합니다.&#xD;&#xA;" unselectable="false">
+              <cl:formdata std:sid="f-data-cc8a39c3" row="0" col="0" rowspan="1" colspan="3"/>
+            </cl:output>
+            <cl:udc std:sid="ud-control-ad921027" id="udcexamace1" style="padding-top:0px; padding-left:10px; padding-bottom:10px; padding-right:10px;" type="udc.exam.udcExamAce">
+              <cl:formdata std:sid="f-data-69c63ada" row="1" col="0" rowspan="1" colspan="3"/>
+              <cl:property name="value" value="function cmbKeydownFunc(e) {&#xD;&#xA;&#x9; /** @type cpr.controls.ComboBox*/&#xD;&#xA;&#x9; var cmb1 = e.control;&#xD;&#xA;&#x9; if (cpr.events.KeyCode.UP == e.keyCode || cpr.events.KeyCode.DOWN == e.keyCode) {&#xD;&#xA;&#x9;&#x9; if (!cmb1.isOpened()) {&#xD;&#xA;&#x9;&#x9;&#x9; cpr.core.DeferredUpdateManager.INSTANCE.asyncExec(function() {&#xD;&#xA;&#x9;&#x9;&#x9; &#x9;cmb1.open();&#xD;&#xA;&#x9;&#x9;&#x9; });&#xD;&#xA;&#x9;&#x9;&#x9; e.preventDefault(); // 방향키로 값 변경되는 동작 방지&#xD;&#xA;&#x9;&#x9; }&#xD;&#xA;&#x9; }&#xD;&#xA;}" type="string"/>
+              <cl:property name="language" value="javascript" type="enumeration"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-26d70929" scrollable="false" hspace="8px" vspace="5px" hseparatorwidth="1" vseparatorwidth="1">
+              <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="80" unit="PIXEL" autoSizing="true" hidden="false" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="150" unit="PIXEL" shadecolor="transparent"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-2641a5fc" class="pb-label" value="콤보박스 속성 지정">
+            <cl:formdata std:sid="f-data-0edec3d4" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-b8c465db" id="grp9">
+            <cl:formdata std:sid="f-data-ce332bb7" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-6f20b26b" id="img2" src="../웹접근성 캡쳐 이미지/3. 셀렉션 계열/4.1.3.3_콤보박스-preventInput_Properties.png" alt="콤보박스 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-415fb76e" width="506px" height="271px" autosize="both"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-3fd7870e" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-bc3c0650" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-f8bf149f" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-8dbb6592" id="grp14">
+            <cl:formdata std:sid="f-data-a4eb9310" row="7" col="1"/>
+            <cl:combobox std:sid="c-box-f7dd2284" id="cmb1" fieldLabel="적용" preventinput="true">
+              <cl:listener std:sid="listener-5904189e" name="keydown" handler="onCmb1Keydown"/>
+              <cl:flowlayoutdata std:sid="f-data-607fbbe4" width="160px" height="30px"/>
+              <cl:item std:sid="t-item-fdf967c4" label="label1" value="value1"/>
+              <cl:item std:sid="t-item-3b7b8b07" label="label2" value="value2"/>
+              <cl:item std:sid="t-item-e05f2189" label="label3" value="value3"/>
+              <cl:item std:sid="t-item-98cc338f" label="label4" value="value4"/>
+            </cl:combobox>
+            <cl:flowlayout std:sid="f-layout-f6b0298b" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-51ff4709" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-683247c0" row="7" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-10c4d9b1" id="grp17">
+            <cl:formdata std:sid="f-data-dacfd59f" row="7" col="3"/>
+            <cl:combobox std:sid="c-box-caa86ef8" id="cmb2" fieldLabel="미적용">
+              <cl:flowlayoutdata std:sid="f-data-0b25adef" width="160px" height="30px" autosize="none"/>
+              <cl:item std:sid="t-item-87784543" label="label1" value="value1"/>
+              <cl:item std:sid="t-item-6137b50a" label="label2" value="value2"/>
+              <cl:item std:sid="t-item-10d45e34" label="label3" value="value3"/>
+              <cl:item std:sid="t-item-7d74760d" label="label4" value="value4"/>
+            </cl:combobox>
+            <cl:flowlayout std:sid="f-layout-57a19a21" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-a8d12b64" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="200" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8fa8b39c" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-44042cc3" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

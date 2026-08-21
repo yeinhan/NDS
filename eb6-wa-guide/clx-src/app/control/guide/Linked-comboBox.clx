@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-f2dc98dc" id="default" name="default" width="1280px" height="760px"/>
+    <screen std:sid="screen-7e62588a" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-27e31d1a" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-90321062"/>
+    <cl:appspec title="[웹접근성가이드] 링크드 콤보박스"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="pb-body">
+    <cl:group std:sid="group-b655417b" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1644px" height="242px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="링크드 콤보박스" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-75a1799d" class="text-red" value="※ 기타 지시문 작성">
+        <cl:verticaldata std:sid="v-data-c42713a6" width="100px" height="20px" syncminheight="true" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-4f00ff31" id="grp1" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-6d77e5b7" width="1280px" height="804px" autosize="height"/>
+      <cl:group std:sid="group-ad00495f" id="grp2">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-3ed7c833" width="1544px" height="705px" autosize="height"/>
+        <cl:udc std:sid="ud-control-392b571a" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-4508bfac" width="1544px" height="29px"/>
+          <cl:property name="title" value="링크드 콤보박스 – fieldLabel" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-bedd990d" id="grp13" class="pb-table wa-table">
+          <cl:verticaldata std:sid="v-data-2e6e8d4c" width="1544px" height="663px" autosize="height"/>
+          <cl:output std:sid="output-320c8d70" class="pb-label" value="1. fieldLabels 속성에 링크드 콤보박스에 대한 설명이 작성되어야 한다.">
+            <cl:formdata std:sid="f-data-f4fce933" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-fe39a97e" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-a5011ccb" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-6bac81bf" value="fieldLabels&#xD;&#xA;" displayexp="text + sstr(&quot;※ 유의사항 :  fieldLabel 속성이 아닌 fieldLabels 속성에 입력&quot;, [&quot;text-red&quot;])" unselectable="false">
+            <cl:formdata std:sid="f-data-705476ed" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-6834a164" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-4098967f" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-05f938b4" value="-" unselectable="false">
+            <cl:formdata std:sid="f-data-10f77d72" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-667fd02b" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-5170d53c" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-d30cf35f" value="항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-ae3a19e0" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-90bf151d" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-bf4d6266" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-b50def24" value="시각 장애&#xD;&#xA;사용 환경으로 인해 시각 기능 일시적 사용 불능 및 저하 (운전중, 조명등)" unselectable="false">
+            <cl:formdata std:sid="f-data-e43a9b8b" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-16382fbb" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-614165d4" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ab56ca87" value="링크드 콤보박스의 fieldLabels 속성에 배열로 콤보박스 정보를 입력하면 각 콤보박스 순서에 맞게 aria-label 속성에 제공합니다.&#xD;&#xA;" displayexp="text&#xD;&#xA;+ sstr(&quot;ex) fieldLabels = [도/특별시/광역시, 시/군/구, 읍/면/동]\n &quot;, [&quot;text-primary&quot;])&#xD;&#xA;+ sstr(&quot;- 첫 번째 콤보박스 aria-label = '도/특별시/광역시'\n - 두 번째 콤보박스 aria-label = '시/군/구'\n - 세 번째 콤보박스 aria-label = '읍/면/동'&quot;, [&quot;text-primary&quot;])" unselectable="false">
+            <cl:formdata std:sid="f-data-cc8a39c3" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-0dcf2488" class="pb-label" value="링크드 콤보박스 속성 지정">
+            <cl:formdata std:sid="f-data-62a6338e" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-e77a16f0" id="grp8">
+            <cl:formdata std:sid="f-data-abaff091" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-9df306a0" id="img3" src="../웹접근성 캡쳐 이미지/3. 셀렉션 계열/4.1.3.7_링크드콤보박스-fieldLabels_Properties.png" alt="링크드 콤보박스 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-950b0263" width="506px" height="271px" autosize="both"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-c7a9f988" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-d21f9125" class="pb-label" value="DOM 내용 확인">
+            <cl:formdata std:sid="f-data-f0cdc2cc" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-136724f9" id="grp3">
+            <cl:formdata std:sid="f-data-47a13866" row="7" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-136586eb" id="img2" src="../웹접근성 캡쳐 이미지/3. 셀렉션 계열/4.1.3.7_링크드콤보박스-fieldLabels_DOM.jpg" alt="DOM 내용 확인">
+              <cl:flowlayoutdata std:sid="f-data-c8c04a2d" width="527px" height="828px" autosize="none"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-f2dcc423" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-bc3c0650" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-f8bf149f" row="8" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-8dbb6592" id="grp14">
+            <cl:formdata std:sid="f-data-f8ed64f7" row="8" col="1"/>
+            <cl:linkedcombobox std:sid="lc-box-90538f56" id="lcb1">
+              <cl:flowlayoutdata std:sid="f-data-b1a7734f" width="403px" height="30px"/>
+              <cl:treeitem std:sid="t-item-45e6a3eb" label="서울특별시" value="서울특별시" parent=""/>
+              <cl:treeitem std:sid="t-item-17b16f7d" label="경기도" value="경기도"/>
+              <cl:treeitem std:sid="t-item-c462eca9" label="강원도" value="강원도"/>
+              <cl:treeitem std:sid="t-item-23bda0f3" label="천안시" value="천안시" parent="경기도"/>
+              <cl:treeitem std:sid="t-item-4f8337ad" label="수원시" value="수원시" parent="경기도"/>
+              <cl:treeitem std:sid="t-item-330af173" label="남양주시" value="남양주시" parent="경기도"/>
+              <cl:treeitem std:sid="t-item-8c17fc09" label="인제군" value="인제군" parent="강원도"/>
+              <cl:treeitem std:sid="t-item-f1a107c8" label="화천군" value="화천군" parent="강원도"/>
+              <cl:treeitem std:sid="t-item-fd612f2b" label="속초시" value="속초시" parent="강원도"/>
+              <cl:treeitem std:sid="t-item-ff7b5388" label="춘천시" value="춘천시" parent="강원도"/>
+              <cl:treeitem std:sid="t-item-19c10289" label="강남구" value="강남구" parent="서울특별시"/>
+              <cl:treeitem std:sid="t-item-8bfc50d3" label="서초구" value="서초구" parent="서울특별시"/>
+              <cl:treeitem std:sid="t-item-2711a664" label="중구" value="중구" parent="서울특별시"/>
+              <cl:treeitem std:sid="t-item-cce5ccc1" label="동작구" value="동작구" parent="서울특별시"/>
+              <cl:treeitem std:sid="t-item-908f7c77" label="신사동" value="신사동" parent="강남구"/>
+              <cl:treeitem std:sid="t-item-083a3809" label="논현동" value="논현동" parent="강남구"/>
+              <cl:treeitem std:sid="t-item-2af5dea1" label="압구정동" value="압구정동" parent="강남구"/>
+              <cl:treeitem std:sid="t-item-6bc3886d" label="반포동" value="반포동" parent="서초구"/>
+              <cl:treeitem std:sid="t-item-ccb702ee" label="방배동" value="방배동" parent="서초구"/>
+              <cl:treeitem std:sid="t-item-82ea5884" label="양재동" value="양재동" parent="서초구"/>
+              <cl:treeitem std:sid="t-item-52fce785" label="회현동" value="회현동" parent="중구"/>
+              <cl:treeitem std:sid="t-item-55f0d32f" label="약수동" value="약수동" parent="중구"/>
+              <cl:treeitem std:sid="t-item-db82cb13" label="신당동" value="신당동" parent="중구"/>
+              <cl:treeitem std:sid="t-item-c07b10b6" label="사당동" value="사당동" parent="동작구"/>
+              <cl:treeitem std:sid="t-item-ecca06a9" label="상도동" value="상도동" parent="동작구"/>
+              <cl:treeitem std:sid="t-item-8f7cf801" label="흑석동" value="흑석동" parent="동작구"/>
+              <cl:fieldLabels>도/특별시/광역시</cl:fieldLabels>
+              <cl:fieldLabels>시/군/구</cl:fieldLabels>
+              <cl:fieldLabels>읍/면/동</cl:fieldLabels>
+            </cl:linkedcombobox>
+            <cl:flowlayout std:sid="f-layout-f6b0298b" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-51ff4709" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-683247c0" row="8" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-10c4d9b1" id="grp17">
+            <cl:formdata std:sid="f-data-dacfd59f" row="8" col="3"/>
+            <cl:linkedcombobox std:sid="lc-box-044cd268" id="lcb2">
+              <cl:flowlayoutdata std:sid="f-data-3b631b9f" width="403px" height="30px" autosize="none"/>
+              <cl:treeitem std:sid="t-item-affc7da8" label="서울특별시" value="서울특별시" parent=""/>
+              <cl:treeitem std:sid="t-item-918365ea" label="경기도" value="경기도"/>
+              <cl:treeitem std:sid="t-item-4863e1f3" label="강원도" value="강원도"/>
+              <cl:treeitem std:sid="t-item-fe822ffa" label="천안시" value="천안시" parent="경기도"/>
+              <cl:treeitem std:sid="t-item-d2e4a7f3" label="수원시" value="수원시" parent="경기도"/>
+              <cl:treeitem std:sid="t-item-eb8efea4" label="남양주시" value="남양주시" parent="경기도"/>
+              <cl:treeitem std:sid="t-item-3b555237" label="인제군" value="인제군" parent="강원도"/>
+              <cl:treeitem std:sid="t-item-3f9f96d9" label="화천군" value="화천군" parent="강원도"/>
+              <cl:treeitem std:sid="t-item-f90c37a7" label="속초시" value="속초시" parent="강원도"/>
+              <cl:treeitem std:sid="t-item-fb14a902" label="춘천시" value="춘천시" parent="강원도"/>
+              <cl:treeitem std:sid="t-item-5774b18f" label="강남구" value="강남구" parent="서울특별시"/>
+              <cl:treeitem std:sid="t-item-5a51842a" label="서초구" value="서초구" parent="서울특별시"/>
+              <cl:treeitem std:sid="t-item-f7379719" label="중구" value="중구" parent="서울특별시"/>
+              <cl:treeitem std:sid="t-item-55b07b33" label="동작구" value="동작구" parent="서울특별시"/>
+              <cl:treeitem std:sid="t-item-4eb46928" label="신사동" value="신사동" parent="강남구"/>
+              <cl:treeitem std:sid="t-item-7fd05671" label="논현동" value="논현동" parent="강남구"/>
+              <cl:treeitem std:sid="t-item-d6571cf1" label="압구정동" value="압구정동" parent="강남구"/>
+              <cl:treeitem std:sid="t-item-8c43f655" label="반포동" value="반포동" parent="서초구"/>
+              <cl:treeitem std:sid="t-item-187e10d0" label="방배동" value="방배동" parent="서초구"/>
+              <cl:treeitem std:sid="t-item-16d2c012" label="양재동" value="양재동" parent="서초구"/>
+              <cl:treeitem std:sid="t-item-7407b61d" label="회현동" value="회현동" parent="중구"/>
+              <cl:treeitem std:sid="t-item-5f5f9b60" label="약수동" value="약수동" parent="중구"/>
+              <cl:treeitem std:sid="t-item-189bac13" label="신당동" value="신당동" parent="중구"/>
+              <cl:treeitem std:sid="t-item-802cc0cf" label="사당동" value="사당동" parent="동작구"/>
+              <cl:treeitem std:sid="t-item-8c1fbb09" label="상도동" value="상도동" parent="동작구"/>
+              <cl:treeitem std:sid="t-item-fbb66a43" label="흑석동" value="흑석동" parent="동작구"/>
+            </cl:linkedcombobox>
+            <cl:flowlayout std:sid="f-layout-57a19a21" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-a8d12b64" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="200" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8fa8b39c" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-44042cc3" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="740"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

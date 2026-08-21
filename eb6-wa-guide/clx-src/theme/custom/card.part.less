@@ -1,0 +1,83 @@
+@import "../custom-settings.part.less";
+
+/************************************************
+ * 카드
+ ************************************************/
+ 
+.cl-container.card {
+	background-color: @component-background-color;
+	border: @component-border-base;
+	border-radius: @component-border-radius;
+	
+}
+.cms-sitemap {
+	.cl-container.card {
+		background-color: @component-background-color;
+		border: @component-border-base;
+		border-radius: 15px;
+	}
+		
+}
+.cl-container {
+	.cl-layout-wrap.row {
+		.cl-container.card {
+			border-radius: @component-border-radius-0;
+		}
+
+		&.cl-first-row {
+			.cl-container.card {
+				border-top-left-radius: @component-border-radius;
+				border-top-right-radius: @component-border-radius;
+			}
+		}
+		
+		&.cl-last-row {
+			.cl-container.card {
+				border-bottom-left-radius: @component-border-radius;
+				border-bottom-right-radius: @component-border-radius;
+			}
+		}
+		
+		&:not(.cl-first-row) {
+			.cl-container.card {
+				border-top: none;
+			}
+		}
+	}
+}
+
+
+
+/*대시보드 */
+.cl-container.dashboard{
+	.cl-container.card {
+		&.card-notice{
+			background-color: #f3f3f3;
+		}
+		
+		&.card-guideline{
+			background-color: #e5ecff;
+			.cl-button{
+			    border-radius: 10px;
+			    background-color: #6262FB;
+			    color: #fff;
+			    font-size: 16px;
+			    border: none;
+			    padding: 10px 20px;
+			    text-align: center;
+			}
+		}
+		&.card-guidedoc{
+			background-color: #faecd2;
+			.cl-button{
+			    border-radius: 10px;
+			    background-color: #BD5A1B;
+			    color: #fff;
+			    font-size: 16px;
+			    border: none;
+			    padding: 10px 20px;
+			    text-align: center;
+			}
+		}
+	}
+}

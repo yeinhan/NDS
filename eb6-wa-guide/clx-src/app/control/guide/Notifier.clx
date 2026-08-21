@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-9f879bb8" id="default" name="default" width="1280px" height="760px" useCustomHeight="true" customHeight="1600" customWidth="800"/>
+    <screen std:sid="screen-5feeab6a" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-2d731eda" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-90321062"/>
+    <cl:appspec title="[웹접근성가이드] 알림"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="pb-body">
+    <cl:group std:sid="group-b655417b" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1644px" height="242px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="알림" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-75a1799d" class="text-red" value="※ 기타 지시문 작성">
+        <cl:verticaldata std:sid="v-data-c42713a6" width="100px" height="20px" syncminheight="true" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-4f00ff31" id="grp1" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-6d77e5b7" width="1280px" height="953px" autosize="height"/>
+      <cl:group std:sid="group-ad00495f" id="grp2">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-3ed7c833" width="1544px" height="854px" autosize="height"/>
+        <cl:udc std:sid="ud-control-392b571a" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-4508bfac" width="1544px" height="29px"/>
+          <cl:property name="title" value="알림 – 웹 접근성 준수하는 페이지에 사용해야 할 때 방법" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-bedd990d" id="grp3" class="pb-table wa-table">
+          <cl:verticaldata std:sid="v-data-2e6e8d4c" width="1544px" height="812px" autosize="height"/>
+          <cl:output std:sid="output-320c8d70" class="pb-label" value="1. 웹 접근성을 준수하는 페이지에 알림 컨트롤을 사용해야 할 때 방법">
+            <cl:formdata std:sid="f-data-f4fce933" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-fe39a97e" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-a5011ccb" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-6bac81bf" value=" -" unselectable="false">
+            <cl:formdata std:sid="f-data-705476ed" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-6834a164" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-4098967f" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-05f938b4" value=" -" unselectable="false">
+            <cl:formdata std:sid="f-data-10f77d72" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-667fd02b" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-5170d53c" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-d30cf35f" value="항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-ae3a19e0" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-90bf151d" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-bf4d6266" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-b50def24" value="전체" unselectable="false">
+            <cl:formdata std:sid="f-data-e43a9b8b" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-16382fbb" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-614165d4" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ab56ca87" value="" displayexp="&quot;웹 접근성을 준수하는 페이지의 경우 다음과 같이 알림 컨트롤을 사용해야 합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+ sstr(&quot;&lt; 알림 컨트롤 – Help Contents 참조 >\n&quot;, [&quot;fw-bold&quot;])&#xD;&#xA;+&quot;1. 자동으로 닫히면 안됩니다.&quot;+ sstr( &quot; (delay 속성을 Int 형식 변수의 최댓값인 2,147,483,647 로 설정해야 합니다.)\n&quot;, [&quot;text-info&quot;])&#xD;&#xA;+&quot;2. '닫기'버튼을 제공해야 합니다.&quot;+sstr(&quot; (close 속성을 true 로 설정해야 합니다.)\n&quot;, [&quot;text-info&quot;])&#xD;&#xA;+&quot;3. 알림 컨트롤을 키보드로 접근, 복귀가 가능해야 합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA; +&quot;알림 컨트롤이 띄워진 경우, 현재 포커스 컨트롤에서 &quot;+sstr(&quot;탭 이동시 알림 컨트롤로 포커스 이동&quot;, [&quot;text-underline&quot;])+&quot;해야 하고, 알림 컨트롤의 리스트가 &quot;+sstr(&quot;모두 닫히는 경우 기존 컨트롤로  포커스 이동&quot;, [&quot;text-underline&quot;])+&quot;해야 합니다.\n&quot;&#xD;&#xA;+sstr(&quot;focusItem(item, restoreFocusControl) API&quot;, [&quot;text-info&quot;])+&quot; 를 사용하시기 바랍니다.&quot;" unselectable="false">
+            <cl:formdata std:sid="f-data-cc8a39c3" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-71e5dc3b" class="pb-label" value="알림 속성 지정">
+            <cl:formdata std:sid="f-data-ba6d82ed" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-2185ca05" id="grp5">
+            <cl:formdata std:sid="f-data-d35109ed" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-c2a0ad22" id="img1" src="../웹접근성 캡쳐 이미지/5. 아웃풋 계열/4.1.5.2_알림-delay&amp;close_Properties_.PNG" alt="알림 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-300b2af4" width="401px" height="370px" autosize="both"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-c1ad9b4b" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-bc3c0650" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-f8bf149f" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-8dbb6592" id="grp4">
+            <cl:formdata std:sid="f-data-a4eb9310" row="7" col="1"/>
+            <cl:button std:sid="button-30192a89" id="btnInfoCreate" value="알림창 생성">
+              <cl:listener std:sid="listener-5714e4ee" name="click" handler="onBtnInfoCreateClick"/>
+              <cl:attribute name="relatedNoti" value="ntf1"/>
+              <cl:flowlayoutdata std:sid="f-data-79cc05f7" width="160px" height="30px" autosize="none"/>
+            </cl:button>
+            <cl:notifier std:sid="notifier-c4406c05" id="ntf1" maxnotifycount="2" delay="2147483647" close="true" successdelay="2147483647" successclose="true" infodelay="2147483647" infoclose="true" warningdelay="2147483647" warningclose="true" dangerdelay="2147483647" dangerclose="true">
+              <cl:flowlayoutdata std:sid="f-data-8b4e17c5" width="240px" height="60px" autosize="none"/>
+            </cl:notifier>
+            <cl:flowlayout std:sid="f-layout-f6b0298b" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-51ff4709" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-683247c0" row="7" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-10c4d9b1" id="grp8">
+            <cl:formdata std:sid="f-data-dacfd59f" row="7" col="3"/>
+            <cl:button std:sid="button-222b4425" id="btnInfoCreate2" value="알림창 생성">
+              <cl:listener std:sid="listener-4e40a6bc" name="click" handler="onBtnInfoCreate2Click"/>
+              <cl:attribute name="relatedNoti" value="ntf2"/>
+              <cl:flowlayoutdata std:sid="f-data-16a1b587" width="160px" height="30px" autosize="none"/>
+            </cl:button>
+            <cl:notifier std:sid="notifier-086e6d76" id="ntf2" maxnotifycount="2" delay="2500" successdelay="2500" infodelay="2500" warningdelay="2500" dangerdelay="2500">
+              <cl:flowlayoutdata std:sid="f-data-1c88d823" width="240px" height="60px" autosize="none"/>
+            </cl:notifier>
+            <cl:flowlayout std:sid="f-layout-57a19a21" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-a8d12b64" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="395" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="120" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="60" syncminlength="false"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8fa8b39c" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-44042cc3" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

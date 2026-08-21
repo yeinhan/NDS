@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4b4d287b" version="1.0.4034">
+  <head std:sid="head-212e02aa">
+    <screen std:sid="screen-f28332d9" id="default" name="default" minwidth="1280px" width="1280px" height="760px" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-585da9e1" id="tablet" name="tablet" minwidth="800px" maxwidth="1279px" width="800px" height="760px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-b1ab041d" id="mobile" name="mobile" maxwidth="799px" width="360px" height="760px" customHeight="600" customWidth="800"/>
+    <script std:sid="script-6190cfdc" src="../../thirdparty/html2pdf/dist/html2pdf.bundle.min.js" type="text/javascript"/>
+    <cl:model std:sid="model-360031d6">
+      <cl:dataset comment="메뉴" std:sid="d-set-a1e801ff" id="dsAllMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b7d0e3e2" name="MENU_NM"/>
+          <cl:datacolumn std:sid="d-column-1a75e7e3" name="MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-ce8bf8b8" name="UP_MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-18380ef4" name="TOP_MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-b7879d44" name="CALL_PAGE"/>
+          <cl:datacolumn std:sid="d-column-9bdc2fe6" name="PGM_ID"/>
+          <cl:datacolumn std:sid="d-column-4c100870" name="ICON"/>
+          <cl:datacolumn std:sid="d-column-a2bd6f9f" name="MENU_KEY"/>
+          <cl:datacolumn std:sid="d-column-1d8b7278" name="MOBILE_YN"/>
+          <cl:datacolumn std:sid="d-column-7bb4293e" name="DESC"/>
+          <cl:datacolumn std:sid="d-column-f1e3e1d7" name="CLASS"/>
+          <cl:datacolumn std:sid="d-column-a5f7493c" name="MENU_DESC" datatype="expression" expression="&quot;[&quot; + MENU_NM + &quot;] &quot; + DESC&#xD;&#xA;"/>
+          <cl:datacolumn std:sid="d-column-e7bfcd7b" name="MENU_LOWERCASE" datatype="expression" expression="doLowerCase(MENU_NM)"/>
+          <cl:datacolumn std:sid="d-column-48c5ffc5" name="DESC_LOWERCASE" datatype="expression" expression="doLowerCase(DESC)"/>
+          <cl:datacolumn std:sid="d-column-448f8461" name="MENU_TOOLTIP" datatype="expression" expression="MENU_NM + ((CALL_PAGE !=&quot;&quot; &amp;&amp; CALL_PAGE.indexOf(&quot;.clx&quot;) == -1) ? &quot;새 창 열기&quot; : &quot;&quot;)"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-267d742b" id="dsPropView">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="필터조건(같은 숫자에 대해서만 필터하여 내용을 보여준다)" std:sid="d-column-5941843b" name="keyNum" datatype="string"/>
+          <cl:datacolumn comment="컨트롤명(영문)" std:sid="d-column-4cd817ad" name="control"/>
+          <cl:datacolumn comment="속성명" std:sid="d-column-a67ff141" name="propNm"/>
+          <cl:datacolumn comment="속성값" std:sid="d-column-309a35a3" name="propVal"/>
+          <cl:datacolumn comment="관련 웹접근성 지침" std:sid="d-column-d6e23689" name="relatedWaInst"/>
+          <cl:datacolumn std:sid="d-column-4a5e554b" name="code"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">imgLogo</cl:datavalue>
+            <cl:datavalue columnname="control">image</cl:datavalue>
+            <cl:datavalue columnname="propNm">alt</cl:datavalue>
+            <cl:datavalue columnname="propVal">메인 로고</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnZoomMinus</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">tooltip</cl:datavalue>
+            <cl:datavalue columnname="propVal">화면크기 축소</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnZoomMinus</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnZoomReset</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">tooltip</cl:datavalue>
+            <cl:datavalue columnname="propVal">화면크기 원복</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnZoomReset</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnZoomPlus</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">tooltip</cl:datavalue>
+            <cl:datavalue columnname="propVal">화면크기 확대</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnZoomPlus</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnAlarm</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">tooltip</cl:datavalue>
+            <cl:datavalue columnname="propVal">알림</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnAlarm</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnLogout</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">tooltip</cl:datavalue>
+            <cl:datavalue columnname="propVal">로그아웃</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnLogout</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnToggle</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">tooltip</cl:datavalue>
+            <cl:datavalue columnname="propVal">접근성 가이드 모아보기 토글</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnToggle</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">srchMenu</cl:datavalue>
+            <cl:datavalue columnname="control">searchinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">메뉴 검색</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+            <cl:datavalue columnname="code"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">srchMenu</cl:datavalue>
+            <cl:datavalue columnname="control">searchinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다.</cl:datavalue>
+            <cl:datavalue columnname="code"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">srchMenu</cl:datavalue>
+            <cl:datavalue columnname="control">searchinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">sngMn</cl:datavalue>
+            <cl:datavalue columnname="control">sidenavigation</cl:datavalue>
+            <cl:datavalue columnname="propNm">displayExp</cl:datavalue>
+            <cl:datavalue columnname="propVal">label
++
+((CALL_PAGE !=&quot;&quot; &amp;&amp; CALL_PAGE.indexOf(&quot;.clx&quot;) == -1) ? sstr(&quot;새창 열기&quot;, [&quot;cl-sound-only&quot;]) : &quot;&quot;)</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnRefresh</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">tooltip</cl:datavalue>
+            <cl:datavalue columnname="propVal">화면 새로고침</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+            <cl:datavalue columnname="code"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnRefresh</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+            <cl:datavalue columnname="code"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnClose</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">tooltip</cl:datavalue>
+            <cl:datavalue columnname="propVal">전체 화면 닫기</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+            <cl:datavalue columnname="code"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnClose</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+            <cl:datavalue columnname="code"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnTabHome</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">tooltip</cl:datavalue>
+            <cl:datavalue columnname="propVal">대시보드</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+            <cl:datavalue columnname="code"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnTabHome</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+            <cl:datavalue columnname="code"/>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-f5eb5e3f" id="dsTotalProp">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="필터조건(같은 숫자에 대해서만 필터하여 내용을 보여준다)" std:sid="d-column-55a80aea" name="keyNum" datatype="string"/>
+          <cl:datacolumn comment="컨트롤명(영문)" std:sid="d-column-bc34b470" name="control"/>
+          <cl:datacolumn comment="속성명" std:sid="d-column-ba9abc52" name="propNm"/>
+          <cl:datacolumn comment="속성값" std:sid="d-column-ceb31610" name="propVal"/>
+          <cl:datacolumn std:sid="d-column-5e5afc5c" name="menuNm"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:datamap comment="사용자 정보" std:sid="d-map-1a875ed5" id="dmUserInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bfea4f73" info="사용자ID" name="USER_ID"/>
+          <cl:datacolumn std:sid="d-column-13210478" info="사용자명" name="USER_NM" defaultvalue="홍길동"/>
+          <cl:datacolumn std:sid="d-column-0ce6801c" info="부서명" name="DEPT_NM"/>
+          <cl:datacolumn std:sid="d-column-57877776" info="부서코드" name="DEPT_CD"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap comment="프로젝트 설정 컨피그" std:sid="d-map-7cabb165" id="dmGlobalConfig">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="mdi 최대 오픈 갯수" std:sid="d-column-6b206cb1" name="mdiWindowMaxCount"/>
+          <cl:datacolumn comment="디폴트 언어키" std:sid="d-column-b7683641" name="defaultLocale"/>
+          <cl:datacolumn comment="디비전 사용 여부" std:sid="d-column-3aa84c94" name="divideMdiUseYn"/>
+          <cl:datacolumn comment="알림(alert, confirm)시 레이어드팝업 사용 여부" std:sid="d-column-a57d9b90" name="useLayerdPop" defaultvalue="N"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-84b6d7fa" id="subOnLoad" method="get" action="app/main/data/main.json">
+        <cl:responsedata dataid="dsAllMenu" isadd="true"/>
+        <cl:responsedata dataid="dmUserInfo"/>
+        <cl:responsedata dataid="dmGlobalConfig"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec preferred-width="1280" title="eXBuilder6 웹 접근성 가이드"/>
+  </head>
+  <body std:sid="body-f2aa36f4">
+    <cl:listener std:sid="listener-e03eac00" name="init" handler="onBodyInit"/>
+    <cl:listener std:sid="listener-8c251dfe" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-642154ec" name="before-unload" handler="onBodyBeforeUnload"/>
+    <cl:notifier std:sid="notifier-776736b7" id="notiToastr" maxnotifycount="1" delay="2000" animation="fadein" close="true" successdelay="2000" successclose="true" infodelay="2000" infoclose="true" warningdelay="2000" warningclose="true" dangerdelay="4000" dangerclose="true">
+      <cl:xylayoutdata std:sid="xyl-data-084ff8e3" right="10px" bottom="20px" width="350px" height="50px" horizontalAnchor="RIGHT" verticalAnchor="BOTTOM"/>
+    </cl:notifier>
+    <cl:group std:sid="group-8a2d8d39" id="grpHeader" class="header">
+      <cl:xylayoutdata std:sid="xyl-data-28a67343" top="0px" right="0px" left="0px" height="119px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:img std:sid="image-90dfcc35" id="imgLogo" class="cursor-pointer" tabindex="0" src="../../theme/images/com/logo.png" alt="메인 로고">
+        <cl:listener std:sid="listener-121657c6" name="click" handler="onImageClick"/>
+        <cl:listener std:sid="listener-be40a1ca" name="keydown" handler="onImgLogoKeydown"/>
+        <cl:attribute name="wa-prop-key" value="imgLogo"/>
+        <cl:xylayoutdata std:sid="xyl-data-d0fe7ca4" top="32px" left="30px" width="177px" height="55px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:img>
+      <cl:checkbox std:sid="c-box-6c82a7b7" id="cbxWaCheck" style="padding-left:20px;" falsevalue="false" text="접근성 검토모드">
+        <cl:listener std:sid="listener-869b6ebf" name="value-change" handler="onCbx1ValueChange"/>
+        <cl:xylayoutdata std:sid="xyl-data-f1a62b16" top="20px" left="265px" width="160px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:checkbox>
+      <cl:group std:sid="group-dfb82314" id="grpUserInfo">
+        <cl:xylayoutdata std:sid="xyl-data-2f1f09fa" top="10px" right="309px" width="406px" height="40px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+        <cl:img std:sid="image-13752131" class="rounded-circle" fieldLabel="사용자 프로필" src="../../theme/images/com/user_blank.png" alt="사용자 프로필">
+          <cl:xylayoutdata std:sid="xyl-data-8273d6cf" left="0px" width="40px" height="40px" horizontalAnchor="LEFT" verticalAnchor="CENTER"/>
+        </cl:img>
+        <cl:output std:sid="output-219d1b65" class="text-gray-800" displayexp="sstr(text, [&quot;fw-medium&quot;]) + &quot;님&quot;">
+          <cl:datamapbind property="value" datacontrolid="dmUserInfo" columnname="USER_NM"/>
+          <cl:xylayoutdata std:sid="xyl-data-8e30a676" top="0px" left="50px" width="117px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-cac842a5" id="optLoginTime" class="text-gray-800" value="202209151051" datatype="date" format="YYYY-MM-DD HH:mm">
+          <cl:xylayoutdata std:sid="xyl-data-cbb48f69" top="20px" left="50px" width="117px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-5d8fd078" id="optTime" class="timer" value="00 : 00" displayexp="&quot;남은 시간  &quot; + &#xD;&#xA;(@isDark() ? sstr(text, [&quot;text-yellow&quot;]) : sstr(text, [&quot;text-primary&quot;]) )">
+          <cl:xylayoutdata std:sid="xyl-data-fe5bdf18" right="93px" width="132px" height="30px" horizontalAnchor="RIGHT" verticalAnchor="CENTER"/>
+        </cl:output>
+        <cl:button std:sid="button-332cd8b8" id="btnTime" value="시간 연장">
+          <cl:listener std:sid="listener-6bd6b5c4" name="click" handler="onBtnTimeClick"/>
+          <cl:xylayoutdata std:sid="xyl-data-a07192c2" right="0px" width="88px" height="30px" horizontalAnchor="RIGHT" verticalAnchor="CENTER"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-682b4a3e" scrollable="false"/>
+      </cl:group>
+      <cl:group std:sid="group-401d283a" class="border-left">
+        <cl:xylayoutdata std:sid="xyl-data-0b2e62b3" top="15px" right="33px" width="256px" height="35px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+        <cl:group std:sid="group-d0d3a679" id="grpZoom" class="form-box-1px rounded border-gray-600">
+          <cl:flowlayoutdata std:sid="f-data-330082b8" width="104px" height="33px" autosize="height"/>
+          <cl:button std:sid="button-99ab5008" id="btnZoomMinus" class="btn-nav-text btn-transparent" fieldLabel="화면크기 축소" tooltip="화면크기 축소" value="–">
+            <cl:listener std:sid="listener-07ca80fb" name="click" handler="onBtnZoomPlusMinusClick"/>
+            <cl:attribute name="wa-prop-key" value="btnZoomMinus"/>
+            <cl:formdata std:sid="f-data-2100d8c3" row="0" col="0"/>
+          </cl:button>
+          <cl:button std:sid="button-8d0b7b5d" id="btnZoomReset" class="btn-nav-text btn-transparent" fieldLabel="화면크기 원상복구" tooltip="화면크기 원상복구" value="▢">
+            <cl:listener std:sid="listener-c0586c50" name="click" handler="onBtnZoomResetClick"/>
+            <cl:attribute name="wa-prop-key" value="btnZoomReset"/>
+            <cl:formdata std:sid="f-data-75ebff7a" row="0" col="1"/>
+          </cl:button>
+          <cl:button std:sid="button-30660461" id="btnZoomPlus" class="btn-nav-text btn-transparent" fieldLabel="화면크기 확대" tooltip="화면크기 확대" value="+">
+            <cl:listener std:sid="listener-4d523567" name="click" handler="onBtnZoomPlusMinusClick"/>
+            <cl:attribute name="wa-prop-key" value="btnZoomPlus"/>
+            <cl:formdata std:sid="f-data-41aac163" row="0" col="2"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-416c6879" scrollable="false" hspace="6px" vspace="6px" top-margin="1fr" right-margin="0px" bottom-margin="1fr" left-margin="0px" hseparatorwidth="1" hseparatortype="CUSTOM" hseparatorcolor="bg-gray-600" vseparatorwidth="1" vseparatortype="BY_CLASS" vseparatorcolor="bg-gray-600">
+            <cl:rows length="30" unit="PIXEL"/>
+            <cl:columns length="30"/>
+            <cl:columns length="30"/>
+            <cl:columns length="30"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:button std:sid="button-1cdcc0e3" id="btnAlarm" class="btn-transparent btn-nav-alarm" fieldLabel="알림" tooltip="알림" value="">
+          <cl:listener std:sid="listener-d0d06a60" name="click" handler="onBtnAlarmClick"/>
+          <cl:attribute name="wa-prop-key" value="btnAlarm"/>
+          <cl:flowlayoutdata std:sid="f-data-c4246021" width="24px" height="24px"/>
+        </cl:button>
+        <cl:button std:sid="button-646f56ab" id="btnLogout" class="btn-transparent btn-nav-logout" fieldLabel="로그아웃" tooltip="로그아웃" value="">
+          <cl:listener std:sid="listener-9e69a3a0" name="click" handler="onButtonClick2"/>
+          <cl:attribute name="wa-prop-key" value="btnLogout"/>
+          <cl:flowlayoutdata std:sid="f-data-9474c33f" width="24px" height="24px"/>
+        </cl:button>
+        <cl:button std:sid="button-1bcf8c24" id="btnToggle" class="btn-transparent btn-nav-menu" fieldLabel="접근성 가이드 모아보기 토글" tooltip="접근성 가이드 모아보기 토글">
+          <cl:listener std:sid="listener-689031e2" name="click" handler="onBtnToggleClick"/>
+          <cl:attribute name="wa-prop-key" value="btnToggle"/>
+          <cl:flowlayoutdata std:sid="f-data-904e780c" width="24px" height="24px"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-a13d9e94" scrollable="false" hspacing="20" halign="right" valign="middle" linewrap="false"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-04643240" scrollable="false"/>
+    </cl:group>
+    <cl:group std:sid="group-369c2cc2" id="grpLNB" class="aside" clipcontent="false">
+      <cl:xylayoutdata std:sid="xyl-data-a9fade76" top="119px" bottom="1px" left="0px" width="265px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+      <cl:searchinput std:sid="s-input-82447622" id="srchMenu" class="global-search" fieldLabel="메뉴 검색">
+        <cl:listener std:sid="listener-3aef5778" name="search" handler="onSearchInputSearch"/>
+        <cl:attribute name="wa-prop-key" value="srchMenu"/>
+        <cl:xylayoutdata std:sid="xyl-data-bb0499aa" top="0px" right="30px" left="30px" height="40px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      </cl:searchinput>
+      <cl:sidenavigation std:sid="s-navigation-8fb92413" id="sngMn" class="sidemenu" indent="0" displayexp="label &#xD;&#xA;+ &#xD;&#xA;((CALL_PAGE !=&quot;&quot; &amp;&amp; CALL_PAGE.indexOf(&quot;.clx&quot;) == -1) ? sstr(&quot;새 창 열기&quot;, [&quot;cl-sound-only&quot;]) : &quot;&quot;)">
+        <cl:listener std:sid="listener-333096e2" name="item-click" handler="onSideNav1ItemClick"/>
+        <cl:listener std:sid="listener-aa294889" name="before-selection-change" handler="onSideNavMenuBeforeSelectionChange"/>
+        <cl:attribute name="wa-prop-key" value="sngMn"/>
+        <cl:xylayoutdata std:sid="xyl-data-2f0bdc9a" top="80px" right="5px" bottom="108px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        <cl:treeitemset datasetid="dsAllMenu" label="MENU_NM" value="MENU_ID" tooltip="MENU_TOOLTIP" parent="UP_MENU_ID"/>
+        <cl:itemstyle>
+          <cl:expbind property="class" category="CLASS" expression="CLASS"/>
+        </cl:itemstyle>
+      </cl:sidenavigation>
+      <cl:output std:sid="output-cc76371a" class="caption fs-sm" value="copyright(c) 2023 &#xD;&#xA;Tomatosystem All reserved.">
+        <cl:xylayoutdata std:sid="xyl-data-5163d550" bottom="36px" left="34px" width="156px" height="32px" horizontalAnchor="LEFT" verticalAnchor="BOTTOM"/>
+      </cl:output>
+      <cl:xylayout std:sid="xylayout-9d49e9dd" scrollable="false"/>
+    </cl:group>
+    <cl:group std:sid="group-bf7f3a64" id="grpMdiWrapper" class="body">
+      <cl:xylayoutdata std:sid="xyl-data-2a5b3c72" top="60px" right="500px" bottom="0px" left="265px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:mdifolder std:sid="mdifolder-02a317e5" id="mdiCn" class="tab-content" childcombinatorclass="content" headercheckable="true">
+        <cl:listener std:sid="listener-37feacde" name="close" handler="onMdiCnClose"/>
+        <cl:listener std:sid="listener-df46d177" name="content-load" handler="onMdiCnContentLoad"/>
+        <cl:listener std:sid="listener-136cd58c" name="selection-change" handler="onMdiCnSelectionChange"/>
+        <cl:xylayoutdata std:sid="xyl-data-5a62654c" top="5px" right="5px" bottom="5px" left="5px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        <cl:tabitem std:sid="t-item-971ccc07" name="default" selected="true" text="대시보드" visible="false">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:embeddedapp std:sid="e-app-5b87dce1" id="embapp1" src="Dashboard_Re.clx">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+          </cl:embeddedapp>
+        </cl:tabitem>
+        <cl:group std:sid="group-715492dd" id="grp2" clipcontent="false">
+          <cl:headercontroldata std:sid="thc-data-fe9bfc4b" width="35" position="heading"/>
+          <cl:button std:sid="button-d66b2783" id="btnTabHome" class="cl-tabfolder-item btn-i-0" tooltip="대시보드" value="" icon="../../theme/images/com/ic_home.png">
+            <cl:listener std:sid="listener-e6d1e3e6" name="click" handler="onBtnTabHomeClick"/>
+            <cl:attribute name="wa-prop-key" value="btnTabHome"/>
+            <cl:xylayoutdata std:sid="xyl-data-ce5a20d9" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-c985a330" scrollable="false"/>
+        </cl:group>
+        <cl:group std:sid="group-7cea0b96" id="grp3" class="tab-utils" clipcontent="false">
+          <cl:headercontroldata std:sid="thc-data-9326e81d" width="69" position="right"/>
+          <cl:button comment="새로고침" std:sid="button-0f6ea548" id="btnRefresh" class="btn-refresh" tooltip="화면 새로고침" value="" icon="../../theme/images/com/ic_btn_refresh.png">
+            <cl:listener std:sid="listener-1bb49648" name="click" handler="onButtonClick"/>
+            <cl:attribute name="wa-prop-key" value="btnRefresh"/>
+            <cl:xylayoutdata std:sid="xyl-data-537207ba" top="0px" right="35px" bottom="0px" width="36px" horizontalAnchor="RIGHT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button comment="닫기" std:sid="button-3ab1f2bc" id="btnClose" class="btn-close" tooltip="전체 화면 닫기" value="" icon="../../theme/images/com/ic_btn_close.png">
+            <cl:listener std:sid="listener-d3953f98" name="click" handler="onBtnCloseClick"/>
+            <cl:attribute name="wa-prop-key" value="btnClose"/>
+            <cl:xylayoutdata std:sid="xyl-data-9d1f6444" top="0px" right="0px" bottom="0px" width="36px" horizontalAnchor="RIGHT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-ca5815d2" scrollable="false"/>
+        </cl:group>
+      </cl:mdifolder>
+      <cl:xylayout std:sid="xylayout-09ca067c"/>
+    </cl:group>
+    <cl:group std:sid="group-d1109698" id="grpProps">
+      <cl:xylayoutdata std:sid="xyl-data-95c2962d" top="60px" right="5px" bottom="5px" width="490px" horizontalAnchor="RIGHT" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-27763584" value="※ 행을 더블 클릭 하여 컨트롤 ID를 클립보드에 복사할 수 있습니다.">
+        <cl:formdata std:sid="f-data-004914dd" row="0" col="0"/>
+      </cl:output>
+      <cl:grid std:sid="grid-94110e7c" id="grdProperty" class="grid-PropView" fieldLabel="가이드 모아보기" datasetid="dsTotalProp" autofit="all" autorowheight="all" suppressedcelltype="merged">
+        <cl:listener std:sid="listener-b7311752" name="selection-change" handler="onGrd1SelectionChange"/>
+        <cl:listener std:sid="listener-2ffd1a93" name="row-dblclick" handler="onGrdPropertyRowDblclick"/>
+        <cl:formdata std:sid="f-data-ecd7f09b" row="1" col="0"/>
+        <cl:gridcolumn std:sid="g-column-e1fe0609" width="100px"/>
+        <cl:gridcolumn std:sid="g-column-f54989a2" width="100px"/>
+        <cl:gridcolumn std:sid="g-column-6e4a032c" width="140px"/>
+        <cl:gridcolumn std:sid="g-column-7ce44aed" width="130px"/>
+        <cl:gridheader std:sid="gh-band-a5fd120d">
+          <cl:gridrow std:sid="g-row-b8e4085b" height="36px"/>
+          <cl:gridcell std:sid="gh-cell-77ca1a31" rowindex="0" colindex="0" targetcolumnname="keyNum" sortable="false" filterable="false" text="컨트롤ID"/>
+          <cl:gridcell std:sid="gh-cell-ddb53ce7" rowindex="0" colindex="2" targetcolumnname="propNm" text="속성명"/>
+          <cl:gridcell std:sid="gh-cell-51540579" rowindex="0" colindex="3" targetcolumnname="propVal" text="속성값"/>
+          <cl:gridcell std:sid="gh-cell-9138994c" rowindex="0" colindex="1" text="컨트롤&#xD;&#xA;종류"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-871a66bb">
+          <cl:gridrow std:sid="g-row-6655047f" height="37px"/>
+          <cl:gridcell std:sid="gd-cell-2165d82b" rowindex="0" colindex="0" columnname="keyNum" suppressible="true" keepmerged="true">
+            <cl:output std:sid="output-7a704adb" class="text-center" value="Output">
+              <cl:celldata std:sid="c-data-5452951a"/>
+            </cl:output>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-a4887830" rowindex="0" colindex="2" columnname="propNm">
+            <cl:output std:sid="output-b4b15568" style="padding-left:5px;" value="Output">
+              <cl:celldata std:sid="c-data-a18850ea"/>
+            </cl:output>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-296ba6ea" rowindex="0" colindex="3" columnname="propVal">
+            <cl:output std:sid="output-cc46ccbc" style="padding-left:5px;" value="Output">
+              <cl:celldata std:sid="c-data-3450d405"/>
+            </cl:output>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-a3bdea01" rowindex="0" colindex="1" columnname="control" suppressible="true" suppressref="0" keepmerged="true">
+            <cl:output std:sid="output-bd022b77" class="text-center" value="Output">
+              <cl:celldata std:sid="c-data-ee5de0f8"/>
+            </cl:output>
+          </cl:gridcell>
+        </cl:griddetail>
+        <cl:gridrowgrouplist std:sid="grg-list-54d16193">
+          <cl:gridrowgroup std:sid="gr-group-febca129" groupcondition="menuNm">
+            <cl:gridgroupheader std:sid="ggh-band-30632741">
+              <cl:gridrow std:sid="g-row-bb483e91" height="37px"/>
+              <cl:gridcell std:sid="ggh-cell-e5179a29" rowindex="0" colindex="0" rowspan="1" colspan="4" class="text-left bg-secondary fw-bold text-white" expr="menuNm"/>
+            </cl:gridgroupheader>
+          </cl:gridrowgroup>
+        </cl:gridrowgrouplist>
+      </cl:grid>
+      <cl:formlayout std:sid="f-layout-5895665d">
+        <cl:rows length="20" unit="PIXEL" autoSizing="true"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-fe8ccb9d" id="grpAlarm" class="card" visible="false">
+      <cl:xylayoutdata std:sid="xyl-data-b586eec5" top="70px" right="40px" width="320px" height="216px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+      <cl:group std:sid="group-65f3446a" id="grp1">
+        <cl:formdata std:sid="f-data-1635d8fb" row="0" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-dd297134" class="h5" value="알림">
+          <cl:formdata std:sid="f-data-bc5b5a34" row="0" col="0"/>
+        </cl:output>
+        <cl:button std:sid="button-871b8f74" id="btnNotiDelete" class="btn-txt fs-sm text-gray-700" value="전체삭제">
+          <cl:listener std:sid="listener-9e199eb9" name="click" handler="onBtnNotiDeleteClick"/>
+          <cl:listener std:sid="listener-2e9e8c6f" name="keydown" handler="onBtnNotiDeleteKeydown"/>
+          <cl:formdata std:sid="f-data-d93bde90" row="0" col="1"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-3484ce33" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="20px" bottom-margin="0px" left-margin="20px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="45" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group comment="알림 아이템이 실제로 배치되는 컨테이너" std:sid="group-6036197b" id="grpAlarmCont" class="noti-content">
+        <cl:formdata std:sid="f-data-640d7ae8" row="1" col="0"/>
+        <cl:verticallayout std:sid="v-layout-abad82af" spacing="0"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-e4f216a5" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+        <cl:rows length="36" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-70561515" animationduration="0.3"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler>
+      <std:guide position="578"/>
+    </std:hruler>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

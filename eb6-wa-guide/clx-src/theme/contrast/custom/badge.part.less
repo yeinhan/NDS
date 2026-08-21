@@ -1,0 +1,123 @@
+@import "../../custom-settings.part.less";
+
+/************************************************
+ * 배지
+ ************************************************/
+ .high-contrast{
+.cl-output.badge {
+	background-color: @lighter;
+	border: @component-border-base;
+	border-radius: @border-radius-circle;
+	color: @component-text-color;
+	font-size: 13px;
+	padding: 0px 8px;
+	text-align: center;
+	
+	&.badge-primary {
+		background-color: @primary;
+		border-color: @primary;
+		color: @white;
+	}
+	
+	&.badge-secondary {
+		background-color: @secondary;
+		border-color: @secondary;
+		color: @white;
+	}
+	
+	&.badge-success {
+		background-color: @success;
+		border-color: @success;
+		color: @white;
+	}
+	
+	&.badge-info {
+		background-color: @info;
+		border-color: @info;
+		color: @white;
+	}
+	
+	&.badge-warning {
+		background-color: @warning;
+		border-color: @warning;
+		color: @white;
+	}
+	
+	&.badge-danger {
+		background-color: @danger;
+		border-color: @danger;
+		color: @white;
+	}
+	
+	&.badge-primary-dim {
+		background-color: @primary-dim;
+		border-color: @transparent;
+		color: @primary;
+	}
+	
+	&.badge-secondary-dim {
+		background-color: @secondary-dim;
+		border-color: @transparent;
+		color: @secondary;
+	}
+	
+	&.badge-success-dim {
+		background-color: @success-dim;
+		border-color: @transparent;
+		color: @success;
+	}
+	
+	&.badge-info-dim {
+		background-color: @info-dim;
+		border-color: @transparent;
+		color: @info;
+	}
+	
+	&.badge-warning-dim {
+		background-color: @warning-dim;
+		border-color: @transparent;
+		color: @warning;
+	}
+	
+	&.badge-danger-dim {
+		background-color: @danger-dim;
+		border-color: @transparent;
+		color: @danger;
+	}
+}
+
+/************************************************
+ * 범례 배지
+ ************************************************/
+ 
+.legend {
+	background-color: @white;
+	border: @component-border-base;
+	padding: 0px 10px;
+	margin-right: 3px;
+	
+	&.legend-01 {
+		background-color: @lighter;
+	}
+	
+	&.legend-02 {
+		background-color: @danger-dim;
+	}
+	
+	&.legend-03 {
+		background-color: @warning-dim;
+	}
+	
+	&.legend-04 {
+		background-color: @success-dim;
+	}
+	
+	&.legend-05 {
+		background-color: @info-dim;
+	}
+	
+	&.legend-06 {
+		background-color: #f7f1fb;
+	}
+}
+}

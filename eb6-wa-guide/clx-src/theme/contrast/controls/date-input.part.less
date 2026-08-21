@@ -1,0 +1,112 @@
+@import "../../custom-settings.part.less";
+.high-contrast {
+/* 데이트 인풋 */
+.cl-dateinput {
+	font: @font-base;
+	background-image: @input-background-image;
+	background-color: @input-background-color;
+	border: @input-border-contrast;
+	border-radius: @input-border-radius;
+	color: @input-text-color-contrast;
+
+	/* 데이트 인풋 텍스트 */
+	.cl-text {
+		padding: @input-padding-0 @input-padding-x;
+		
+		&.cl-placeholder {
+			color: @input-placeholder-text-color-contrast !important;
+			font-style: @input-placeholder-text-style;
+			font-weight: @input-placeholder-text-weight;
+		}
+	}
+
+	/* 데이트 인풋 버튼 */
+	.cl-dateinput-button {
+		background-image: url("../../images/controls/dateinput/ic_calendar.png");
+		background-size: auto;
+		width: 22px;
+		
+		&.cl-left {
+			background-position: right center;
+		}
+		
+		&.cl-right {
+			background-position: left center;
+		}
+	}
+
+	/* 데이트 인풋 클리어 버튼 */
+	.cl-dateinput-clear {
+		background-image: url("../../images/controls/inputbox/ic_text_clear.png");
+		background-size: auto;
+		background-position: left center;
+		width: 22px;
+	}
+
+	// 스핀 버튼 영역
+	.cl-dateinput-spinbuttons {
+		border-left: @input-border-contrast;
+		// width:16px;
+
+		.cl-dateinput-increase,
+		.cl-dateinput-decrease {
+			background-size: auto;	
+		}
+		
+		// 증가 버튼
+		.cl-dateinput-increase {
+			background-image: url("../../images/controls/numbereditor/ic_spin_up.png");
+		}
+
+		// 감소 버튼
+		.cl-dateinput-decrease {
+			background-image: url("../../images/controls/numbereditor/ic_spin_down.png");
+		}
+	}
+
+	&:not(.cl-disabled) {
+		.cl-dateinput-increase:hover {
+			background-image: url("../../images/controls/numbereditor/ic_spin_up_h.png");
+			background-color: @transparent;
+		}
+
+		.cl-dateinput-increase:active {
+			background-image: url("../../images/controls/numbereditor/ic_spin_up_on.png");
+			background-color: @transparent;
+		}
+
+		.cl-dateinput-decrease:hover {
+		background-image: url("../../images/controls/numbereditor/ic_spin_down_h.png");
+			background-color: @transparent;
+		}
+
+		.cl-dateinput-decrease:active {
+			background-image: url("../../images/controls/numbereditor/ic_spin_down_on.png");
+			background-color: @transparent;
+		}
+	}
+
+	&.cl-disabled {
+		background-color: @input-disabled-background-color-contrast;
+		border-color: @input-disabled-border-color-contrast;
+		color: @input-disabled-text-color-contrast;
+
+		/* 데이트 인풋 disabled 상태 버튼 */
+		.cl-dateinput-button {
+			background-image: url("../../images/controls/dateinput/ic_calendar.png");
+		}
+	}
+
+	&.cl-focus {
+		border-color: @input-focus-border-color-contrast;
+		
+		&:not(.cl-readonly) .cl-dateinput-button {
+			background-image: url("../../images/controls/dateinput/ic_calednar_on.png");
+		}
+		
+		.cl-dateinput-spinbuttons {
+			border-color: @input-focus-border-color-contrast;
+		}
+	}
+}
+}

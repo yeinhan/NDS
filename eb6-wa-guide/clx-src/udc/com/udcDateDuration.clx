@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6c52669b" version="1.0.4727">
+  <head std:sid="head-66f85f0f">
+    <screen std:sid="screen-e9ec6a36" id="default" name="default" minwidth="1280px" width="1280px" height="760px" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-af2711cc" id="tablet" name="tablet" minwidth="800px" maxwidth="1279px" width="800px" height="760px"/>
+    <screen std:sid="screen-3b9a52d5" id="mobile" name="mobile" maxwidth="799px" width="360px" height="760px"/>
+    <cl:model std:sid="model-9e884544"/>
+    <cl:appspec>
+      <cl:property name="start" type="string" bindable="true"/>
+      <cl:property name="end" type="string" bindable="true"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-50156ea9" style="top:0px; left:0px; width:255px; height:30px;">
+    <cl:dateinput std:sid="d-input-33948ba1" id="dti1" fieldLabel="기간 시작일" showclearbutton="false">
+      <cl:apppropbind property="value" category="PROPERTY" app-property="start"/>
+      <cl:formdata std:sid="f-data-972a0b6f" row="0" col="0"/>
+    </cl:dateinput>
+    <cl:output std:sid="output-1d5f6584" style="text-align:center;" value="~">
+      <cl:formdata std:sid="f-data-3656cd36" row="0" col="1"/>
+    </cl:output>
+    <cl:dateinput std:sid="d-input-2a43b107" id="dti2" fieldLabel="기간 종료일" showclearbutton="false">
+      <cl:apppropbind property="value" category="PROPERTY" app-property="end"/>
+      <cl:formdata std:sid="f-data-517e1d44" row="0" col="2"/>
+    </cl:dateinput>
+    <cl:formlayout std:sid="f-layout-c0cc7c1a" scrollable="false" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="18" unit="PIXEL"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

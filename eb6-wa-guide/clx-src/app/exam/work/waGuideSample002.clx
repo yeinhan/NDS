@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c6044076" version="1.0.4034">
+  <head std:sid="head-06f71a2c">
+    <screen std:sid="screen-f0494cac" id="default" name="default" minwidth="1280px" width="1280px" height="760px" useCustomHeight="true" customHeight="718"/>
+    <screen std:sid="screen-dd3372dc" id="tablet" name="tablet" minwidth="800px" maxwidth="1279px" width="800px" height="760px"/>
+    <screen std:sid="screen-9e812286" id="mobile" name="mobile" maxwidth="799px" width="360px" height="760px"/>
+    <cl:model std:sid="model-e5f82001">
+      <cl:dataset std:sid="d-set-267d742b" id="dsPropView">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="필터조건(같은 숫자에 대해서만 필터하여 내용을 보여준다)" std:sid="d-column-5941843b" name="keyNum" datatype="string"/>
+          <cl:datacolumn comment="컨트롤명(영문)" std:sid="d-column-4cd817ad" name="control"/>
+          <cl:datacolumn comment="속성명" std:sid="d-column-a67ff141" name="propNm"/>
+          <cl:datacolumn comment="속성값" std:sid="d-column-309a35a3" name="propVal"/>
+          <cl:datacolumn comment="관련 웹접근성 지침" std:sid="d-column-d6e23689" name="relatedWaInst"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">cbxSearch</cl:datavalue>
+            <cl:datavalue columnname="control">combobox</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">검색조건</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">ipbSearch</cl:datavalue>
+            <cl:datavalue columnname="control">inputbox</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">검색어 입력창</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">ipbSearch</cl:datavalue>
+            <cl:datavalue columnname="control">inputbox</cl:datavalue>
+            <cl:datavalue columnname="propNm">showClearButton</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">ipbSearch</cl:datavalue>
+            <cl:datavalue columnname="control">inputbox</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">ipbSearch</cl:datavalue>
+            <cl:datavalue columnname="control">inputbox</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnSearch</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnExcel1</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnExcel2</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">grdDocList</cl:datavalue>
+            <cl:datavalue columnname="control">grid</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">문서 목록</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">optDocNo</cl:datavalue>
+            <cl:datavalue columnname="control">output</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">문서번호</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">optDocNM</cl:datavalue>
+            <cl:datavalue columnname="control">output</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">문서명</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">optEname</cl:datavalue>
+            <cl:datavalue columnname="control">output</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">사원명</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">optEno</cl:datavalue>
+            <cl:datavalue columnname="control">output</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">사원번호</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiReportDate</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">기안일자</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiReportDate</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiReportDate</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiReportDate</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">preventInput</cl:datavalue>
+            <cl:datavalue columnname="propVal">false</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 12. (조작 가능) 사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiApprDate</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">완료일자</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiApprDate</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiApprDate</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiApprDate</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">preventInput</cl:datavalue>
+            <cl:datavalue columnname="propVal">false</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 12. (조작 가능) 사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">cmbDocType</cl:datavalue>
+            <cl:datavalue columnname="control">combobox</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">문서 종류</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">cmbState</cl:datavalue>
+            <cl:datavalue columnname="control">combobox</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">구분</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnAdd</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnDelete</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">btnSave</cl:datavalue>
+            <cl:datavalue columnname="control">button</cl:datavalue>
+            <cl:datavalue columnname="propNm">ariaButtonType</cl:datavalue>
+            <cl:datavalue columnname="propVal">button</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">ipbDocNo</cl:datavalue>
+            <cl:datavalue columnname="control">inputbox</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">문서번호</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">ipbDocNm</cl:datavalue>
+            <cl:datavalue columnname="control">inputbox</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">문서명</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">ipbEmpNm</cl:datavalue>
+            <cl:datavalue columnname="control">inputbox</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">사원명</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">nbeEmpNo</cl:datavalue>
+            <cl:datavalue columnname="control">numbereditor</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">사원번호</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">nbeEmpNo</cl:datavalue>
+            <cl:datavalue columnname="control">numbereditor</cl:datavalue>
+            <cl:datavalue columnname="propNm">preventInput</cl:datavalue>
+            <cl:datavalue columnname="propVal">false</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 12. (조작 가능) 사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">sipDept</cl:datavalue>
+            <cl:datavalue columnname="control">searchinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">부서</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">sipDept</cl:datavalue>
+            <cl:datavalue columnname="control">searchinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">sipDept</cl:datavalue>
+            <cl:datavalue columnname="control">searchinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">cmbJob</cl:datavalue>
+            <cl:datavalue columnname="control">combobox</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">직급</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiWorkDt</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">입사일자</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiWorkDt</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiWorkDt</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiWorkDt</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">preventInput</cl:datavalue>
+            <cl:datavalue columnname="propVal">false</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 12. (조작 가능) 사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiVacB</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">휴가기간 시작일</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiVacB</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiVacB</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiVacB</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">preventInput</cl:datavalue>
+            <cl:datavalue columnname="propVal">false</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 12. (조작 가능) 사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiVacE</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">휴가기간 종료일</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiVacE</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiVacE</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="propVal">true</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">dtiVacE</cl:datavalue>
+            <cl:datavalue columnname="control">dateinput</cl:datavalue>
+            <cl:datavalue columnname="propNm">preventInput</cl:datavalue>
+            <cl:datavalue columnname="propVal">false</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 12. (조작 가능) 사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">cbxVacType</cl:datavalue>
+            <cl:datavalue columnname="control">checkbox</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">휴가 유형</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">rbtUser</cl:datavalue>
+            <cl:datavalue columnname="control">radiobutton</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">사용자</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">fiuFiles</cl:datavalue>
+            <cl:datavalue columnname="control">fileupload</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">첨부파일</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">txaVacFor</cl:datavalue>
+            <cl:datavalue columnname="control">textarea</cl:datavalue>
+            <cl:datavalue columnname="propNm">fieldLabel</cl:datavalue>
+            <cl:datavalue columnname="propVal">휴가사유</cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst">항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-3450c0dd" id="dsVacDoc">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="문서번호" std:sid="d-column-8a7a12c9" name="DOCNO"/>
+          <cl:datacolumn comment="문서명" std:sid="d-column-ecc93a75" name="DOCNM"/>
+          <cl:datacolumn comment="사원명" std:sid="d-column-b3a07326" name="ENAME"/>
+          <cl:datacolumn comment="사원번호" std:sid="d-column-0e61ffb4" name="ENO"/>
+          <cl:datacolumn comment="직급" std:sid="d-column-6e39f090" name="JOB"/>
+          <cl:datacolumn comment="부서" std:sid="d-column-bbe8977b" name="DEP"/>
+          <cl:datacolumn comment="입사일자" std:sid="d-column-d9042310" name="WDATE"/>
+          <cl:datacolumn comment="휴가 시작일" std:sid="d-column-7dc6a474" name="VACBEGIN"/>
+          <cl:datacolumn comment="휴가 종료일" std:sid="d-column-01e3a1d9" name="VACEND"/>
+          <cl:datacolumn comment="휴가유형" std:sid="d-column-a12559d9" name="VACTYPE"/>
+          <cl:datacolumn comment="사용자" std:sid="d-column-9cd9a1d4" name="VACUSER"/>
+          <cl:datacolumn comment="휴가사유" std:sid="d-column-9eadd8ea" name="VACFOR" datatype="string"/>
+          <cl:datacolumn comment="기안일자" std:sid="d-column-c0d782ed" name="REPORTDATE" datatype="string" displayonly="false"/>
+          <cl:datacolumn comment="완료일자" std:sid="d-column-b23719cb" name="APPRDATE" datatype="string" displayonly="false"/>
+          <cl:datacolumn comment="문서 종류" std:sid="d-column-1413fb1a" name="DOCTYPE" datatype="string" displayonly="false"/>
+          <cl:datacolumn comment="구분" std:sid="d-column-a1d3b790" name="DOCSTATE" datatype="string" displayonly="false"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="ENAME">홍길동</cl:datavalue>
+            <cl:datavalue columnname="ENO">20230814</cl:datavalue>
+            <cl:datavalue columnname="JOB">사원</cl:datavalue>
+            <cl:datavalue columnname="DOCNO">휴가-00001</cl:datavalue>
+            <cl:datavalue columnname="DEP">영업부</cl:datavalue>
+            <cl:datavalue columnname="WDATE">20210318</cl:datavalue>
+            <cl:datavalue columnname="VACBEGIN">20230905</cl:datavalue>
+            <cl:datavalue columnname="VACEND">20230906</cl:datavalue>
+            <cl:datavalue columnname="VACTYPE">annual</cl:datavalue>
+            <cl:datavalue columnname="VACUSER">self</cl:datavalue>
+            <cl:datavalue columnname="VACFOR">개인 휴식</cl:datavalue>
+            <cl:datavalue columnname="DOCNM">휴가 기안-[00001]</cl:datavalue>
+            <cl:datavalue columnname="REPORTDATE">20230812</cl:datavalue>
+            <cl:datavalue columnname="APPRDATE">20230814</cl:datavalue>
+            <cl:datavalue columnname="DOCTYPE">report</cl:datavalue>
+            <cl:datavalue columnname="DOCSTATE">signed</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="ENAME">홍길동</cl:datavalue>
+            <cl:datavalue columnname="ENO">20230814</cl:datavalue>
+            <cl:datavalue columnname="JOB">사원</cl:datavalue>
+            <cl:datavalue columnname="DOCNO">휴가-00002</cl:datavalue>
+            <cl:datavalue columnname="DEP">영업부</cl:datavalue>
+            <cl:datavalue columnname="WDATE">20210318</cl:datavalue>
+            <cl:datavalue columnname="VACBEGIN">20231001</cl:datavalue>
+            <cl:datavalue columnname="VACEND">20231001</cl:datavalue>
+            <cl:datavalue columnname="VACTYPE">sick</cl:datavalue>
+            <cl:datavalue columnname="VACUSER">peer</cl:datavalue>
+            <cl:datavalue columnname="VACFOR">코로나 확진</cl:datavalue>
+            <cl:datavalue columnname="DOCNM">휴가 기안-[00002]</cl:datavalue>
+            <cl:datavalue columnname="REPORTDATE">20230812</cl:datavalue>
+            <cl:datavalue columnname="APPRDATE">20230814</cl:datavalue>
+            <cl:datavalue columnname="DOCTYPE">report</cl:datavalue>
+            <cl:datavalue columnname="DOCSTATE">signed</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="ENAME">홍길동</cl:datavalue>
+            <cl:datavalue columnname="ENO">20230814</cl:datavalue>
+            <cl:datavalue columnname="JOB">사원</cl:datavalue>
+            <cl:datavalue columnname="DOCNO">휴가-00003</cl:datavalue>
+            <cl:datavalue columnname="DEP">영업부</cl:datavalue>
+            <cl:datavalue columnname="WDATE">20210318</cl:datavalue>
+            <cl:datavalue columnname="VACBEGIN">20231019</cl:datavalue>
+            <cl:datavalue columnname="VACEND">20231020</cl:datavalue>
+            <cl:datavalue columnname="VACTYPE">annual</cl:datavalue>
+            <cl:datavalue columnname="VACUSER">self</cl:datavalue>
+            <cl:datavalue columnname="VACFOR">가족행사</cl:datavalue>
+            <cl:datavalue columnname="DOCNM">휴가 기안-[00003]</cl:datavalue>
+            <cl:datavalue columnname="REPORTDATE">20230812</cl:datavalue>
+            <cl:datavalue columnname="APPRDATE">20230814</cl:datavalue>
+            <cl:datavalue columnname="DOCTYPE">report</cl:datavalue>
+            <cl:datavalue columnname="DOCSTATE">signed</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="ENAME">홍길동</cl:datavalue>
+            <cl:datavalue columnname="ENO">20230814</cl:datavalue>
+            <cl:datavalue columnname="JOB">사원</cl:datavalue>
+            <cl:datavalue columnname="DOCNO">휴가-00004</cl:datavalue>
+            <cl:datavalue columnname="DEP">영업부</cl:datavalue>
+            <cl:datavalue columnname="WDATE">20210318</cl:datavalue>
+            <cl:datavalue columnname="VACBEGIN">20231105</cl:datavalue>
+            <cl:datavalue columnname="VACEND">20231106</cl:datavalue>
+            <cl:datavalue columnname="VACTYPE">annual</cl:datavalue>
+            <cl:datavalue columnname="VACUSER">self</cl:datavalue>
+            <cl:datavalue columnname="VACFOR">개인 휴식</cl:datavalue>
+            <cl:datavalue columnname="DOCNM">휴가 기안-[00004]</cl:datavalue>
+            <cl:datavalue columnname="REPORTDATE">20230812</cl:datavalue>
+            <cl:datavalue columnname="APPRDATE">20230814</cl:datavalue>
+            <cl:datavalue columnname="DOCTYPE">report</cl:datavalue>
+            <cl:datavalue columnname="DOCSTATE">signed</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="ENAME">홍길동</cl:datavalue>
+            <cl:datavalue columnname="ENO">20230814</cl:datavalue>
+            <cl:datavalue columnname="JOB">사원</cl:datavalue>
+            <cl:datavalue columnname="DOCNO">휴가-00005</cl:datavalue>
+            <cl:datavalue columnname="DEP">영업부</cl:datavalue>
+            <cl:datavalue columnname="WDATE">20210318</cl:datavalue>
+            <cl:datavalue columnname="VACBEGIN">20231221</cl:datavalue>
+            <cl:datavalue columnname="VACEND">20231223</cl:datavalue>
+            <cl:datavalue columnname="VACTYPE">annual</cl:datavalue>
+            <cl:datavalue columnname="VACUSER">self</cl:datavalue>
+            <cl:datavalue columnname="VACFOR">개인 휴식</cl:datavalue>
+            <cl:datavalue columnname="DOCNM">휴가 기안-[00005]</cl:datavalue>
+            <cl:datavalue columnname="REPORTDATE">20230812</cl:datavalue>
+            <cl:datavalue columnname="APPRDATE">20230814</cl:datavalue>
+            <cl:datavalue columnname="DOCTYPE">report</cl:datavalue>
+            <cl:datavalue columnname="DOCSTATE">signed</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="ENAME">홍길동</cl:datavalue>
+            <cl:datavalue columnname="ENO">20230814</cl:datavalue>
+            <cl:datavalue columnname="JOB">사원</cl:datavalue>
+            <cl:datavalue columnname="DOCNO">휴가-00006</cl:datavalue>
+            <cl:datavalue columnname="DEP">영업부</cl:datavalue>
+            <cl:datavalue columnname="WDATE">20210318</cl:datavalue>
+            <cl:datavalue columnname="VACBEGIN">20231226</cl:datavalue>
+            <cl:datavalue columnname="VACEND">20231230</cl:datavalue>
+            <cl:datavalue columnname="VACTYPE">annual</cl:datavalue>
+            <cl:datavalue columnname="VACUSER">self</cl:datavalue>
+            <cl:datavalue columnname="VACFOR">가족행사</cl:datavalue>
+            <cl:datavalue columnname="DOCNM">휴가 기안-[00006]</cl:datavalue>
+            <cl:datavalue columnname="REPORTDATE">20230812</cl:datavalue>
+            <cl:datavalue columnname="APPRDATE">20230814</cl:datavalue>
+            <cl:datavalue columnname="DOCTYPE">report</cl:datavalue>
+            <cl:datavalue columnname="DOCSTATE">signed</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-c91936fe" id="dsDocList">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="문서번호" std:sid="d-column-89b5a9d4" name="DOCNO"/>
+          <cl:datacolumn comment="문서명" std:sid="d-column-dadc702f" name="DOCNM"/>
+          <cl:datacolumn comment="사용자명" std:sid="d-column-07f5b72b" name="USERNM"/>
+          <cl:datacolumn comment="기안일자" std:sid="d-column-ecdbb1d2" name="REPORTDATE"/>
+          <cl:datacolumn comment="완료일자" std:sid="d-column-05b00ce0" name="APPRDATE"/>
+          <cl:datacolumn comment="문서 종류" std:sid="d-column-4890ecc3" name="DOCTYPE"/>
+          <cl:datacolumn comment="구분" std:sid="d-column-9c36b807" name="DOCSTATE"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="DOCNO">휴가-00001</cl:datavalue>
+            <cl:datavalue columnname="DOCNM">1</cl:datavalue>
+            <cl:datavalue columnname="USERNM">홍길동</cl:datavalue>
+            <cl:datavalue columnname="REPORTDATE">20230814</cl:datavalue>
+            <cl:datavalue columnname="APPRDATE">20230815</cl:datavalue>
+            <cl:datavalue columnname="DOCTYPE">report</cl:datavalue>
+            <cl:datavalue columnname="DOCSTATE">done</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DOCNO">휴가-00002</cl:datavalue>
+            <cl:datavalue columnname="DOCNM">2</cl:datavalue>
+            <cl:datavalue columnname="USERNM">홍길동</cl:datavalue>
+            <cl:datavalue columnname="REPORTDATE">20230814</cl:datavalue>
+            <cl:datavalue columnname="APPRDATE">20230815</cl:datavalue>
+            <cl:datavalue columnname="DOCTYPE">report</cl:datavalue>
+            <cl:datavalue columnname="DOCSTATE">done</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DOCNO">휴가-00003</cl:datavalue>
+            <cl:datavalue columnname="DOCNM">3</cl:datavalue>
+            <cl:datavalue columnname="USERNM">홍길동</cl:datavalue>
+            <cl:datavalue columnname="REPORTDATE">20230814</cl:datavalue>
+            <cl:datavalue columnname="APPRDATE">20230815</cl:datavalue>
+            <cl:datavalue columnname="DOCTYPE">report</cl:datavalue>
+            <cl:datavalue columnname="DOCSTATE">done</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DOCNO">휴가-00004</cl:datavalue>
+            <cl:datavalue columnname="DOCNM">4</cl:datavalue>
+            <cl:datavalue columnname="USERNM">홍길동</cl:datavalue>
+            <cl:datavalue columnname="REPORTDATE">20230814</cl:datavalue>
+            <cl:datavalue columnname="APPRDATE">20230815</cl:datavalue>
+            <cl:datavalue columnname="DOCTYPE">report</cl:datavalue>
+            <cl:datavalue columnname="DOCSTATE">done</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DOCNO">휴가-00005</cl:datavalue>
+            <cl:datavalue columnname="DOCNM">5</cl:datavalue>
+            <cl:datavalue columnname="USERNM">홍길동</cl:datavalue>
+            <cl:datavalue columnname="REPORTDATE">20230814</cl:datavalue>
+            <cl:datavalue columnname="APPRDATE">20230815</cl:datavalue>
+            <cl:datavalue columnname="DOCTYPE">report</cl:datavalue>
+            <cl:datavalue columnname="DOCSTATE">done</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="그리드+폼_좌우배치"/>
+  </head>
+  <body std:sid="body-b847e4e5">
+    <cl:udc std:sid="ud-control-c22cb40a" id="udccomappheader1" type="udc.com.udcComAppHeader">
+      <cl:formdata std:sid="f-data-db47fbd0" row="0" col="0" rowspan="1" colspan="2"/>
+    </cl:udc>
+    <cl:group std:sid="group-b00f5249" id="grpSearch" class="search-box">
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:formdata std:sid="f-data-b4ba371b" row="1" col="0" rowspan="1" colspan="2"/>
+      <cl:group std:sid="group-c7ba9df1" id="grp1">
+        <cl:formdata std:sid="f-data-9be8b030" row="0" col="0"/>
+        <cl:combobox std:sid="c-box-9ef1a2dd" id="cbxSearch" fieldLabel="검색 조건" value="ALL">
+          <cl:attribute name="wa-prop-key" value="cbxSearch"/>
+          <cl:formdata std:sid="f-data-1bee5b8a" row="0" col="0"/>
+          <cl:item std:sid="t-item-a41aff42" label="전체" value="ALL"/>
+          <cl:item std:sid="t-item-601fe8e2" label="사원명" value="ENAME"/>
+          <cl:item std:sid="t-item-00d79dc4" label="사원번호" value="ENO"/>
+          <cl:item std:sid="t-item-f1cfa312" label="문서번호" value="DOCNO"/>
+        </cl:combobox>
+        <cl:inputbox std:sid="i-box-e11e2d32" id="ipbSearch" fieldLabel="검색어 입력창" buttonfocusable="true">
+          <cl:attribute name="wa-prop-key" value="ipbSearch"/>
+          <cl:formdata std:sid="f-data-d2b4ddfe" row="0" col="1" rowspan="1" colspan="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-4141a92a" scrollable="false" hspace="8px" vspace="10px">
+          <cl:rows length="32"/>
+          <cl:columns length="150" autoSizing="true" syncminlength="true"/>
+          <cl:columns length="1" unit="FRACTION" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-fb873b2f" id="grp9" clipcontent="false">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-858fb6bb" row="0" col="1"/>
+        <cl:button std:sid="button-f920d17c" id="btnSearch" class="btn-secondary btn-i-search" value="조회" icon="/theme/images/controls/button/ic_btn.png">
+          <cl:listener std:sid="listener-d6fd09cd" name="click" handler="onBtnSearchClick"/>
+          <cl:attribute name="wa-prop-key" value="btnSearch"/>
+          <cl:flowlayoutdata std:sid="f-data-65ca1c02" width="77px" height="32px"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-4a230073" scrollable="false" hspacing="6" vspacing="0" halign="right" leftmargin="12"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-55939e8f" scrollable="false" hspace="8px" vspace="10px" top-margin="12px" right-margin="20px" bottom-margin="12px" left-margin="20px">
+        <cl:rows length="32"/>
+        <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        <cl:columns length="90" unit="PIXEL" autoSizing="true" minlength="90" syncminlength="false"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-3a4cba1f" id="grp2">
+      <cl:formdata std:sid="f-data-360be4e2" row="2" col="0" rowspan="1" colspan="2"/>
+      <cl:group std:sid="group-b0413eb0" id="grpGrid">
+        <cl:formdata std:sid="f-data-e2e117b5" row="0" col="0"/>
+        <cl:group std:sid="group-297e6c89" id="grpGridTitle">
+          <cl:attribute name="mobile-column-count" value="1"/>
+          <cl:formdata std:sid="f-data-aac62b9a" row="0" col="0"/>
+          <cl:udc std:sid="ud-control-49b72cd7" id="udccomgridtitle1" type="udc.com.udcComGridTitle">
+            <cl:attribute name="wa-prop-key" value="4"/>
+            <cl:formdata std:sid="f-data-45791d1c" row="0" col="0"/>
+            <cl:property name="ctrl" value="grdDocList" type="control"/>
+          </cl:udc>
+          <cl:group std:sid="group-ee1e77d9" id="grp5">
+            <cl:formdata std:sid="f-data-7215a0dc" row="0" col="1"/>
+            <cl:button std:sid="button-27d3ca58" id="btn1" class="btn-outline-primary btn-i-excel" value="엑셀업로드" icon="../../theme/images/controls/button/ic_btn.png">
+              <cl:attribute name="wa-prop-key" value="btnExcel1"/>
+              <cl:flowlayoutdata std:sid="f-data-c5a4bd9d" width="109px" height="32px" autosize="width"/>
+            </cl:button>
+            <cl:button std:sid="button-822a55e9" id="btn2" class="btn-outline-primary btn-i-excel" value="엑셀내려받기" icon="../../theme/images/controls/button/ic_btn.png">
+              <cl:attribute name="wa-prop-key" value="btnExcel2"/>
+              <cl:flowlayoutdata std:sid="f-data-1d751aa5" width="122px" height="32px" autosize="width"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-7ba35316" scrollable="false" hspacing="6" vspacing="6" halign="right"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-0be296cb" scrollable="false" hspace="6px" vspace="6px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-8a623af0" id="grdDocList" fieldLabel="문서 목록" datasetid="dsVacDoc">
+          <cl:attribute name="wa-prop-key" value="grdDocList"/>
+          <cl:formdata std:sid="f-data-cc862497" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-e488950c" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-4d49c5ce" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-0f3ae078" width="200px"/>
+          <cl:gridcolumn std:sid="g-column-164fdd6d" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-2ef43db4" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-874929bd" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-255b9c5b" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-4c2a77f0" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-38e432a6" width="120px"/>
+          <cl:gridheader std:sid="gh-band-be79b130">
+            <cl:gridrow std:sid="g-row-fb085113" height="36px"/>
+            <cl:gridcell std:sid="gh-cell-d3a3b3fc" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+            <cl:gridcell std:sid="gh-cell-a42aac5e" rowindex="0" colindex="1" targetcolumnname="DOCNO" sortable="false" filterable="false" text="문서번호"/>
+            <cl:gridcell std:sid="gh-cell-ed0f0554" rowindex="0" colindex="2" targetcolumnname="DOCNM" sortable="false" filterable="false" text="문서명"/>
+            <cl:gridcell std:sid="gh-cell-e9305596" rowindex="0" colindex="3" targetcolumnname="ENAME" sortable="false" filterable="false" text="사원명"/>
+            <cl:gridcell std:sid="gh-cell-0b49f702" rowindex="0" colindex="4" fieldLabel="사원번호" targetcolumnname="ENO" sortable="false" filterable="false" text="사원번호"/>
+            <cl:gridcell std:sid="gh-cell-d08b3f34" rowindex="0" colindex="5" targetcolumnname="REPORTDATE" sortable="false" filterable="false" text="기안일자"/>
+            <cl:gridcell std:sid="gh-cell-75834844" rowindex="0" colindex="6" targetcolumnname="APPRDATE" sortable="false" filterable="false" text="완료일자"/>
+            <cl:gridcell std:sid="gh-cell-f5c2c29a" rowindex="0" colindex="7" targetcolumnname="DOCTYPE" sortable="false" filterable="false" text="문서 종류"/>
+            <cl:gridcell std:sid="gh-cell-0abab759" rowindex="0" colindex="8" targetcolumnname="DOCSTATE" sortable="false" filterable="false" text="구분"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-619f8cad">
+            <cl:gridrow std:sid="g-row-1d9eb1c5" height="37px"/>
+            <cl:gridcell std:sid="gd-cell-bc79300a" rowindex="0" colindex="0" fieldLabel="행번호" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-51195dea" rowindex="0" colindex="1" columnname="DOCNO">
+              <cl:output std:sid="output-0bb64ff1" fieldLabel="문서번호" value="Output">
+                <cl:attribute name="wa-prop-key" value="optDocNo"/>
+                <cl:celldata std:sid="c-data-d41262a1"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-84ee1b70" rowindex="0" colindex="2" columnname="DOCNM">
+              <cl:output std:sid="output-a1660fc0" fieldLabel="문서명" value="Output">
+                <cl:attribute name="wa-prop-key" value="optDocNM"/>
+                <cl:celldata std:sid="c-data-507b5bb1"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-41a2a9d1" rowindex="0" colindex="3" columnname="ENAME">
+              <cl:output std:sid="output-22dd2054" fieldLabel="사원명" value="Output">
+                <cl:attribute name="wa-prop-key" value="optEname"/>
+                <cl:celldata std:sid="c-data-9ce6bbc7"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-59067744" rowindex="0" colindex="4" columnname="ENO">
+              <cl:output std:sid="output-b79d147b" fieldLabel="사원번호" value="Output">
+                <cl:attribute name="wa-prop-key" value="optEno"/>
+                <cl:celldata std:sid="c-data-6e6ef415"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-334e5afe" rowindex="0" colindex="5" columnname="REPORTDATE">
+              <cl:dateinput std:sid="d-input-5247d0b3" id="dtiReportDate" fieldLabel="기안일자" readonly="true" buttonfocusable="true">
+                <cl:attribute name="wa-prop-key" value="dtiReportDate"/>
+                <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+                <cl:celldata std:sid="c-data-b658bb19"/>
+              </cl:dateinput>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-c38da96d" rowindex="0" colindex="6" columnname="APPRDATE">
+              <cl:dateinput std:sid="d-input-b3b2f815" id="dtiApprDate" fieldLabel="완료일자" readonly="true" buttonfocusable="true">
+                <cl:attribute name="wa-prop-key" value="dtiApprDate"/>
+                <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+                <cl:celldata std:sid="c-data-fc29c539"/>
+              </cl:dateinput>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-943414f0" rowindex="0" colindex="7" columnname="DOCTYPE">
+              <cl:combobox std:sid="c-box-0b9fae8e" id="cmbDocType" fieldLabel="문서종류" readonly="true">
+                <cl:attribute name="wa-prop-key" value="cmbDocType"/>
+                <cl:celldata std:sid="c-data-40b7b313"/>
+                <cl:item std:sid="t-item-aa2423fa" label="기안" value="report"/>
+                <cl:item std:sid="t-item-5375fbaa" label="결재" value="sign"/>
+                <cl:item std:sid="t-item-a1a3c370" label="수신" value="receive"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-ae1fe8ca" rowindex="0" colindex="8" columnname="DOCSTATE">
+              <cl:combobox std:sid="c-box-95bb3578" id="cmb1" fieldLabel="구분" readonly="true">
+                <cl:attribute name="wa-prop-key" value="cmbState"/>
+                <cl:celldata std:sid="c-data-d886e7c9"/>
+                <cl:item std:sid="t-item-c0ae7e8c" label="승인" value="signed"/>
+                <cl:item std:sid="t-item-709ce28e" label="반려" value="resigned"/>
+                <cl:item std:sid="t-item-98feb018" label="열람" value="opened"/>
+              </cl:combobox>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-59e482ab" scrollable="false" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="30" unit="PIXEL" autoSizing="true"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-55d83fdc" id="grpForm">
+        <cl:formdata std:sid="f-data-c28f79c3" row="0" col="1"/>
+        <cl:group std:sid="group-00ec81a6" id="grpFormTitle">
+          <cl:attribute name="mobile-column-count" value="1"/>
+          <cl:formdata std:sid="f-data-bcb48642" row="0" col="0"/>
+          <cl:udc std:sid="ud-control-0454970e" id="udccomformtitle1" type="udc.com.udcComFormTitle">
+            <cl:formdata std:sid="f-data-7cf09fc1" row="0" col="0"/>
+          </cl:udc>
+          <cl:group std:sid="group-69b1407c" id="grp8">
+            <cl:formdata std:sid="f-data-dcd49062" row="0" col="1"/>
+            <cl:button std:sid="button-db0d9f09" id="btn3" class="btn-primary-dim btn-i-add" value="추가" icon="../../theme/images/controls/button/ic_btn.png">
+              <cl:listener std:sid="listener-521e67de" name="click" handler="onBtn3Click"/>
+              <cl:attribute name="wa-prop-key" value="btnAdd"/>
+              <cl:flowlayoutdata std:sid="f-data-08cdee54" width="74px" height="32px" autosize="width"/>
+            </cl:button>
+            <cl:button std:sid="button-c235843d" id="btn4" class="btn-primary-dim btn-i-remove" value="삭제" icon="../../theme/images/controls/button/ic_btn.png">
+              <cl:listener std:sid="listener-f9c905e6" name="click" handler="onBtn4Click"/>
+              <cl:attribute name="wa-prop-key" value="btnDelete"/>
+              <cl:flowlayoutdata std:sid="f-data-d6d56caa" width="74px" height="32px" autosize="width"/>
+            </cl:button>
+            <cl:button std:sid="button-1507bae7" id="btn5" class="btn-primary btn-i-save" value="저장" icon="../../theme/images/controls/button/ic_btn.png">
+              <cl:listener std:sid="listener-e4332241" name="click" handler="onBtn5Click"/>
+              <cl:attribute name="wa-prop-key" value="btnSave"/>
+              <cl:flowlayoutdata std:sid="f-data-ffa59b26" width="74px" height="32px" autosize="width"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-1fdf2a71" scrollable="false" hspacing="6" vspacing="6" halign="right"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-e354e86a" scrollable="false" hspace="6px" vspace="6px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-d8e3eb99" id="grpFormDetail" class="form-base">
+          <cl:attribute name="tablet-column-count" value="2"/>
+          <cl:attribute name="mobile-column-count" value="2"/>
+          <cl:selectioncontext selectionProvider="#grid-8a623af0"/>
+          <cl:formdata std:sid="f-data-6446ff6d" row="1" col="0"/>
+          <cl:output std:sid="output-8bee4bec" class="label required" value="문서 번호">
+            <cl:formdata std:sid="f-data-60c01148" row="0" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-b0d07bce" id="ipb1" class="text-left" fieldLabel="문서 번호" showclearbutton="false">
+            <cl:attribute name="wa-prop-key" value="ipbDocNo"/>
+            <cl:relativebind property="value" columnname="DOCNO"/>
+            <cl:formdata std:sid="f-data-ccf81661" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-ec01b997" class="label required" value="문서명">
+            <cl:formdata std:sid="f-data-2e7918dd" row="0" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-91ab8fce" id="ipb2" class="text-left" fieldLabel="문서명" showclearbutton="false">
+            <cl:attribute name="wa-prop-key" value="ipbDocNm"/>
+            <cl:relativebind property="value" category="PROPERTY" columnname="DOCNM"/>
+            <cl:formdata std:sid="f-data-77fd270c" row="0" col="3"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-ce02cef9" class="label" value="사원명">
+            <cl:formdata std:sid="f-data-f43696a9" row="1" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-22c9493c" id="ipb5" class="text-left" fieldLabel="사원명" showclearbutton="false">
+            <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+            <cl:attribute name="wa-prop-key" value="ipbEmpNm"/>
+            <cl:relativebind property="value" columnname="ENAME"/>
+            <cl:formdata std:sid="f-data-3a8b7ebc" row="1" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-6c275ccc" class="label" value="사원번호">
+            <cl:formdata std:sid="f-data-b17abc5e" row="1" col="2"/>
+          </cl:output>
+          <cl:numbereditor std:sid="n-editor-3018fd40" id="nbe4" class="text-left" fieldLabel="사원번호" format="##">
+            <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+            <cl:attribute name="wa-prop-key" value="nbeEmpNo"/>
+            <cl:relativebind property="value" columnname="ENO"/>
+            <cl:formdata std:sid="f-data-020dded0" row="1" col="3"/>
+          </cl:numbereditor>
+          <cl:output std:sid="output-a54dfe07" class="label" value="부서">
+            <cl:formdata std:sid="f-data-02bfaac2" row="2" col="0"/>
+          </cl:output>
+          <cl:searchinput std:sid="s-input-bd2d672d" class="text-left" fieldLabel="부서" hideclearbutton="true" buttonfocusable="true" preventinput="true">
+            <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+            <cl:attribute name="wa-prop-key" value="sipDept"/>
+            <cl:relativebind property="value" columnname="DEP"/>
+            <cl:formdata std:sid="f-data-37d58b96" row="2" col="1"/>
+          </cl:searchinput>
+          <cl:output std:sid="output-ad22d110" class="label" value="직급">
+            <cl:formdata std:sid="f-data-2ebfad9a" row="2" col="2"/>
+          </cl:output>
+          <cl:combobox std:sid="c-box-b4ace8a9" id="cmb3" class="text-left" fieldLabel="직급">
+            <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+            <cl:attribute name="wa-prop-key" value="cmbJob"/>
+            <cl:relativebind property="value" columnname="JOB"/>
+            <cl:formdata std:sid="f-data-9234e531" row="2" col="3"/>
+            <cl:item std:sid="t-item-9eb05449" label="사원" value="사원"/>
+            <cl:item std:sid="t-item-daaf8d1e" label="주임" value="주임"/>
+            <cl:item std:sid="t-item-0e962c43" label="선임" value="선임"/>
+            <cl:item std:sid="t-item-75e54255" label="책임" value="책임"/>
+            <cl:item std:sid="t-item-bf1c0700" label="수석" value="수석"/>
+          </cl:combobox>
+          <cl:output std:sid="output-e18c84e8" class="label" value="입사일자">
+            <cl:formdata std:sid="f-data-58790ff5" row="3" col="0"/>
+          </cl:output>
+          <cl:dateinput std:sid="d-input-f3b5756e" id="dti7" class="text-left" fieldLabel="입사일자" buttonfocusable="true">
+            <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+            <cl:attribute name="wa-prop-key" value="dtiWorkDt"/>
+            <cl:relativebind property="value" columnname="WDATE"/>
+            <cl:formdata std:sid="f-data-23f54ed6" row="3" col="1"/>
+          </cl:dateinput>
+          <cl:output std:sid="output-b2ccade0" class="label" value="휴가기간">
+            <cl:formdata std:sid="f-data-253db30c" row="3" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-8dc2f552" id="grp13">
+            <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+            <cl:formdata std:sid="f-data-6f1180fb" row="3" col="3"/>
+            <cl:dateinput std:sid="d-input-b2bfa72b" id="dti8" fieldLabel="휴가기간 시작일" buttonfocusable="true">
+              <cl:attribute name="wa-prop-key" value="dtiVacB"/>
+              <cl:relativebind property="value" columnname="VACBEGIN"/>
+              <cl:formdata std:sid="f-data-cec96fcf" row="0" col="0"/>
+            </cl:dateinput>
+            <cl:output std:sid="output-5d09b304" class="text-center" value="~">
+              <cl:formdata std:sid="f-data-6a85a78c" row="0" col="1"/>
+            </cl:output>
+            <cl:dateinput std:sid="d-input-7cb3607b" id="dti9" fieldLabel="휴가기간 종료일" buttonfocusable="true">
+              <cl:attribute name="wa-prop-key" value="dtiVacE"/>
+              <cl:relativebind property="value" columnname="VACEND"/>
+              <cl:formdata std:sid="f-data-a42588ad" row="0" col="2"/>
+            </cl:dateinput>
+            <cl:formlayout std:sid="f-layout-162f8783" scrollable="false" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="10" unit="PIXEL" autoSizing="true"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-baa61990" class="label" value="휴가유형">
+            <cl:formdata std:sid="f-data-1b2ac84e" row="4" col="0"/>
+          </cl:output>
+          <cl:checkboxgroup std:sid="cb-group-61b0ef6a" id="cbg3" fieldLabel="휴가유형" fixedwidth="false" hspacing="12" vspacing="12">
+            <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+            <cl:attribute name="wa-prop-key" value="cbxVacType"/>
+            <cl:relativebind property="value" columnname="VACTYPE"/>
+            <cl:formdata std:sid="f-data-aeae903c" row="4" col="1"/>
+            <cl:item std:sid="item-56dbec5d" label="연차" value="annual"/>
+            <cl:item std:sid="item-86f8125b" label="병가" value="sick"/>
+            <cl:item std:sid="item-72eaddd3" label="경조사" value="cnc"/>
+            <cl:item std:sid="item-0fefa4a6" label="공가" value="official"/>
+            <cl:item std:sid="item-92028b2b" label="기타" value="etc"/>
+          </cl:checkboxgroup>
+          <cl:output std:sid="output-9a595df7" class="label" value="사용자">
+            <cl:formdata std:sid="f-data-f1fbe470" row="4" col="2"/>
+          </cl:output>
+          <cl:radiobutton std:sid="r-button-9e780072" id="rdb3" fieldLabel="사용자" fixedwidth="false" hspacing="12" vspacing="12">
+            <cl:attribute name="wa-prop-key" value="rbtUser"/>
+            <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+            <cl:relativebind property="value" columnname="VACUSER"/>
+            <cl:formdata std:sid="f-data-568390b8" row="4" col="3"/>
+            <cl:item std:sid="item-7ce4b158" label="본인" value="self"/>
+            <cl:item std:sid="item-252ef2a6" label="동료" value="peer"/>
+          </cl:radiobutton>
+          <cl:output std:sid="output-67a012e1" class="label" value="첨부 파일">
+            <cl:formdata std:sid="f-data-3500d04f" row="5" col="0"/>
+          </cl:output>
+          <cl:fileupload std:sid="f-upload-44ebc45c" id="fid2" fieldLabel="첨부 파일">
+            <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+            <cl:attribute name="wa-prop-key" value="fiuFiles"/>
+            <cl:formdata std:sid="f-data-51130743" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:fileupload>
+          <cl:output std:sid="output-1995a94e" class="label" value="휴가 사유">
+            <cl:formdata std:sid="f-data-dafc8b01" row="6" col="0"/>
+          </cl:output>
+          <cl:textarea std:sid="t-area-2af08709" id="txaVacFor" fieldLabel="휴가사유">
+            <cl:attribute name="wa-prop-key" value="txaVacFor"/>
+            <cl:relativebind property="value" columnname="VACFOR"/>
+            <cl:formdata std:sid="f-data-b6070471" row="6" col="1" rowspan="1" colspan="3"/>
+          </cl:textarea>
+          <cl:formlayout std:sid="f-layout-6024c918" scrollable="false" hspace="12px" vspace="12px" top-margin="6px" right-margin="6px" bottom-margin="6px" left-margin="6px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="150" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent"/>
+            <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS"/>
+            <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS"/>
+            <cl:columns length="2" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-ddbb7e1f" scrollable="false" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="30" unit="PIXEL" autoSizing="true"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-827f8b3a" scrollable="false" hspace="15px" vspace="20px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="2" unit="FRACTION" shadetype="NONE" shadecolor="transparent" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-f0cdb233" scrollable="false" hspace="20px" vspace="20px" top-margin="20px" right-margin="20px" bottom-margin="20px" left-margin="20px">
+      <cl:rows length="35" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      <cl:rows length="54" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

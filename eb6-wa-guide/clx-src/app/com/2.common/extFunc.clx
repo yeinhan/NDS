@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a3a7216d" version="1.0.4690">
+  <head std:sid="head-62730626">
+    <screen std:sid="screen-ea0e871f" id="default" name="default" width="1280px" height="760px"/>
+    <screen std:sid="screen-c8f068d0" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-d147cf9f" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-04c12df0">
+      <cl:dataset std:sid="d-set-61427eb9" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-562cd8e9" name="EMPLOYEE_ID" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-6e57af25" name="FIRST_NAME"/>
+          <cl:datacolumn std:sid="d-column-363135f3" name="LAST_NAME"/>
+          <cl:datacolumn std:sid="d-column-d7f42db5" name="EMAIL"/>
+          <cl:datacolumn std:sid="d-column-a53c67e4" name="PHONE_NUMBER"/>
+          <cl:datacolumn std:sid="d-column-4d0ceb14" name="HIRE_DATE" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-e586da30" name="DEPARTMENT_ID" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-37020c7b" name="SALARY" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-182528fa" name="PROGRESS" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPLOYEE_ID">1</cl:datavalue>
+            <cl:datavalue columnname="FIRST_NAME">FIRST_NAME1</cl:datavalue>
+            <cl:datavalue columnname="LAST_NAME">LAST_NAME1</cl:datavalue>
+            <cl:datavalue columnname="EMAIL">EMAIL1</cl:datavalue>
+            <cl:datavalue columnname="PHONE_NUMBER">01012341234</cl:datavalue>
+            <cl:datavalue columnname="HIRE_DATE">20210201</cl:datavalue>
+            <cl:datavalue columnname="DEPARTMENT_ID">1</cl:datavalue>
+            <cl:datavalue columnname="SALARY">1</cl:datavalue>
+            <cl:datavalue columnname="PROGRESS"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPLOYEE_ID">2</cl:datavalue>
+            <cl:datavalue columnname="FIRST_NAME">FIRST_NAME2</cl:datavalue>
+            <cl:datavalue columnname="LAST_NAME">LAST_NAME2</cl:datavalue>
+            <cl:datavalue columnname="EMAIL">EMAIL2</cl:datavalue>
+            <cl:datavalue columnname="PHONE_NUMBER">01012341234</cl:datavalue>
+            <cl:datavalue columnname="HIRE_DATE">20210201</cl:datavalue>
+            <cl:datavalue columnname="DEPARTMENT_ID">2</cl:datavalue>
+            <cl:datavalue columnname="SALARY">2</cl:datavalue>
+            <cl:datavalue columnname="PROGRESS"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPLOYEE_ID">3</cl:datavalue>
+            <cl:datavalue columnname="FIRST_NAME">FIRST_NAME3</cl:datavalue>
+            <cl:datavalue columnname="LAST_NAME">LAST_NAME3</cl:datavalue>
+            <cl:datavalue columnname="EMAIL">EMAIL3</cl:datavalue>
+            <cl:datavalue columnname="PHONE_NUMBER">01012341234</cl:datavalue>
+            <cl:datavalue columnname="HIRE_DATE">20210201</cl:datavalue>
+            <cl:datavalue columnname="DEPARTMENT_ID">3</cl:datavalue>
+            <cl:datavalue columnname="SALARY">3</cl:datavalue>
+            <cl:datavalue columnname="PROGRESS"><![CDATA[50]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPLOYEE_ID">4</cl:datavalue>
+            <cl:datavalue columnname="FIRST_NAME">FIRST_NAME4</cl:datavalue>
+            <cl:datavalue columnname="LAST_NAME">LAST_NAME4</cl:datavalue>
+            <cl:datavalue columnname="EMAIL">EMAIL4</cl:datavalue>
+            <cl:datavalue columnname="PHONE_NUMBER">01012341234</cl:datavalue>
+            <cl:datavalue columnname="HIRE_DATE">20210201</cl:datavalue>
+            <cl:datavalue columnname="DEPARTMENT_ID">1</cl:datavalue>
+            <cl:datavalue columnname="SALARY">4</cl:datavalue>
+            <cl:datavalue columnname="PROGRESS"><![CDATA[70]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPLOYEE_ID">5</cl:datavalue>
+            <cl:datavalue columnname="FIRST_NAME">FIRST_NAME5</cl:datavalue>
+            <cl:datavalue columnname="LAST_NAME">LAST_NAME5</cl:datavalue>
+            <cl:datavalue columnname="EMAIL">EMAIL5</cl:datavalue>
+            <cl:datavalue columnname="PHONE_NUMBER">01012341234</cl:datavalue>
+            <cl:datavalue columnname="HIRE_DATE">20210201</cl:datavalue>
+            <cl:datavalue columnname="DEPARTMENT_ID">2</cl:datavalue>
+            <cl:datavalue columnname="SALARY">5</cl:datavalue>
+            <cl:datavalue columnname="PROGRESS"><![CDATA[90]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-5891d19b" id="dsDept">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-226d4e55" name="DEPT_NO" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-17797431" name="DEPT_NAME"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPT_NO">1</cl:datavalue>
+            <cl:datavalue columnname="DEPT_NAME">DEPT_NAME1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPT_NO">2</cl:datavalue>
+            <cl:datavalue columnname="DEPT_NAME">DEPT_NAME2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPT_NO">3</cl:datavalue>
+            <cl:datavalue columnname="DEPT_NAME">DEPT_NAME3</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-3a3f8ed9" id="dsMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-11e1b300" name="label"/>
+          <cl:datacolumn std:sid="d-column-6c45bb62" name="value"/>
+          <cl:datacolumn std:sid="d-column-557c3e0d" name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대메뉴1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중메뉴1-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴1-1-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value16</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴1-1-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value17</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중메뉴1-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value6</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴1-2-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value18</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴1-2-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value19</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴1-2-3]]></cl:datavalue>
+            <cl:datavalue columnname="value">value20</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중메뉴1-3]]></cl:datavalue>
+            <cl:datavalue columnname="value">value7</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴1-3-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value21</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value7]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대메뉴2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중메뉴2-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value8</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴2-1-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value22</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴2-1-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value23</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴2-1-3]]></cl:datavalue>
+            <cl:datavalue columnname="value">value24</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴2-1-4]]></cl:datavalue>
+            <cl:datavalue columnname="value">value25</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중메뉴2-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value9</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴2-2-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value26</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value9]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴2-2-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value27</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value9]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대메뉴3]]></cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중메뉴3-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value10</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴3-1-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value28</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴3-1-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value29</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴3-1-3]]></cl:datavalue>
+            <cl:datavalue columnname="value">value30</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중메뉴3-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value11</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴3-2-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value31</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value11]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대메뉴4]]></cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중메뉴4-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value12</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-1-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value32</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value12]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-1-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value33</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value12]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중메뉴4-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value13</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-2-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value34</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value13]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-2-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value35</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value13]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-2-3]]></cl:datavalue>
+            <cl:datavalue columnname="value">value36</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value13]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-2-4]]></cl:datavalue>
+            <cl:datavalue columnname="value">value37</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value13]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-2-5]]></cl:datavalue>
+            <cl:datavalue columnname="value">value38</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value13]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중메뉴4-3]]></cl:datavalue>
+            <cl:datavalue columnname="value">value14</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-3-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value39</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value14]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-3-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value40</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value14]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-3-3]]></cl:datavalue>
+            <cl:datavalue columnname="value">value41</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value14]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중메뉴4-4]]></cl:datavalue>
+            <cl:datavalue columnname="value">value15</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-4-1]]></cl:datavalue>
+            <cl:datavalue columnname="value">value42</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-4-2]]></cl:datavalue>
+            <cl:datavalue columnname="value">value43</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-4-3]]></cl:datavalue>
+            <cl:datavalue columnname="value">value44</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[소메뉴4-4-4]]></cl:datavalue>
+            <cl:datavalue columnname="value">value45</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value15]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="웹 접근성 관련 확장 기능"/>
+  </head>
+  <body std:sid="body-2d34bd2e">
+    <cl:listener std:sid="listener-687c73c7" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-39996f37" id="breadcrumbs1" type="udc.pb.Breadcrumbs">
+      <cl:verticaldata std:sid="v-data-37da5297" width="1644px" height="174px" autosize="height"/>
+      <cl:property name="title" value="웹 접근성 관련 공통 모듈" type="string"/>
+    </cl:udc>
+    <cl:group std:sid="group-6c4646a5" id="grp1" class="bg-primary-dim">
+      <cl:verticaldata std:sid="v-data-bc4a348e" width="400px" height="105px" autosize="height"/>
+      <cl:output std:sid="output-a5bbbbb2" displayexp="&quot;본 화면에서는 웹 접근성 준수하기 위한 확장기능에 대해서 확인할 수 있습니다.\n&quot;&#xD;&#xA;+&quot;확장기능은 &quot; + sstr(&quot;module/wa/accessibility.module.js(이하 공통모듈)&quot;, [&quot;text-danger&quot;, &quot;fw-bold&quot;])+ &quot; 에서 제공하고  있으며, 각 &quot; + sstr(&quot;프로젝트 별 커스터마이징을 필수적으로 선행&quot;, [&quot;text-underline&quot;]) + &quot;하시기 바랍니다.\n&quot;&#xD;&#xA;+&quot;공통모듈에서 수정가능한 변수는 &quot; + sstr(&quot;module/wa/accessibilityProperties.module.js&quot;, [&quot;text-primary&quot;, &quot;fw-bold&quot;]) +&quot; 에 정의되어있으니, 해당 파일을 반드시 확인하시기 바랍니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+&quot;모듈에서 최초 제공해드린 기능은 아래 샘플을 통해 확인할 수 있습니다.\n&quot;&#xD;&#xA;+&quot;샘플을 확인하실 때에는 스크린리더 프로그램을 실행하고 확인하는 것을 권장합니다.&quot;">
+        <cl:verticaldata std:sid="v-data-89cd7f2b" width="100px" height="85px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-e2a63d96" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+    </cl:group>
+    <cl:group std:sid="group-d3c8ba75" id="grp7" class="border rounded">
+      <cl:verticaldata std:sid="v-data-0e8b8c13" width="1220px" height="776px" autosize="height"/>
+      <cl:udc std:sid="ud-control-aa72cb1c" id="sectiontitle1" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-cac00737" width="1644px" height="29px" autosize="height"/>
+        <cl:property name="title" value="필수입력 정보 제공" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-08f46e0d" value="스크린리더 사용자에게 필수입력 정보를 제공합니다.&#xD;&#xA;필수 입력항목은 아래 속성에 정의된 스타일 클래스를 적용하도록 합니다.">
+        <cl:verticaldata std:sid="v-data-6ec595da" width="1178px" height="46px" autosize="height"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-8570611d" id="udcexamace2" type="udc.exam.udcExamAce">
+        <cl:verticaldata std:sid="v-data-afbe3028" width="200px" height="180px" autosize="height"/>
+        <cl:property name="value" value="/**&#xD;&#xA; * [공통] 필수입력 스타일 클래스&#xD;&#xA; * fieldLabel에 '필수입력' 정보 제공&#xD;&#xA; */&#xD;&#xA;AccessibilityProperties.prototype.CTRL_REQUIRED_CLS = [&quot;required&quot;];" type="string"/>
+        <cl:property name="title" value="관련 속성" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-0063c351" id="grp2">
+        <std:metadata>
+          <std:property key="template-uuid" value="0abf0c6a-96ee-4fb4-8758-176eeb9b7819"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-6730fff6" width="1178px" height="449px" autosize="height"/>
+        <cl:group std:sid="group-f5c2ad9f" id="grp3">
+          <cl:verticaldata std:sid="v-data-a5293768" width="1198px" height="24px"/>
+          <cl:udc std:sid="ud-control-87bdd548" id="udccomformtitle2" type="udc.com.udcComFormTitle">
+            <cl:formdata std:sid="f-data-ee1ce4d0" row="0" col="0"/>
+            <cl:property name="title" value="(예시) 입력 폼" type="string"/>
+          </cl:udc>
+          <cl:output std:sid="output-5359539b" class="text-right" value="" displayexp="sstr(&quot;*&quot;, [&quot;text-danger&quot;]) + &quot; 는 필수입력항목 입니다.&quot;">
+            <cl:formdata std:sid="f-data-d08957bd" row="0" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-74b2d3f2" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="true"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-a9d7a230" id="grp4" class="form-base">
+          <cl:verticaldata std:sid="v-data-83d5cbe3" width="1178px" height="170px"/>
+          <cl:output std:sid="output-f413bdf7" class="label required" value="이름">
+            <cl:formdata std:sid="f-data-bee0cb53" row="0" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-58d49f62" id="ipb1" class="required" fieldLabel="이름">
+            <cl:formdata std:sid="f-data-0965582f" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-af26bff2" class="label" value="좋아하는 항목">
+            <cl:formdata std:sid="f-data-05846fd6" row="1" col="0"/>
+          </cl:output>
+          <cl:checkboxgroup std:sid="cb-group-7c4cdd3c" id="cbg1" fieldLabel="좋아하는 항목">
+            <cl:formdata std:sid="f-data-224dd8b6" row="1" col="1" rowspan="1" colspan="1"/>
+            <cl:item std:sid="item-bfc2fcf4" label="아이템1" value="value1"/>
+            <cl:item std:sid="item-f7b3db53" label="아이템2" value="value2"/>
+            <cl:item std:sid="item-21a1c17a" label="아이템3" value="value3"/>
+          </cl:checkboxgroup>
+          <cl:output std:sid="output-5d191d3a" class="label required" value="생년월일(비활성상태)">
+            <cl:formdata std:sid="f-data-345a987e" row="2" col="0"/>
+          </cl:output>
+          <cl:dateinput std:sid="d-input-e33fedc0" id="dti1" class="required" fieldLabel="생년월일" enabled="false" value="20000101">
+            <cl:formdata std:sid="f-data-3f147e91" row="2" col="1"/>
+          </cl:dateinput>
+          <cl:output std:sid="output-197e8bb8" class="label" value="성별">
+            <cl:formdata std:sid="f-data-424b46f2" row="3" col="0"/>
+          </cl:output>
+          <cl:radiobutton std:sid="r-button-d252b19f" id="rdb1" fieldLabel="성별">
+            <cl:formdata std:sid="f-data-052c4a60" row="3" col="1"/>
+            <cl:item std:sid="item-a15cbea8" label="남" value="value1"/>
+            <cl:item std:sid="item-8bb16b84" label="여" value="value2"/>
+          </cl:radiobutton>
+          <cl:formlayout std:sid="f-layout-03477c05" scrollable="false" hspace="12px" vspace="12px" top-margin="6px" right-margin="6px" bottom-margin="6px" left-margin="6px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="30" unit="PIXEL"/>
+            <cl:rows length="30" unit="PIXEL"/>
+            <cl:rows length="30" unit="PIXEL"/>
+            <cl:rows length="30" unit="PIXEL"/>
+            <cl:columns length="180" unit="PIXEL" shadetype="BY_CLASS"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-7b263a92" id="grp12">
+          <cl:verticaldata std:sid="v-data-4d414788" width="1198px" height="24px" autosize="none"/>
+          <cl:udc std:sid="ud-control-55de8a76" id="udccomformtitle4" type="udc.com.udcComFormTitle">
+            <cl:formdata std:sid="f-data-353641b3" row="0" col="0"/>
+            <cl:property name="title" value="(예시) 그리드" type="string"/>
+          </cl:udc>
+          <cl:output std:sid="output-0d08aaa1" class="text-right" value="" displayexp="sstr(&quot;*&quot;, [&quot;text-danger&quot;]) + &quot; 는 필수입력항목 입니다.&quot;">
+            <cl:formdata std:sid="f-data-b3fd3514" row="0" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-201d5c9b" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="true"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-21ffd959" id="grdMst" style="background-color:white; background-image:none;" fieldLabel="필수입력 그리드" readonly="false" datasetid="dsList" autofit="4" clickmode="edit" resizablecolumns="none" columnMovable="false">
+          <cl:verticaldata std:sid="v-data-c16484fa" width="1078px" height="183px" autosize="height"/>
+          <cl:rowstyle>
+            <cl:expbind property="background-color" category="STYLER" expression="(getIndex() / 2  )== 0 ? red : blue"/>
+          </cl:rowstyle>
+          <cl:gridcolumn std:sid="g-column-783a344e" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-40201964" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-419e3747" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-dd15b77f" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-18b3255b" width="149px"/>
+          <cl:gridcolumn std:sid="g-column-3c57ca07" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-2f557083" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-7875b6c3" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-1c4b846f" width="120px"/>
+          <cl:gridheader std:sid="gh-band-7617f40c">
+            <cl:gridrow std:sid="g-row-fa96eb61" height="36px"/>
+            <cl:gridcell std:sid="gh-cell-efe50556" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+            <cl:gridcell std:sid="gh-cell-e1ebb65e" rowindex="0" colindex="1" filterable="false"/>
+            <cl:gridcell std:sid="gh-cell-b3ce4a9f" rowindex="0" colindex="2" class="required" targetcolumnname="LAST_NAME" filterable="false" text="이름"/>
+            <cl:gridcell std:sid="gh-cell-e3ba4e54" rowindex="0" colindex="3" class="required" targetcolumnname="FIRST_NAME" sortable="false" filterable="false" text="성"/>
+            <cl:gridcell std:sid="gh-cell-1451cee3" rowindex="0" colindex="4" targetcolumnname="EMAIL" sortable="false" filterable="false" text="이메일"/>
+            <cl:gridcell std:sid="gh-cell-065c3568" rowindex="0" colindex="5" targetcolumnname="PHONE_NUMBER" sortable="false" filterable="false" text="휴대폰번호"/>
+            <cl:gridcell std:sid="gh-cell-29c0fabc" rowindex="0" colindex="6" targetcolumnname="HIRE_DATE" sortable="false" filterable="false" text="고용일"/>
+            <cl:gridcell std:sid="gh-cell-b69db309" rowindex="0" colindex="7" class="required" targetcolumnname="DEPARTMENT_ID" sortable="false" filterable="false" text="부서ID"/>
+            <cl:gridcell std:sid="gh-cell-476c4bdb" rowindex="0" colindex="8" targetcolumnname="SALARY" sortable="false" filterable="false" text="연봉"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-dea675be">
+            <cl:gridrow std:sid="g-row-1fd40177" height="37px"/>
+            <cl:gridcell std:sid="gd-cell-9b28d636" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-d2a088de" rowindex="0" colindex="1" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-389a9dee" rowindex="0" colindex="2" columnname="LAST_NAME">
+              <cl:inputbox std:sid="i-box-d3f7494f" id="ipb7" class="required" fieldLabel="이름">
+                <cl:celldata std:sid="c-data-585697e0"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-a701b13f" rowindex="0" colindex="3" columnname="FIRST_NAME">
+              <cl:inputbox std:sid="i-box-1f76f51a" id="ipb6" class="required" fieldLabel="성">
+                <cl:celldata std:sid="c-data-21e5bdc5"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-510dfc57" rowindex="0" colindex="4" columnname="EMAIL">
+              <cl:inputbox std:sid="i-box-e83f86a8" id="ipb8" fieldLabel="이메일">
+                <cl:celldata std:sid="c-data-fee4ee57"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-464c95b5" rowindex="0" colindex="5" columnname="PHONE_NUMBER">
+              <cl:maskeditor std:sid="m-editor-16376a5a" id="mse1" fieldLabel="휴대폰번호" mask="000-0000-0000">
+                <cl:celldata std:sid="c-data-9fe88982"/>
+              </cl:maskeditor>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-7bdc3fa7" rowindex="0" colindex="6" columnname="HIRE_DATE">
+              <cl:dateinput std:sid="d-input-6843d080" id="dti2" fieldLabel="고용일" mask="YYYY-MM-DD">
+                <cl:celldata std:sid="c-data-1827106e"/>
+              </cl:dateinput>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-15122dbc" rowindex="0" colindex="7" columnname="DEPARTMENT_ID">
+              <cl:combobox std:sid="c-box-1c63c4df" id="cmb2" class="required" fieldLabel="부서ID">
+                <cl:celldata std:sid="c-data-32fd6862"/>
+                <cl:itemset datasetid="dsDept" label="DEPT_NAME" value="DEPT_NO"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-514a1672" rowindex="0" colindex="8" columnname="SALARY">
+              <cl:numbereditor std:sid="n-editor-00afed57" id="nbe3" fieldLabel="연봉" value="0" format="s#,###">
+                <cl:celldata std:sid="c-data-67a0b1fd"/>
+              </cl:numbereditor>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:verticallayout std:sid="v-layout-732a3d70" spacing="10"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-787a4b5d" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-ee89d323" id="grp6" class="border rounded">
+      <cl:verticaldata std:sid="v-data-4361f8df" width="1240px" height="540px" autosize="height"/>
+      <cl:udc std:sid="ud-control-37ec733a" id="sectiontitle2" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-a8a49525" width="1644px" height="29px" autosize="height"/>
+        <cl:property name="title" value="확장형 버튼" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-603d2c84" value="버튼 클릭 시 하위 영역을 접고 펼치는 동작을 할 경우, 해당 동작에 대한 음성을 제공합니다.&#xD;&#xA;&#xD;&#xA;공통모듈에서는 확장형 스타일 클래스 가 적용되어 있는 버튼에 대해 aria-expanded 속성을 지원합니다.&#xD;&#xA;해당 버튼에 확장 클래스 가 추가적으로 설정 될 경우 스크린리더는 [확장됨] 이라고 읽습니다.">
+        <cl:verticaldata std:sid="v-data-3e7e794c" width="1198px" height="59px" autosize="height"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-2699e9c8" id="udcexamace3" type="udc.exam.udcExamAce">
+        <cl:verticaldata std:sid="v-data-13942623" width="1178px" height="180px" autosize="height"/>
+        <cl:property name="value" value="/**&#xD;&#xA; * [버튼] 하위 영역을 확장/축소 가능한 아코디언 버튼 스타일 클래스&#xD;&#xA; * ● 적용 기술 : aria-expanded=false 적용&#xD;&#xA; */&#xD;&#xA;AccessibilityProperties.prototype.BTN_TOGGLE_CLS = [&quot;btn-expanded&quot;];&#xD;&#xA;&#xD;&#xA;/**&#xD;&#xA; * [버튼] AccessibilityProperties.BTN_TOGGLE_CLS 가 적용된 버튼&#xD;&#xA; * ● 적용 기술 : aria-expanded=true 적용&#xD;&#xA; */&#xD;&#xA;AccessibilityProperties.prototype.BTN_TOGGLE_EXPAND_CLS = [&quot;expand&quot;];" type="string"/>
+        <cl:property name="title" value="관련 속성" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-82baf87d" id="grpToggle" class="border">
+        <cl:verticaldata std:sid="v-data-190436af" width="400px" height="200px" autosize="height"/>
+        <cl:udc std:sid="ud-control-659dfd16" id="udccomformtitle3" type="udc.com.udcComFormTitle">
+          <cl:formdata std:sid="f-data-5ff4e71e" row="0" col="0"/>
+          <cl:property name="title" value="(예시) 이용약관" type="string"/>
+        </cl:udc>
+        <cl:button std:sid="button-ce86b03e" id="btnToggle" class="btn-expanded expand" fieldLabel="이용약관">
+          <cl:listener std:sid="listener-f020922d" name="click" handler="onBtnToggleClick"/>
+          <cl:formdata std:sid="f-data-d58fe9d1" row="0" col="1"/>
+        </cl:button>
+        <cl:group std:sid="group-1f341534" id="grp14">
+          <cl:formdata std:sid="f-data-fefa5107" row="1" col="0" rowspan="1" colspan="2"/>
+          <cl:output std:sid="output-225461b3" class="dashed p-4" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&#xD;&#xA;&#xD;&#xA;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&#xD;&#xA;&#xD;&#xA;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&#xD;&#xA;&#xD;&#xA;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
+            <cl:verticaldata std:sid="v-data-5f875d22" width="100px" height="155px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-d3c631e5" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-b1573655" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="25" unit="PIXEL" autoSizing="true"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="30" unit="PIXEL"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-c47af7e8" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-00f5fb58" id="grp8" class="border rounded">
+      <cl:verticaldata std:sid="v-data-11703ed3" width="1240px" height="557px" autosize="height"/>
+      <cl:udc std:sid="ud-control-8291c852" id="sectiontitle3" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-deb25c08" width="1644px" height="29px" autosize="height"/>
+        <cl:property name="title" value="그리드 헤더 정보 제공" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-64bcb12a" displayexp="&quot;그리드의 각 셀을 탐색할 때, 헤더에 대한 정보를 알 수 있어야 합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+&quot;공통모듈에서는 각 셀의 fieldLabel 속성에 설정함으로써 헤더 정보를 제공합니다.\n&quot;&#xD;&#xA;+&quot;fieldLabel 은 셀에 배치된 컨트롤에 우선적으로 적용되며, 컨트롤이 배치되어 있지 않을 경우 셀에 적용됩니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+sstr(&quot;만약 공통모듈에서 설정한 값을 적용하고 싶지 않으시면 해당 &quot;, [&quot;text-underline&quot;])&#xD;&#xA;+sstr(&quot;셀 또는 컨트롤의 fieldLabel 에 직접 값을 작성&quot;, [&quot;text-underline&quot;, &quot;text-danger&quot;]) &#xD;&#xA;+sstr(&quot;하면 됩니다.&quot;, [&quot;text-underline&quot;])">
+        <cl:verticaldata std:sid="v-data-73b537d5" width="1198px" height="59px" autosize="height"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-2cecaa73" id="udcexamace4" type="udc.exam.udcExamAce">
+        <cl:verticaldata std:sid="v-data-2ab40c5c" width="1178px" height="180px" autosize="height"/>
+        <cl:property name="title" value="관련 속성" type="string"/>
+        <cl:property name="value" value="/**&#xD;&#xA; * [그리드]  마지막 행/열 정보 추가 여부&#xD;&#xA; * (default : true)&#xD;&#xA; */&#xD;&#xA;AccessibilityProperties.prototype.SET_GRID_LAST_CELL_INFO = true;&#xD;&#xA;&#xD;&#xA;/**&#xD;&#xA; * [그리드] 행 상태 정보 제공 여부 (신규행/삭제행/수정행)&#xD;&#xA; * (default : false)&#xD;&#xA; */&#xD;&#xA;AccessibilityProperties.prototype.SET_GRID_ROW_STATE_INFO = false;" type="string"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-3dac7e24" id="udccomformtitle1" type="udc.com.udcComFormTitle">
+        <cl:verticaldata std:sid="v-data-db6a0286" width="800px" height="24px" autosize="height"/>
+        <cl:property name="title" value="(예시) 그리드" type="string"/>
+      </cl:udc>
+      <cl:grid std:sid="grid-fd06a86f" id="grdMst2" style="background-color:white; background-image:none;" fieldLabel="헤더정보제공 그리드" readonly="false" datasetid="dsList" autofit="4" clickmode="edit" resizablecolumns="none" columnMovable="false">
+        <cl:verticaldata std:sid="v-data-8cd730e2" width="1198px" height="183px" autosize="height"/>
+        <cl:rowstyle>
+          <cl:expbind property="background-color" category="STYLER" expression="(getIndex() / 2  )== 0 ? red : blue"/>
+        </cl:rowstyle>
+        <cl:gridcolumn std:sid="g-column-644b44e9" width="25px"/>
+        <cl:gridcolumn std:sid="g-column-7191b6ca" width="50px"/>
+        <cl:gridcolumn std:sid="g-column-aadb3f6f" width="120px"/>
+        <cl:gridcolumn std:sid="g-column-ab6a58cd" width="120px"/>
+        <cl:gridcolumn std:sid="g-column-7f35d578" width="149px"/>
+        <cl:gridcolumn std:sid="g-column-8e10db18" width="150px"/>
+        <cl:gridcolumn std:sid="g-column-3f7e299f" width="150px"/>
+        <cl:gridcolumn std:sid="g-column-9016e27c" width="150px"/>
+        <cl:gridcolumn std:sid="g-column-25d71fef" width="120px"/>
+        <cl:gridheader std:sid="gh-band-ca8725bb">
+          <cl:gridrow std:sid="g-row-18873c1a" height="36px"/>
+          <cl:gridrow std:sid="g-row-92badf4a" height="36px"/>
+          <cl:gridrow std:sid="g-row-b997e66d" height="36px"/>
+          <cl:gridcell std:sid="gh-cell-2a518f5f" rowindex="0" colindex="0" rowspan="3" colspan="1" sortable="false" filterable="false" columntype="checkbox"/>
+          <cl:gridcell std:sid="gh-cell-cbf93157" rowindex="0" colindex="1" rowspan="3" colspan="1" sortable="false" filterable="false"/>
+          <cl:gridcell std:sid="gh-cell-0dd3b513" rowindex="2" colindex="2" class="required" targetcolumnname="LAST_NAME" sortable="false" filterable="false" text="이름"/>
+          <cl:gridcell std:sid="gh-cell-ab2991ee" rowindex="2" colindex="3" class="required" targetcolumnname="FIRST_NAME" sortable="false" filterable="false" text="성"/>
+          <cl:gridcell std:sid="gh-cell-76b71798" rowindex="2" colindex="4" targetcolumnname="EMAIL" sortable="false" filterable="false" text="이메일"/>
+          <cl:gridcell std:sid="gh-cell-2294dfce" rowindex="2" colindex="5" targetcolumnname="PHONE_NUMBER" sortable="false" filterable="false" text="휴대폰번호"/>
+          <cl:gridcell std:sid="gh-cell-dd34f6c1" rowindex="2" colindex="6" targetcolumnname="HIRE_DATE" sortable="false" filterable="false" text="고용일"/>
+          <cl:gridcell std:sid="gh-cell-bcb7c012" rowindex="2" colindex="7" class="required" targetcolumnname="DEPARTMENT_ID" sortable="false" filterable="false" text="부서ID"/>
+          <cl:gridcell std:sid="gh-cell-052c3726" rowindex="2" colindex="8" targetcolumnname="SALARY" sortable="false" filterable="false" text="연봉"/>
+          <cl:gridcell std:sid="gh-cell-58e7e17e" rowindex="1" colindex="2" rowspan="1" colspan="2" text="헤더2"/>
+          <cl:gridcell std:sid="gh-cell-abb90f8d" rowindex="1" colindex="4" rowspan="1" colspan="3" text="헤더3"/>
+          <cl:gridcell std:sid="gh-cell-71024078" rowindex="1" colindex="7" rowspan="1" colspan="2" text="헤더4"/>
+          <cl:gridcell std:sid="gh-cell-dc04c441" rowindex="0" colindex="2" rowspan="1" colspan="7" text="헤더1"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-5475bae2">
+          <cl:gridrow std:sid="g-row-dd71736a" height="37px"/>
+          <cl:gridcell std:sid="gd-cell-236b5719" rowindex="0" colindex="0" columntype="checkbox"/>
+          <cl:gridcell std:sid="gd-cell-c40ee946" rowindex="0" colindex="1" columntype="rowindex"/>
+          <cl:gridcell std:sid="gd-cell-3dbc2d22" rowindex="0" colindex="2" columnname="LAST_NAME">
+            <cl:inputbox std:sid="i-box-abdb12ba" id="ipb2" class="required">
+              <cl:celldata std:sid="c-data-22411d45" topSpacing="3" bottomSpacing="3" leftSpacing="3" rightSpacing="3"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-74b57615" rowindex="0" colindex="3" columnname="FIRST_NAME">
+            <cl:inputbox std:sid="i-box-f767a2f2" id="ipb3" class="required">
+              <cl:celldata std:sid="c-data-0a741bab" topSpacing="3" bottomSpacing="3" leftSpacing="3" rightSpacing="3"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-4ab7edd1" rowindex="0" colindex="4" columnname="EMAIL">
+            <cl:inputbox std:sid="i-box-221e3679" id="ipb4">
+              <cl:celldata std:sid="c-data-985bca9f" topSpacing="3" bottomSpacing="3" leftSpacing="3" rightSpacing="3"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-312d7507" rowindex="0" colindex="5" columnname="PHONE_NUMBER">
+            <cl:maskeditor std:sid="m-editor-f3f8c921" id="mse2" mask="000-0000-0000">
+              <cl:celldata std:sid="c-data-e37d3242" topSpacing="3" bottomSpacing="3" leftSpacing="3" rightSpacing="3"/>
+            </cl:maskeditor>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-48f141b3" rowindex="0" colindex="6" columnname="HIRE_DATE">
+            <cl:dateinput std:sid="d-input-bfa9ea2b" id="dti3" mask="YYYY-MM-DD">
+              <cl:celldata std:sid="c-data-f773343a" topSpacing="3" bottomSpacing="3" leftSpacing="3" rightSpacing="3"/>
+            </cl:dateinput>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-3f82fc8b" rowindex="0" colindex="7" columnname="DEPARTMENT_ID">
+            <cl:combobox std:sid="c-box-16534389" id="cmb3" class="required">
+              <cl:celldata std:sid="c-data-2f6a780d" topSpacing="3" bottomSpacing="3" leftSpacing="3" rightSpacing="3"/>
+              <cl:itemset datasetid="dsDept" label="DEPT_NAME" value="DEPT_NO"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-929b9b73" rowindex="0" colindex="8" columnname="SALARY">
+            <cl:numbereditor std:sid="n-editor-6d0a7266" id="nbe2" value="0" format="s#,###">
+              <cl:celldata std:sid="c-data-8cf12d23" topSpacing="3" bottomSpacing="3" leftSpacing="3" rightSpacing="3"/>
+            </cl:numbereditor>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:verticallayout std:sid="v-layout-ada2646a" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-70f7b9c6" id="grp9" class="border rounded">
+      <cl:verticaldata std:sid="v-data-27b654e4" width="1240px" height="835px" autosize="height"/>
+      <cl:udc std:sid="ud-control-19d6fa7b" id="sectiontitle4" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-a3fa3456" width="1644px" height="29px" autosize="height"/>
+        <cl:property name="title" value="단축키 제공" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-1fbc348f" displayexp="&quot;웹 접근성 준수를 위한 필수적인 사항은 아니지만, 사용자 편의를 위해 다양한 단축키를 지원 할 수 있어야 합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+ &quot;다음 공통모듈에서 제공하는 단축키는 사용자 편의를 위한 대표적인 기능들로, 각 프로젝트에서 필요에 따라 사용 및 수정하여 적용하시기 바랍니다.\n&quot;&#xD;&#xA;+ &quot;또한 스크린리더 프로그램의 단축키와 중복될 수 있으니, 단축키에 대한 협의가 사전에 반드시 이루어져야 한다는 점을 참고하시기 바랍니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;+ sstr(&quot;1) 메인화면\n&quot;, [&quot;fw-bold&quot;])&#xD;&#xA;+ &quot;\t- &quot; + sstr(&quot;메인화면의 각 영역으로 포커스를 이동할 수 있는 단축키\n&quot;, [&quot;text-underline&quot;])&#xD;&#xA;+ &quot;\t  공통모듈에서는 [상단/좌측/컨텐츠/탭메뉴] 영역으로 이동할 수 있는 방법을 제공합니다.\n&quot;&#xD;&#xA;+ &quot;\t  프로젝트 별 화면구조가 상이하므로, 반드시 해당 단축키를 사용하기 위해서는 단축키가 동작했을 때 어느 영역을 포커스 할 지 설정하시기 바랍니다.\n&quot;&#xD;&#xA;+ sstr(&quot;\t- 단축키 : Ctrl+Alt+[I/J/L/,]\n&quot;, [&quot;text-success&quot;])&#xD;&#xA;+ sstr(&quot;\t- 업무화면에서는 [좌측/컨텐츠/탭메뉴] 를, CMS 화면에서는 [상단/컨텐츠] 영역에 대한 동작을 확인 할 수 있습니다.\n&quot;, [&quot;text-success&quot;])&#xD;&#xA;&#xD;&#xA;+ &quot;\t- &quot;+ sstr(&quot;메인화면의 각 영역을 롤링하여 포커스를 이동할 수 있는 단축키\n&quot;, [&quot;text-underline&quot;])&#xD;&#xA;+ sstr(&quot;\t- 롤링 단축키 : Ctrl+Alt+[K]&quot;, [&quot;text-success&quot;])">
+        <cl:verticaldata std:sid="v-data-3d1003e0" width="1198px" height="59px" autosize="height"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-9596297b" id="udcexamace5" type="udc.exam.udcExamAce">
+        <cl:verticaldata std:sid="v-data-72ef8ebe" width="1178px" height="180px" autosize="height"/>
+        <cl:property name="title" value="메인화면 관련 속성" type="string"/>
+        <cl:property name="value" value="AccessibilityProperties.prototype.SHORT_KEY_FOCUS_TOP = &quot;I&quot;; &#x9;&#x9;&#x9;// 상단 내비게이션 메뉴로 포커스 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_FOCUS_LEFT = &quot;J&quot;; &#x9;&#x9;&#x9;// 좌측 사이드 메뉴로 포커스 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_FOCUS_RIGHT = &quot;L&quot;; &#x9;&#x9;// 중앙 임베디드 영역(컨텐츠)으로 포커스 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_FOCUS_BOTTOM = &quot;,&quot;; &#x9;// 하단 영역으로 포커스 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_FOCUS_ROLL = &quot;K&quot;; &#x9;&#x9;// 상단/좌측/중앙/하단 포커스 이동 롤링" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-fc7f3be3" displayexp="sstr(&quot;\n2) 그리드\n&quot;, [&quot;fw-bold&quot;])&#xD;&#xA;+ &quot;\t1) &quot;+ sstr(&quot;그리드의 이전/이후 컨트롤으로 포커스 이동\n&quot;, [&quot;text-underline&quot;])&#xD;&#xA;+ sstr(&quot;\t- 단축키 : Ctrl+Alt+[U/O]\n&quot;, [&quot;text-success&quot;])&#xD;&#xA;&#xD;&#xA;+ &quot;\t2) &quot;+ sstr(&quot;그리드의 현재 포커스 된 셀 정보 음성 안내\n&quot;, [&quot;text-underline&quot;])&#xD;&#xA;+ sstr(&quot;\t- 단축키 : Ctrl+Alt+[T]\n&quot;, [&quot;text-success&quot;])&#xD;&#xA;&#xD;&#xA;+ &quot;\t3) &quot;+ sstr(&quot;그리드 내 현재 위치에서 첫 행/마지막 행으로 이동\n&quot;, [&quot;text-underline&quot;])&#xD;&#xA;+ sstr(&quot;\t- 단축키 : Ctrl+Alt+[PageUp/PageDown]\n&quot;, [&quot;text-success&quot;])&#xD;&#xA;&#xD;&#xA;+ &quot;\t4) &quot;+ sstr(&quot;그리드 내 셀 이동\n&quot;, [&quot;text-underline&quot;])&#xD;&#xA;+ sstr(&quot;\t- 단축키 : Ctrl+Alt+[방향키]&quot;, [&quot;text-success&quot;])">
+        <cl:verticaldata std:sid="v-data-d5574383" width="1178px" height="59px" autosize="height"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-0ada2eab" id="udcexamace8" type="udc.exam.udcExamAce">
+        <cl:verticaldata std:sid="v-data-fb6a1f57" width="1178px" height="180px" autosize="height"/>
+        <cl:property name="title" value="그리드 관련 속성" type="string"/>
+        <cl:property name="value" value="/* 그리드 외부 포커스 */&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_FOCUS_GRID_PREV = &quot;U&quot;; &#x9;// 그리드에서 이전 컨트롤으로 포커스 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_FOCUS_GRID_NEXT = &quot;O&quot;; &#x9;// 그리드에서 다음 컨트롤으로 포커스 이동&#xD;&#xA;/* 그리드 현제 셀 확인 */&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_GRID_CELL_INFO = &quot;T&quot;; &#x9;&#x9;// 현재 위치한 셀 정보 확인(스크린리더의 음성피드백으로 확인)&#xD;&#xA;/* 그리드 내부 셀 이동 */&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_GRID_MOVE_CELL_UP = cpr.events.KeyCode.UP; &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// 현재 위치한 셀에서 위에 위치한 셀로 포커스 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_GRID_MOVE_CELL_LEFT = cpr.events.KeyCode.LEFT; &#x9;&#x9;&#x9;&#x9;&#x9;// 현재 위치한 셀에서 좌측에 위치한 셀로 포커스 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_GRID_MOVE_CELL_RIGHT = cpr.events.KeyCode.RIGHT; &#x9;&#x9;&#x9;&#x9;// 현재 위치한 셀에서 우측에 위치한 셀로 포커스 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_GRID_MOVE_CELL_DOWN = cpr.events.KeyCode.DOWN; &#x9;&#x9;&#x9;// 현재 위치한 셀에서 아래에 위치한 셀로 포커스 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_GRID_MOVE_PAGEUP = cpr.events.KeyCode.PAGEUP; &#x9;&#x9;&#x9;&#x9;// 현재 위치한 셀에서 첫번째 rowIndex 로 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_GRID_MOVE_PAGEDOWN = cpr.events.KeyCode.PAGEDOWN; &#x9;// 현재 위치한 셀에서 마지막 rowIndex 로 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_GRID_MOVE_HOME = cpr.events.KeyCode.HOME; &#x9;&#x9;&#x9;&#x9;&#x9;// 현재 위치한 셀에서 첫번째 cellIndex 로 이동&#xD;&#xA;AccessibilityProperties.prototype.SHORT_KEY_GRID_MOVE_END = cpr.events.KeyCode.END; &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// 현재 위치한 셀에서 마지막 cellIndex 로 이동" type="string"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-f1e76d59" id="udccomformtitle5" type="udc.com.udcComFormTitle">
+        <cl:verticaldata std:sid="v-data-52d9da1d" width="1178px" height="24px" autosize="height"/>
+        <cl:property name="title" value="(예시) 그리드" type="string"/>
+      </cl:udc>
+      <cl:grid std:sid="grid-0e32d01f" id="grdMst5" style="background-color:white; background-image:none;" fieldLabel="단축키 그리드" readonly="false" datasetid="dsList" autofit="4" clickmode="edit" resizablecolumns="none" columnMovable="false">
+        <cl:verticaldata std:sid="v-data-f8c0139a" width="1036px" height="202px" autosize="none"/>
+        <cl:rowstyle>
+          <cl:expbind property="background-color" category="STYLER" expression="(getIndex() / 2  )== 0 ? red : blue"/>
+        </cl:rowstyle>
+        <cl:gridcolumn std:sid="g-column-c84a0427" width="25px"/>
+        <cl:gridcolumn std:sid="g-column-f389f78b" width="50px"/>
+        <cl:gridcolumn std:sid="g-column-07c54bdb" width="120px"/>
+        <cl:gridcolumn std:sid="g-column-15c6f04a" width="120px"/>
+        <cl:gridcolumn std:sid="g-column-f97e38b3" width="149px"/>
+        <cl:gridcolumn std:sid="g-column-3aa29af8" width="150px"/>
+        <cl:gridcolumn std:sid="g-column-e6f30fcc" width="150px"/>
+        <cl:gridcolumn std:sid="g-column-1153e9ff" width="150px"/>
+        <cl:gridcolumn std:sid="g-column-e145c185" width="120px"/>
+        <cl:gridheader std:sid="gh-band-98801739">
+          <cl:gridrow std:sid="g-row-b79777bb" height="36px"/>
+          <cl:gridcell std:sid="gh-cell-5131920f" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+          <cl:gridcell std:sid="gh-cell-c7a08965" rowindex="0" colindex="1" sortable="false" filterable="false"/>
+          <cl:gridcell std:sid="gh-cell-4538d714" rowindex="0" colindex="2" class="required" targetcolumnname="LAST_NAME" sortable="false" filterable="false" text="이름"/>
+          <cl:gridcell std:sid="gh-cell-9f63265b" rowindex="0" colindex="3" class="required" targetcolumnname="FIRST_NAME" sortable="false" filterable="false" text="성"/>
+          <cl:gridcell std:sid="gh-cell-59fcede5" rowindex="0" colindex="4" targetcolumnname="EMAIL" sortable="false" filterable="false" text="이메일"/>
+          <cl:gridcell std:sid="gh-cell-9765cc83" rowindex="0" colindex="5" targetcolumnname="PHONE_NUMBER" sortable="false" filterable="false" text="휴대폰번호"/>
+          <cl:gridcell std:sid="gh-cell-3775cb58" rowindex="0" colindex="6" targetcolumnname="HIRE_DATE" sortable="false" filterable="false" text="고용일"/>
+          <cl:gridcell std:sid="gh-cell-62dd1fce" rowindex="0" colindex="7" class="required" targetcolumnname="DEPARTMENT_ID" sortable="false" filterable="false" text="부서ID"/>
+          <cl:gridcell std:sid="gh-cell-58205939" rowindex="0" colindex="8" targetcolumnname="SALARY" sortable="false" filterable="false" text="연봉"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-38412098">
+          <cl:gridrow std:sid="g-row-83af3a30" height="37px"/>
+          <cl:gridcell std:sid="gd-cell-8dfc886d" rowindex="0" colindex="0" columntype="checkbox"/>
+          <cl:gridcell std:sid="gd-cell-5f5dd781" rowindex="0" colindex="1" columntype="rowindex"/>
+          <cl:gridcell std:sid="gd-cell-90b55b4b" rowindex="0" colindex="2" columnname="LAST_NAME">
+            <cl:inputbox std:sid="i-box-ee96afbc" id="ipb14" class="required" fieldLabel="이름">
+              <cl:celldata std:sid="c-data-19d90bc8"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-e32888a7" rowindex="0" colindex="3" columnname="FIRST_NAME">
+            <cl:inputbox std:sid="i-box-d0fcfad5" id="ipb15" class="required" fieldLabel="성">
+              <cl:celldata std:sid="c-data-1bd6e3dd"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-744c2feb" rowindex="0" colindex="4" columnname="EMAIL">
+            <cl:inputbox std:sid="i-box-a1d434fb" id="ipb16" fieldLabel="이메일">
+              <cl:celldata std:sid="c-data-eaf5f4e7"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-eb8ba950" rowindex="0" colindex="5" columnname="PHONE_NUMBER">
+            <cl:maskeditor std:sid="m-editor-cb3e18e3" id="mse5" fieldLabel="휴대폰번호" mask="000-0000-0000">
+              <cl:celldata std:sid="c-data-619d246a"/>
+            </cl:maskeditor>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-95c10fca" rowindex="0" colindex="6" columnname="HIRE_DATE">
+            <cl:dateinput std:sid="d-input-946139fe" id="dti6" fieldLabel="고용일" mask="YYYY-MM-DD">
+              <cl:celldata std:sid="c-data-7ffc8080"/>
+            </cl:dateinput>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-8ff9b4f0" rowindex="0" colindex="7" columnname="DEPARTMENT_ID">
+            <cl:combobox std:sid="c-box-bb9b29c8" id="cmb6" class="required" fieldLabel="부서ID">
+              <cl:celldata std:sid="c-data-276b7491"/>
+              <cl:itemset datasetid="dsDept" label="DEPT_NAME" value="DEPT_NO"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-c7a2e65b" rowindex="0" colindex="8" columnname="SALARY">
+            <cl:numbereditor std:sid="n-editor-e4ca644b" id="nbe6" fieldLabel="연봉" value="0" format="s#,###">
+              <cl:celldata std:sid="c-data-27f912ca"/>
+            </cl:numbereditor>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:verticallayout std:sid="v-layout-21229b04" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-672a1cbb" id="grp10" class="border rounded">
+      <cl:verticaldata std:sid="v-data-e3d30876" width="1240px" height="643px" autosize="height"/>
+      <cl:udc std:sid="ud-control-8af022d9" id="sectiontitle5" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-82784295" width="1644px" height="29px" autosize="height"/>
+        <cl:property name="title" value="동작에 대한 음성 피드백 제공" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-a9ae4a7a" value="" displayexp="&quot;사용자가 특정 동작을 했을 때, 스크린리더는 어떠한 동작이 수행되었는지 음성 피드백을 제공합니다.\n&quot;&#xD;&#xA;+&quot;공통모듈에서는 다음과 같은 음성 정보를 제공합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+sstr(&quot;1) 다이얼로그 오픈\n&quot;, [&quot;fw-bold&quot;])&#xD;&#xA;+&quot;다이얼로그를 오픈 할 때, 다이얼로그 화면명에 대한 정보를 스크린리더가 제공합니다.\n&quot;&#xD;&#xA;+&quot;단, 메시지 다이얼로그는 제외해야되며, 다음 위치에서 메시지 다이얼로그에 대한 화면 ID를 작성하십시오.&quot;">
+        <cl:verticaldata std:sid="v-data-767576a3" width="1198px" height="59px" autosize="height"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-33b0b95f" id="udcexamace6" type="udc.exam.udcExamAce">
+        <cl:verticaldata std:sid="v-data-1624036f" width="1178px" height="180px" autosize="height"/>
+        <cl:property name="title" value="관련 속성" type="string"/>
+        <cl:property name="value" value="/**&#xD;&#xA; * [다이얼로그] 메시지용 다이얼로그 화면ID. (alertDlg, confirmDlg)&#xD;&#xA; * 다이얼로그 화면이 오픈 될 경우 스크린리더는 &quot;@ 다이얼로그 페이지 열림&quot; 이라는 음성피드백을 제공합니다.&#xD;&#xA; * 이 때 메시지 다이얼로그는 제외합니다.&#xD;&#xA; */&#xD;&#xA;AccessibilityProperties.prototype.MSG_DIALOG_APP_ID = [&quot;app/com/0.com/comPMsgDialog&quot;];" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-65158b40" value="" displayexp="sstr(&quot;\n2) MDI폴더\n&quot;, [&quot;fw-bold&quot;])&#xD;&#xA;+&quot;MDI폴더는 특정 화면을 탭 형태로 띄우는 컨트롤으로, 화면 열림/전환/닫힘 에 대한 정보를 제공해야 합니다.\n&quot;&#xD;&#xA;+&quot;메인화면에서 메뉴를 선택한 뒤, 스크린리더를 통해 음성을 확인하십시오.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+sstr(&quot;3) 내비게이션바/사이드내비게이션\n&quot;, [&quot;fw-bold&quot;])&#xD;&#xA;+&quot;실제 동작하는 아이템에 대해서만 role=link 을 지원합니다.\n&quot;&#xD;&#xA;+&quot;[role=link] 은 스크린리더가 메뉴로 동작하는 요소로 인식하여 '링크' 로 읽기 때문에, 실제로 동작하지 않는 메뉴에 대해서는 [role=menuitem]으로 적용합니다.\n&quot;&#xD;&#xA;+&quot;공통모듈에서는 최하위 depth 에 해당하는 아이템만 role=link 를 적용합니다.\n&quot;&#xD;&#xA;+&quot;메인화면(업무/CMS) 에서 메뉴 아이템을 포커스한 뒤, 스크린리더를 통해 음성을 확인하십시오.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+sstr(&quot;4) 그리드\n&quot;, [&quot;fw-bold&quot;])&#xD;&#xA;+&quot;그리드 focus/blur/Mode전환에 대한 정보를 제공합니다.\n&quot;&#xD;&#xA;+&quot;다음 그리드에서 스크린리더를 통해 음성을 확인하십시오.&quot;">
+        <cl:verticaldata std:sid="v-data-0a1954ac" width="1178px" height="59px" autosize="height"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-a76bc5c9" id="udccomformtitle6" type="udc.com.udcComFormTitle">
+        <cl:verticaldata std:sid="v-data-9dc6bf39" width="1178px" height="24px" autosize="height"/>
+        <cl:property name="title" value="(예시)" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-f203e67f" id="grp13" class="cl-form-group">
+        <cl:verticaldata std:sid="v-data-18913fb7" width="400px" height="200px" autosize="height"/>
+        <cl:output std:sid="output-de028803" value="다이얼로그 오픈">
+          <cl:formdata std:sid="f-data-4a7086f6" row="0" col="0"/>
+        </cl:output>
+        <cl:button std:sid="button-4a3e31b4" id="btnDialog" value="다이얼로그 오픈">
+          <cl:listener std:sid="listener-34949f96" name="click" handler="onBtnDialogClick"/>
+          <cl:formdata std:sid="f-data-0db94e60" halign="LEFT" valign="CENTER" width="150" height="30" row="0" col="1"/>
+        </cl:button>
+        <cl:output std:sid="output-574f839e" value="그리드">
+          <cl:formdata std:sid="f-data-52f326a0" row="1" col="0"/>
+        </cl:output>
+        <cl:grid std:sid="grid-56c7f850" id="grdMst4" style="background-color:white; background-image:none;" fieldLabel="음성피드백 그리드" readonly="false" datasetid="dsList" autofit="4" clickmode="edit" resizablecolumns="none" columnMovable="false">
+          <cl:formdata std:sid="f-data-4ae8d568" row="1" col="1"/>
+          <cl:rowstyle>
+            <cl:expbind property="background-color" category="STYLER" expression="(getIndex() / 2  )== 0 ? red : blue"/>
+          </cl:rowstyle>
+          <cl:gridcolumn std:sid="g-column-bab42b8e" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-fa3a61cb" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-4d4d6e0e" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-437957d6" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-c882dc86" width="149px"/>
+          <cl:gridcolumn std:sid="g-column-2b09d54c" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-c5455039" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-aa11d4b8" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-588ae594" width="120px"/>
+          <cl:gridheader std:sid="gh-band-19ae35fd">
+            <cl:gridrow std:sid="g-row-be1f84bd" height="36px"/>
+            <cl:gridcell std:sid="gh-cell-7ef4ed22" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+            <cl:gridcell std:sid="gh-cell-39fe4cad" rowindex="0" colindex="1" sortable="false" filterable="false"/>
+            <cl:gridcell std:sid="gh-cell-a679eecc" rowindex="0" colindex="2" class="required" targetcolumnname="LAST_NAME" sortable="false" filterable="false" text="이름"/>
+            <cl:gridcell std:sid="gh-cell-9b0995c3" rowindex="0" colindex="3" class="required" targetcolumnname="FIRST_NAME" sortable="false" filterable="false" text="성"/>
+            <cl:gridcell std:sid="gh-cell-82bd5151" rowindex="0" colindex="4" targetcolumnname="EMAIL" sortable="false" filterable="false" text="이메일"/>
+            <cl:gridcell std:sid="gh-cell-80d9cefd" rowindex="0" colindex="5" targetcolumnname="PHONE_NUMBER" sortable="false" filterable="false" text="휴대폰번호"/>
+            <cl:gridcell std:sid="gh-cell-4e2d2a42" rowindex="0" colindex="6" targetcolumnname="HIRE_DATE" sortable="false" filterable="false" text="고용일"/>
+            <cl:gridcell std:sid="gh-cell-bad65133" rowindex="0" colindex="7" class="required" targetcolumnname="DEPARTMENT_ID" sortable="false" filterable="false" text="부서ID"/>
+            <cl:gridcell std:sid="gh-cell-82fd43de" rowindex="0" colindex="8" targetcolumnname="SALARY" sortable="false" filterable="false" text="연봉"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-81a0760b">
+            <cl:gridrow std:sid="g-row-9602aad3" height="37px"/>
+            <cl:gridcell std:sid="gd-cell-49415c7b" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-5b769c30" rowindex="0" colindex="1" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-8358db1a" rowindex="0" colindex="2" columnname="LAST_NAME">
+              <cl:inputbox std:sid="i-box-37415477" id="ipb11" class="required" fieldLabel="이름">
+                <cl:celldata std:sid="c-data-b9f1c08f"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-2babfc32" rowindex="0" colindex="3" columnname="FIRST_NAME">
+              <cl:inputbox std:sid="i-box-9e90bcd2" id="ipb12" class="required" fieldLabel="성">
+                <cl:celldata std:sid="c-data-77643b79"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-d24ab230" rowindex="0" colindex="4" columnname="EMAIL">
+              <cl:inputbox std:sid="i-box-af632d45" id="ipb13" fieldLabel="이메일">
+                <cl:celldata std:sid="c-data-d551cb1f"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-f8b44c8e" rowindex="0" colindex="5" columnname="PHONE_NUMBER">
+              <cl:maskeditor std:sid="m-editor-d24a1a6f" id="mse4" fieldLabel="휴대폰번호" mask="000-0000-0000">
+                <cl:celldata std:sid="c-data-e5bbd878"/>
+              </cl:maskeditor>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-893ccd59" rowindex="0" colindex="6" columnname="HIRE_DATE">
+              <cl:dateinput std:sid="d-input-c94be228" id="dti5" fieldLabel="고용일" mask="YYYY-MM-DD">
+                <cl:celldata std:sid="c-data-92a8a374"/>
+              </cl:dateinput>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-6cfd0df6" rowindex="0" colindex="7" columnname="DEPARTMENT_ID">
+              <cl:combobox std:sid="c-box-b0ae86a5" id="cmb5" class="required" fieldLabel="부서ID">
+                <cl:celldata std:sid="c-data-6d2ddb0c"/>
+                <cl:itemset datasetid="dsDept" label="DEPT_NAME" value="DEPT_NO"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-b7674d7b" rowindex="0" colindex="8" columnname="SALARY">
+              <cl:numbereditor std:sid="n-editor-146f4fbf" id="nbe5" fieldLabel="연봉" value="0" format="s#,###">
+                <cl:celldata std:sid="c-data-cc23fc9a"/>
+              </cl:numbereditor>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-4e63ea3a" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION" minlength="100"/>
+          <cl:columns length="140" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-d615cd97" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-38bad7b6" id="grp11" class="border rounded">
+      <cl:verticaldata std:sid="v-data-48b509f1" width="1240px" height="737px" autosize="height"/>
+      <cl:udc std:sid="ud-control-cde7d283" id="sectiontitle6" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-22fae9d9" width="1644px" height="29px" autosize="height"/>
+        <cl:property name="title" value="Space 키 동작 지원" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-7020608a" displayexp="&quot;공통모듈에서 [내비게이션바, 사이드내비게이션, 그리드 셀]에 대해서 Space 키가 Enter키와 동일하게 동작하도록 지원합니다.\n&quot;&#xD;&#xA;+&quot;내비게이션바와 사이드내비게이션은 &quot;+ sstr(&quot;item-click 이벤트&quot;, [&quot;text-primary&quot;, &quot;text-underline&quot;]) +&quot;가, 그리드 셀에서는 &quot;+ sstr(&quot;cell-click 이벤트&quot;, [&quot;text-primary&quot;, &quot;text-underline&quot;]) +&quot;가 발생합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+&quot;아래 컨트롤에서 Enter키와 Space 키를 눌러 동일한 이벤트가 발생하는지 콘솔창을 통해 확인할 수 있습니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+&quot;※ 그리드 편집모드에서 Space 키에 대한 기본동작을 소유하고 있는 컨트롤은 cell-click 이벤트가 발생하지 않습니다.\n&quot;&#xD;&#xA;+&quot;(인풋박스, 넘버에디터, 데이트인풋, 텍스트에리어, 마스크에디터, 서치인풋, 콤보박스, 버튼, 라디오버튼, 체크박스, 체크박스그룹)&quot;">
+        <cl:verticaldata std:sid="v-data-32ddecfc" width="1198px" height="59px" autosize="height"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-46403ee6" id="udccomformtitle7" type="udc.com.udcComFormTitle">
+        <cl:verticaldata std:sid="v-data-ed6dad41" width="1178px" height="24px" autosize="height"/>
+        <cl:property name="title" value="(예시)" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-7204dfeb" id="grp15" class="cl-form-group">
+        <cl:verticaldata std:sid="v-data-e9366fb2" width="400px" height="553px" autosize="height"/>
+        <cl:output std:sid="output-f3626a56" value="내비게이션바">
+          <cl:formdata std:sid="f-data-e7f37d56" row="0" col="0"/>
+        </cl:output>
+        <cl:navigationbar std:sid="n-bar-05c7b727" menutype="accessiblemegamenu" expandtrigger="click" tabtraversal="true" barscrollbuttonposition="none">
+          <cl:listener std:sid="listener-c491438a" name="item-click" handler="onNavigationBarItemClick"/>
+          <cl:formdata std:sid="f-data-37d8ac3d" row="0" col="1"/>
+          <cl:menuitemset datasetid="dsMenu" label="label" value="value" parent="parent"/>
+        </cl:navigationbar>
+        <cl:output std:sid="output-6c59d3c3" value="사이드내비게이션">
+          <cl:formdata std:sid="f-data-1a5814bc" row="1" col="0"/>
+        </cl:output>
+        <cl:sidenavigation std:sid="s-navigation-fd9edcfd">
+          <cl:listener std:sid="listener-33bb3909" name="item-click" handler="onSideNavigationItemClick"/>
+          <cl:formdata std:sid="f-data-8c2eacca" row="1" col="1"/>
+          <cl:treeitemset datasetid="dsMenu" label="label" value="value" parent="parent"/>
+        </cl:sidenavigation>
+        <cl:output std:sid="output-273e6522" value="그리드">
+          <cl:formdata std:sid="f-data-b373ea53" row="2" col="0"/>
+        </cl:output>
+        <cl:grid std:sid="grid-27ba2202" id="grdMst3" style="background-color:white; background-image:none;" fieldLabel="이벤트 그리드" readonly="false" datasetid="dsList" autofit="4" clickmode="edit" resizablecolumns="none" columnMovable="false">
+          <cl:listener std:sid="listener-ba767510" name="cell-click" handler="onGrdMst3CellClick"/>
+          <cl:formdata std:sid="f-data-f528cf79" row="2" col="1"/>
+          <cl:rowstyle>
+            <cl:expbind property="background-color" category="STYLER" expression="(getIndex() / 2  )== 0 ? red : blue"/>
+          </cl:rowstyle>
+          <cl:gridcolumn std:sid="g-column-10fb11dc" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-aa7f7c82" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-80ed5c0f" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-8ece7324" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-6544d4ce" width="149px"/>
+          <cl:gridcolumn std:sid="g-column-96714a24" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-0c64f39b" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-17b731b5" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-7f01c03b" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-bc79c558" width="120px"/>
+          <cl:gridheader std:sid="gh-band-3d8f1f62">
+            <cl:gridrow std:sid="g-row-689e914d" height="36px"/>
+            <cl:gridcell std:sid="gh-cell-7768e181" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+            <cl:gridcell std:sid="gh-cell-13980fe8" rowindex="0" colindex="1" sortable="false" filterable="false"/>
+            <cl:gridcell std:sid="gh-cell-cdb4ad80" rowindex="0" colindex="2" class="required" targetcolumnname="LAST_NAME" sortable="false" filterable="false" text="이름"/>
+            <cl:gridcell std:sid="gh-cell-115fe5e9" rowindex="0" colindex="3" class="required" targetcolumnname="FIRST_NAME" sortable="false" filterable="false" text="성"/>
+            <cl:gridcell std:sid="gh-cell-000f618a" rowindex="0" colindex="4" targetcolumnname="EMAIL" sortable="false" filterable="false" text="이메일"/>
+            <cl:gridcell std:sid="gh-cell-ea2258de" rowindex="0" colindex="5" targetcolumnname="PHONE_NUMBER" sortable="false" filterable="false" text="휴대폰번호"/>
+            <cl:gridcell std:sid="gh-cell-c125f953" rowindex="0" colindex="6" targetcolumnname="HIRE_DATE" sortable="false" filterable="false" text="고용일"/>
+            <cl:gridcell std:sid="gh-cell-477be9af" rowindex="0" colindex="7" class="required" targetcolumnname="DEPARTMENT_ID" sortable="false" filterable="false" text="부서ID"/>
+            <cl:gridcell std:sid="gh-cell-7c9c6f12" rowindex="0" colindex="8" targetcolumnname="SALARY" sortable="false" filterable="false" text="연봉"/>
+            <cl:gridcell std:sid="gh-cell-9f7e61eb" rowindex="0" colindex="9" text="진척율"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-b550716e">
+            <cl:gridrow std:sid="g-row-0f75bcf0" height="37px"/>
+            <cl:gridcell std:sid="gd-cell-08a22e00" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-7296c071" rowindex="0" colindex="1" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-be205575" rowindex="0" colindex="2" columnname="LAST_NAME">
+              <cl:inputbox std:sid="i-box-6203b0a5" id="ipb5" class="required" fieldLabel="이름">
+                <cl:celldata std:sid="c-data-b79f2547" topSpacing="4" bottomSpacing="4" leftSpacing="4" rightSpacing="4"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-843f7928" rowindex="0" colindex="3" columnname="FIRST_NAME">
+              <cl:inputbox std:sid="i-box-ae8a8ae1" id="ipb9" class="required" fieldLabel="성">
+                <cl:celldata std:sid="c-data-6361ef2d" topSpacing="4" bottomSpacing="4" leftSpacing="4" rightSpacing="4"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-7a7e8516" rowindex="0" colindex="4" columnname="EMAIL">
+              <cl:inputbox std:sid="i-box-1a924b35" id="ipb10" fieldLabel="이메일">
+                <cl:celldata std:sid="c-data-a2f1ca73" topSpacing="4" bottomSpacing="4" leftSpacing="4" rightSpacing="4"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-0a2fe91e" rowindex="0" colindex="5" columnname="PHONE_NUMBER">
+              <cl:maskeditor std:sid="m-editor-d76f268f" id="mse3" fieldLabel="휴대폰번호" mask="000-0000-0000">
+                <cl:celldata std:sid="c-data-8215d9a8" topSpacing="4" bottomSpacing="4" leftSpacing="4" rightSpacing="4"/>
+              </cl:maskeditor>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-dfddf0c6" rowindex="0" colindex="6" columnname="HIRE_DATE">
+              <cl:dateinput std:sid="d-input-95ec9ba6" id="dti4" fieldLabel="고용일" mask="YYYY-MM-DD">
+                <cl:celldata std:sid="c-data-bd5a0905" topSpacing="4" bottomSpacing="4" leftSpacing="4" rightSpacing="4"/>
+              </cl:dateinput>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-e6b73075" rowindex="0" colindex="7" columnname="DEPARTMENT_ID">
+              <cl:combobox std:sid="c-box-8b867b8f" id="cmb4" class="required" fieldLabel="부서ID">
+                <cl:celldata std:sid="c-data-6e28fe76" topSpacing="4" bottomSpacing="4" leftSpacing="4" rightSpacing="4"/>
+                <cl:itemset datasetid="dsDept" label="DEPT_NAME" value="DEPT_NO"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-d0145ae2" rowindex="0" colindex="8" columnname="SALARY">
+              <cl:numbereditor std:sid="n-editor-a344658c" id="nbe4" fieldLabel="연봉" value="0" format="s#,###">
+                <cl:celldata std:sid="c-data-88311725" topSpacing="4" bottomSpacing="4" leftSpacing="4" rightSpacing="4"/>
+              </cl:numbereditor>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-bc459ba9" rowindex="0" colindex="9" columnname="PROGRESS">
+              <cl:progress std:sid="progress-8d21f92d" id="pgr1" fieldLabel="진척율">
+                <cl:celldata std:sid="c-data-2cdfd2de"/>
+              </cl:progress>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-4c602e34" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="50" unit="PIXEL"/>
+          <cl:rows length="300" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION" minlength="100"/>
+          <cl:columns length="140" unit="PIXEL" shadetype="BY_CLASS"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-13ed1f25" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-aa74d85c" id="grp18" class="border rounded">
+      <cl:verticaldata std:sid="v-data-3a319286" width="1220px" height="330px" autosize="height"/>
+      <cl:udc std:sid="ud-control-d00d919b" id="sectiontitle8" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-af407986" width="1644px" height="29px" autosize="height"/>
+        <cl:property name="title" value="버튼타입 아웃풋" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-76236b59" value="아웃풋의 tabIndex=0 이 적용되어 있는 경우, 아웃풋은 버튼과 동일한 형태로 기능을 제공합니다.&#xD;&#xA;role=button 이 적용되어 스크린 리더는 버튼으로 인식하며, Enter 키를 눌러 click 이벤트를 발생시킵니다.">
+        <cl:verticaldata std:sid="v-data-a5d70e31" width="1198px" height="59px" autosize="height"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-5badc780" id="udcexamace7" type="udc.exam.udcExamAce">
+        <cl:verticaldata std:sid="v-data-9dbb1ad8" width="1178px" height="180px" autosize="height"/>
+        <cl:property name="title" value="관련 속성" type="string"/>
+        <cl:property name="value" value="/**&#xD;&#xA; * [아웃풋] 버튼 역할 아웃풋(tabIndex>=0)&#xD;&#xA; * ● 적용 기술 : 포커스 가능한 아웃풋은 버튼으로 인식되도록 role=button 적용 및 Enter 시 클릭 이벤트 전파&#xD;&#xA; * (default : false)&#xD;&#xA; */&#xD;&#xA;AccessibilityProperties.prototype.SET_FOCUSABLE_OUPTUT = false;" type="string"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-319542cb" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-a4052ac5" id="grp5" class="border rounded">
+      <cl:verticaldata std:sid="v-data-c86ad6c0" width="1220px" height="500px" autosize="height"/>
+      <cl:udc std:sid="ud-control-94a3a78c" id="sectiontitle7" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-cca84444" width="1644px" height="29px" autosize="height"/>
+        <cl:property name="title" value="HTML 파일 생성" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-39ae16ce" displayexp="&quot;웹 접근성 자가진단 또는 웹 표준 검사를 진행 할 경우, URL 혹은 HTML 파일이 필요합니다.\n&quot;&#xD;&#xA;+&quot;SPA(Single Page Application) 으로 구현된 화면의 경우 URL 로 확인할 수 없으므로 &quot;+sstr(&quot;HTML 파일을 통해 검사를 진행&quot;, [&quot;text-underline&quot;])+&quot;합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+&quot;다음 함수(makeHtmlFile) 를 호출하여 현재 화면을 HTML 파일로 다운로드 받을 수 있습니다.\n&quot;&#xD;&#xA;+&quot;HTML 파일은 브라우저에 그려지는 전체화면을 대상으로 합니다.\n&quot;&#xD;&#xA;+&quot;검사를 진행하고자 하는 모든 화면을 HTML 파일로 생성하고, 해당 파일을 검사를 진행하시기 바랍니다.&quot;">
+        <cl:verticaldata std:sid="v-data-a1f944c7" width="1198px" height="59px" autosize="height"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-cf161f89" id="udcexamace1" type="udc.exam.udcExamAce">
+        <cl:verticaldata std:sid="v-data-e48fd937" width="300px" height="300px" autosize="height"/>
+        <cl:property name="value" value="function onBtnClick(e){&#xD;&#xA;&#x9;var btn = e.control;&#xD;&#xA;&#xD;&#xA;&#x9;makeHtmlFile(&quot;파일명&quot;); // 파일명.html 로 다운로드 실행&#xD;&#xA;}" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-68c95c67" id="grp16" class="cl-form-group">
+        <cl:verticaldata std:sid="v-data-6244725d" width="1178px" height="40px" autosize="height"/>
+        <cl:output std:sid="output-18deb70c" value="HTML 생성">
+          <cl:formdata std:sid="f-data-f3d6564d" row="0" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-a15a369a" id="grp17">
+          <cl:formdata std:sid="f-data-3977c6c1" row="0" col="1" rowspan="1" colspan="1"/>
+          <cl:inputbox std:sid="i-box-285c71e5" id="ipbFileName" value="EXB_HTML_FILE" placeholder="파일명을 입력하세요">
+            <cl:flowlayoutdata std:sid="f-data-00a3f85c" width="200px" height="30px"/>
+          </cl:inputbox>
+          <cl:button std:sid="button-15dcda5b" id="btn1" class="btn-primary" value="HTML생성">
+            <cl:listener std:sid="listener-cca39274" name="click" handler="onBtn1Click"/>
+            <cl:flowlayoutdata std:sid="f-data-0accc35b" width="100px" height="28px"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-465bc0a1" scrollable="false"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-cb22e8cd" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="140" unit="PIXEL" shadetype="BY_CLASS"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-54515f3e" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-4d8579cf" spacing="30" leftmargin="30" rightmargin="30" topmargin="0" bottommargin="0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

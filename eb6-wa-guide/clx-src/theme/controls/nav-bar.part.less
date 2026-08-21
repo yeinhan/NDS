@@ -1,0 +1,246 @@
+@import "../custom-settings.part.less";
+
+/* 내비게이션 바 */
+.cl-navigationbar {
+	font: @font-base;
+	background-color: @list-background-color;
+	border: @list-border-base;
+	border-radius: @list-border-radius;
+	color: @list-text-color;
+	z-index : 2 !important;
+	
+	.cl-navigationbar-prev {
+		background-image: url("../images/controls/menu/ic_prev.png");
+
+		&.cl-position-both {
+			border-right: @list-border-base;
+		}
+
+		&.cl-position-left {
+			border-right: @list-border-base;
+		}
+
+		&.cl-position-right {
+			border-left: @list-border-base;
+		}
+
+		&.cl-disabled {
+			background-image: url("../images/controls/menu/ic_prev_off.png");
+		}
+	}
+
+	.cl-navigationbar-next {
+		background-image: url("../images/controls/menu/ic_next.png");
+
+		&.cl-position-both {
+			border-left: @list-border-base;
+		}
+
+		&.cl-position-left {
+			border-right: @list-border-base;
+		}
+
+		&.cl-position-right {
+			border-left: @list-border-base;
+		}
+
+		&.cl-disabled {
+			background-image: url("../images/controls/menu/ic_next_off.png");
+		}
+	}
+
+	/* 상단 바 */
+	.cl-navigationbar-bar {
+
+		/* 내비게이션 바 아이템 */
+		.cl-navigationbar-item {
+			padding: @list-item-padding-y (@list-item-padding-x * 2);
+			
+			/* 내비게이션 바 아이템 아이콘 */
+			.cl-navigationbar-icon {}
+
+			/* 내비게이션 바 아이템 텍스트 */
+			.cl-text {}
+
+			/* 내비게이션 바 아이템 단축키*/
+			.cl-navigationbar-accesskey {}
+
+			/* 내비게이션 바 아이템 드랍다운 아이콘 */
+			.cl-navigationbar-arrow {
+				background-image: url("../images/controls/combobox/ic_arrow_down.png");
+				background-size: auto;
+				margin-left: 10px;
+				width: 10px;
+			}
+
+			/* 내비게이션 바 아이템 - 호버 */
+			&.cl-hover {
+				background-color: @list-item-hover-background-color;
+				color: @list-item-hover-text-color;
+			}
+
+			/* 내비게이션 바 아이템 - 활성화 */
+			&:not(.cl-disabled) {
+
+				/* 내비게이션 바 아이템 - 호버 */
+				&:not(.cl-selected):hover,
+				&.cl-hover {
+					background-color: @list-item-hover-background-color;
+					color: @list-item-hover-text-color;
+				}
+			}
+
+			/* 내비게이션 바 아이템 - disabled */
+			&.cl-disabled {
+				color: @list-disabled-text-color;
+
+				/* 내비게이션 바 아이템 - 선택됨, disabled */
+				&.cl-selected {
+					background-color:  @list-item-disabled-selected-background-color;
+					color: @list-item-disabled-selected-text-color;
+				}
+			}
+
+			/* 내비게이션 바 아이템 - 선택됨 */
+			&.cl-selected {
+				background-color: @list-item-hover-background-color;
+				color: @list-item-hover-text-color;
+				
+				.cl-navigationbar-arrow {
+					background-image: url("../images/controls/combobox/ic_arrow_down.png");
+				}
+			}
+		}
+	}
+
+	/* 내비게이션 바 - 포커스 */
+	&.cl-focus {
+		border-color: @list-focus-border-color;
+	}
+	
+	&.cl-disabled {
+		background-color: @list-disabled-background-color;
+		border-color: @list-disabled-border-color;
+		color: @list-disabled-text-color;
+	}
+}
+
+/* 내비게이션 바 드랍다운 메뉴 */
+.cl-navigationbar-list {
+	font: @font-base;
+	background-color: @list-background-color;
+	border: @list-border-base;
+	border-radius: @list-border-radius;
+
+	/* megamenu 타입의 카테고리 */
+	.cl-navigationbar-category {
+
+		/* 카테고리의 아이템 영역 */
+		.sub-items {
+
+			/* 카테고리의 목록 아이템*/
+			.cl-navigationbar-listitem {}
+		}
+
+	}
+
+	/* submenu의 up스크롤 버튼*/
+	.cl-arrow-up {
+		background-image: url("../images/controls/numbereditor/ic_spin_up.png");
+
+		&:hover {
+			background-image: url("../images/controls/numbereditor/ic_spin_up_h.png");
+		}
+
+		&.cl-disabled {
+			background-color: @list-disabled-background-color;
+		}
+	}
+
+	/* submenu의 down스크롤 버튼*/
+	.cl-arrow-down {
+		background-image: url("../images/controls/numbereditor/ic_spin_down.png");
+
+		&:hover {
+			background-image: url("../images/controls/numbereditor/ic_spin_down_h.png");
+		}
+
+		&.cl-disabled {
+			background-color: @list-disabled-background-color;
+		}
+	}
+
+	/* 내비게이션 바 드랍다운 메뉴 아이템 */
+	.cl-navigationbar-listitem {
+		color: @list-text-color;
+		min-height: @list-item-height;
+
+		.cl-navigationbar-icon-wrapper {
+
+			/* 내비게이션 바 드랍다운 메뉴 아이템 아이콘 */
+			.cl-navigationbar-icon {}
+		}
+
+		.cl-navigationbar-arrow-wrapper {
+			.cl-navigationbar-arrow {}
+		}
+
+		/* 내비게이션 바 드랍다운 메뉴 아이템 텍스트 */
+		.cl-text {}
+
+		.cl-navigationbar-accesskey-wrapper {
+
+			/* 내비게이션 바 드랍다운 메뉴 아이템 단축키 */
+			.cl-navigationbar-accesskey {}
+		}
+
+		/* 내비게이션 드랍다운 메뉴 아이템 - 활성화 */
+		&:not(.cl-disabled) {
+
+			/* 내비게이션 드랍다운 메뉴 아이템 - 호버 */
+			&:not(.cl-selected):hover,
+			&.cl-hover {
+				background-color: @list-item-hover-background-color;
+				color: @list-item-hover-text-color;
+			}
+		}
+
+		/* 내비게이션 바 드랍다운 메뉴 아이템 - 호버 */
+		&.cl-hover {
+			background-color: @list-item-hover-background-color;
+			color: @list-item-hover-text-color;
+		}
+
+		/* 내비게이션 바 드랍다운 메뉴 아이템 - disabled */
+		&.cl-disabled {
+			color: @list-disabled-text-color;
+
+			/* 내비게이션 바 드랍다운 메뉴 아이템 - disabled, 선택됨 */
+			&.cl-selected {
+				background-color:  @list-item-disabled-selected-background-color;
+				color: @list-item-disabled-selected-text-color;
+			}
+		}
+
+		/* 내비게이션 바 드랍다운 메뉴 아이템 - 선택됨 */
+		&.cl-selected {
+			background-color: @list-item-selected-background-color;
+			color: @list-item-selected-text-color;
+		}
+	}
+}
+
+/* fullmenu 타입 서브메뉴 */
+.cl-navigationbar-fullmenu {
+
+	/* 서브메뉴에서 나누어진 그룹 영역 */
+	.cl-navigationbar-group {
+
+		.cl-navigationbar-category {
+
+			.sub-items {
+				.cl-navigationbar-listitem {}
+			}
+		}
+	}
+}

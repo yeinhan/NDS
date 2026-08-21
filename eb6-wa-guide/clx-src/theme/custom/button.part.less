@@ -1,0 +1,699 @@
+@import "../custom-settings.part.less";
+
+/************************************************
+ * 버튼 유틸
+ ************************************************/
+ 
+.cl-button.btn-p-0 {
+	padding: 0px;
+}
+
+.cl-button.btn-square {
+	border-radius: @border-radius-0 !important;
+}
+
+.cl-button.btn-round {
+	border-radius: @border-radius-circle !important;
+}
+
+/************************************************
+ * 투명 버튼
+ ************************************************/
+ 
+.cl-button.btn-transparent {
+	background-color: @transparent;
+	border: none;
+	border-radius: @component-border-radius-0;
+	padding: 0px !important;
+	
+	.cl-icon {
+		margin: 0px !important;
+	}
+	
+	&:not(.cl-disabled):hover {
+ 		background-color: @transparent;
+ 	}
+ 	
+ 	&:focus,
+ 	&.cl-focus {
+ 		background-color: @transparent;
+ 	}
+ 	
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+ 		background-color: @transparent;
+ 	}
+ 	
+ 	&.btn-link:hover{
+ 		text-decoration: underline;
+ 	}
+}
+
+.cl-button.btn-txt {
+	background-color: @transparent;
+	border: none;
+	border-radius: @component-border-radius-0;
+	padding: 0px !important;
+	text-align: left;
+	
+	&:not(.cl-disabled):hover,
+ 	&:focus,
+ 	&.cl-focus,
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+ 		background-color: @transparent;
+ 	}
+}
+
+.cl-button.btn-expanded {
+	background-color: @transparent;
+	border: none;
+	background-image : url("../images/controls/accordion/ic_btn_down_off.png");
+	background-repeat : no-repeat;
+	background-position : center;
+	background-size : auto;
+	
+	&:not(.cl-disabled):hover,
+ 	&:focus,
+ 	&.cl-focus,
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+ 		background-color: @transparent;
+ 		background-image : url("../images/controls/accordion/ic_btn_down_h.png");
+ 	}
+ 	
+ 	&.expand {
+ 		background-image : url("../images/controls/accordion/ic_btn_up_off.png");
+ 		
+ 		&:not(.cl-disabled):hover,
+	 	&:focus,
+	 	&.cl-focus,
+	 	&:not(.cl-disabled).cl-activated,
+	 	&:not(.cl-disabled):active {
+	 		background-color: @transparent;
+	 		background-image : url("../images/controls/accordion/ic_btn_up_on.png");
+	 	}
+ 	}
+}
+
+/************************************************
+ * 기본 버튼
+ ************************************************/
+ 
+.cl-button.btn-primary {
+	background-color: @primary;
+	border-color: @primary;
+	color: @white;
+	
+	&:not(.cl-disabled):hover,
+	&:focus, &.cl-focus {
+		background-color: #0c57c1;
+		border-color: #0c57c1;
+		color: @white;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color: #2372e3;
+		border-color: #2372e3;
+		color: @white;
+	}
+	
+	&.cl-disabled {
+		background-color: @btn-disabled-background-color;
+		border-color: @btn-disabled-border-color;
+		color: @btn-disabled-text-color;
+	}
+}
+ 
+.cl-button.btn-secondary {
+	background-color: @secondary;
+	border-color: @secondary;
+	color: @white;
+	
+	&:not(.cl-disabled):hover,
+	&:focus, &.cl-focus {
+		background-color: #092a59;
+		border-color: #092a59;
+		color: @white;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color: #0f428c;
+		border-color: #0f428c;
+		color: @white;
+	}
+	
+	&.cl-disabled {
+		background-color: @btn-disabled-background-color;
+		border-color: @btn-disabled-border-color;
+		color: @btn-disabled-text-color;
+	}
+}
+
+.cl-button.btn-primary-dim {
+	background-color: #edf4ff;
+	border-color: @primary;
+	color: @primary;
+	
+	&:not(.cl-disabled):hover,
+	&:focus, &.cl-focus {
+		background-color: #e7f0ff;
+		border-color: @primary;
+		color: @primary;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color: #ebf2ff;
+		border-color: @primary;
+		color: @primary;
+	}
+	
+	&.cl-disabled {
+		background-color: @btn-disabled-background-color;
+		border-color: @btn-disabled-border-color;
+		color: @btn-disabled-text-color;
+	}
+}
+
+/************************************************
+ * 라인 버튼
+ ************************************************/
+ 
+.cl-button.btn-outline-primary {
+	background-color: @white;
+	border-color: @primary;
+	color: @primary;
+	
+	&:not(.cl-disabled):hover,
+	&:focus, &.cl-focus {
+		background-color: @white;
+		border-color: #0c57c1;
+		color: #0c57c1;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color: @white;
+		border-color: #2372e3;
+		color: #2372e3;
+	}
+	
+	&.cl-disabled {
+		background-color: @btn-disabled-background-color;
+		border-color: @btn-disabled-border-color;
+		color: @btn-disabled-text-color;
+	}
+}
+ 
+.cl-button.btn-outline-secondary {
+	background-color: @white;
+	border-color: @secondary;
+	color: @secondary;
+	
+	&:not(.cl-disabled):hover,
+	&:focus, &.cl-focus {
+		background-color: @white;
+		border-color: #092a59;
+		color: #092a59;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color: @white;
+		border-color: #0f428c;
+		color: #0f428c;
+	}
+	
+	&.cl-disabled {
+		background-color: @btn-disabled-background-color;
+		border-color: @btn-disabled-border-color;
+		color: @btn-disabled-text-color;
+	}
+}
+
+
+/************************************************
+ * 아이콘 버튼
+ ************************************************/
+ 
+
+.cl-button {
+	&.cl-icon-align-left,
+	&.cl-icon-align-right {
+		padding: 0px 8px;
+	}
+	
+	&.cl-icon-align-top,
+	&.cl-icon-align-bottom {
+		padding: 8px 12px;
+	}
+	
+	&.cl-icon-align-left {
+		.cl-icon {
+			margin-right: 6px;
+		}
+	}
+	
+	&.cl-icon-align-right {
+		.cl-icon {
+			margin-left: 6px;
+		}
+	}
+	
+	&.cl-icon-align-top {
+		.cl-icon {
+			margin-bottom: 6px;
+		}
+	}
+	
+	&.cl-icon-align-bottom {
+		.cl-icon {
+			margin-top: 6px;
+		}
+	}
+}
+
+.cl-button.btn-i-0 {
+	&.cl-icon-align-left {
+		.cl-icon {
+			margin-right: 0px;
+		}
+	}
+	
+	&.cl-icon-align-right {
+		.cl-icon {
+			margin-left: 0px;
+		}
+	}
+	
+	&.cl-icon-align-top {
+		.cl-icon {
+			margin-bottom: 0px;
+		}
+	}
+	
+	&.cl-icon-align-bottom {
+		.cl-icon {
+			margin-top: 0px;
+		}
+	}
+}
+
+.cl-button.btn-i-auto {
+	.cl-icon {
+		width : 1rem;
+		height : 1rem;
+	}
+}
+
+.cl-button.btn-i-reset {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_reset.png") !important;
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_reset_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-search {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_search.png") !important;
+	}
+	
+	&.btn-primary, &.btn-secondary {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_search_w.png") !important;
+		}
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_search_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-save {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_save.png") !important;
+	}
+	
+	&.btn-primary, &.btn-secondary {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_save_w.png") !important;
+		}
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_save_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-apply {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_apply.png") !important;
+	}
+	
+	&.btn-primary, &.btn-secondary {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_apply_w.png") !important;
+		}
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_apply_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-insert {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_insert.png") !important;
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_insert_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-delete {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_delete.png") !important;
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_delete_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-add {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_add.png") !important;
+	}
+	
+	&.btn-primary, &.btn-secondary {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_add_w.png") !important;
+		}
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_add_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-remove {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_remove.png") !important;
+	}
+	
+	&.btn-primary, &.btn-secondary {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_remove_w.png") !important;
+		}
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_remove_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-refresh {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_refresh.png") !important;
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_refresh_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-copy {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_copy.png") !important;
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_copy_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-print {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_print.png") !important;
+	}
+	
+	&.btn-primary, &.btn-secondary {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_print_w.png") !important;
+		}
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_print_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-docs {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_docs.png") !important;
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_docs_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-upload {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_upload.png") !important;
+	}
+	
+	&.btn-primary, &.btn-secondary {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_upload_w.png") !important;
+		}
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_upload_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-download {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_download.png") !important;
+	}
+	
+	&.btn-primary, &.btn-secondary {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_download_w.png") !important;
+		}
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_download_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-excel {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_excel.png") !important;
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_excel_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-pop {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_pop.png") !important;
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_pop_off.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-setting {
+	.cl-icon {
+		background-image: url("../images/controls/button/ic_btn_setting.png") !important;
+	}
+	
+	&.cl-disabled {
+		.cl-icon {
+			background-image: url("../images/controls/button/ic_btn_setting_off.png") !important;
+		}
+	}
+}
+
+
+/************************************************
+ * 아이콘 버튼 (CMS 전용)
+ ************************************************/
+ 
+  // 아이콘 + 텍스트 형태 버튼
+.cl-button.btn-i {
+	&.cl-icon-align-left {
+		.cl-icon {
+			margin-right: 5px;
+		}
+	}
+	&.cl-icon-align-right {
+		.cl-icon {
+			margin-left: 5px;
+		}
+	}
+	&.cl-icon-align-top {
+		.cl-icon {
+			margin-bottom: 5px;
+		}
+	}
+	&.cl-icon-align-bottom {
+		.cl-icon {
+			margin-top: 5px;
+		}
+	}
+}
+
+.cl-button.btn-i-onepass {
+	.cl-icon {
+		background-image: url("../images/controls/button/cms/ico_btn_digital_onepass_login.png") !important;
+		width: 39px;
+		height: 23px;
+	}
+	
+	&:not(.cl-disabled):hover,
+ 	&:focus,
+ 	&.cl-focus,
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+		.cl-icon {
+			background-image: url("../images/controls/button/cms/ico_btn_digital_onepass_login.png") !important;
+		}
+	}
+}
+
+.cl-button.btn-i-snslist {
+	.cl-icon {
+		background-image:
+			url("../images/controls/button/cms/ico_kakao_sm.png"),
+			url("../images/controls/button/cms/ico_naver_sm.png"),
+			url("../images/controls/button/cms/ico_pass_sm.png"),
+			url("../images/controls/button/cms/ico_toss_sm.png"),
+			url("../images/controls/button/cms/ico_kftc_sm.png"),
+			url("../images/controls/button/cms/ico_payco_sm.png") !important;
+		background-position : 0px, 33px, 66px, 99px, 132px, 165px;
+		width: 193px;
+		height: 28px;
+	}
+	
+	&:not(.cl-disabled):hover,
+ 	&:focus,
+ 	&.cl-focus,
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+		.cl-icon {
+			background-image:
+				url("../images/controls/button/cms/ico_kakao_sm.png"),
+				url("../images/controls/button/cms/ico_naver_sm.png"),
+				url("../images/controls/button/cms/ico_pass_sm.png"),
+				url("../images/controls/button/cms/ico_toss_sm.png"),
+				url("../images/controls/button/cms/ico_kftc_sm_on.png"),
+				url("../images/controls/button/cms/ico_payco_sm.png") !important;
+			}
+	}
+}
+
+.cl-button.btn-i-install {
+	.cl-icon {
+		background-image : url("../images/controls/button/cms/ico_btn_right_arrow.png") !important;
+		width : 17px;
+		height :11px;
+	}
+}
+
+.cl-button.btn-i-kakao {
+	.cl-icon {
+		background-image : url("../images/controls/button/cms/ico_kakao.png") !important;
+		width : 40px;
+		height :40px;
+	}
+}
+
+.cl-button.btn-i-naver {
+	.cl-icon {
+		background-image : url("../images/controls/button/cms/ico_naver.png") !important;
+		width : 40px;
+		height :40px;
+	}
+}
+
+.cl-button.btn-i-pass {
+	.cl-icon {
+		background-image : url("../images/controls/button/cms/ico_pass.png") !important;
+		width : 40px;
+		height :40px;
+	}
+}
+
+.cl-button.btn-i-toss {
+	.cl-icon {
+		background-image : url("../images/controls/button/cms/ico_toss.png") !important;
+		width : 40px;
+		height :40px;
+	}
+}
+
+.cl-button.btn-i-kftc {
+	.cl-icon {
+		background-image : url("../images/controls/button/cms/ico_kftc.png") !important;
+		width : 40px;
+		height :40px;
+	}
+}
+
+.cl-button.btn-i-payco {
+	.cl-icon {
+		background-image : url("../images/controls/button/cms/ico_payco.png") !important;
+		width : 40px;
+		height :40px;
+	}
+}
+
+.cl-button.btn-i-close {
+	.cl-icon {
+		background-image: url("../images/controls/button/cms/ico_btn_close.png") !important;
+		width: 11px;
+		height: 11px;
+	}
+}

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-5c60ec43" version="1.0.4034">
+  <head std:sid="head-53972b7c">
+    <screen std:sid="screen-dc6e96de" id="default" name="default" minwidth="1280px" width="1280px" height="760px" useCustomHeight="true" customHeight="726"/>
+    <screen std:sid="screen-6e0c5190" id="tablet" name="tablet" minwidth="800px" maxwidth="1279px" width="800px" height="760px"/>
+    <screen std:sid="screen-1094620d" id="mobile" name="mobile" maxwidth="799px" width="360px" height="760px"/>
+    <cl:model std:sid="model-1a744bb7">
+      <cl:dataset std:sid="d-set-cb992c76" id="dsEmpList">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="부서" std:sid="d-column-8a24a931" name="employee_name"/>
+          <cl:datacolumn std:sid="d-column-a5ebdfb4" name="department_name"/>
+          <cl:datacolumn std:sid="d-column-bb640c1a" name="job_title"/>
+          <cl:datacolumn std:sid="d-column-f5a29ef2" name="email"/>
+          <cl:datacolumn std:sid="d-column-d09e337e" name="index" datatype="expression" expression="getIndex()"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-b9e861de" id="dsDept">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-e9c755a9" name="department_name"/>
+          <cl:datacolumn std:sid="d-column-eb2961fa" name="parent-department_name"/>
+          <cl:datacolumn std:sid="d-column-31a190f6" name="level"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-267d742b" id="dsPropView">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="필터조건(같은 숫자에 대해서만 필터하여 내용을 보여준다)" std:sid="d-column-5941843b" name="keyNum" datatype="string"/>
+          <cl:datacolumn comment="컨트롤명(영문)" std:sid="d-column-4cd817ad" name="control"/>
+          <cl:datacolumn comment="속성명" std:sid="d-column-a67ff141" name="propNm"/>
+          <cl:datacolumn comment="속성값" std:sid="d-column-309a35a3" name="propVal"/>
+          <cl:datacolumn comment="관련 웹접근성 지침" std:sid="d-column-d6e23689" name="relatedWaInst"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[ipbEname]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[inputbox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[사원명]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[ipbEname]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[inputbox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[showClearButton]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[true]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[ipbEname]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[inputbox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[buttonFocusable]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[true]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[ipbEname]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[inputbox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[buttonFocusable]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[true]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[cmbDname]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[combobox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[부서]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnSearch]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnSave]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[grdMain]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[grid]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[직원목록]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[optEname]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[사원명]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[cmbDname2]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[combobox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[부서명]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[optJobTitle]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[직급]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[optEmail]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[이메일]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-43b0c170" id="subList" action="app/exam/work/sampleData.json">
+        <cl:listener std:sid="listener-7caafd2c" name="submit-done" handler="onSubListSubmitDone"/>
+        <cl:responsedata dataid="dsEmpList"/>
+        <cl:responsedata dataid="dsDept"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="단일 그리드"/>
+  </head>
+  <body std:sid="body-86bb16c7">
+    <cl:listener std:sid="listener-60238376" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-b93de256" id="udcComAppHeader" type="udc.com.udcComAppHeader">
+      <cl:formdata std:sid="f-data-ec87550d" row="0" col="0"/>
+    </cl:udc>
+    <cl:group std:sid="group-b00f5249" id="grpSearch" class="search-box">
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:formdata std:sid="f-data-c20e0285" height="88" row="1" col="0"/>
+      <cl:output std:sid="output-2ed90d2d" class="label" fieldLabel="필수입력" value="사원명">
+        <cl:formdata std:sid="f-data-0c2b3350" row="0" col="0"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-a128552b" id="ipb2" fieldLabel="사원명" buttonfocusable="true">
+        <cl:attribute name="wa-prop-key" value="ipbEname"/>
+        <cl:formdata std:sid="f-data-f79b50a5" row="0" col="1"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-d44a0fb9" class="label" value="부서">
+        <cl:formdata std:sid="f-data-c2fd0664" row="0" col="2"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-08dbdeb0" id="cmb1" fieldLabel="부서">
+        <cl:attribute name="wa-prop-key" value="cmbDname"/>
+        <cl:formdata std:sid="f-data-4e22f2e8" row="0" col="3"/>
+        <cl:itemset datasetid="dsDept" label="department_name" value="department_name"/>
+      </cl:combobox>
+      <cl:button std:sid="button-f920d17c" id="btnSearch" class="btn-secondary btn-i-search" value="조회" icon="/theme/images/controls/button/ic_btn.png">
+        <cl:attribute name="wa-prop-key" value="btnSearch"/>
+        <cl:formdata std:sid="f-data-e750ae16" row="0" col="6"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-55939e8f" scrollable="false" hspace="8px" vspace="4px" top-margin="12px" right-margin="20px" bottom-margin="12px" left-margin="20px">
+        <cl:rows length="30"/>
+        <cl:columns length="61" autoSizing="true" syncminlength="false"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="61" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="78" autoSizing="true" syncminlength="false"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="77" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" minlength="90"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-8e6f64ac" id="grpData" class="data-box">
+      <cl:formdata std:sid="f-data-08a38049" row="2" col="0" rowspan="1" colspan="1"/>
+      <cl:group std:sid="group-847833ff" id="grpContent">
+        <cl:formdata std:sid="f-data-d07c1da6" row="0" col="0"/>
+        <cl:group std:sid="group-9f1dcfd0" id="grp3">
+          <cl:attribute name="mobile-column-count" value="1"/>
+          <cl:formdata std:sid="f-data-d817e901" row="0" col="0"/>
+          <cl:udc std:sid="ud-control-4f791d69" id="udccomgridtitle1" type="udc.com.udcComGridTitle">
+            <cl:attribute name="needs-auto-height" value="true"/>
+            <cl:formdata std:sid="f-data-5a48a3c6" row="0" col="0"/>
+            <cl:property name="title" value="" type="string"/>
+            <cl:property name="ctrl" value="grdMain" type="control"/>
+          </cl:udc>
+          <cl:group std:sid="group-f3d7a659" id="grp4">
+            <cl:formdata std:sid="f-data-6849e521" row="0" col="1"/>
+            <cl:button std:sid="button-5e5bbaf8" id="btn7" class="btn-primary btn-i-save" value="저장" icon="../../theme/images/controls/button/ic_btn.png">
+              <cl:attribute name="wa-prop-key" value="btnSave"/>
+              <cl:flowlayoutdata std:sid="f-data-0bf04ff0" width="74px" height="30px" autosize="width"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-1364edba" scrollable="false" hspacing="6" vspacing="6" halign="right"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-b2eecf16" scrollable="false" hspace="6px" vspace="6px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-043c4fea" id="grp5">
+          <cl:formdata std:sid="f-data-f5692b45" row="1" col="0"/>
+          <cl:grid std:sid="grid-e04f0278" id="grdMain" fieldLabel="직원목록" datasetid="dsEmpList" autofit="2, 3, 4, 5">
+            <cl:listener std:sid="listener-592640c5" name="selection-change" handler="onGrdMainSelectionChange"/>
+            <cl:attribute name="wa-prop-key" value="grdMain"/>
+            <cl:formdata std:sid="f-data-76df66c8" row="0" col="0"/>
+            <cl:gridcolumn std:sid="g-column-3ed60e9c" width="25px"/>
+            <cl:gridcolumn std:sid="g-column-25302a09" width="50px"/>
+            <cl:gridcolumn std:sid="g-column-541819bd" width="120px"/>
+            <cl:gridcolumn std:sid="g-column-ab7c390a" width="120px"/>
+            <cl:gridcolumn std:sid="g-column-a4fa5c42" width="120px"/>
+            <cl:gridcolumn std:sid="g-column-e5063d62" width="120px"/>
+            <cl:gridheader std:sid="gh-band-6f885eb1">
+              <cl:gridrow std:sid="g-row-d5fdf74b" height="36px"/>
+              <cl:gridcell std:sid="gh-cell-a2496317" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+              <cl:gridcell std:sid="gh-cell-8dad3fda" rowindex="0" colindex="1" sortable="false" filterable="false"/>
+              <cl:gridcell std:sid="gh-cell-56616675" rowindex="0" colindex="2" targetcolumnname="employee_name" sortable="false" filterable="false" text="사원명"/>
+              <cl:gridcell std:sid="gh-cell-a542fa02" rowindex="0" colindex="3" targetcolumnname="department_name" sortable="false" filterable="false" text="부서명"/>
+              <cl:gridcell std:sid="gh-cell-dffde2b2" rowindex="0" colindex="4" targetcolumnname="job_title" sortable="false" filterable="false" text="직급"/>
+              <cl:gridcell std:sid="gh-cell-fd94ceb8" rowindex="0" colindex="5" targetcolumnname="email" sortable="false" filterable="false" text="이메일"/>
+            </cl:gridheader>
+            <cl:griddetail std:sid="gd-band-93cfa9dd">
+              <cl:gridrow std:sid="g-row-fb232713" height="33px"/>
+              <cl:gridcell std:sid="gd-cell-18c96902" rowindex="0" colindex="0" columntype="checkbox"/>
+              <cl:gridcell std:sid="gd-cell-c315bc06" rowindex="0" colindex="1" fieldLabel="행번호" columntype="rowindex"/>
+              <cl:gridcell std:sid="gd-cell-53f19604" rowindex="0" colindex="2" columnname="employee_name">
+                <cl:output std:sid="output-4865b6b3" class="text-left" fieldLabel="사원명" value="Output">
+                  <cl:attribute name="wa-prop-key" value="optEname"/>
+                  <cl:celldata std:sid="c-data-b635f15c"/>
+                </cl:output>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gd-cell-5e4254a4" rowindex="0" colindex="3" columnname="department_name">
+                <cl:combobox std:sid="c-box-7878c74f" id="cmb2" fieldLabel="부서명">
+                  <cl:attribute name="wa-prop-key" value="cmbDname2"/>
+                  <cl:celldata std:sid="c-data-3106719c"/>
+                  <cl:itemset datasetid="dsDept" label="department_name" value="department_name"/>
+                </cl:combobox>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gd-cell-0053d114" rowindex="0" colindex="4" fieldLabel="직급" columnname="job_title">
+                <cl:output std:sid="output-cf8e4766" fieldLabel="직급" value="Output">
+                  <cl:attribute name="wa-prop-key" value="optJobTitle"/>
+                  <cl:celldata std:sid="c-data-2dc7232b"/>
+                </cl:output>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gd-cell-09dbbf35" rowindex="0" colindex="5" fieldLabel="이메일" columnname="email">
+                <cl:output std:sid="output-a8cce9b4" fieldLabel="이메일" value="Output">
+                  <cl:attribute name="wa-prop-key" value="optEmail"/>
+                  <cl:celldata std:sid="c-data-052d814e"/>
+                </cl:output>
+              </cl:gridcell>
+            </cl:griddetail>
+          </cl:grid>
+          <cl:formlayout std:sid="f-layout-00e18840" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-24735fef" scrollable="false" hspace="10px" vspace="10px">
+          <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" minlength="20" syncminlength="false"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c3b57196" scrollable="true" hspace="10px" vspace="10px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-cc1e8975" scrollable="true" hspace="0px" vspace="20px" top-margin="20px" right-margin="20px" bottom-margin="20px" left-margin="20px">
+      <cl:rows length="35" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+      <cl:rows length="54" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,421 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-1eb021af" version="1.0.4727">
+  <head std:sid="head-93e2054e">
+    <screen std:sid="screen-6d2f3d96" id="default" name="default" width="1280px" height="760px"/>
+    <screen std:sid="screen-034b14e0" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-41f59873" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-0accc708">
+      <cl:dataset std:sid="d-set-45d64f0b" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="컨트롤" std:sid="d-column-5c73e91a" name="CTRL_NM"/>
+          <cl:datacolumn comment="속성명" std:sid="d-column-a7ae4c55" name="PROP_NM"/>
+          <cl:datacolumn comment="속성값" std:sid="d-column-7406c02e" name="PROP_VAL"/>
+          <cl:datacolumn comment="속성 설명" std:sid="d-column-4ac8dd9d" name="PROP_CONT"/>
+          <cl:datacolumn comment="최소 버전" std:sid="d-column-20246dea" name="MIN_VERSION"/>
+          <cl:datacolumn comment="필수 여부" std:sid="d-column-b222bbaa" name="REQ_YN"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">dialog</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">autoFocusedTarget</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">auto</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">헤더가 있는 경우 다이얼로그에 포커스가 설정됩니다. 헤더가 없는 경우 열리는 앱의 첫번째 컨트롤에 포커스를 설정합니다.</cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3905</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">dialog</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">restoreFocus</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">Dialog를 닫을 때 Dialog를 열기 전 위치로 초점이 돌아갈 수 있도록 설정합니다.</cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3905</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">dateinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[컨트롤 내 버튼영역에 tab으로 포커스 할 수 있습니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3010</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">dateinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">showClearButton</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[clear버튼을 표시합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3010</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">dateinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">clearLabelExp</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">fieldLabel +' '+i18n('--cpr-clear')</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">클리어 버튼의 aria-label 속성을 설정합니다. </cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4727</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">dateinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">buttonLabelExp</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">fieldLabel +' '+i18n('--cpr-dateinput-button')</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">캘린더 버튼의 aria-label 속성을 설정합니다. </cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4727</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">fileinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">showClearButton</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[clear버튼을 표시합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3010</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">fileinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[컨트롤 내 버튼영역에 tab으로 포커스 할 수 있습니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3840</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">fileinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">clearLabelExp</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">fieldLabel +' '+i18n('--cpr-clear')</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">클리어 버튼의 aria-label 속성을 설정합니다. </cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4727</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">fileupload</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">emptyMessage</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">여기를 더블 클릭 또는 파일을 드래그 하세요</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[파일 목록이 비어 있을때 표시하는 메시지를 설정합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">-</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">grid</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">tabMode</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL"><![CDATA[focusable]]></cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[포커스 이동이 가능한 컨트롤로만 tab 이동이 됩니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">-</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN"><![CDATA[Y]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">grid</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">clickMode</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">edit</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">클릭시 편집모드로 동작합니다.</cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">-</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">grid</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">focusCycle</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">셀이 포커스를 가졌을 때 포커스 전이가 행 내부에서만 순회됩니다.</cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4427</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">grid</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">noDataMessage</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">표시할 데이터가 없습니다.</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">디테일 영역에 데이터가 없을 때 보여지게 할 메시지를 설정합니다.</cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">-</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">grid</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">viewingMode</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">button</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">뷰잉모드에서 버튼이 표현됩니다. (서치 인풋, 데이트 인풋, 콤보박스)</cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4034</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">grid</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">wholeRenderingMode</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">해당 속성은 데이터 건수에 따라 성능 상 이유가 발생할 수 있으니, 사용에 주의하시기 바랍니다.
+            스크롤 뷰포트 바깥의 보이지 않는 영역까지 모두 그립니다.</cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4523</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">inputbox</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">showClearButton</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[clear버튼을 표시합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.2018</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">inputbox</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[컨트롤 내 버튼영역에 tab으로 포커스 할 수 있습니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.2474</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">inputbox</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">clearLabelExp</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">fieldLabel +' '+i18n('--cpr-clear')</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">클리어 버튼의 aria-label 속성을 설정합니다. </cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4727</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">maskeditor</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">showClearButton</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[clear버튼을 표시합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3010</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">maskeditor</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[컨트롤 내 버튼영역에 tab으로 포커스 할 수 있습니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3010</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">maskeditor</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">clearLabelExp</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">fieldLabel +' '+i18n('--cpr-clear')</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">클리어 버튼의 aria-label 속성을 설정합니다. </cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4727</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">mdifolder</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">tabsWithAutoSelection</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL"><![CDATA[false]]></cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[탭 아이템 이동 시 Enter 키로 탭 아이템을 직접 선택합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4523</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">navigationbar</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">tabTraversal</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[탭 키로 탭 순회 할 수 있습니다. 방향키 동작은 그대로 유지됩니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3462</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">navigationbar</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">expandTrigger</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">click</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[서브 메뉴 확장 시 마우스 click 으로 열 수 있습니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">-</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">navigationbar</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">menuType</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">accessiblemegamenu</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[웹접근성 친화적인 내비게이션바 모드를 설정합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4427</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">navigationbar</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">displayExp</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">label + sstr(depth + \&quot;단계\&quot;, [\&quot;cl-sound-only\&quot;])</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[각 아이템의 텍스트의 Expression을 설정합니다. defaults.js 에서는 각 아이템 별 depth 를 설정하며, 시각적으로 표현되지 않고 스크린리더를 통해 확인 할 수 있습니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION"><![CDATA[1.0.4427]]></cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">numbereditor</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">showClearButton</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[clear버튼을 표시합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3010</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">numbereditor</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[컨트롤 내 버튼영역에 tab으로 포커스 할 수 있습니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3010</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">numbereditor</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">clearLabelExp</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">fieldLabel +' '+i18n('--cpr-clear')</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">클리어 버튼의 aria-label 속성을 설정합니다. </cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4727</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM"><![CDATA[progress]]></cl:datavalue>
+            <cl:datavalue columnname="PROP_NM"><![CDATA[displayExp]]></cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL"><![CDATA[sstr(\"진행상황: \"+self.max+\"% 중 현재 \", [\"cl-sound-only\"]) + value + sstr(\"% 진행 중\", [\"cl-sound-only\"])]]></cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[현재 진행상황에 대한 텍스트의 Expression을 설정합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION"><![CDATA[1.0.3010]]></cl:datavalue>
+            <cl:datavalue columnname="REQ_YN"><![CDATA[N]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">progress</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM"><![CDATA[showText]]></cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL"><![CDATA[true]]></cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[현재 진행상황에 대해 설정한 Expression 을 표현하기 위해 필요합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.3010</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN"><![CDATA[N]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">searchinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">buttonFocusable</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[컨트롤 내 버튼영역에 tab으로 포커스 할 수 있습니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.2474</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">searchinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">hideClearButton</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">true</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[clear버튼을 표시하지 않습니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">-</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">searchinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">hideSearchButton</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">false</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[search버튼의 표시합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">-</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">searchinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">searchLabelExp</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">fieldLabel +' '+i18n('--cpr-search')</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">서치 버튼의 aria-label 속성을 설정합니다. </cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4727</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">searchinput</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">clearLabelExp</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL">fieldLabel +' '+i18n('--cpr-clear')</cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT">클리어 버튼의 aria-label 속성을 설정합니다. </cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4727</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CTRL_NM">tabfolder</cl:datavalue>
+            <cl:datavalue columnname="PROP_NM">tabsWithAutoSelection</cl:datavalue>
+            <cl:datavalue columnname="PROP_VAL"><![CDATA[false]]></cl:datavalue>
+            <cl:datavalue columnname="PROP_CONT"><![CDATA[탭 아이템 이동 시 Enter 키로 탭 아이템을 직접 선택합니다.]]></cl:datavalue>
+            <cl:datavalue columnname="MIN_VERSION">1.0.4523</cl:datavalue>
+            <cl:datavalue columnname="REQ_YN">N</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="defaults.js 설정"/>
+  </head>
+  <body std:sid="body-cc7794bc">
+    <cl:listener std:sid="listener-d233854c" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-6c4646a5" id="grp1" class="bg-primary-dim">
+      <cl:formdata std:sid="f-data-4083f02a" row="1" col="0" rowspan="1" colspan="1"/>
+      <cl:output std:sid="output-a5bbbbb2" displayexp="&quot;본 화면에서는 웹 접근성 준수 및 사용자 편의성을 확장하기 위해 &quot; &#xD;&#xA;+ sstr(&quot;각 컨트롤 별 정의된 기본 표준속성&quot;, [&quot;text-primary&quot;, &quot;text-underline&quot;]) &#xD;&#xA;+ &quot;에 대해 설명합니다.\n&quot;&#xD;&#xA;&#xD;&#xA;+ &quot;기본 속성은 &quot; &#xD;&#xA;+  sstr(&quot;defaults.js&quot;, [&quot;text-primary&quot;, &quot;text-underline&quot;]) &#xD;&#xA;+ &quot; 파일을 통해 설정하며, 설정된 값은 속성의 기본 값으로 설정됩니다.\n&quot;&#xD;&#xA;+ &quot;아래 &quot; + sstr(&quot;필수여부가 Y&quot;, [&quot;text-danger&quot;]) +&quot;로 되어 있는 속성은 웹 접근성 준수를 위해 반드시 설정할 것을 권장드립니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;+ &quot;각 화면에서는 표준속성값을 사용하지 않고 수정할 수 있지만,\n&quot;&#xD;&#xA;+ &quot;표준을 위해 설정된 값이기 때문에 잦은 변경을 지양해야 하며, &quot; + sstr(&quot;반드시 필요한 경우에만 수정할 것을 권고드립니다.&quot;, [&quot;text-underline&quot;])">
+        <cl:verticaldata std:sid="v-data-89cd7f2b" width="100px" height="140px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-e2a63d96" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+    </cl:group>
+    <cl:group std:sid="group-bfe31598" id="grp2">
+      <cl:formdata std:sid="f-data-52f0d47b" row="2" col="0" rowspan="1" colspan="1"/>
+      <cl:grid std:sid="grid-72219c84" id="grd1" datasetid="dsList" autofit="2, 3" enabledcellautowidth="true" autorowheight="all" suppressedcelltype="merged" resizablecolumns="all" columnMovable="true">
+        <cl:formdata std:sid="f-data-6b15b81e" row="0" col="1"/>
+        <cl:gridcolumn std:sid="g-column-99c76d80" width="100px"/>
+        <cl:gridcolumn std:sid="g-column-71368ac6" width="150px"/>
+        <cl:gridcolumn std:sid="g-column-26bc364e" width="280px"/>
+        <cl:gridcolumn std:sid="g-column-830fb4b0" width="300px"/>
+        <cl:gridcolumn std:sid="g-column-295d95c1" width="120px"/>
+        <cl:gridcolumn std:sid="g-column-a3feea46" width="120px"/>
+        <cl:gridheader std:sid="gh-band-0b594971">
+          <cl:gridrow std:sid="g-row-4b8466ed" height="36px"/>
+          <cl:gridcell std:sid="gh-cell-3c86dc50" rowindex="0" colindex="0" targetcolumnname="CTRL_NM" sortable="true" filterable="true" text="컨트롤"/>
+          <cl:gridcell std:sid="gh-cell-a8ad1386" rowindex="0" colindex="1" targetcolumnname="PROP_NM" sortable="true" filterable="true" text="속성명"/>
+          <cl:gridcell std:sid="gh-cell-ca7fe0ba" rowindex="0" colindex="2" targetcolumnname="PROP_VAL" sortable="true" filterable="true" text="속성값"/>
+          <cl:gridcell std:sid="gh-cell-8824da97" rowindex="0" colindex="3" targetcolumnname="PROP_CONT" sortable="true" filterable="true" text="속성 설명"/>
+          <cl:gridcell std:sid="gh-cell-6c806935" rowindex="0" colindex="4" targetcolumnname="MIN_VERSION" sortable="true" filterable="true" text="최소 버전"/>
+          <cl:gridcell std:sid="gh-cell-a5668f15" rowindex="0" colindex="5" targetcolumnname="REQ_YN" sortable="true" filterable="true" text="필수 여부"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-10a84666">
+          <cl:gridrow std:sid="g-row-ca92fdf0" height="37px"/>
+          <cl:gridcell std:sid="gd-cell-d10136cf" rowindex="0" colindex="0" columnname="CTRL_NM" suppressible="true" keepmerged="true">
+            <cl:output std:sid="output-74625d4d" class="text-center">
+              <cl:celldata std:sid="c-data-868f759d"/>
+            </cl:output>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-c27464a6" rowindex="0" colindex="1" columnname="PROP_NM">
+            <cl:output std:sid="output-7cc0a71d">
+              <cl:expbind property="class" category="CLASS" expression="REQ_YN == &quot;Y&quot; ? &quot;text-indigo fw-medium bg-primary-dim&quot; : &quot;&quot;"/>
+              <cl:celldata std:sid="c-data-622c247b"/>
+            </cl:output>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-87f356e3" rowindex="0" colindex="2" columnname="PROP_VAL">
+            <cl:output std:sid="output-a80ba4a1">
+              <cl:expbind property="class" category="CLASS" expression="REQ_YN == &quot;Y&quot; ? &quot;text-indigo fw-medium bg-primary-dim&quot; : &quot;&quot;"/>
+              <cl:celldata std:sid="c-data-90050c01"/>
+            </cl:output>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-9fb79d01" rowindex="0" colindex="3" columnname="PROP_CONT">
+            <cl:output std:sid="output-ffbe0fb6">
+              <cl:expbind property="class" category="CLASS" expression="REQ_YN == &quot;Y&quot; ? &quot;text-indigo fw-medium bg-primary-dim&quot; : &quot;&quot;"/>
+              <cl:celldata std:sid="c-data-a694c7bb"/>
+            </cl:output>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-915f9f8f" rowindex="0" colindex="4" columnname="MIN_VERSION">
+            <cl:output std:sid="output-20b6b66d">
+              <cl:expbind property="class" category="CLASS" expression="(REQ_YN == &quot;Y&quot; ? &quot;text-indigo fw-medium bg-primary-dim&quot; : &quot;&quot;) + &quot; text-center&quot;"/>
+              <cl:celldata std:sid="c-data-6b144130"/>
+            </cl:output>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-b660ecdd" rowindex="0" colindex="5" columnname="REQ_YN">
+            <cl:output std:sid="output-8c74455b">
+              <cl:expbind property="class" category="CLASS" expression="(REQ_YN == &quot;Y&quot; ? &quot;text-indigo fw-medium bg-primary-dim&quot; : &quot;&quot;) + &quot; text-center&quot;"/>
+              <cl:celldata std:sid="c-data-33c1ec8f"/>
+            </cl:output>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:udc std:sid="ud-control-eddac5f3" id="udcexamace1" type="udc.exam.udcExamAce">
+        <cl:formdata std:sid="f-data-87441d48" row="0" col="0"/>
+        <cl:property name="value" value="/**&#xD;&#xA; * Control별 기본 값 및 공통 상수 정의&#xD;&#xA; */&#xD;&#xA;var CPR_DEFAULTS = {&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;controls: {&#xD;&#xA;&#x9;&#x9;/* 각 개별 Control 관련 기본 설정. 속성, Style,... */&#xD;&#xA;&#x9;&#x9;controls: {&#xD;&#xA;&#x9;&#x9;&#x9;dialog: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;autoFocusedTarget: &quot;auto&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;restoreFocus: true&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;dateinput: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;buttonFocusable: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;showClearButton: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;clearLabelExp: &quot;fieldLabel +' '+i18n('--cpr-clear')&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;buttonLabelExp: &quot;fieldLabel +' '+i18n('--cpr-dateinput-button')&quot;&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;fileinput: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;showClearButton: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;buttonFocusable: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;clearLabelExp: &quot;fieldLabel + ' '+i18n('--cpr-clear')&quot;&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;fileupload: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;emptyMessage: &quot;여기를 더블 클릭 또는 파일을 드래그 하세요&quot;&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;grid: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;tabMode: &quot;focusable&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;clickMode: &quot;edit&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;focusCycle: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;noDataMessage: &quot;표시할 데이터가 없습니다&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;viewingMode: &quot;button&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//&#x9;&#x9;&#x9;wholeRenderingMode: true&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;inputbox: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;buttonFocusable: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;showClearButton: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;clearLabelExp: &quot;fieldLabel + ' '+i18n('--cpr-clear')&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;maskeditor: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;showClearButton: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;buttonFocusable: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;clearLabelExp: &quot;fieldLabel + ' '+i18n('--cpr-clear')&quot;&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;mdifolder: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//&#x9;&#x9;&#x9;tabsWithAutoSelection: false&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;navigationbar: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;tabTraversal: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;expandTrigger: &quot;click&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;menuType: &quot;accessiblemegamenu&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;displayExp: &quot;label + sstr(depth + \&quot;단계\&quot;, [\&quot;cl-sound-only\&quot;])&quot;&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;numbereditor: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;buttonFocusable: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;showClearButton: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;clearLabelExp: &quot;fieldLabel + ' '+i18n('--cpr-clear')&quot;&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;progress: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;displayExp: &quot;sstr(\&quot;진행상황: \&quot;+self.max+\&quot;% 중 현재 \&quot;, [\&quot;cl-sound-only\&quot;]) + value + sstr(\&quot;% 진행 중\&quot;, [\&quot;cl-sound-only\&quot;])&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;showText: true&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;searchinput: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;buttonFocusable: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;hideClearButton: true,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;hideSearchButton: false,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;searchLabelExp: &quot;fieldLabel + ' '+i18n('--cpr-search')&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;clearLabelExp: &quot;fieldLabel + ' '+i18n('--cpr-clear')&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;tabfolder: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//&#x9;&#x9;&#x9;tabsWithAutoSelection: false&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;}&#xD;&#xA;};" type="string"/>
+        <cl:property name="title" value="defaults.js" type="string"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-41cd001c" scrollable="false" user-resizing-mode="standard" hspace="30px" vspace="30px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="2" unit="FRACTION"/>
+        <cl:columns length="3" unit="FRACTION" shadecolor="transparent"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:udc std:sid="ud-control-c58c9e4c" id="breadcrumbs1" type="udc.pb.Breadcrumbs">
+      <cl:formdata std:sid="f-data-1a35ea39" row="0" col="0"/>
+      <cl:property name="title" value="defaults.js 설정" type="string"/>
+    </cl:udc>
+    <cl:formlayout std:sid="f-layout-64bb6cbc" scrollable="false" hspace="30px" vspace="30px" top-margin="0px" right-margin="30px" bottom-margin="0px" left-margin="30px">
+      <cl:rows length="135" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      <cl:rows length="165" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

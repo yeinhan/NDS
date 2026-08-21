@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6cec00ec" version="1.0.3655">
+  <head std:sid="head-d0627a5b">
+    <screen std:sid="screen-c32fb542" id="default" name="default" minwidth="1280px" width="1280px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="1200" customWidth="1920" active="true"/>
+    <screen std:sid="screen-0bd95ac3" id="tablet" name="tablet" minwidth="1024px" maxwidth="1279px" width="1024px" height="667px" active="false"/>
+    <screen std:sid="screen-963379ea" id="mobile" name="mobile" maxwidth="1023px" width="720px" height="525px" active="false"/>
+    <cl:model std:sid="model-12ce08a2">
+      <cl:dataset std:sid="d-set-267d742b" id="dsPropView">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="필터조건(같은 숫자에 대해서만 필터하여 내용을 보여준다)" std:sid="d-column-5941843b" name="keyNum" datatype="string"/>
+          <cl:datacolumn comment="컨트롤명(영문)" std:sid="d-column-4cd817ad" name="control"/>
+          <cl:datacolumn comment="속성명" std:sid="d-column-a67ff141" name="propNm"/>
+          <cl:datacolumn comment="속성값" std:sid="d-column-309a35a3" name="propVal"/>
+          <cl:datacolumn comment="관련 웹접근성 지침" std:sid="d-column-d6e23689" name="relatedWaInst"/>
+          <cl:datacolumn std:sid="d-column-4a5e554b" name="code"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[cbxSecu]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[checkbox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[보안접속]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[ipbId]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[inputbox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[아이디]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[ipbPw]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[inputbox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[비밀번호]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnLogin1]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btntTextLink]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[link]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[optTitle]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[outputType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[h2]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 18. (제목 제공) 페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[optLoginTitle]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[outputType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[h1]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 18. (제목 제공) 페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="CMS 로그인"/>
+  </head>
+  <body std:sid="body-08cd15b0" class="login-body">
+    <cl:group std:sid="group-41a54acb" id="grpHD">
+      <cl:verticaldata std:sid="v-data-9f47776e" width="400px" height="185px" autosize="height"/>
+      <cl:group std:sid="group-26dc074d" id="grp1">
+        <cl:verticaldata std:sid="v-data-5cdbb3f0" width="1240px" height="63px"/>
+        <cl:output std:sid="output-99fa25b3" class="text-center main-title" value="로그인" outputtype="h1">
+          <cl:attribute name="wa-prop-key" value="optLoginTitle"/>
+          <cl:formdata std:sid="f-data-576f807b" halign="CENTER" width="200" row="0" col="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-28e70236" scrollable="false" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:output std:sid="output-bc3103ef" class="text-center text2" value="eXBuilder6 웹 접근성 가이드에 오신 것을 환영합니다.">
+        <cl:verticaldata std:sid="v-data-0a6b783e" width="1280px" height="43px" autosize="height"/>
+      </cl:output>
+      <cl:output std:sid="output-b3e18da5" class="text-center" value="로그인 하시면 보다 편리하게 서비스 이용이 가능합니다.">
+        <cl:verticaldata std:sid="v-data-91c4a4cd" width="1280px" height="31px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-7dcd7ae6" spacing="20" leftmargin="20" rightmargin="20" topmargin="0" bottommargin="0"/>
+    </cl:group>
+    <cl:group std:sid="group-b20e756b" id="grpLoginBox">
+      <cl:verticaldata std:sid="v-data-4e755028" width="400px" height="458px" autosize="height"/>
+      <cl:group std:sid="group-d89c2c04" class="login-box">
+        <cl:formdata std:sid="f-data-959c477e" height="388" row="0" col="1"/>
+        <cl:output std:sid="output-c111ab69" class="text-center title-output" value="아이디 로그인" outputtype="h2">
+          <cl:attribute name="wa-prop-key" value="optTitle"/>
+          <cl:formdata std:sid="f-data-68a49f9b" row="0" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-8d2b8727">
+          <cl:formdata std:sid="f-data-18634b97" row="1" col="0"/>
+          <cl:checkbox std:sid="c-box-3ce7c78e" id="cbx3" fieldLabel="보안접속" readonly="true" value="true" text="보안접속">
+            <cl:attribute name="wa-prop-key" value="cbxSecu"/>
+            <cl:formdata std:sid="f-data-43fb4e8d" halign="LEFT" row="0" col="0"/>
+          </cl:checkbox>
+          <cl:group std:sid="group-58b0bbca">
+            <cl:formdata std:sid="f-data-6e6430d3" row="1" col="0"/>
+            <cl:inputbox std:sid="i-box-17cfab60" id="ipbId" fieldLabel="아이디" placeholder="아이디">
+              <cl:attribute name="wa-prop-key" value="ipbId"/>
+              <cl:formdata std:sid="f-data-c55b6cd0" row="0" col="0"/>
+            </cl:inputbox>
+            <cl:inputbox std:sid="i-box-af4f60f3" id="ipbPwd" fieldLabel="비밀번호" secret="true" placeholder="비밀번호">
+              <cl:attribute name="wa-prop-key" value="ipbPw"/>
+              <cl:formdata std:sid="f-data-f3ccc313" row="1" col="0"/>
+            </cl:inputbox>
+            <cl:formlayout std:sid="f-layout-c0f60378" scrollable="false" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-ce0e62d6" scrollable="false" hspace="13px" vspace="13px" top-margin="25px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="23" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-3ac58074">
+          <cl:formdata std:sid="f-data-c4dbd199" row="2" col="0" rowspan="1" colspan="1"/>
+          <cl:button std:sid="button-57d0ddaf" id="btnLogin1" class="btn-secondary" value="로그인" ariabuttontype="button">
+            <cl:listener std:sid="listener-84f4e6c5" name="click" handler="onBtnLogin1Click"/>
+            <cl:attribute name="wa-prop-key" value="btnLogin1"/>
+            <cl:formdata std:sid="f-data-0f95728f" row="0" col="0"/>
+          </cl:button>
+          <cl:group std:sid="group-1f253c3d" class="grp-separation">
+            <cl:formdata std:sid="f-data-77a47946" row="1" col="0"/>
+            <cl:button std:sid="button-3168f742" id="btn5" class="btn-transparent btn-link" value="아이디 찾기" ariabuttontype="link">
+              <cl:attribute name="wa-prop-key" value="btntTextLink"/>
+              <cl:formdata std:sid="f-data-9c7b8837" row="0" col="0"/>
+            </cl:button>
+            <cl:button std:sid="button-69b74f41" id="btn6" class="btn-transparent btn-link" value="비밀번호 찾기" ariabuttontype="link">
+              <cl:attribute name="wa-prop-key" value="btntTextLink"/>
+              <cl:formdata std:sid="f-data-3dfd41df" row="0" col="1"/>
+            </cl:button>
+            <cl:button std:sid="button-935e0265" id="btn7" class="btn-transparent btn-link" value="회원가입" ariabuttontype="link">
+              <cl:attribute name="wa-prop-key" value="btntTextLink"/>
+              <cl:formdata std:sid="f-data-705b3416" row="0" col="2"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-3bb0c7c2" scrollable="false" hspace="0px" vspace="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+              <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-a28e8698" scrollable="false" hspace="24px" vspace="22px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="55" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-fd2f4ba3" scrollable="false" hspace="15px" vspace="15px" top-margin="35px" right-margin="35px" bottom-margin="35px" left-margin="35px">
+          <cl:rows length="35" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="157" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="98" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-8217cd09" scrollable="false" hspace="20px" vspace="20px" top-margin="49px" right-margin="0px" bottom-margin="28px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="2" unit="FRACTION" autoSizing="false" hidden="false" minlength="0"/>
+        <cl:columns length="3" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="500"/>
+        <cl:columns length="2" unit="FRACTION" autoSizing="false" hidden="false" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-6760b6b3" id="grp2">
+      <cl:verticaldata std:sid="v-data-3d67c57d" width="1280px" height="21px" autosize="none"/>
+      <cl:group std:sid="group-3c998e7f" id="grp3" class="grp-separation">
+        <cl:formdata std:sid="f-data-6e03b5bf" row="0" col="1"/>
+        <cl:button std:sid="button-2aa222af" id="btn8" class="btn-transparent btn-link" value="이전페이지로 이동" ariabuttontype="link">
+          <cl:attribute name="wa-prop-key" value="btntTextLink"/>
+          <cl:formdata std:sid="f-data-8b16c0fa" topSpacing="0" bottomSpacing="0" leftSpacing="10" rightSpacing="10" row="0" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-909653c8" id="btn9" class="btn-transparent btn-link" value="보안 프로그램 설치 안내" ariabuttontype="link">
+          <cl:attribute name="wa-prop-key" value="btntTextLink"/>
+          <cl:formdata std:sid="f-data-595da1d1" topSpacing="0" bottomSpacing="0" leftSpacing="10" rightSpacing="10" row="0" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-ecc6c95a" id="btn10" class="btn-transparent btn-link" value="원격지원" ariabuttontype="link">
+          <cl:attribute name="wa-prop-key" value="btntTextLink"/>
+          <cl:formdata std:sid="f-data-a826d0fc" topSpacing="0" bottomSpacing="0" leftSpacing="10" rightSpacing="10" row="0" col="2"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-a3ded55d" scrollable="false" hspace="0px" vspace="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="150" autoSizing="true" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="150" autoSizing="true" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="150" autoSizing="true"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c74e7bfc" scrollable="false" hspace="0px" vspace="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        <cl:columns length="2" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        <cl:columns length="427" unit="PIXEL" autoSizing="true"/>
+        <cl:columns length="2" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-b7b153d3" spacing="0" topmargin="90" bottommargin="0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

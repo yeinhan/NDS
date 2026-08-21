@@ -1,0 +1,29 @@
+@import "../custom-settings.part.less";
+/*메인 사이드 네비게이션 서식*/
+.cl-sidenavigation.sidemenu {
+	.cl-with-vscrollbar {
+		width: calc(100% - 3px) !important;
+	}
+	/*사이드 네비게이션 세로 스크롤*/
+	.cl-vscrollbar {
+		background-color: transparent;
+		width : 8px;
+		
+		.cl-track {
+			top: 0px;
+			height: 100%;
+			
+			.cl-thumb{
+				border-radius: 10px;
+				background-color: #D4D4D4;
+			}
+		}
+		.cl-arrow-up {
+			display : none;
+		}
+		.cl-arrow-down {
+			display : none;
+		}
+		
+	}
+}

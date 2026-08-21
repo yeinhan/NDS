@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-f2dc98dc" id="default" name="default" width="1280px" height="760px"/>
+    <screen std:sid="screen-7e62588a" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-27e31d1a" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-90321062"/>
+    <cl:appspec title="[웹접근성가이드] 아웃풋"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="pb-body">
+    <cl:group std:sid="group-b655417b" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1644px" height="234px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="아웃풋" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-75a1799d" class="text-red" value="※ 기타 지시문 작성">
+        <cl:verticaldata std:sid="v-data-c42713a6" width="100px" height="20px" syncminheight="true" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-4f00ff31" id="grp1" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-6d77e5b7" width="1280px" height="972px" autosize="height"/>
+      <cl:group std:sid="group-ad00495f" id="grp2">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-3ed7c833" width="1544px" height="873px" autosize="height"/>
+        <cl:udc std:sid="ud-control-392b571a" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-4508bfac" width="1544px" height="29px"/>
+          <cl:property name="title" value="아웃풋 – ariaLive" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-bedd990d" id="grp13" class="pb-table wa-table">
+          <cl:verticaldata std:sid="v-data-2e6e8d4c" width="1544px" height="831px" autosize="height"/>
+          <cl:output std:sid="output-320c8d70" class="pb-label" value="1. ariaLive 속성을 통해 사용자에게 변경 사항을 알린다.">
+            <cl:formdata std:sid="f-data-f4fce933" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-fe39a97e" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-a5011ccb" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-6bac81bf" value="ariaLive" unselectable="false">
+            <cl:formdata std:sid="f-data-705476ed" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-6834a164" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-4098967f" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-05f938b4" value="1.0.2474" unselectable="false">
+            <cl:formdata std:sid="f-data-10f77d72" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-667fd02b" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-5170d53c" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-d30cf35f" value="-" unselectable="false">
+            <cl:formdata std:sid="f-data-ae3a19e0" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-90bf151d" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-bf4d6266" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-b50def24" value="시각 장애 (전맹)&#xD;&#xA;사용 환경으로 인해 시각 기능 일시적 사용 불능 및 저하 (운전중, 조명 등)" unselectable="false">
+            <cl:formdata std:sid="f-data-e43a9b8b" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-16382fbb" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-614165d4" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ab56ca87" value="" displayexp="&quot;aria-live 속성을 설정함에 따라 &quot; + sstr(&quot;동적으로 변경되는 텍스트를 스크린리더가 읽을 수 있도록 설정&quot;, [&quot;text-underline&quot;])+ &quot; 합니다.\n&quot;&#xD;&#xA;+ sstr(&quot;변경된 내용을 반드시 알아야 하는 상황에 대해서 설정이 필요하며, 산발적으로 변경되는 값에 대한 설정은 지양할 것을 권장드립니다.\n\n&quot;, [&quot;text-danger&quot;])&#xD;&#xA;&#xD;&#xA;+ &quot;- &quot;+sstr(&quot;polite&quot;, [&quot;text-primary&quot;])+&quot; : 중요도가 낮은 내용에 사용하여 현재 진행중인 음성 또는 타이핑을 방해하지 않고 뒤늦게 전달합니다. \n&quot;&#xD;&#xA;+ &quot;- &quot;+sstr(&quot;assertive&quot;, [&quot;text-primary&quot;])+&quot; : 중요도가 높은 내용에 사용하여 현재 진행중인 보조기기 작업을 중단하고 갱신 내용을 즉시 사용자에게 전달합니다. &quot;" unselectable="false">
+            <cl:formdata std:sid="f-data-cc8a39c3" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-2641a5fc" class="pb-label" value="아웃풋 속성 지정">
+            <cl:formdata std:sid="f-data-0edec3d4" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-ff0fd327" id="grp9">
+            <cl:formdata std:sid="f-data-f2469a60" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-89c67c86" id="img1" src="../웹접근성 캡쳐 이미지/5. 아웃풋 계열/4.1.5.1_아웃풋-ariaLive_Properties.png" alt="아웃풋 aria-Live속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-bf8b95d1" width="507px" height="271px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-a3e67cc8" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-960fe1ee" class="pb-label" value="DOM 내용 확인">
+            <cl:formdata std:sid="f-data-d680777e" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-92f2c2dd" id="grp10">
+            <cl:formdata std:sid="f-data-8c491820" row="7" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-c2a0ad22" id="img3" src="../웹접근성 캡쳐 이미지/5. 아웃풋 계열/4.1.5.1_아웃풋-ariaLive_DOM.PNG" alt="DOM 내용 확인">
+              <cl:flowlayoutdata std:sid="f-data-6c518788" width="566px" height="180px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-dd62f997" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-bc3c0650" class="pb-label" value="ariaLive=assertive">
+            <cl:formdata std:sid="f-data-f8bf149f" row="8" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-c9f03a7f" id="grp21">
+            <cl:formdata std:sid="f-data-3f7c1107" row="8" col="1"/>
+            <cl:button std:sid="button-bf6e4489" id="btn3" value="값 변경">
+              <cl:listener std:sid="listener-e4d91771" name="click" handler="onBtn3Click"/>
+              <cl:formdata std:sid="f-data-e07fbfdb" row="0" col="0"/>
+            </cl:button>
+            <cl:output std:sid="output-65f6ca2d" id="optAriaLive3" value="라벨" arialive="assertive">
+              <cl:formdata std:sid="f-data-2d678726" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-05558ba0" scrollable="false" hspace="20px" vspace="0px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="120" unit="PIXEL"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-51ff4709" class="pb-label" value="ariaLive=polite">
+            <cl:formdata std:sid="f-data-683247c0" row="8" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-f5f23fdb" id="grp22">
+            <cl:formdata std:sid="f-data-3651bf62" row="8" col="3"/>
+            <cl:button std:sid="button-614a3844" id="btn4" value="값 변경">
+              <cl:listener std:sid="listener-a0156af4" name="click" handler="onBtn4Click"/>
+              <cl:formdata std:sid="f-data-ee078fe5" row="0" col="0"/>
+            </cl:button>
+            <cl:output std:sid="output-8c94b962" id="optAriaLive4" value="라벨" arialive="polite">
+              <cl:formdata std:sid="f-data-b3c0a9a4" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-f75e94d8" scrollable="false" hspace="20px" vspace="0px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="120" unit="PIXEL"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-a8d12b64" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="284" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="184" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8fa8b39c" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-44042cc3" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-f7f42505" id="grp3" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-27a66a51" width="1280px" height="982px" autosize="height"/>
+      <cl:group std:sid="group-b49ad4cf" id="grp4">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-b7a77b1e" width="1544px" height="882px" autosize="height"/>
+        <cl:udc std:sid="ud-control-a8e6c416" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-b3a23860" width="1544px" height="29px"/>
+          <cl:property name="title" value="아웃풋 – outputType" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-7a6ac001" id="grp5" class="pb-table wa-table">
+          <cl:verticaldata std:sid="v-data-5a8010f2" width="1544px" height="839px" autosize="height"/>
+          <cl:output std:sid="output-9788a1a1" class="pb-label" value="2. outputType 속성을 통해 컨트롤 블록요소에 대하여 적절한 제목을 제공한다.">
+            <cl:formdata std:sid="f-data-99906de7" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-2c38c5e9" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-beaa1a5e" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-7a75fe1d" value="outputType" unselectable="false">
+            <cl:formdata std:sid="f-data-dd691327" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-edb37a3d" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-a981151f" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ec0e1e37" value="1.0.3905" unselectable="false">
+            <cl:formdata std:sid="f-data-bf659f6b" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-596853df" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-2ce54702" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-2d730f08" value="항목 18. (제목 제공) 페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-851e3b25" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-9cd52e2e" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-665146aa" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-e844f98a" value="시각 장애&#xD;" unselectable="false">
+            <cl:formdata std:sid="f-data-ca368056" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-1b000b98" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-cab8cc91" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-d3fab948" value="outputType 속성을 이용하여 특정 아웃풋이 제목을 표시하고 있음을 나타내어 스크린 리더 및 음성 브라우저의 탐색을 도울 수 있습니다" unselectable="false">
+            <cl:formdata std:sid="f-data-846b5d33" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-c72fed73" class="pb-label" value="아웃풋 속성 지정">
+            <cl:formdata std:sid="f-data-a895104c" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-acd3c710" id="grp11">
+            <cl:formdata std:sid="f-data-968f6934" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-67bad50d" id="img4" src="../웹접근성 캡쳐 이미지/5. 아웃풋 계열/4.1.5.1_아웃풋-outputType_Properties.png" alt="아웃풋 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-d17d529d" width="507px" height="271px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-3e0e1e9c" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-23a0aa54" class="pb-label" value="DOM 내용 확인">
+            <cl:formdata std:sid="f-data-9fc9fd05" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-18c97ffb" id="grp12">
+            <cl:formdata std:sid="f-data-c21d6ba3" row="7" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-6fe1e27e" id="img5" src="../웹접근성 캡쳐 이미지/5. 아웃풋 계열/4.1.5.1_아웃풋-outputType_DOM.PNG" alt="DOM 내용 확인">
+              <cl:flowlayoutdata std:sid="f-data-9a0ca32a" width="569px" height="181px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-57c851b5" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-f38a4201" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-c41d907e" row="8" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-b538c1cc" id="grp6">
+            <cl:formdata std:sid="f-data-e000ba93" row="8" col="1"/>
+            <cl:output std:sid="output-aa1b4601" value="라벨" outputtype="h1">
+              <cl:formdata std:sid="f-data-574ec2c4" row="0" col="0"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-c87613fc" scrollable="false" hspace="0px" vspace="0px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-aecf49c2" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-ccc26537" row="8" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-4979ce01" id="grp7">
+            <cl:formdata std:sid="f-data-2cb7edf4" row="8" col="3"/>
+            <cl:output std:sid="output-1c38f491" value="라벨">
+              <cl:formdata std:sid="f-data-f5b91de3" row="0" col="0"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-208c19c4" scrollable="false" hspace="0px" vspace="0px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-ed30f75d" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="288" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="188" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-9f5e9063" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-05b3c368" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-d3af3586" id="grp16" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-04eacfdf" width="1280px" height="770px" autosize="height"/>
+      <cl:group std:sid="group-3bb5308f" id="grp17">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-ec19059a" width="1544px" height="670px" autosize="height"/>
+        <cl:udc std:sid="ud-control-c6ed7705" id="sectiontitle2" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-d0aa7e18" width="1544px" height="29px"/>
+          <cl:property name="title" value="아웃풋 – 주의사항" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-803e44c3" id="grp18" class="pb-table wa-table">
+          <cl:verticaldata std:sid="v-data-8a979e43" width="1544px" height="627px" autosize="height"/>
+          <cl:output std:sid="output-61f3a89e" class="pb-label" value="3. 클릭이 가능한 링크 텍스트는 아웃풋이 아닌 버튼을 사용해야합니다.">
+            <cl:formdata std:sid="f-data-dec708a0" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-458c73b5" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-405258d6" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-633d922c" value="-" unselectable="false">
+            <cl:formdata std:sid="f-data-dff616e2" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-3ec4b9f8" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-a3489588" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-bd8210a4" value="-" unselectable="false">
+            <cl:formdata std:sid="f-data-0c97aed0" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-a1b2d736" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-21c3c287" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-4ad4e39e" value="항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-b66f4e1a" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-d32dc154" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-05beba4e" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ebd94f14" value="시각 장애&#xD;" unselectable="false">
+            <cl:formdata std:sid="f-data-2738e29c" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-a6ada5d3" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-4d343339" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-4dd69568" value="링크 용도로 사용하는 텍스트는 아웃풋이 아닌 버튼 컨트롤을 배치하여 사용해야하며, ariaButtonType=&quot;link&quot;를 적용해서 사용합니다." unselectable="false">
+            <cl:formdata std:sid="f-data-50b05617" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-faf61d79" class="pb-label" value="아웃풋 속성 지정">
+            <cl:formdata std:sid="f-data-1c2c145b" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-ed61c9ed" id="grp15">
+            <cl:formdata std:sid="f-data-5342845a" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-800b8dab" id="img2" src="../웹접근성 캡쳐 이미지/5. 아웃풋 계열/4.1.5.1_아웃풋-주의사항.PNG" alt="아웃풋 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-6e056825" width="507px" height="271px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-0e3d8861" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-66bd7630" class="pb-label" value="적용&#xD;&#xA;(버튼)">
+            <cl:formdata std:sid="f-data-6288c38f" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-358a4367" id="grp20">
+            <cl:formdata std:sid="f-data-e34dc5a8" row="7" col="1"/>
+            <cl:button std:sid="button-e01eabfc" id="btnShowMore" class="btn-link btn-transparent text-left" fieldLabel="자유 게시판" value="+ 더보기" ariabuttontype="link">
+              <cl:formdata std:sid="f-data-271e49ff" row="0" col="0"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-645e37b3" scrollable="false" hspace="0px" vspace="0px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-52aeda1b" class="pb-label" value="미적용&#xD;&#xA;(아웃풋)">
+            <cl:formdata std:sid="f-data-17c29964" row="7" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-7364372d" id="grp19">
+            <cl:formdata std:sid="f-data-c612c0cd" row="7" col="3"/>
+            <cl:output std:sid="output-74dd82ed" class="text-link" fieldLabel="자유게시판 " value="+ 더보기">
+              <cl:formdata std:sid="f-data-99d6eefc" row="0" col="0"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-0f5e4354" scrollable="false" hspace="0px" vspace="0px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-d282152c" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="280" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-3d29550f" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-5d206c16" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

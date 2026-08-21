@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:settings="kr.co.tomatosystem.exbuilder.model.ui.settings">
+  <settings:IDPolicy type="Accordion" pattern="acd" use="true"/>
+  <settings:IDPolicy type="Audio" pattern="aud"/>
+  <settings:IDPolicy type="Button" pattern="btn" use="true"/>
+  <settings:IDPolicy type="Calendar" pattern="cal" use="true"/>
+  <settings:IDPolicy type="CheckBox" pattern="cbx" use="true"/>
+  <settings:IDPolicy type="CheckBoxGroup" pattern="cbg" use="true"/>
+  <settings:IDPolicy type="ComboBox" pattern="cmb" use="true"/>
+  <settings:IDPolicy type="DataMap" pattern="dm" use="true"/>
+  <settings:IDPolicy type="DataSet" pattern="ds" use="true"/>
+  <settings:IDPolicy type="DataView" pattern="dv" use="true"/>
+  <settings:IDPolicy type="DateInput" pattern="dti" use="true"/>
+  <settings:IDPolicy type="EmbeddedApp" pattern="embapp" use="true"/>
+  <settings:IDPolicy type="EmbeddedPage" pattern="embpage" use="true"/>
+  <settings:IDPolicy type="FileInput" pattern="fit" use="true"/>
+  <settings:IDPolicy type="FileUpload" pattern="fid" use="true"/>
+  <settings:IDPolicy type="Grid" pattern="grd" use="true"/>
+  <settings:IDPolicy type="Group" pattern="grp" use="true"/>
+  <settings:IDPolicy type="HTMLObject" pattern="hobj" use="true"/>
+  <settings:IDPolicy type="HTMLSnippet" pattern="hspt" use="true"/>
+  <settings:IDPolicy type="Image" pattern="img" use="true"/>
+  <settings:IDPolicy type="InputBox" pattern="ipb" use="true"/>
+  <settings:IDPolicy type="LinkedComboBox" pattern="lcb" use="true"/>
+  <settings:IDPolicy type="LinkedListBox" pattern="llb" use="true"/>
+  <settings:IDPolicy type="ListBox" pattern="lbx" use="true"/>
+  <settings:IDPolicy type="MaskEditor" pattern="mse" use="true"/>
+  <settings:IDPolicy type="MatrixSubmission" pattern="msub" use="true"/>
+  <settings:IDPolicy type="MDIFolder" pattern="mdi"/>
+  <settings:IDPolicy type="Menu" pattern="mnu"/>
+  <settings:IDPolicy type="NavigationBar" pattern="ngb"/>
+  <settings:IDPolicy type="Notifier" pattern="ntf"/>
+  <settings:IDPolicy type="NumberEditor" pattern="nbe" use="true"/>
+  <settings:IDPolicy type="Output" pattern="opt"/>
+  <settings:IDPolicy type="PageIndexer" pattern="pix" use="true"/>
+  <settings:IDPolicy type="Progress" pattern="pgr" use="true"/>
+  <settings:IDPolicy type="RadioButton" pattern="rdb" use="true"/>
+  <settings:IDPolicy type="Slider" pattern="sld" use="true"/>
+  <settings:IDPolicy type="Submission" pattern="sub" use="true"/>
+  <settings:IDPolicy type="TabFolder" pattern="tab" use="true"/>
+  <settings:IDPolicy type="TextArea" pattern="txa" use="true"/>
+  <settings:IDPolicy type="Tree" pattern="tre" use="true"/>
+  <settings:IDPolicy type="UIControlShell" pattern="shl" use="true"/>
+  <settings:IDPolicy type="Video" pattern="vid"/>
+  <settings:IDPolicy type="DataWindow" pattern="datawindow" use="true"/>
+  <settings:IDPolicy type="SearchInput" pattern="searchinput"/>
+  <settings:IDPolicy type="SideNavigation" pattern="sidenavigation"/>
+  <settings:IDPolicy type="udc.com.udcComFormTitle" pattern="udccomformtitle" use="true"/>
+  <settings:IDPolicy type="udc.com.udcComPivotHelperH" pattern="udccompivothelperh" use="true"/>
+  <settings:IDPolicy type="udc.com.udcComGridCudBtns" pattern="udccomgridcudbtns" use="true"/>
+  <settings:IDPolicy type="udc.com.udcComPivotGrid" pattern="udccompivotgrid" use="true"/>
+  <settings:IDPolicy type="udc.com.udcComGridSplit" pattern="udccomgridsplit" use="true"/>
+  <settings:IDPolicy type="udc.com.udcComGridTitle" pattern="udccomgridtitle" use="true"/>
+  <settings:IDPolicy type="udc.com.udcComPivotHelperV" pattern="udccompivothelperv" use="true"/>
+  <settings:IDPolicy type="udc.com.udcComAppHeader" pattern="udccomappheader" use="true"/>
+  <settings:IDPolicy type="udc.com.udcComLoadmask" pattern="udccomloadmask" use="true"/>
+  <settings:IDPolicy type="udc.com.udcComLoadmaskpgs" pattern="udccomloadmaskpgs" use="true"/>
+  <settings:IDPolicy type="udc.com.udcComPageindexer" pattern="udccompageindexer" use="true"/>
+</xmi:XMI>

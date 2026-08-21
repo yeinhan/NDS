@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cad74a02" version="1.0.3988">
+  <head std:sid="head-01c5114a">
+    <screen std:sid="screen-8fe2cea6" id="default" name="default" minwidth="1280px" width="1280px" height="768px" active="true"/>
+    <screen std:sid="screen-8774da0a" id="tablet" name="tablet" minwidth="800px" maxwidth="1279px" width="800px" height="768px" active="false"/>
+    <screen std:sid="screen-cb070c80" id="mobile" name="mobile" maxwidth="799px" width="360px" height="768px" active="false"/>
+    <cl:model std:sid="model-d06e2ea9">
+      <cl:dataset std:sid="d-set-267d742b" id="dsPropView">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="필터조건(같은 숫자에 대해서만 필터하여 내용을 보여준다)" std:sid="d-column-5941843b" name="keyNum" datatype="number"/>
+          <cl:datacolumn comment="컨트롤명(영문)" std:sid="d-column-4cd817ad" name="control"/>
+          <cl:datacolumn comment="속성명" std:sid="d-column-a67ff141" name="propNm"/>
+          <cl:datacolumn comment="속성값" std:sid="d-column-309a35a3" name="propVal"/>
+          <cl:datacolumn comment="관련 웹접근성 지침" std:sid="d-column-d6e23689" name="relatedWaInst"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum">1</cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[image]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[alt]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[eXCFrame 로고]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[outputType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[h1]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 18. (제목 제공) 페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[inputbox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[아이디]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[inputbox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[비밀번호]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="eXBuilder6 이미지 : alt=&quot;eXBuilder6 로고&quot;&#xD;&#xA;로그인 아웃풋 : outputType=&quot;h1&quot;&#xD;&#xA;아이디 인풋 : fieldLabel=&quot;아이디&quot;&#xD;&#xA;비밀번호 인풋 : fieldLabel=&quot;비밀번호&quot;" title="로그인"/>
+  </head>
+  <body std:sid="body-1a80aaf6">
+    <cl:listener std:sid="listener-8e61c591" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-5bd2f0dc" id="grp1" class="login-wrap">
+      <cl:responsivexylayoutdata std:sid="rxyl-data-c6a43adf">
+        <cl:xylayoutdata std:sid="sxyl-data-c7333363" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH" screenid="default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-85b14e3a" top="0px" right="480px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH" screenid="tablet" hidden="false"/>
+        <cl:xylayoutdata std:sid="sxyl-data-4c68c940" top="0px" left="0px" width="0px" height="0px" horizontalAnchor="LEFT" verticalAnchor="TOP" screenid="mobile" hidden="true"/>
+      </cl:responsivexylayoutdata>
+      <cl:button std:sid="button-01dee743" class="btn-dark-mode" value="다크모드">
+        <cl:listener std:sid="listener-5afc7893" name="click" handler="onButtonClick2"/>
+        <cl:xylayoutdata std:sid="xyl-data-018bf2b1" top="20px" left="20px" width="101px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:button>
+      <cl:button std:sid="button-c691b9f2" id="btn1" class="btn-dark-mode" value="고대비 모드">
+        <cl:listener std:sid="listener-8bdd46e9" name="click" handler="onBtn1Click"/>
+        <cl:xylayoutdata std:sid="xyl-data-29012913" top="20px" left="131px" width="101px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-ed4a2bba" scrollable="false"/>
+    </cl:group>
+    <cl:group std:sid="group-7b755c07" class="login-box">
+      <cl:responsivexylayoutdata std:sid="rxyl-data-45cf57e6">
+        <cl:xylayoutdata std:sid="sxyl-data-2ec3ff07" width="580px" height="600px" horizontalAnchor="CENTER" verticalAnchor="CENTER" screenid="default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-91d2b041" top="0px" right="0px" bottom="0px" width="480px" horizontalAnchor="RIGHT" verticalAnchor="BOTH" screenid="tablet"/>
+        <cl:xylayoutdata std:sid="sxyl-data-f63795c1" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH" screenid="mobile"/>
+      </cl:responsivexylayoutdata>
+      <cl:img std:sid="image-f73c8324" id="imgLogo" fieldLabel="eXBuilder6" tabindex="0" src="../../theme/images/com/logo.png" alt="eXCFrame 로고">
+        <cl:attribute name="wa-prop-key" value="1"/>
+        <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+        <cl:responsivexylayoutdata std:sid="rxyl-data-15523133">
+          <cl:xylayoutdata std:sid="sxyl-data-851020bd" top="40px" width="177px" height="55px" horizontalAnchor="CENTER" verticalAnchor="TOP" screenid="default"/>
+        </cl:responsivexylayoutdata>
+      </cl:img>
+      <cl:group std:sid="group-bb3ee880" class="login-body">
+        <cl:responsivexylayoutdata std:sid="rxyl-data-7bff4a7a">
+          <cl:xylayoutdata std:sid="sxyl-data-a911949f" width="420px" height="360px" horizontalAnchor="CENTER" verticalAnchor="CENTER" screenid="default"/>
+          <cl:xylayoutdata std:sid="sxyl-data-cdee1bea" width="376px" height="410px" horizontalAnchor="CENTER" verticalAnchor="CENTER" screenid="tablet"/>
+          <cl:xylayoutdata std:sid="sxyl-data-5b23f05d" right="32px" left="32px" height="410px" horizontalAnchor="BOTH" verticalAnchor="CENTER" screenid="mobile"/>
+        </cl:responsivexylayoutdata>
+        <cl:group std:sid="group-cdb10c6c">
+          <cl:verticaldata std:sid="v-data-96f45165" width="380px" height="60px" autosize="height"/>
+          <cl:output std:sid="output-68dc3734" style="font-weight:bold; font-size:30px;" class="h1 text-center" value="로그인" outputtype="h1">
+            <cl:attribute name="wa-prop-key" value="2"/>
+            <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+            <cl:formdata std:sid="f-data-374df02f" row="0" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-76fe41a6" scrollable="false" hspace="0px" vspace="10px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-23c68dcd">
+          <cl:verticaldata std:sid="v-data-67ca2d1c" width="380px" height="200px" autosize="height"/>
+          <cl:group std:sid="group-e9b2a32e">
+            <cl:verticaldata std:sid="v-data-afe890b8" width="380px" height="64px" autosize="none"/>
+            <cl:output std:sid="output-975337cd" class="fs-sm fw-medium" value="아이디">
+              <cl:formdata std:sid="f-data-05cd393b" row="0" col="0" rowspan="1" colspan="1"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-7b83ea5c" id="ipbId" fieldLabel="아이디" placeholder="아이디">
+              <cl:listener std:sid="listener-eee372e2" name="keydown" handler="onIpbUserNmKeydown"/>
+              <cl:attribute name="wa-prop-key" value="3"/>
+              <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+              <cl:formdata std:sid="f-data-9f1fa050" row="1" col="0"/>
+            </cl:inputbox>
+            <cl:formlayout std:sid="f-layout-5e34504e" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="24" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="40" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-a43b28ec">
+            <cl:verticaldata std:sid="v-data-2b25a1eb" width="380px" height="64px" autosize="none"/>
+            <cl:output std:sid="output-f6d63206" class="fs-sm fw-medium" value="비밀번호">
+              <cl:formdata std:sid="f-data-0e1d1350" row="0" col="0" rowspan="1" colspan="1"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-09b0afe5" id="ipbPw" fieldLabel="비밀번호" secret="true" placeholder="비밀번호">
+              <cl:listener std:sid="listener-fa969b64" name="keydown" handler="onIpbPwKeydown"/>
+              <cl:attribute name="wa-prop-key" value="4"/>
+              <cl:attribute name="wa-prop-dataset" value="dsPropView"/>
+              <cl:formdata std:sid="f-data-4b58c7e2" row="1" col="0"/>
+            </cl:inputbox>
+            <cl:formlayout std:sid="f-layout-09890c5d" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="24" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="40" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-24f760a2" id="grp2">
+            <cl:verticaldata std:sid="v-data-9abf160b" width="380px" height="30px"/>
+            <cl:checkbox std:sid="c-box-06afc63d" id="cbxRmbr" text="아이디 저장">
+              <cl:formdata std:sid="f-data-e9e399cc" row="0" col="0"/>
+            </cl:checkbox>
+            <cl:formlayout std:sid="f-layout-95fa994d" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="30" unit="PIXEL"/>
+              <cl:columns length="120" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-fcb1938b" spacing="14"/>
+        </cl:group>
+        <cl:button std:sid="button-58a52477" id="btnLogin" class="btn-login" value="로그인">
+          <cl:listener std:sid="listener-59d5ae1f" name="click" handler="onBtnLoginClick"/>
+          <cl:verticaldata std:sid="v-data-99ecd978" width="380px" height="48px"/>
+        </cl:button>
+        <cl:verticallayout std:sid="v-layout-b1e48a55" scrollable="false" spacing="24"/>
+      </cl:group>
+      <cl:output std:sid="output-97c02eb0" class="text-gray-600 text-center" value="ⓒ 2023. TOMATOSYSTEM All rights reserved.">
+        <cl:responsivexylayoutdata std:sid="rxyl-data-7f293c82">
+          <cl:xylayoutdata std:sid="sxyl-data-8bb5a799" right="0px" bottom="20px" left="0px" height="20px" horizontalAnchor="BOTH" verticalAnchor="BOTTOM" screenid="default"/>
+          <cl:xylayoutdata std:sid="sxyl-data-6618f974" right="0px" bottom="20px" left="0px" height="20px" horizontalAnchor="BOTH" verticalAnchor="BOTTOM" screenid="tablet"/>
+          <cl:xylayoutdata std:sid="sxyl-data-396629ba" right="0px" bottom="20px" left="0px" height="20px" horizontalAnchor="BOTH" verticalAnchor="BOTTOM" screenid="mobile"/>
+        </cl:responsivexylayoutdata>
+      </cl:output>
+      <cl:responsivexylayout std:sid="r-xylayout-3902775a" animationduration="0.35"/>
+    </cl:group>
+    <cl:responsivexylayout std:sid="r-xylayout-8313b83b" animationduration="0.35"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

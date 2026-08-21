@@ -1,0 +1,64 @@
+@import "../../custom-settings.part.less";
+
+.high-contrast{
+
+/************************************************
+ * 카드
+ ************************************************/
+ 
+.cl-container.card {
+	background-color: @component-background-color;
+	border: @component-border-contrast;
+	border-radius: @component-border-radius;
+	
+}
+.cms-sitemap {
+	.cl-container.card {
+		background-color: @component-background-color;
+		border: @component-border-contrast;
+		border-radius: 15px;
+	}
+		
+}
+.cl-container {
+	.cl-layout-wrap.row {
+		.cl-container.card {
+			border-radius: @component-border-radius-0;
+		}
+
+		&.cl-first-row {
+			.cl-container.card {
+				border-top-left-radius: @component-border-radius;
+				border-top-right-radius: @component-border-radius;
+			}
+		}
+		
+		&.cl-last-row {
+			.cl-container.card {
+				border-bottom-left-radius: @component-border-radius;
+				border-bottom-right-radius: @component-border-radius;
+			}
+		}
+		
+		&:not(.cl-first-row) {
+			.cl-container.card {
+				border-top: none;
+			}
+		}
+	}
+}
+
+
+
+/*대시보드 */
+.cl-container.dashboard{
+	.cl-container.card {
+		&.card-notice{
+			border: 1px solid @gray-900;
+			background-color: @gray-400
+		}
+	}
+}
+
+	
+}

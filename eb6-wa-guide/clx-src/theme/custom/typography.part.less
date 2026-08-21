@@ -1,0 +1,103 @@
+@import "../custom-settings.part.less";
+
+/************************************************
+ * 캡션
+ ************************************************/
+ 
+.cl-output.caption {
+	font-size: 13px;
+	color: @gray-700;
+}
+
+.cl-grid {
+	.cl-grid-cell {
+		.cl-output.caption {
+			font-size: 13px;
+			color: @gray-700;
+		}
+	}
+}
+
+/************************************************
+ * CMS
+ ************************************************/
+ .cl-output.main-title {
+	font-size : 44px;
+	font-family: "S-Core Dream";
+	color : @black;
+	font-weight: @font-weight-bold;
+}
+
+.cl-output.sub-title {
+	background-image : url("../images/controls/output/ico_title_bullet.png");
+	background-repeat : no-repeat;
+	background-size : 14px 22px;
+	background-position: left center;
+	
+	.cl-text {
+		padding-left : 21px;
+		font-size : 32px;
+		font-weight: @font-weight-medium;
+		color : @black;
+	}
+}
+
+.cl-output.required {
+	.cl-text:after{
+		background-image: url("../images/controls/output/red-asterisk.png");
+		background-repeat: no-repeat;
+		background-position: 0% 50%;
+		background-size: 7px;
+		content: "　"; // "ㄱ"+ 한자[1] 공백특수문자 사용
+		margin-left: 3px;
+	}
+}
+
+.cl-output.required-before {
+	.cl-text:before {
+		background-image: url("../images/controls/output/red-asterisk.png");
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+		background-size: 7px;
+		content: "　"; // "ㄱ"+ 한자[1] 공백특수문자 사용
+		margin-right: 3px;
+	}
+}
+
+// required가 표준, require는 사용하지 않습니다. (템플릿 표시용)
+.cl-output.require {
+	.cl-text:after{
+		background-image: url("../images/controls/output/red-asterisk.png");
+		background-repeat: no-repeat;
+		background-position: 0% 50%;
+		background-size: 7px;
+		content: "　"; // "ㄱ"+ 한자[1] 공백특수문자 사용
+		margin-left: 3px;
+	}
+}
+// required가 표준, require는 사용하지 않습니다.
+.cl-output.require-before {
+	.cl-text:before {
+		background-image: url("../images/controls/output/red-asterisk.png");
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+		background-size: 7px;
+		content: "　"; // "ㄱ"+ 한자[1] 공백특수문자 사용
+		margin-right: 3px;
+	}
+}
+
+.cl-output.required-absolute {
+	.cl-text:after{
+		position: absolute;
+		color: @red;
+		content: "가상요소";
+	}
+}
+.cl-output.required-relative {
+	.cl-text:after{
+		position: relative;
+		color: @red;
+		content: "가상요소";
+	}
+}

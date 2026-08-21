@@ -1,0 +1,103 @@
+@import "../custom-settings.part.less";
+
+.cl-sidenavigation {
+	font: @font-base;
+	background-color: @list-background-color;
+	border: @list-border-base;
+	border-radius: @list-border-radius;
+	color: @list-text-color;
+
+	&.cl-focus {
+		border-color: @list-focus-border-color;
+	}
+
+	.cl-sidenavigation-item {
+		min-height: @list-item-height;
+		height: auto;
+		padding: @list-item-padding-y @list-item-padding-x;
+		
+		.cl-icon {
+			background-size: auto;
+			width: 18px;
+			height: 18px;
+		}
+
+		.cl-text {
+			padding: 0px 0px 0px @list-item-padding-x;
+			white-space: normal;
+			text-overflow: initial;
+			word-break: break-all;
+		}
+
+		.cl-badge {
+		}
+
+		.cl-expand-icon {
+			background-size: auto;
+			width: 19px;
+			height: 19px;
+		}
+		
+		&.cl-folder {
+			.cl-icon {
+			}
+			&.cl-expanded .cl-expand-icon {
+			}
+	
+			&.cl-collapsed .cl-expand-icon {
+			}
+		}
+
+		&:hover, &.cl-hover,&:focus {
+			background-color: @list-item-hover-background-color;
+			color: @list-item-hover-text-color;
+		}
+
+		&.cl-selected {
+			background-color: @list-item-selected-background-color;
+			color: @list-item-selected-text-color;
+
+			&.cl-folder{
+				&.cl-expanded .cl-expand-icon {
+					// background-image:url(icons/expanded-selected.png);
+				}
+		
+				&.cl-collapsed .cl-expand-icon {
+					// background-image:url(icons/collapsed-selected.png);
+				}
+			}
+		}
+
+		&.cl-disabled {
+			color: @list-item-disabled-text-color;
+
+			&:hover, &.cl-hover, &:focus {
+				// background-color: transparent;
+			}
+			
+			&.cl-selected {
+				background-color:  @list-item-disabled-selected-background-color;
+				color: @list-item-disabled-selected-text-color;
+			}
+		}
+	
+	}
+
+	&.cl-disabled {
+		background-color: @list-disabled-background-color;
+		border-color: @list-disabled-border-color;
+		color: @list-disabled-text-color;
+		
+		.cl-sidenavigation-item {
+
+			&:hover, &.cl-hover, &:focus {
+				// background-color: transparent;
+			}
+			
+			&.cl-selected {
+				background-color:  @list-item-disabled-selected-background-color;
+				color: @list-item-disabled-selected-text-color;
+			}
+		}
+	}
+}

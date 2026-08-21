@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-aefac33d" version="1.0.3736">
+  <head std:sid="head-14877270">
+    <screen std:sid="screen-4c4eaee1" id="default" name="default" minwidth="1020px" width="1020px" height="540px" useCustomWidth="true" useCustomHeight="true" customHeight="310" customWidth="330"/>
+    <screen std:sid="screen-d713d933" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-29b7ca81" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-ac971301">
+      <cl:dataset std:sid="d-set-b7466145" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b0689ea6" name="headerNm"/>
+          <cl:datacolumn std:sid="d-column-98ce32ba" name="column"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="그리드 틀고정">
+      <cl:property name="grid" type="control"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-07802da1" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:listener std:sid="listener-1d8baff5" name="load" handler="onBodyLoad"/>
+    <cl:output std:sid="output-f2c10782" id="opt1" class="h5" value="틀고정">
+      <cl:formdata std:sid="f-data-003cd673" row="0" col="0" rowspan="1" colspan="4"/>
+    </cl:output>
+    <cl:group std:sid="group-ed5a0474" id="grp2" class="form-base">
+      <cl:formdata std:sid="f-data-1858891a" row="1" col="0" rowspan="1" colspan="4"/>
+      <cl:output std:sid="output-d041f6cb" class="label text-center" value="좌측 셀">
+        <cl:formdata std:sid="f-data-8f406d74" row="0" col="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-7d08f713" id="cmbLeft">
+        <cl:formdata std:sid="f-data-7451780f" row="0" col="1"/>
+        <cl:item std:sid="t-item-d12ee432" label="선택안함" value="" checked="false"/>
+        <cl:itemset datasetid="ds1" label="headerNm" value="column"/>
+      </cl:combobox>
+      <cl:numbereditor std:sid="n-editor-4cef46c1" id="nbeLeftWdt" min="0" spinbutton="false" placeholder="셀 너비" autoselect="true">
+        <cl:formdata std:sid="f-data-5bc5a827" row="0" col="2"/>
+      </cl:numbereditor>
+      <cl:output std:sid="output-c36a5e69" class="label text-center" value="우측 셀">
+        <cl:formdata std:sid="f-data-823797a4" row="1" col="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-077cfce3" id="cmbRight">
+        <cl:formdata std:sid="f-data-b56d3314" row="1" col="1"/>
+        <cl:item std:sid="t-item-8afa679a" label="선택안함" value=""/>
+        <cl:itemset datasetid="ds1" label="headerNm" value="column"/>
+      </cl:combobox>
+      <cl:numbereditor std:sid="n-editor-02cc57ea" id="nbeRightWdt" min="0" spinbutton="false" placeholder="셀 너비" autoselect="true">
+        <cl:formdata std:sid="f-data-9102a0e9" row="1" col="2"/>
+      </cl:numbereditor>
+      <cl:output std:sid="output-846717e5" class="label text-center" value="상단 행">
+        <cl:formdata std:sid="f-data-510aad97" row="2" col="0"/>
+      </cl:output>
+      <cl:numbereditor std:sid="n-editor-e8fbf8ba" id="nbeTop" min="0.0" spinbutton="false" placeholder="행 인덱스">
+        <cl:formdata std:sid="f-data-8037d376" row="2" col="1"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-6e68c55c" id="nbeTopHgt" min="0" spinbutton="false" placeholder="행 높이" autoselect="true">
+        <cl:formdata std:sid="f-data-23cbe9c6" row="2" col="2"/>
+      </cl:numbereditor>
+      <cl:output std:sid="output-1fa9a4b2" class="label text-center" value="하단 행">
+        <cl:formdata std:sid="f-data-189d24ab" row="3" col="0"/>
+      </cl:output>
+      <cl:numbereditor std:sid="n-editor-2a6b2644" id="nbeBottom" min="0.0" spinbutton="false" placeholder="행 인덱스">
+        <cl:formdata std:sid="f-data-2ee79722" row="3" col="1"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-bb1a0872" id="nbeBtmHgt" min="0" spinbutton="false" placeholder="행 높이" autoselect="true">
+        <cl:formdata std:sid="f-data-ed6f69a8" row="3" col="2"/>
+      </cl:numbereditor>
+      <cl:formlayout std:sid="f-layout-1b15613e" scrollable="false" hspace="12px" vspace="12px" top-margin="6px" right-margin="6px" bottom-margin="6px" left-margin="6px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+        <cl:rows length="30" unit="PIXEL"/>
+        <cl:rows length="30" unit="PIXEL"/>
+        <cl:rows length="30" unit="PIXEL"/>
+        <cl:rows length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="75" unit="PIXEL"/>
+        <cl:columns length="3" unit="FRACTION"/>
+        <cl:columns length="2" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-e4188c6e" id="grp1">
+      <cl:formdata std:sid="f-data-9b3887ef" row="2" col="0" rowspan="1" colspan="4"/>
+      <cl:button std:sid="button-d704f7af" id="btnCancel" value="닫기">
+        <cl:listener std:sid="listener-d28aebf5" name="click" handler="onBtn2Click"/>
+        <cl:flowlayoutdata std:sid="f-data-3f791436" width="74px" height="30px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-5886cd24" id="btnOk" class="btn-primary" value="확인">
+        <cl:listener std:sid="listener-a6052d3d" name="click" handler="onBtn1Click"/>
+        <cl:flowlayoutdata std:sid="f-data-b9b931de" width="74px" height="30px" autosize="none"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-a221692c" scrollable="false" hspacing="6" vspacing="6" halign="right"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-26a44afd" hspace="0px" vspace="20px" top-margin="20px" right-margin="20px" bottom-margin="20px" left-margin="20px">
+      <cl:rows length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="170" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" minlength="0"/>
+      <cl:columns length="70" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="70" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler>
+      <std:guide position="114"/>
+    </std:hruler>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

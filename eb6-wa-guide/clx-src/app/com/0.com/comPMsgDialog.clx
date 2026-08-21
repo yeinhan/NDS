@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-2aefb2ec" version="1.0.4034">
+  <head std:sid="head-0f36aaf2">
+    <screen std:sid="screen-a2acc44a" id="default" name="default" width="1644px" height="903px" useCustomWidth="true" useCustomHeight="true" customHeight="220" customWidth="400"/>
+    <screen std:sid="screen-34ae2b7d" id="tablet" name="tablet" width="1541px" height="903px"/>
+    <cl:model std:sid="model-505fbc7f"/>
+    <cl:appspec title="메세지 팝업"/>
+  </head>
+  <body std:sid="body-b4f3f1ff">
+    <cl:listener std:sid="listener-462f9122" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-61555465" id="grpMsgContent">
+      <cl:verticaldata std:sid="v-data-5074c8f7" width="352px" height="114px"/>
+      <cl:group std:sid="group-c370f43e" id="grp1">
+        <cl:verticaldata std:sid="v-data-b0fd2691" width="400px" height="42px"/>
+        <cl:img std:sid="image-42ca44c7" id="imgDanger" visible="false" src="../../../theme/images/controls/dialog/ic_pop_danger.png">
+          <cl:xylayoutdata std:sid="xyl-data-7f9f6023" width="40px" height="40px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+        </cl:img>
+        <cl:img std:sid="image-2c0a159f" id="imgWarning" visible="false" src="../../../theme/images/controls/dialog/ic_pop_warning.png">
+          <cl:xylayoutdata std:sid="xyl-data-24de3af1" width="40px" height="40px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+        </cl:img>
+        <cl:img std:sid="image-87e787af" id="imgInfo" visible="false" src="../../../theme/images/controls/dialog/ic_pop_info.png">
+          <cl:xylayoutdata std:sid="xyl-data-b18a04b8" width="40px" height="40px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+        </cl:img>
+        <cl:xylayout std:sid="xylayout-b3c4a9b4" scrollable="false"/>
+      </cl:group>
+      <cl:output std:sid="output-1bd8cf4f" id="optMsg" class="h5 text-center" arialive="assertive">
+        <cl:verticaldata std:sid="v-data-62342f9c" width="100%" height="24px" autosize="height"/>
+      </cl:output>
+      <cl:output std:sid="output-e504f27b" id="optSubMsg" class="fs-sm text-gray-600 text-center" arialive="assertive">
+        <cl:verticaldata std:sid="v-data-89d5d4a0" width="100%" height="34px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-ab35f739" scrollable="false" spacing="6"/>
+    </cl:group>
+    <cl:group std:sid="group-5163a58e" id="grp2">
+      <cl:verticaldata std:sid="v-data-54ad8b95" width="352px" height="48px"/>
+      <cl:button std:sid="button-8955cf36" id="btnNegative" visible="false" value="취소">
+        <cl:listener std:sid="listener-ae4e33d2" name="click" handler="onBtnCancelClick"/>
+        <cl:flowlayoutdata std:sid="f-data-31bca5b8" width="171px" height="48px"/>
+      </cl:button>
+      <cl:button std:sid="button-bd3dd4d3" id="btnPositive" class="btn-primary" visible="false" value="확인">
+        <cl:listener std:sid="listener-f533729f" name="click" handler="onBtnConfirmClick"/>
+        <cl:flowlayoutdata std:sid="f-data-9da2653d" width="171px" height="48px"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-d806c5bf" scrollable="false" hspacing="10" vspacing="0" halign="center" linewrap="false"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-9366d041" spacing="10" leftmargin="24" rightmargin="24" topmargin="24" bottommargin="24"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

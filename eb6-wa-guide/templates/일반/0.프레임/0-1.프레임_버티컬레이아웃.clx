@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <screen std:sid="screen-f2dc98dc" id="default" name="default" minwidth="1280px" width="1280px" height="760px"/>
+    <screen std:sid="screen-7e62588a" id="tablet" name="tablet" minwidth="800px" maxwidth="1279px" width="800px" height="760px"/>
+    <screen std:sid="screen-27e31d1a" id="mobile" name="mobile" maxwidth="799px" width="360px" height="760px"/>
+    <cl:model std:sid="model-90321062"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-a0c207fd">
+    <cl:udc std:sid="ud-control-8c71e0ab" id="udcComAppHeader" type="udc.com.udcComAppHeader">
+      <cl:verticaldata std:sid="v-data-d23e67ba" width="1238px" height="30px" autosize="height"/>
+    </cl:udc>
+    <cl:group std:sid="group-6bd1a7be" id="grpSearch" class="search-box">
+      <std:metadata>
+        <std:property key="template-uuid" value="407f0018-c6b1-4f99-9f8b-123d0bcee9d7"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-4736fbe8" width="892px" height="88px" autosize="height"/>
+      <cl:output std:sid="output-ef004bc0" class="label require" value="라벨">
+        <cl:formdata std:sid="f-data-61f01729" row="0" col="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-b67f57fe" id="cmb1">
+        <cl:formdata std:sid="f-data-c759812c" halign="FILL" width="200" row="0" col="1"/>
+      </cl:combobox>
+      <cl:output std:sid="output-bbcd2fdb" class="label" value="라벨">
+        <cl:formdata std:sid="f-data-d707c6ce" row="0" col="2"/>
+      </cl:output>
+      <cl:dateinput std:sid="d-input-83706d2f" id="dti1">
+        <cl:formdata std:sid="f-data-85d5fda5" row="0" col="3"/>
+      </cl:dateinput>
+      <cl:output std:sid="output-e177ffbf" class="label" value="라벨">
+        <cl:formdata std:sid="f-data-f8d2a2db" row="0" col="4"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-4e1eeb36" id="ipb1">
+        <cl:formdata std:sid="f-data-0be4c40d" row="0" col="5"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-3e9cbeb5" class="label require" value="라벨">
+        <cl:formdata std:sid="f-data-8caed7c5" row="1" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-c3ee7977" id="grp2">
+        <cl:formdata std:sid="f-data-c47a18c6" row="1" col="1"/>
+        <cl:combobox std:sid="c-box-c826821d" id="cmb2">
+          <cl:formdata std:sid="f-data-959bdcae" row="0" col="0"/>
+        </cl:combobox>
+        <cl:combobox std:sid="c-box-0e3e329a" id="cmb3">
+          <cl:formdata std:sid="f-data-8094a5c6" row="0" col="1"/>
+        </cl:combobox>
+        <cl:formlayout std:sid="f-layout-563b50d9" scrollable="false" hspace="6px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:output std:sid="output-278c68f8" class="label" value="라벨">
+        <cl:formdata std:sid="f-data-2b612c92" row="1" col="2"/>
+      </cl:output>
+      <cl:searchinput std:sid="s-input-7ef2fc42">
+        <cl:formdata std:sid="f-data-a8fc14ec" row="1" col="3"/>
+      </cl:searchinput>
+      <cl:output std:sid="output-db69af1b" class="label" value="라벨">
+        <cl:formdata std:sid="f-data-4e48fcdb" row="1" col="4"/>
+      </cl:output>
+      <cl:group std:sid="group-4132fda9" id="grp3">
+        <cl:formdata std:sid="f-data-b81f835d" row="1" col="5"/>
+        <cl:dateinput std:sid="d-input-5e8ef0b8" id="dti2">
+          <cl:formdata std:sid="f-data-d79dbd02" row="0" col="0"/>
+        </cl:dateinput>
+        <cl:output std:sid="output-d0ca5fd3" class="text-center" value="~">
+          <cl:formdata std:sid="f-data-4f791e61" row="0" col="1"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-9561bfee" id="dti3">
+          <cl:formdata std:sid="f-data-ecb3536a" row="0" col="2"/>
+        </cl:dateinput>
+        <cl:formlayout std:sid="f-layout-7186c07a" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="20" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:button std:sid="button-a7ebb5b8" id="btn1" class="btn-secondary btn-i-search" value="조회" icon="../../theme/images/controls/button/ic_btn.png">
+        <cl:formdata std:sid="f-data-ae1c81eb" row="1" col="6"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-2184044c" scrollable="false" hspace="8px" vspace="4px" top-margin="12px" right-margin="20px" bottom-margin="12px" left-margin="20px">
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:columns length="35" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="26" autoSizing="true" syncminlength="false"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="26" autoSizing="true" syncminlength="false"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="77" unit="PIXEL" autoSizing="true"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-2ee1e8ce" id="grpData" class="data-box">
+      <cl:verticaldata std:sid="v-data-f01a3499" width="400px" height="535px" autosize="height"/>
+      <cl:verticallayout std:sid="v-layout-c6fce575" spacing="10"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="740"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9915e24a" version="1.0.5306">
+  <head std:sid="head-5eb02ee4">
+    <screen std:sid="screen-3c2b9266" id="default" name="default" width="1280px" height="760px"/>
+    <screen std:sid="screen-4eeddbcd" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-cf0138c4" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-b98cea2d"/>
+    <cl:appspec title="웹 접근성 자가 진단 도구"/>
+  </head>
+  <body std:sid="body-eec5cb67" class="pb-body">
+    <cl:group std:sid="group-b655417b" id="grpHeader" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1280px" height="319px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" id="breadcrumbs1" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="웹 접근성 자가 진단 도구" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-6c4646a5" id="grp1" class="bg-primary-dim">
+        <cl:verticaldata std:sid="v-data-bc4a348e" width="1220px" height="105px" autosize="height"/>
+        <cl:output std:sid="output-a5bbbbb2" value="본 화면에서는 웹 접근성 자가 진단 도구를 소개합니다.&#xD;&#xA;&#xD;&#xA;각 화면에서 웹 접근성을 잘 준수하고 있는지 자가 진단 도구를 통해 확인 할 수 있습니다.&#xD;&#xA;따라서 웹 접근성 심사를 받기 전에, 웹 접근성 자가진단 도구를 통해 접근성 준수 여부를 확인하는 것을 권장합니다.&#xD;&#xA;단, 자가 진단 결과는 웹 접근성 심사 결과와는 무관합니다.&#xD;&#xA;">
+          <cl:verticaldata std:sid="v-data-89cd7f2b" width="100px" height="85px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-e2a63d96" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-4f00ff31" id="grpData1" class="pb-content wa-guideline">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-6d77e5b7" width="1280px" height="2125px" autosize="height"/>
+      <cl:udc std:sid="ud-control-392b571a" id="sectiontitle1" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-fdc20506" width="1180px" height="29px" autosize="none"/>
+        <cl:property name="title" value="OpenWAX" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-1e80a092" value="OpenWAX 는 기본적으로 가장 많이 사용되는 웹 접근성 진단 도구 입니다.&#xD;&#xA;Chrome 과 FireFox 에서 사용하며, 확장 프로그램 형태로 설치하여 사용합니다.">
+        <cl:verticaldata std:sid="v-data-3cb0f632" width="1178px" height="79px" autosize="height"/>
+      </cl:output>
+      <cl:group std:sid="group-502810a5" id="grp8">
+        <cl:verticaldata std:sid="v-data-e09c5f06" width="1180px" height="1897px" autosize="height"/>
+        <cl:group std:sid="group-e3c1e3ac" id="grp3">
+          <cl:verticaldata std:sid="v-data-cc69a3bc" width="1180px" height="461px" autosize="height"/>
+          <cl:output std:sid="output-215c9119" displayexp="sstr(&quot;(1) OpenWAX 다운로드&quot;, [&quot;fw-bold&quot;, &quot;fs-lg&quot;]) + &quot;\n\n&quot;&#xD;&#xA;+ &quot;브라우저 확장프로그램에서 OpenWAX 를 검색한 뒤, 설치를 진행합니다.\n&quot;&#xD;&#xA;+ &quot;설치가 완료되면 브라우저 상단에 &quot;+sstr(&quot;OpenWax 아이콘&quot;, [&quot;text-underline&quot;])+&quot;을 확인 할 수 있습니다.&quot;">
+            <cl:verticaldata std:sid="v-data-830474ca" width="100px" height="99px" autosize="height"/>
+          </cl:output>
+          <cl:group std:sid="group-68a30240" id="grp2">
+            <cl:verticaldata std:sid="v-data-0609bf58" width="1180px" height="332px" autosize="height"/>
+            <cl:img std:sid="image-3bfb2059" id="img1" class="border" src="../../control/웹접근성 캡쳐 이미지/0. 공통/OpenWAX_Download.png">
+              <cl:flowlayoutdata std:sid="f-data-a2354972" width="800px" height="331px"/>
+            </cl:img>
+            <cl:img std:sid="image-6b106b6e" id="img7" class="border" src="../../control/웹접근성 캡쳐 이미지/0. 공통/OpenWAX_Install.png">
+              <cl:flowlayoutdata std:sid="f-data-bc9621dd" width="154px" height="77px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-6880a90b" scrollable="false" hspacing="10" vspacing="0" linewrap="false"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-7de35f01" spacing="10" topmargin="10"/>
+        </cl:group>
+        <cl:group std:sid="group-26f46065" id="grp5">
+          <cl:verticaldata std:sid="v-data-18474b2c" width="1180px" height="875px" autosize="height"/>
+          <cl:output std:sid="output-ee4f8da0" displayexp="sstr(&quot;(2) OpenWAX 실행&quot;, [&quot;fw-bold&quot;, &quot;fs-lg&quot;]) + &quot;\n\n&quot;&#xD;&#xA;+ &quot;진단을 하고자 하는 화면을 열어놓은 뒤, OpenWAX 아이콘을 누르면 &quot;+sstr(&quot;좌측에 진단 결과&quot;, [&quot;text-underline&quot;])+&quot;를 확인 할 수 있습니다.\n&quot;&#xD;&#xA;+ &quot;모든 내용은 웹 접근성 지표에 의하여 검사를 수행합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+ &quot;검사 시 오류가 발생한 부분은 &quot;+sstr(&quot;빨간색&quot;, [&quot;text-danger&quot;])+&quot;으로 표시 됩니다.\n&quot;&#xD;&#xA;+ &quot;상단에 &quot;+sstr(&quot;Toggle All 버튼&quot;, [&quot;text-underline&quot;])+&quot;을 클릭하여 좀 더 상세한 내용을 함께 확인 할 수 있습니다.&quot;">
+            <cl:verticaldata std:sid="v-data-f1c9b365" width="1180px" height="99px" autosize="height"/>
+          </cl:output>
+          <cl:group std:sid="group-bcd82aaf" id="grp4">
+            <cl:verticaldata std:sid="v-data-891910d2" width="1180px" height="766px" autosize="height"/>
+            <cl:img std:sid="image-5220eec5" id="img3" class="border" src="../../control/웹접근성 캡쳐 이미지/0. 공통/OpenWAX_result.png">
+              <cl:flowlayoutdata std:sid="f-data-6fc8bd16" width="700px" height="377px"/>
+            </cl:img>
+            <cl:img std:sid="image-e4d9d91b" id="img12" class="border" src="../../control/웹접근성 캡쳐 이미지/0. 공통/OpenWAX_result_detail.png">
+              <cl:flowlayoutdata std:sid="f-data-ac5addc2" width="700px" height="374px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-8e8afd9a" scrollable="false" hspacing="20" valign="middle" linewrap="false"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-9e3f45ca" spacing="10"/>
+        </cl:group>
+        <cl:group std:sid="group-a4309890" id="grp7">
+          <cl:verticaldata std:sid="v-data-653c5475" width="1180px" height="541px" autosize="height"/>
+          <cl:output std:sid="output-e2ec4cc5" displayexp="sstr(&quot;(3) OpenWAX 도움말&quot;, [&quot;fw-bold&quot;, &quot;fs-lg&quot;]) + &quot;\n\n&quot;&#xD;&#xA;+ &quot;아래 URL 에서 OpenWAX 에 대해 더 자세한 가이드를 확인 할 수 있습니다.\n&quot;&#xD;&#xA;+ sstr(&quot;https://goonoo.github.io/OpenWAX/&quot;, [&quot;text-primary&quot;, &quot;text-underline&quot;])&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <cl:verticaldata std:sid="v-data-14578838" width="1180px" height="99px" autosize="height"/>
+          </cl:output>
+          <cl:group std:sid="group-c7706002" id="grp6">
+            <cl:verticaldata std:sid="v-data-1032d062" width="1180px" height="432px" autosize="height"/>
+            <cl:img std:sid="image-5d88dd65" id="img17" class="border" src="../../control/웹접근성 캡쳐 이미지/0. 공통/OpenWAX_docs.png">
+              <cl:verticaldata std:sid="v-data-0591c52e" width="800px" height="432px"/>
+            </cl:img>
+            <cl:verticallayout std:sid="v-layout-40c4af0b" distribution="leading"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-b3ea52f5" spacing="10"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-c8d59b33" spacing="20"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-44042cc3" scrollable="false" spacing="10" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-91fb31eb" id="grpData2" class="pb-content wa-guideline">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-9fa8c68f" width="1280px" height="2540px" autosize="height"/>
+      <cl:udc std:sid="ud-control-67a86484" id="sectiontitle2" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-a076cba9" width="1180px" height="29px" autosize="none"/>
+        <cl:property name="title" value="Watch 2.0" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-4390ef66" value="Watch 2.0 은 웹 접근성 품질인증기관인 웹 와치에서 제공하고 있는 자가 진단 도구입니다.&#xD;&#xA;Watch 2.0 을 통해 현재 화면에 대한 웹 접근성 및 웹 표준 준수 여부를 자동 진단할 수  있습니다.">
+        <cl:verticaldata std:sid="v-data-f6579872" width="1180px" height="79px" autosize="height"/>
+      </cl:output>
+      <cl:group std:sid="group-60801be9" id="grp18">
+        <cl:verticaldata std:sid="v-data-05422ad8" width="1180px" height="2312px" autosize="height"/>
+        <cl:group std:sid="group-4b4774b9" id="grp12">
+          <cl:verticaldata std:sid="v-data-6a34b15a" width="1180px" height="551px" autosize="height"/>
+          <cl:output std:sid="output-ecc11203" displayexp="sstr(&quot;(1) Watch 2.0 다운로드&quot;, [&quot;fw-bold&quot;, &quot;fs-lg&quot;]) + &quot;\n\n&quot;&#xD;&#xA;+ &quot;웹와치 홈페이지에 접속하면 Watch 2.0 도구를 다운로드 받을 수 있습니다.\n&quot;&#xD;&#xA;+ &quot;아래 URL 에 접속한 뒤, 다운로드 탭에서 확인할 수 있습니다.\n&quot;&#xD;&#xA;+ sstr(&quot;https://webwatch.or.kr/accessibility/040301.html?MenuCD=730&quot;, [&quot;text-primary&quot;, &quot;text-underline&quot;])">
+            <cl:verticaldata std:sid="v-data-ec758648" width="1180px" height="99px" autosize="height"/>
+          </cl:output>
+          <cl:group std:sid="group-9cb51b9b" id="grp11">
+            <cl:verticaldata std:sid="v-data-142e887c" width="1180px" height="432px" autosize="height"/>
+            <cl:img std:sid="image-83840248" id="img10" class="border" src="../../control/웹접근성 캡쳐 이미지/0. 공통/Watch2_webwatch.png">
+              <cl:verticaldata std:sid="v-data-c2f749ce" width="800px" height="432px"/>
+            </cl:img>
+            <cl:verticallayout std:sid="v-layout-a583c948" distribution="leading"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-de7933d0" spacing="10" topmargin="10"/>
+        </cl:group>
+        <cl:group std:sid="group-1c75d9ad" id="grp15">
+          <cl:verticaldata std:sid="v-data-c1fd7fd2" width="1180px" height="540px" autosize="height"/>
+          <cl:output std:sid="output-2ea1e417" displayexp="sstr(&quot;(2) Watch 2.0 진단&quot;, [&quot;fw-bold&quot;, &quot;fs-lg&quot;]) + &quot;\n\n&quot;&#xD;&#xA;+ &quot;Watch 2.0 프로그램을 실행한 화면입니다.\n&quot;&#xD;&#xA;+ &quot;상단 좌측에 &quot;+sstr(&quot;진단&quot;, [&quot;text-underline&quot;])+&quot; 버튼을 클릭하면 웹 접근성 자가진단 프로젝트 설정 창을 확인 할 수 있습니다.\n\n&quot;&#xD;&#xA;+ &quot;설정 창에서 프로젝트 명을 작성한 뒤, 진단 대상을 선택합니다.\n&quot;&#xD;&#xA;+ &quot;진단대상에 URL 또는 파일을 선택한 뒤, &quot;+sstr(&quot;시작&quot;, [&quot;text-danger&quot;])+&quot;버튼을 눌러 진단을 진행합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+ sstr(&quot;※ 진단 대상 선택방법 ※&quot;, [&quot;fs-md&quot;])+&quot;\n&quot;&#xD;&#xA;+ &quot;eXBuilder6 로 개발된 화면의 경우 두 가지 방식으로 진단을 할 수 있습니다.\n&quot;&#xD;&#xA;+ &quot;▹ SPA 방식 : &quot;+sstr(&quot;파일(경로)&quot;, [&quot;text-danger&quot;])+&quot; 선택\n\t\t\tURL이 그대로 유지되지 때문에 각 화면을 HTML 파일로 생성한 뒤, 각 HTML 파일를 진단하는 방식을 사용합니다.\n\t\t\tHTML 파일 생성방법은 아래 코드 예제를 참고하세요.\n&quot;&#xD;&#xA;+ &quot;▹ MPA 방식 : &quot;+sstr(&quot;URL&quot;, [&quot;text-danger&quot;])+&quot; 선택\n\t\t\t각 화면의 URL 을 통해 진단하는 방식을 사용합니다.&quot;">
+            <cl:verticaldata std:sid="v-data-e21195e0" width="1180px" height="99px" autosize="height"/>
+          </cl:output>
+          <cl:group std:sid="group-b9cbedde" id="grp19">
+            <cl:verticaldata std:sid="v-data-9b698da6" width="1180px" height="431px" autosize="height"/>
+            <cl:group std:sid="group-617fe1d4" id="grp9">
+              <cl:formdata std:sid="f-data-fd34dfca" width="100" height="-44" row="0" col="0"/>
+              <cl:img std:sid="image-88d4e9b1" id="img2" class="border" src="../../control/웹접근성 캡쳐 이미지/0. 공통/Watch2_assess.png">
+                <cl:verticaldata std:sid="v-data-a0331197" width="800px" height="431px"/>
+              </cl:img>
+              <cl:verticallayout std:sid="v-layout-e3dbb70b" distribution="leading"/>
+            </cl:group>
+            <cl:udc std:sid="ud-control-293a3ae1" id="udcexamace1" type="udc.exam.udcExamAce">
+              <cl:formdata std:sid="f-data-4500466a" row="0" col="1"/>
+              <cl:property name="value" value="/*&#xD;&#xA; * 파일(경로) 진단을 위한 HTML 파일 생성 방법&#xD;&#xA; * &#xD;&#xA; * 현재 전체 document 를 HTML 파일로 생성합니다.&#xD;&#xA; * 해당 함수는 accessibility.module.js 에서 제공합니다.&#xD;&#xA; */&#xD;&#xA;makeHtmlFile(&quot;fileName&quot;);" type="string"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-c4592546" scrollable="false" hspace="10px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="981" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-d9d963de" spacing="10"/>
+        </cl:group>
+        <cl:group std:sid="group-84382696" id="grp16">
+          <cl:verticaldata std:sid="v-data-7fd9210d" width="1180px" height="542px" autosize="height"/>
+          <cl:output std:sid="output-8fb1d42c" displayexp="sstr(&quot;(3) Watch 2.0 진단 결과&quot;, [&quot;fw-bold&quot;, &quot;fs-lg&quot;]) + &quot;\n\n&quot;&#xD;&#xA;+ &quot;각 화면 별 진단 결과를 확인 할 수 있습니다.\n&quot;&#xD;&#xA;+ &quot;진단 결과 중 오류가 있을 경우, 좌측 트리에서 &quot;+sstr(&quot;빨간색&quot;, [&quot;text-danger&quot;])+&quot; 아이콘을 통해 확인 할 수 있습니다.\n&quot;&#xD;&#xA;+ &quot;지침별로 정렬하여 결과를 확인 할 수 있으며, 오류 종류를 확인하여 오류를 수정해야 합니다.&quot;">
+            <cl:verticaldata std:sid="v-data-efd87220" width="1180px" height="99px" autosize="height"/>
+          </cl:output>
+          <cl:group std:sid="group-ce1b33de" id="grp13">
+            <cl:verticaldata std:sid="v-data-89f3cc13" width="1180px" height="433px" autosize="height"/>
+            <cl:img std:sid="image-0671a240" id="img11" class="border" src="../../control/웹접근성 캡쳐 이미지/0. 공통/Watch2_result.png">
+              <cl:verticaldata std:sid="v-data-6e37bf75" width="799px" height="433px"/>
+            </cl:img>
+            <cl:verticallayout std:sid="v-layout-3951c79b" distribution="leading"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-b6679143" spacing="10"/>
+        </cl:group>
+        <cl:group std:sid="group-ee195caf" id="grp17">
+          <cl:verticaldata std:sid="v-data-a86e04f3" width="1180px" height="619px" autosize="height"/>
+          <cl:output std:sid="output-35ff9ade" displayexp="sstr(&quot;(4) Watch 2.0 진단 보고서&quot;, [&quot;fw-bold&quot;, &quot;fs-lg&quot;]) + &quot;\n\n&quot;&#xD;&#xA;+ &quot;진단 결과에 따른 &quot;+sstr(&quot;보고서&quot;, [&quot;text-underline&quot;])+&quot;를 생성할 수 있습니다.\n&quot;&#xD;&#xA;+ &quot;상단의 보고서 버튼을 눌러 보고서를 생성 및 저장할 수 있습니다.&quot;">
+            <cl:verticaldata std:sid="v-data-43a398bb" width="1180px" height="99px" autosize="height"/>
+          </cl:output>
+          <cl:group std:sid="group-9ab65191" id="grp14">
+            <cl:verticaldata std:sid="v-data-ca1434fe" width="1180px" height="510px" autosize="height"/>
+            <cl:img std:sid="image-eb8b7cf1" id="img5" class="border" src="../../control/웹접근성 캡쳐 이미지/0. 공통/Watch2_report.png">
+              <cl:verticaldata std:sid="v-data-eaaa6f78" width="497px" height="510px"/>
+            </cl:img>
+            <cl:verticallayout std:sid="v-layout-e20d62ff" distribution="leading"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-5a4d3911" spacing="10"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-9a19ba87" spacing="20"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-aff3b4dd" scrollable="false" spacing="10" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-fdaf4a5a" id="grpData3" class="pb-content wa-guideline">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-19651b87" width="1280px" height="1453px" autosize="height"/>
+      <cl:udc std:sid="ud-control-9f699b39" id="sectiontitle3" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-17196366" width="1180px" height="29px" autosize="none"/>
+        <cl:property name="title" value="The W3C Markup Validation Service" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-207a394e" value="웹 접근성을 향상시키기 위해서는 웹 표준 준수가 선행되어야 합니다.&#xD;&#xA;W3C 에서 제공하는 마크업 유효성 검사 페이지를 통해 웹 표준 준수 여부를 검사 할 수 있습니다.">
+        <cl:verticaldata std:sid="v-data-651ca9e9" width="1180px" height="79px" autosize="height"/>
+      </cl:output>
+      <cl:group std:sid="group-4024d4ff" id="grp23">
+        <cl:verticaldata std:sid="v-data-70ff31cf" width="1180px" height="1091px" autosize="height"/>
+        <cl:group std:sid="group-8b215ea1" id="grp21">
+          <cl:verticaldata std:sid="v-data-e77c2786" width="1180px" height="541px" autosize="height"/>
+          <cl:output std:sid="output-b3f1872e" displayexp="sstr(&quot;(1) W3C 웹 표준 진단&quot;, [&quot;fw-bold&quot;, &quot;fs-lg&quot;]) + &quot;\n\n&quot;&#xD;&#xA;+ &quot;아래 URL에 접속하여 W3C 웹 표준 진단을 수행 할 수 있습니다.\n&quot;&#xD;&#xA;+ sstr(&quot;https://validator.w3.org/&quot;, [&quot;text-primary&quot;, &quot;text-underline&quot;]) + &quot;\n\n&quot;&#xD;&#xA;&#xD;&#xA;+ &quot;Watch 2.0 도구와 마찬가지로 현재 Document 를 대상으로 웹 표준을 검사하기 때문에 URL 과 HTML 파일을 통해 검사할 수 있습니다.\n&quot;&#xD;&#xA;+ &quot;SPA/MPA 방식에 따라 진단 방식을 선택 한 뒤, &quot; + sstr(&quot;Check&quot;, [&quot;text-danger&quot;]) + &quot;버튼을 눌러 웹 표준을 검사합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;+ sstr(&quot;※ 진단 방식 선택방법 ※&quot;, [&quot;fs-md&quot;])+&quot;\n&quot;&#xD;&#xA;+ &quot;▹ SPA 방식 : &quot;+sstr(&quot;Validate by URI&quot;, [&quot;text-danger&quot;])+&quot; 선택\n&quot;&#xD;&#xA;+ &quot;▹ MPA 방식 : &quot;+sstr(&quot;Validate by File Upload&quot;, [&quot;text-danger&quot;])+&quot; 선택\n\t\t\t&quot; + sstr(&quot;makeHtmlFile&quot;, [&quot;text-underline&quot;]) + &quot;함수를 통해 HTML 파일을 생성한 뒤 진단할 수 있습니다.&quot;">
+            <cl:verticaldata std:sid="v-data-1ddf44b9" width="1180px" height="99px" autosize="height"/>
+          </cl:output>
+          <cl:group std:sid="group-711df688" id="grp10">
+            <cl:verticaldata std:sid="v-data-c983123c" width="1180px" height="432px" autosize="height"/>
+            <cl:img std:sid="image-e11fd99c" id="img8" class="border" src="../../control/웹접근성 캡쳐 이미지/0. 공통/W3C_assess.png">
+              <cl:verticaldata std:sid="v-data-62f2d17b" width="802px" height="432px"/>
+            </cl:img>
+            <cl:verticallayout std:sid="v-layout-786b1bc3" distribution="leading"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-8cfa03c2" spacing="10" topmargin="10"/>
+        </cl:group>
+        <cl:group std:sid="group-1685ce98" id="grp22">
+          <cl:verticaldata std:sid="v-data-72f49501" width="1180px" height="540px" autosize="height"/>
+          <cl:output std:sid="output-1ef11282" displayexp="sstr(&quot;(2) W3C 웹 표준 진단 결과&quot;, [&quot;fw-bold&quot;, &quot;fs-lg&quot;]) + &quot;\n\n&quot;&#xD;&#xA;+ &quot;진단 결과는 뱃지를 통해 오류 정도와 진단 내용을 함께 보여줍니다.\n&quot;&#xD;&#xA;+ &quot;오류 결과에 따라 내용을 수정하여 웹 표준을 준수할 수 있도록 합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+ sstr(&quot;※ 오류 내용 ※&quot;, [&quot;fs-md&quot;]) + &quot;\n&quot; &#xA;+ &quot;▹ &quot;+sstr(&quot;Warning&quot;, [&quot;bg-warning-dim&quot;])+&quot; : 경고사항으로, 수정하는 것을 권장합니다.\n&quot;&#xD;&#xA;+ &quot;▹ &quot;+sstr(&quot;Error&quot;, [&quot;bg-danger-dim&quot;])+&quot; : 오류항목으로 반드시 수정해야 합니다.&quot;">
+            <cl:verticaldata std:sid="v-data-1b0cd137" width="1180px" height="99px" autosize="height"/>
+          </cl:output>
+          <cl:group std:sid="group-33390540" id="grp20">
+            <cl:verticaldata std:sid="v-data-ebbc6349" width="1180px" height="431px" autosize="height"/>
+            <cl:img std:sid="image-e96bc723" id="img6" class="border" src="../../control/웹접근성 캡쳐 이미지/0. 공통/W3C_result.png">
+              <cl:verticaldata std:sid="v-data-82e0d632" width="800px" height="431px"/>
+            </cl:img>
+            <cl:verticallayout std:sid="v-layout-71d9bc5c" distribution="leading"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-10ad72c2" spacing="10"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-6d7b92f6" spacing="20"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-e5dd54fe" scrollable="false" spacing="10" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-88f74627" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

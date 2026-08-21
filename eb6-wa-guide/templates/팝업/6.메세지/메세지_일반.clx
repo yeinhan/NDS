@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cc0c45c7" version="1.0.4034">
+  <head std:sid="head-9e8383b7">
+    <screen std:sid="screen-f4a9810c" id="default" name="default" minwidth="1280px" width="1280px" height="760px" useCustomWidth="true" useCustomHeight="true" customHeight="220" customWidth="400"/>
+    <screen std:sid="screen-fe73783b" id="tablet" name="tablet" minwidth="800px" maxwidth="1279px" width="800px" height="760px"/>
+    <screen std:sid="screen-ec914514" id="mobile" name="mobile" maxwidth="799px" width="360px" height="760px"/>
+    <cl:model std:sid="model-25a10ffd"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-996e4b65">
+    <cl:group std:sid="group-61555465">
+      <cl:formdata std:sid="f-data-41cc3d0d" row="0" col="0"/>
+      <cl:output std:sid="output-1bd8cf4f" class="h5 text-center" value="메세지를 입력하세요">
+        <cl:verticaldata std:sid="v-data-62342f9c" width="100%" height="24px" autosize="height"/>
+      </cl:output>
+      <cl:output std:sid="output-e504f27b" class="fs-sm text-gray-600 text-center" value="메세지에 대한 부가설명을 입력하세요&#xA;메세지에 대한 부가설명을 입력하세요">
+        <cl:verticaldata std:sid="v-data-89d5d4a0" width="100%" height="34px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-ab35f739" scrollable="false" spacing="6"/>
+    </cl:group>
+    <cl:group std:sid="group-5163a58e">
+      <cl:formdata std:sid="f-data-e5676a1d" row="1" col="0"/>
+      <cl:button std:sid="button-8955cf36" value="취소">
+        <cl:formdata std:sid="f-data-8a9128ea" row="0" col="0"/>
+      </cl:button>
+      <cl:button std:sid="button-bd3dd4d3" class="btn-primary" value="확인">
+        <cl:formdata std:sid="f-data-a63061b3" row="0" col="1"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-ddde80a8" scrollable="false" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-a668c32f" scrollable="false" hspace="0px" vspace="10px" top-margin="24px" right-margin="24px" bottom-margin="24px" left-margin="24px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="48" unit="PIXEL"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

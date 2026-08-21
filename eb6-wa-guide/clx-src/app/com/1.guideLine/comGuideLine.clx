@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d74def69" version="1.0.4167">
+  <head std:sid="head-5b77332e">
+    <screen std:sid="screen-35d9fd75" id="default" name="default" width="1280px" height="760px" useCustomHeight="true" customHeight="5500" customWidth="800"/>
+    <screen std:sid="screen-0ed41b47" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-5c7bfce0" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-94b96768">
+      <cl:dataset std:sid="d-set-dc8164f1" id="dsGuideLine" filtercondition="">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="컨트롤" std:sid="d-column-d812e2ef" name="control"/>
+          <cl:datacolumn comment="속성" std:sid="d-column-1d646f1c" name="property"/>
+          <cl:datacolumn comment="설명" std:sid="d-column-b43b4b31" name="description"/>
+          <cl:datacolumn comment="지침항목 번호" std:sid="d-column-cdee9a9b" name="guideNum" datatype="number"/>
+          <cl:datacolumn comment="지침내용" std:sid="d-column-cb052e8b" name="guideline"/>
+          <cl:datacolumn comment="필수여부" std:sid="d-column-892ce6a2" name="required" datatype="string"/>
+        </cl:datacolumnlist>
+        <cl:dataview std:sid="d-view-3b2d092d" id="dv1"/>
+        <cl:dataview std:sid="d-view-ab2a7983" id="dv2"/>
+        <cl:dataview std:sid="d-view-c47b4b4a" id="dv10"/>
+        <cl:dataview comment="" std:sid="d-view-b68755d5" id="dv11"/>
+        <cl:dataview std:sid="d-view-14ca89e0" id="dv12"/>
+        <cl:dataview std:sid="d-view-3d67538e" id="dv15"/>
+        <cl:dataview std:sid="d-view-9d9c2bd3" id="dv18"/>
+        <cl:dataview std:sid="d-view-3e48d183" id="dv19"/>
+        <cl:dataview std:sid="d-view-7b56c027" id="dv26"/>
+        <cl:dataview std:sid="d-view-2e417bb3" id="dv29"/>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:submission std:sid="submission-1a313179" id="subList" action="app/com/1.guideLine/data/guideline.json">
+        <cl:listener std:sid="listener-2eae7f52" name="submit-done" handler="onSubListSubmitDone"/>
+        <cl:responsedata dataid="dsGuideLine"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="웹접근성 지침"/>
+  </head>
+  <body std:sid="body-c1069c3e" class="pb-body">
+    <cl:listener std:sid="listener-dacbf06c" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-b655417b" id="grpHeader" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1280px" height="426px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" id="breadcrumbs1" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="웹 접근성 지침" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-9b099b3d" id="grp23">
+        <cl:verticaldata std:sid="v-data-1e97cdea" width="1180px" height="152px" autosize="height"/>
+        <cl:output std:sid="output-75a1799d" id="opt1" class="text-red" value="웹 접근성 품질인증 표준심사 지침(2022 개정)" displayexp="&quot;※ &quot; + sstr(value, [&quot;text-footnote1&quot;]) + &quot; 문서에서 제공하는 총 33 개의 웹 접근성 준수 지침입니다. ('25.1.1 시행)&quot;">
+          <cl:verticaldata std:sid="v-data-c42713a6" width="1180px" height="20px" syncminheight="true" autosize="height"/>
+        </cl:output>
+        <cl:output std:sid="output-992017d7" value="" displayexp="&quot;※ 지침 목록에 제공된 그리드의 &quot;+sstr(&quot;필수 컬럼&quot;, [&quot;fw-bold&quot;])&#xD;&#xA;+ &quot;은 접근성은 준수하기 위해 컨트롤에 적용되어야 하는 속성 및 조치의 필수 여부를 의미합니다.\n&quot;&#xD;&#xA;+ &quot;아래 체크박스를 통해 전체 항목 중 필수 항목만 조회할 수 있고\n&quot;&#xD;&#xA;+ &quot;그리드 헤더의  filter 버튼을 통해 개별 그리드의 필수 항목만 조회할 수 있습니다. &quot;">
+          <cl:verticaldata std:sid="v-data-07d60e82" width="100px" height="38px" autosize="height"/>
+        </cl:output>
+        <cl:checkbox std:sid="c-box-4aa9c4fa" id="cbx2" falsevalue="false" text="필수 항목만 보기">
+          <cl:listener std:sid="listener-2b013138" name="value-change" handler="onCbx2ValueChange"/>
+          <cl:verticaldata std:sid="v-data-0fd75270" width="1180px" height="40px" autosize="height"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-29cbdd6f" id="cbx1" text="상세지침 모두 접기">
+          <cl:listener std:sid="listener-bbe4f700" name="value-change" handler="onCbx1ValueChange"/>
+          <cl:verticaldata std:sid="v-data-e51aadd6" width="1180px" height="40px" autosize="height"/>
+        </cl:checkbox>
+        <cl:verticallayout std:sid="v-layout-9d012185" spacing="5"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group comment="1.인식의 용이성" std:sid="group-4f00ff31" id="grpRule1" class="pb-content wa-guideline">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-6d77e5b7" width="1280px" height="743px" autosize="height"/>
+      <cl:udc std:sid="ud-control-392b571a" id="sectiontitle1" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-fdc20506" width="1180px" height="29px" autosize="none"/>
+        <cl:property name="title" value="원칙 1. 인식의 용이성 (Perceivable)" type="string"/>
+      </cl:udc>
+      <cl:accordion std:sid="accordion-ed790509" id="acdGuideLine" class="guideLine" multiple="true">
+        <std:metadata>
+          <std:property key="active-index" value="9"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-1159fcb0" width="1180px" height="575px" autosize="height"/>
+        <cl:sectionitem std:sid="s-item-35b04225" selected="true" title="항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록  대체 텍스트를 제공해야 한다.">
+          <cl:group std:sid="group-be65549f" id="grp43">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-640043ba" id="grp46">
+              <cl:verticaldata std:sid="v-data-b5343b8a" width="1178px" height="352px" autosize="height"/>
+              <cl:output std:sid="output-dde66280" value="준수 기준 : 의미 있는 텍스트가 아닌 콘텐츠에 그 의미나 용도를 동등하게 인식할 수 있는 적절한 대체 텍스트를 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-76c7939a" width="1148px" height="30px" autosize="none"/>
+              </cl:output>
+              <cl:grid comment="항목1" std:sid="grid-b7985783" id="grd1" class="wa-guideline-grid" datasetid="dv1" autofit="3" autorowheight="all" suppressedcelltype="merged" suppressedcelleditmode="suppressed">
+                <cl:listener std:sid="listener-ad6f3b48" name="cell-click" handler="onGrdCellClick"/>
+                <cl:verticaldata std:sid="v-data-3f6bcd34" width="400px" height="200px" autosize="height"/>
+                <cl:gridcolumn std:sid="g-column-62f48dc9" width="80px"/>
+                <cl:gridcolumn std:sid="g-column-8fdd45fe" width="160px"/>
+                <cl:gridcolumn std:sid="g-column-96fbc40b" width="150px"/>
+                <cl:gridcolumn std:sid="g-column-54ce513f" width="326px"/>
+                <cl:gridcolumn std:sid="g-column-a0955da0" width="120px"/>
+                <cl:gridheader std:sid="gh-band-7484bd6b">
+                  <cl:gridrow std:sid="g-row-622aebaf" height="36px"/>
+                  <cl:gridcell std:sid="gh-cell-549f392a" rowindex="0" colindex="1" class="fw-bold" targetcolumnname="control" sortable="false" filterable="false" text="컨트롤"/>
+                  <cl:gridcell std:sid="gh-cell-4fe47e21" rowindex="0" colindex="2" class="fw-bold" targetcolumnname="property" sortable="false" filterable="false" text="속성"/>
+                  <cl:gridcell std:sid="gh-cell-84f3b48b" rowindex="0" colindex="3" class="fw-bold" targetcolumnname="description" sortable="false" filterable="false" text="설명"/>
+                  <cl:gridcell std:sid="gh-cell-79952a78" rowindex="0" colindex="4" class="fw-bold" text="가이드 바로가기"/>
+                  <cl:gridcell std:sid="gh-cell-19567923" rowindex="0" colindex="0" class="fw-bold" targetcolumnname="required" sortable="false" filterable="true" text="필수"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-f66c1615">
+                  <cl:gridrow std:sid="g-row-6ff586dc" height="37px"/>
+                  <cl:gridcell std:sid="gd-cell-486d4884" rowindex="0" colindex="1" columnname="control">
+                    <cl:output std:sid="output-c713b620" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-4c8b872a"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-1c966f20" rowindex="0" colindex="2" columnname="property">
+                    <cl:output std:sid="output-f773dabd" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-ce7c4e68"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-7a795447" rowindex="0" colindex="3" columnname="description" suppressible="true" keepmerged="true">
+                    <cl:output std:sid="output-d42a80ce" value="Output">
+                      <cl:celldata std:sid="c-data-8da4b531"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-93b6ba39" rowindex="0" colindex="4">
+                    <cl:button std:sid="button-d1e7cb6d" id="btn4" value="바로가기">
+                      <cl:listener std:sid="listener-005fa780" name="click" handler="onBtn4Click"/>
+                      <cl:celldata std:sid="c-data-2bbe7363"/>
+                    </cl:button>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-6aab6e3d" rowindex="0" colindex="0" columnname="required">
+                    <cl:output std:sid="output-ea15d22a">
+                      <cl:expbind property="class" category="CLASS" expression="required.toLowerCase() == &quot;true&quot; ? &quot;wa-required text-transparent&quot; : &quot;text-transparent&quot;"/>
+                      <cl:celldata std:sid="c-data-67bee9b5"/>
+                    </cl:output>
+                  </cl:gridcell>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:verticallayout std:sid="v-layout-2304d976" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-91391d14"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-be7fdce2" selected="true" title="항목 2. (자막 제공) 멀티미디어 콘텐츠에는 자막, 대본 또는 수어를 제공해야 한다.">
+          <cl:group std:sid="group-68bb1d2a" id="grp37">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-6270999d" id="grp11">
+              <cl:verticaldata std:sid="v-data-5b08648f" width="1158px" height="247px" autosize="height"/>
+              <cl:output std:sid="output-12e07274" value="준수 기준: 영상, 음성 등 멀티미디어 콘텐츠를 동등하게 인식할 수 있는 자막, 대본 또는 수어를 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-19b13f97" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:grid std:sid="grid-92f7eeb7" id="grd2" datasetid="dv2" autofit="3" autorowheight="all" suppressedcelltype="merged">
+                <cl:listener std:sid="listener-60359e9e" name="cell-click" handler="onGrdCellClick"/>
+                <cl:verticaldata std:sid="v-data-5da5575d" width="1158px" height="200px" autosize="height"/>
+                <cl:gridcolumn std:sid="g-column-b5230108" width="80px"/>
+                <cl:gridcolumn std:sid="g-column-1a009320" width="160px"/>
+                <cl:gridcolumn std:sid="g-column-59e4c250" width="150px"/>
+                <cl:gridcolumn std:sid="g-column-6f4a36ad" width="326px"/>
+                <cl:gridcolumn std:sid="g-column-12794b4f" width="120px"/>
+                <cl:gridheader std:sid="gh-band-2570a0d7">
+                  <cl:gridrow std:sid="g-row-97b48489" height="36px"/>
+                  <cl:gridcell std:sid="gh-cell-5c3c9319" rowindex="0" colindex="1" class="fw-bold" targetcolumnname="control" sortable="false" filterable="false" text="컨트롤"/>
+                  <cl:gridcell std:sid="gh-cell-7e9ab105" rowindex="0" colindex="2" class="fw-bold" targetcolumnname="property" sortable="false" filterable="false" text="속성"/>
+                  <cl:gridcell std:sid="gh-cell-22c8e810" rowindex="0" colindex="3" class="fw-bold" targetcolumnname="description" sortable="false" filterable="false" text="설명"/>
+                  <cl:gridcell std:sid="gh-cell-53187ba1" rowindex="0" colindex="4" class="fw-bold" text="가이드 바로가기"/>
+                  <cl:gridcell std:sid="gh-cell-5d462110" rowindex="0" colindex="0" class="fw-bold" targetcolumnname="required" filterable="true" text="필수"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-ba1f8e7a">
+                  <cl:gridrow std:sid="g-row-99ed0c91" height="37px"/>
+                  <cl:gridcell std:sid="gd-cell-1176a72f" rowindex="0" colindex="1" columnname="control">
+                    <cl:output std:sid="output-f39febce" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-e3593841"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-eeaf0912" rowindex="0" colindex="2" columnname="property">
+                    <cl:output std:sid="output-3f2424e1" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-f39bd646"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-76a2b8c8" rowindex="0" colindex="3" columnname="description" suppressible="true" keepmerged="true">
+                    <cl:output std:sid="output-858fafa1" value="Output">
+                      <cl:celldata std:sid="c-data-2e41e729"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-6e7764be" rowindex="0" colindex="4">
+                    <cl:button std:sid="button-f8f6b081" id="btn3" value="바로가기">
+                      <cl:celldata std:sid="c-data-dda5a870"/>
+                    </cl:button>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-492dcc41" rowindex="0" colindex="0" columnname="required">
+                    <cl:output std:sid="output-ab825e31">
+                      <cl:expbind property="class" category="CLASS" expression="required.toLowerCase() == &quot;true&quot; ? &quot;wa-required text-transparent&quot; : &quot;text-transparent&quot;"/>
+                      <cl:celldata std:sid="c-data-72b5b942"/>
+                    </cl:output>
+                  </cl:gridcell>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:verticallayout std:sid="v-layout-c5c49869" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-8d495b98"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-e20ecbf1" title="항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.">
+          <cl:group std:sid="group-520bb175" id="grp65">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-792153b3" id="grp66">
+              <cl:verticaldata std:sid="v-data-31b4db7b" width="1178px" height="37px" autosize="height"/>
+              <cl:output std:sid="output-913bc61c" value="준수 기준 : 표를 이해할 수 있도록 정보를 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-4c641e26" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-a25eb93a" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-14331f12"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-71ff6fd3" title="항목 4. (콘텐츠의 선형 구조) 콘텐츠는 논리적인 순서로 제공해야 한다.">
+          <cl:group std:sid="group-3b6f89a7" id="grp68">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-b0818e30" id="grp17">
+              <cl:verticaldata std:sid="v-data-9098308d" width="1178px" height="41px" autosize="height"/>
+              <cl:output std:sid="output-c5dfd902" value="준수 기준 : 콘텐츠의 순서가 논리적으로 선형화되어 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-38a9a832" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-4251b4b0" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-b6fb8bef"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-fec8f56d" selected="true" title="항목 5. (명확한 지시사항 제공) 지시사항은 모양, 크기, 위치, 방향, 색, 소리 등에 관계없이 인식될 수 있어야 한다.">
+          <cl:group std:sid="group-7699aaac" id="grp39">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-099ad5b7" id="grp14">
+              <cl:verticaldata std:sid="v-data-0f20041e" width="1178px" height="37px" autosize="height"/>
+              <cl:output std:sid="output-0f6a17c1" value="준수 기준 : 지시사항 정보를 특정 감각에 의존하지 않고 다양한 감각을 통해 용도나 목적을 이해할 수 있도록 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-87b3aa9d" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-11965fcb" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-76346591"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-ea36cfa9" selected="true" title="항목 6. (색에 무관한 콘텐츠 인식) 콘텐츠는 색에 관계없이 인식될 수 있어야 한다.">
+          <cl:group std:sid="group-c3d2ca82" id="grp38">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-87202042" id="grp13">
+              <cl:verticaldata std:sid="v-data-2ada94f5" width="1158px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-cd55b5c7" value="준수 기준 : 색을 배제하더라도 인식할 수 있는 콘텐츠를 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-3b6a4b9a" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-764bcb26" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-1dac5129"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-9895dfd5" selected="true" title="항목 7. (자동 재생 금지) 자동으로 소리가 재생되지 않아야 한다.">
+          <cl:group std:sid="group-cf35fd8c" id="grp41">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-1538751d" id="grp44">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:verticaldata std:sid="v-data-3803346a" width="1178px" height="42px" autosize="height"/>
+              <cl:group std:sid="group-cd49aeee" id="grp45">
+                <cl:verticaldata std:sid="v-data-f6aa51e7" width="1158px" height="43px" autosize="height"/>
+                <cl:output std:sid="output-33f32fb6" value="준수 기준 : 소리를 사용하지 않았거나 3초 이내 또는 바로 정지할 수 있는 소리 콘텐츠를 사용한 경우, 준수한 것으로 인정">
+                  <cl:verticaldata std:sid="v-data-2d44f65b" width="1180px" height="18px" autosize="height"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-6f79e497" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+              </cl:group>
+              <cl:verticallayout std:sid="v-layout-17046818"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-2bcfd03c"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-ae0aa29e" selected="true" title="항목 8. (텍스트 콘텐츠의 명도 대비) 텍스트 콘텐츠와 배경 간의 명도 대비는 4.5대 1 이상이어야 한다.">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-19938923" id="grp40">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-fb0ab7d1" id="grp15">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:verticaldata std:sid="v-data-a903a170" width="1178px" height="42px" autosize="height"/>
+              <cl:group std:sid="group-0250b9b6" id="grp16">
+                <cl:verticaldata std:sid="v-data-81b09310" width="1158px" height="43px" autosize="height"/>
+                <cl:output std:sid="output-87327b4f" value="준수 기준 : 텍스트 콘텐츠의 명도 대비가 4.5:1 이상, 18pt 또는 굵은 14pt 이상에서 3:1 이상, 화면 확대가 가능하도록 구현한 콘텐츠의 명도 대비가 3:1 이상일 경우, 준수한 것으로 인정">
+                  <cl:verticaldata std:sid="v-data-b141b407" width="1180px" height="18px" autosize="height"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-d0838a26" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+              </cl:group>
+              <cl:verticallayout std:sid="v-layout-547e5bf7"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-bdc97a92"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-77afa894" selected="true" title="항목 9. (콘텐츠 간의 구분) 이웃한 콘텐츠는 구별될 수 있어야 한다.">
+          <cl:group std:sid="group-233c7680" id="grp12">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-8f531d2d" id="grp36">
+              <cl:verticaldata std:sid="v-data-7c99c782" width="1178px" height="48px" autosize="height"/>
+              <cl:output std:sid="output-c822a199" value="준수 기준 : 이웃한 콘텐츠는 시각적으로 구별되도록 충분한 간격을 두어 구현한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-09201564" width="1148px" height="30px" autosize="none"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-83054e6b" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-e3a3c2b4"/>
+          </cl:group>
+        </cl:sectionitem>
+      </cl:accordion>
+      <cl:verticallayout std:sid="v-layout-44042cc3" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group comment="2.운용의 용이성" std:sid="group-b3b1750d" id="grpRule2" class="pb-content wa-guideline">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-3e464c14" width="1280px" height="1169px" autosize="height"/>
+      <cl:udc std:sid="ud-control-0cc75099" id="sectiontitle5" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-1f906391" width="1180px" height="29px" autosize="none"/>
+        <cl:property name="title" value="원칙 2. 운용의 용이성 (Operable)" type="string"/>
+      </cl:udc>
+      <cl:accordion std:sid="accordion-43c096ac" id="acdGuideLine2" class="guideLine" multiple="true">
+        <std:metadata>
+          <std:property key="active-index" value="16"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-b733773b" width="1180px" height="1000px" autosize="height"/>
+        <cl:sectionitem std:sid="s-item-d3b943bc" selected="true" title="항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다.">
+          <cl:group std:sid="group-9c2c1ef4" id="grp42">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-df0923aa" id="grp47">
+              <cl:verticaldata std:sid="v-data-9bd759b3" width="1158px" height="247px" autosize="height"/>
+              <cl:output std:sid="output-ca04c3dc" value="준수 기준 : 모든 기능을 키보드로 접근 및 운용 가능하도록 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-5892cb76" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:grid std:sid="grid-a0056ed2" id="grd8" datasetid="dv10" autofit="3" autorowheight="all" suppressedcelltype="merged">
+                <cl:listener std:sid="listener-f98b10f9" name="cell-click" handler="onGrdCellClick"/>
+                <cl:verticaldata std:sid="v-data-29bb6ed0" width="1158px" height="200px" autosize="height"/>
+                <cl:gridcolumn std:sid="g-column-007c2769" width="80px"/>
+                <cl:gridcolumn std:sid="g-column-31d96cfd" width="160px"/>
+                <cl:gridcolumn std:sid="g-column-bc09b920" width="150px"/>
+                <cl:gridcolumn std:sid="g-column-946611aa" width="326px"/>
+                <cl:gridcolumn std:sid="g-column-23c0f301" width="120px"/>
+                <cl:gridheader std:sid="gh-band-dbec2c45">
+                  <cl:gridrow std:sid="g-row-d1eada50" height="36px"/>
+                  <cl:gridcell std:sid="gh-cell-14b345ca" rowindex="0" colindex="1" class="fw-bold" targetcolumnname="control" sortable="false" filterable="false" text="컨트롤"/>
+                  <cl:gridcell std:sid="gh-cell-51dd6dfb" rowindex="0" colindex="2" class="fw-bold" targetcolumnname="property" sortable="false" filterable="false" text="속성"/>
+                  <cl:gridcell std:sid="gh-cell-00b80b5a" rowindex="0" colindex="3" class="fw-bold" targetcolumnname="description" sortable="false" filterable="false" text="설명"/>
+                  <cl:gridcell std:sid="gh-cell-6f2d63ec" rowindex="0" colindex="4" class="fw-bold" text="가이드 바로가기"/>
+                  <cl:gridcell std:sid="gh-cell-28e4d8a7" rowindex="0" colindex="0" class="fw-bold" targetcolumnname="required" sortable="false" filterable="true" text="필수"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-584c024d">
+                  <cl:gridrow std:sid="g-row-123803d4" height="37px"/>
+                  <cl:gridcell std:sid="gd-cell-fc6aef39" rowindex="0" colindex="1" columnname="control">
+                    <cl:output std:sid="output-ad1585a4" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-687488c5"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-71eeb0ea" rowindex="0" colindex="2" columnname="property">
+                    <cl:output std:sid="output-fcdef046" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-8bf0e27a"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-508c4d6f" rowindex="0" colindex="3" columnname="description" suppressible="true" keepmerged="true">
+                    <cl:output std:sid="output-4a98e003" value="Output">
+                      <cl:celldata std:sid="c-data-86489fa3"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-c5038d83" rowindex="0" colindex="4">
+                    <cl:button std:sid="button-67bdaea7" id="btn5" value="바로가기">
+                      <cl:celldata std:sid="c-data-37dabeb5"/>
+                    </cl:button>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-1f2eaa18" rowindex="0" colindex="0" columnname="required">
+                    <cl:output std:sid="output-384cc5e2">
+                      <cl:expbind property="class" category="CLASS" expression="required.toLowerCase() == &quot;true&quot; ? &quot;wa-required text-transparent&quot; : &quot;text-transparent&quot;"/>
+                      <cl:celldata std:sid="c-data-d88277b6"/>
+                    </cl:output>
+                  </cl:gridcell>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:verticallayout std:sid="v-layout-e4f3cdc4" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-3ac18eee"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-4a962c9c" selected="true" title="항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.">
+          <cl:group std:sid="group-dd99b580" id="grp50">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-55f0a82c" id="grp51">
+              <cl:verticaldata std:sid="v-data-c45de805" width="1178px" height="247px" autosize="height"/>
+              <cl:output std:sid="output-b4d374f7" value="준수 기준 : 운용 가능한 개체(링크, 버튼, 서식 등)들에 키보드로 접근 시 초점을 인지할 수 있고 논리적 순서로 이동되는 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-dbf04a35" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:grid std:sid="grid-804101b8" id="grd9" datasetid="dv11" autofit="3" autorowheight="all" suppressedcelltype="merged">
+                <cl:listener std:sid="listener-877fbe8a" name="cell-click" handler="onGrdCellClick"/>
+                <cl:verticaldata std:sid="v-data-5e190c1a" width="1158px" height="200px" autosize="height"/>
+                <cl:gridcolumn std:sid="g-column-67d4e73a" width="80px"/>
+                <cl:gridcolumn std:sid="g-column-789f87c4" width="160px"/>
+                <cl:gridcolumn std:sid="g-column-b8821712" width="150px"/>
+                <cl:gridcolumn std:sid="g-column-808bc973" width="326px"/>
+                <cl:gridcolumn std:sid="g-column-3f0c8cd6" width="120px"/>
+                <cl:gridheader std:sid="gh-band-be469f75">
+                  <cl:gridrow std:sid="g-row-18f19105" height="36px"/>
+                  <cl:gridcell std:sid="gh-cell-b9784890" rowindex="0" colindex="1" class="fw-bold" targetcolumnname="control" sortable="false" filterable="false" text="컨트롤"/>
+                  <cl:gridcell std:sid="gh-cell-438cac87" rowindex="0" colindex="2" class="fw-bold" targetcolumnname="property" sortable="false" filterable="false" text="속성"/>
+                  <cl:gridcell std:sid="gh-cell-d97c1b94" rowindex="0" colindex="3" class="fw-bold" targetcolumnname="description" sortable="false" filterable="false" text="설명"/>
+                  <cl:gridcell std:sid="gh-cell-e4494101" rowindex="0" colindex="4" class="fw-bold" text="가이드 바로가기"/>
+                  <cl:gridcell std:sid="gh-cell-897c53eb" rowindex="0" colindex="0" class="fw-bold" targetcolumnname="required" sortable="false" filterable="true" text="필수"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-1ddc516b">
+                  <cl:gridrow std:sid="g-row-84558189" height="37px"/>
+                  <cl:gridcell std:sid="gd-cell-8fd8581d" rowindex="0" colindex="1" columnname="control">
+                    <cl:output std:sid="output-c06d7360" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-73f70df5"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-0cb16ab2" rowindex="0" colindex="2" columnname="property">
+                    <cl:output std:sid="output-f7ec7c30" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-cceaeab8"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-491a3adc" rowindex="0" colindex="3" columnname="description" suppressible="true" keepmerged="true">
+                    <cl:output std:sid="output-61d995a6" value="Output">
+                      <cl:celldata std:sid="c-data-837b23d0"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-5e4d404f" rowindex="0" colindex="4">
+                    <cl:button std:sid="button-d30970e8" id="btn2" value="바로가기">
+                      <cl:celldata std:sid="c-data-74a8166a"/>
+                    </cl:button>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-50ed4bae" rowindex="0" colindex="0" columnname="required">
+                    <cl:output std:sid="output-fab9d8d1">
+                      <cl:expbind property="class" category="CLASS" expression="required.toLowerCase() == &quot;true&quot; ? &quot;wa-required text-transparent&quot; : &quot;text-transparent&quot;"/>
+                      <cl:celldata std:sid="c-data-79e145f6" halign="FILL"/>
+                    </cl:output>
+                  </cl:gridcell>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:verticallayout std:sid="v-layout-5542e476" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-17cf0834"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-907641e0" selected="true" title="항목 12. (조작 가능) 사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-742f23af" id="grp52">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-74a9e8f3" id="grp54">
+              <cl:verticaldata std:sid="v-data-e010c28d" width="1178px" height="247px" autosize="height"/>
+              <cl:output std:sid="output-abc06719" value="준수 기준 : 웹페이지에서 제공하는 모든 이웃한 컨트롤들은 개별적으로 선택하고 사용할 수 있도록 대각선 길이가 6.0mm 이상의 크기와 컨트롤의 안쪽 여백이 1픽셀 이상을 갖도록 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-f8bb0ce4" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:grid std:sid="grid-fdeb61e7" id="grd10" datasetid="dv12" autofit="3" autorowheight="all" suppressedcelltype="merged">
+                <cl:listener std:sid="listener-26fe95d3" name="cell-click" handler="onGrdCellClick"/>
+                <cl:verticaldata std:sid="v-data-fc9657cf" width="1158px" height="200px" autosize="height"/>
+                <cl:gridcolumn std:sid="g-column-0c20bbe8" width="80px"/>
+                <cl:gridcolumn std:sid="g-column-5cba20a8" width="160px"/>
+                <cl:gridcolumn std:sid="g-column-9e9b6436" width="150px"/>
+                <cl:gridcolumn std:sid="g-column-545b5e8d" width="326px"/>
+                <cl:gridcolumn std:sid="g-column-2c0cda35" width="120px"/>
+                <cl:gridheader std:sid="gh-band-39a5244d">
+                  <cl:gridrow std:sid="g-row-bad44f8e" height="36px"/>
+                  <cl:gridcell std:sid="gh-cell-97481589" rowindex="0" colindex="1" class="fw-bold" targetcolumnname="control" sortable="false" filterable="false" text="컨트롤"/>
+                  <cl:gridcell std:sid="gh-cell-f082ec0f" rowindex="0" colindex="2" class="fw-bold" targetcolumnname="property" sortable="false" filterable="false" text="속성"/>
+                  <cl:gridcell std:sid="gh-cell-42850bd5" rowindex="0" colindex="3" class="fw-bold" targetcolumnname="description" sortable="false" filterable="false" text="설명"/>
+                  <cl:gridcell std:sid="gh-cell-a4b4c593" rowindex="0" colindex="4" class="fw-bold" text="가이드 바로가기"/>
+                  <cl:gridcell std:sid="gh-cell-e7756ad6" rowindex="0" colindex="0" class="fw-bold" targetcolumnname="required" sortable="false" filterable="true" text="필수"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-7113f917">
+                  <cl:gridrow std:sid="g-row-3f9592e6" height="37px"/>
+                  <cl:gridcell std:sid="gd-cell-8e6a876b" rowindex="0" colindex="1" columnname="control">
+                    <cl:output std:sid="output-2956f496" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-110e7ceb"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-79787df8" rowindex="0" colindex="2" columnname="property">
+                    <cl:output std:sid="output-15c2940d" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-5c79a5ed"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-543acd75" rowindex="0" colindex="3" columnname="description" suppressible="true" keepmerged="true">
+                    <cl:output std:sid="output-38e9262a" value="Output">
+                      <cl:celldata std:sid="c-data-b8804e6f"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-edf7e10a" rowindex="0" colindex="4">
+                    <cl:button std:sid="button-54343767" id="btn6" value="바로가기">
+                      <cl:celldata std:sid="c-data-451f793c"/>
+                    </cl:button>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-ea564ca1" rowindex="0" colindex="0" columnname="required">
+                    <cl:output std:sid="output-0062fb21">
+                      <cl:expbind property="class" category="CLASS" expression="required.toLowerCase() == &quot;true&quot; ? &quot;wa-required text-transparent&quot; : &quot;text-transparent&quot;"/>
+                      <cl:celldata std:sid="c-data-73b25f00" halign="FILL"/>
+                    </cl:output>
+                  </cl:gridcell>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:verticallayout std:sid="v-layout-b14de915" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-1bf8f6cd"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-37cabe36" title="항목 13. (문자 단축키) 문자 단축키는 오동작으로 인한 오류를 방지하여야 한다.">
+          <cl:group std:sid="group-4782550d" id="grp28">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-eb598dff" id="grp8">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:verticaldata std:sid="v-data-799a19ff" width="1178px" height="42px" autosize="height"/>
+              <cl:group std:sid="group-e72593e3" id="grp9">
+                <cl:verticaldata std:sid="v-data-5338ca71" width="1158px" height="43px" autosize="height"/>
+                <cl:output std:sid="output-bcc617cf" value="준수 기준 : 단일 문자 단축키를 사용하지 않도록 설정하거나 재설정하는 방법을 제공하거나 초점을 받은 상태에서만 실행되도록 구현한 경우, 준수한 것으로 인정">
+                  <cl:verticaldata std:sid="v-data-5a7fbfdf" width="1180px" height="18px" autosize="height"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-0199d74d" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+              </cl:group>
+              <cl:verticallayout std:sid="v-layout-5eb1a456"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-b5450194"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-0d3a2cc0" selected="true" title="항목 14. (응답시간 조절) 시간제한이 있는 콘텐츠는 응답시간을 조절할 수 있어야 한다.">
+          <cl:group std:sid="group-893a6bf0" id="grp55">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-bf7ab837" id="grp57">
+              <cl:verticaldata std:sid="v-data-a8c6ea9a" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-6250a66a" value="준수 기준 : 시간제한 콘텐츠는 배제하되, 불가피한 경우 콘텐츠의 응답시간을 조절할 수 있는 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-cedfb5d0" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-76f20445" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-f5672d38"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-c7d3cecd" selected="true" title="항목 15. (정지 기능 제공) 자동으로 변경되는 콘텐츠는 움직임을 제어할 수 있어야 한다.">
+          <cl:group std:sid="group-d0bbe40b" id="grp1">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-6756901e" id="grp53">
+              <cl:verticaldata std:sid="v-data-0981bed0" width="1178px" height="247px" autosize="height"/>
+              <cl:output std:sid="output-cd730373" value="준수 기준 : 스크롤 및 자동 갱신되는 콘텐츠는 배제하되, 불가피한 경우 콘텐츠를 제어할 수 있도록 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-8b41843e" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:grid std:sid="grid-d27072f0" id="grd12" datasetid="dv15" autofit="3" autorowheight="all" suppressedcelltype="merged">
+                <cl:listener std:sid="listener-4a394339" name="cell-click" handler="onGrdCellClick"/>
+                <cl:verticaldata std:sid="v-data-da1f0a16" width="1158px" height="200px" autosize="height"/>
+                <cl:gridcolumn std:sid="g-column-993849da" width="80px"/>
+                <cl:gridcolumn std:sid="g-column-33003103" width="160px"/>
+                <cl:gridcolumn std:sid="g-column-d3531c16" width="150px"/>
+                <cl:gridcolumn std:sid="g-column-79340994" width="326px"/>
+                <cl:gridcolumn std:sid="g-column-22e0ac56" width="120px"/>
+                <cl:gridheader std:sid="gh-band-f38e1feb">
+                  <cl:gridrow std:sid="g-row-24ca4ce9" height="36px"/>
+                  <cl:gridcell std:sid="gh-cell-1ef86203" rowindex="0" colindex="1" class="fw-bold" targetcolumnname="control" sortable="false" filterable="false" text="컨트롤"/>
+                  <cl:gridcell std:sid="gh-cell-b345a551" rowindex="0" colindex="2" class="fw-bold" targetcolumnname="property" sortable="false" filterable="false" text="속성"/>
+                  <cl:gridcell std:sid="gh-cell-56416544" rowindex="0" colindex="3" class="fw-bold" targetcolumnname="description" sortable="false" filterable="false" text="설명"/>
+                  <cl:gridcell std:sid="gh-cell-4e63f359" rowindex="0" colindex="4" class="fw-bold" text="가이드 바로가기"/>
+                  <cl:gridcell std:sid="gh-cell-8e88cd19" rowindex="0" colindex="0" class="fw-bold" targetcolumnname="required" sortable="false" filterable="true" text="필수"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-b9fe48f4">
+                  <cl:gridrow std:sid="g-row-4b536496" height="37px"/>
+                  <cl:gridcell std:sid="gd-cell-f0f4ae8a" rowindex="0" colindex="1" columnname="control">
+                    <cl:output std:sid="output-2d27e739" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-89114595"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-033d151f" rowindex="0" colindex="2" columnname="property">
+                    <cl:output std:sid="output-e2a9b7d1" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-f7ca1a3e"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-644bc39d" rowindex="0" colindex="3" columnname="description" suppressible="true" keepmerged="true">
+                    <cl:output std:sid="output-0f277fda" value="Output">
+                      <cl:celldata std:sid="c-data-752355f8"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-f25ba82b" rowindex="0" colindex="4">
+                    <cl:button std:sid="button-6d2b4aa2" id="btn7" value="바로가기">
+                      <cl:celldata std:sid="c-data-baea1264"/>
+                    </cl:button>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-a85b08f0" rowindex="0" colindex="0" columnname="required">
+                    <cl:output std:sid="output-6ff2a7d8">
+                      <cl:expbind property="class" category="CLASS" expression="required.toLowerCase() == &quot;true&quot; ? &quot;wa-required text-transparent&quot; : &quot;text-transparent&quot;"/>
+                      <cl:celldata std:sid="c-data-ce647d09" halign="FILL"/>
+                    </cl:output>
+                  </cl:gridcell>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:verticallayout std:sid="v-layout-000bbae8" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-6eff8f81"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-6750a11e" selected="true" title="항목 16. (깜빡임과 번쩍임 사용 제한) 초당 3~50회 주기로 깜빡이거나 번쩍이는 콘텐츠를 제공하지 않아야 한다.">
+          <cl:group std:sid="group-04bf4e19" id="grp2">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-4618fc08" id="grp60">
+              <cl:verticaldata std:sid="v-data-e736be1a" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-d342d142" value="준수 기준 : 초당 3~50회 주기로 깜빡이거나 번쩍이는 콘텐츠를 제공하지 않았거나, 회피할 수 있는 방법을 사전에 알리고 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-78b4567b" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-05112e7c" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-89f75598"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-41ceef44" selected="true" title="항목 17. (반복 영역 건너뛰기) 콘텐츠의 반복되는 영역은 건너뛸 수 있어야 한다.">
+          <cl:group std:sid="group-739a57ca" id="grp3">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-dfb78520" id="grp61">
+              <cl:verticaldata std:sid="v-data-771065bf" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-d347644c" value="준수 기준 : 반복되는 영역을 건너뛸 수 있는 링크를 시각적으로 구현 및 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-b78c96c2" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-11c6dda3" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-26fbb9ea"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-f4963c80" selected="true" title="항목 18. (제목 제공) 페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다.">
+          <cl:group std:sid="group-89cdc48a" id="grp58">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-956dc3a4" id="grp62">
+              <cl:verticaldata std:sid="v-data-88299282" width="1178px" height="247px" autosize="height"/>
+              <cl:output std:sid="output-919ffcb4" value="준수 기준 : 페이지, 프레임, 콘텐츠 블록, 팝업창에 적절한 제목 제공 시, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-fdcf834e" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:grid std:sid="grid-eed9701e" id="grd15" datasetid="dv18" autofit="3" autorowheight="all" suppressedcelltype="merged">
+                <cl:listener std:sid="listener-b26f47f2" name="cell-click" handler="onGrdCellClick"/>
+                <cl:verticaldata std:sid="v-data-943a452e" width="1158px" height="200px" autosize="height"/>
+                <cl:gridcolumn std:sid="g-column-23ce64aa" width="80px"/>
+                <cl:gridcolumn std:sid="g-column-cee056a7" width="160px"/>
+                <cl:gridcolumn std:sid="g-column-09130e17" width="150px"/>
+                <cl:gridcolumn std:sid="g-column-d9ae9c53" width="326px"/>
+                <cl:gridcolumn std:sid="g-column-5c1dae8a" width="120px"/>
+                <cl:gridheader std:sid="gh-band-2a6aa5f8">
+                  <cl:gridrow std:sid="g-row-c0512346" height="36px"/>
+                  <cl:gridcell std:sid="gh-cell-b5165392" rowindex="0" colindex="1" class="fw-bold" targetcolumnname="control" sortable="false" filterable="false" text="컨트롤"/>
+                  <cl:gridcell std:sid="gh-cell-79f90175" rowindex="0" colindex="2" class="fw-bold" targetcolumnname="property" sortable="false" filterable="false" text="속성"/>
+                  <cl:gridcell std:sid="gh-cell-31cc103a" rowindex="0" colindex="3" class="fw-bold" targetcolumnname="description" sortable="false" filterable="false" text="설명"/>
+                  <cl:gridcell std:sid="gh-cell-cbc4fcc6" rowindex="0" colindex="4" class="fw-bold" text="가이드 바로가기"/>
+                  <cl:gridcell std:sid="gh-cell-6d50c6fc" rowindex="0" colindex="0" class="fw-bold" targetcolumnname="required" sortable="false" filterable="true" text="필수"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-51d5f0ef">
+                  <cl:gridrow std:sid="g-row-a1601c42" height="37px"/>
+                  <cl:gridcell std:sid="gd-cell-17a93abd" rowindex="0" colindex="1" columnname="control">
+                    <cl:output std:sid="output-39e17fb1" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-9179f00c"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-0f7f6dc3" rowindex="0" colindex="2" columnname="property">
+                    <cl:output std:sid="output-a650be15" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-72a9c366"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-473c1ed1" rowindex="0" colindex="3" columnname="description" suppressible="true" keepmerged="true">
+                    <cl:output std:sid="output-07b6d6e8" value="Output">
+                      <cl:celldata std:sid="c-data-af9690e8"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-4d8805d3" rowindex="0" colindex="4">
+                    <cl:button std:sid="button-caaeb65b" id="btn8" value="바로가기">
+                      <cl:celldata std:sid="c-data-97ce82ab"/>
+                    </cl:button>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-d01ad4f1" rowindex="0" colindex="0" columnname="required">
+                    <cl:output std:sid="output-1ed7d613">
+                      <cl:expbind property="class" category="CLASS" expression="required.toLowerCase() == &quot;true&quot; ? &quot;wa-required text-transparent&quot; : &quot;text-transparent&quot;"/>
+                      <cl:celldata std:sid="c-data-98befb38" halign="FILL"/>
+                    </cl:output>
+                  </cl:gridcell>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:verticallayout std:sid="v-layout-6c81d70b" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-606bcbdd"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-8e358805" selected="true" title="항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.">
+          <cl:group std:sid="group-8395fe7c" id="grp59">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-cf7a9072" id="grp63">
+              <cl:verticaldata std:sid="v-data-1abdcd90" width="1178px" height="247px" autosize="height"/>
+              <cl:output std:sid="output-f0b48829" value="준수 기준 : 링크 텍스트의 용도나 목적을 이해할 수 있도록 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-9a8f6ab1" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:grid std:sid="grid-cf7acc08" id="grd16" datasetid="dv19" autofit="3" autorowheight="all" suppressedcelltype="merged">
+                <cl:listener std:sid="listener-975068fe" name="cell-click" handler="onGrdCellClick"/>
+                <cl:verticaldata std:sid="v-data-e0e91ff6" width="1158px" height="200px" autosize="height"/>
+                <cl:gridcolumn std:sid="g-column-931e015b" width="80px"/>
+                <cl:gridcolumn std:sid="g-column-e94b8f35" width="160px"/>
+                <cl:gridcolumn std:sid="g-column-52c6d830" width="150px"/>
+                <cl:gridcolumn std:sid="g-column-3b701bc3" width="326px"/>
+                <cl:gridcolumn std:sid="g-column-5e7c3ea0" width="120px"/>
+                <cl:gridheader std:sid="gh-band-3a45e4c5">
+                  <cl:gridrow std:sid="g-row-3db2eb27" height="36px"/>
+                  <cl:gridcell std:sid="gh-cell-3087727a" rowindex="0" colindex="1" class="fw-bold" targetcolumnname="control" sortable="false" filterable="false" text="컨트롤"/>
+                  <cl:gridcell std:sid="gh-cell-36aee37b" rowindex="0" colindex="2" class="fw-bold" targetcolumnname="property" sortable="false" filterable="false" text="속성"/>
+                  <cl:gridcell std:sid="gh-cell-0af05c08" rowindex="0" colindex="3" class="fw-bold" targetcolumnname="description" sortable="false" filterable="false" text="설명"/>
+                  <cl:gridcell std:sid="gh-cell-671f0e74" rowindex="0" colindex="4" class="fw-bold" text="가이드 바로가기"/>
+                  <cl:gridcell std:sid="gh-cell-541eb8dc" rowindex="0" colindex="0" class="fw-bold" targetcolumnname="required" sortable="false" filterable="true" text="필수"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-f90bd070">
+                  <cl:gridrow std:sid="g-row-80f9724f" height="37px"/>
+                  <cl:gridcell std:sid="gd-cell-c0f04181" rowindex="0" colindex="1" columnname="control">
+                    <cl:output std:sid="output-757b6d12" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-ff7234e3"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-3510ce80" rowindex="0" colindex="2" columnname="property">
+                    <cl:output std:sid="output-7592326e" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-ee1ccd34"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-d62f0c60" rowindex="0" colindex="3" columnname="description" suppressible="true" keepmerged="true">
+                    <cl:output std:sid="output-cf55ccda" value="Output">
+                      <cl:celldata std:sid="c-data-f223a53d"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-7ae3e1ac" rowindex="0" colindex="4">
+                    <cl:button std:sid="button-f343b053" id="btn9" value="바로가기">
+                      <cl:celldata std:sid="c-data-41237d91"/>
+                    </cl:button>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-06987a56" rowindex="0" colindex="0" columnname="required">
+                    <cl:output std:sid="output-6fd80e60">
+                      <cl:expbind property="class" category="CLASS" expression="required.toLowerCase() == &quot;true&quot; ? &quot;wa-required text-transparent&quot; : &quot;text-transparent&quot;"/>
+                      <cl:celldata std:sid="c-data-c5f44611" halign="FILL"/>
+                    </cl:output>
+                  </cl:gridcell>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:verticallayout std:sid="v-layout-f0428d14" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-0b78053d"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-571bbadc" title="항목 20. (고정된 참조 위치 정보) 전자출판문서 형식의 웹페이지는 각 페이지로 이동할 수 있는 기능이 있어야 하고, 서식이나 플랫폼에 상관없이 참조 위치 정보를 일관되게 제공·유지해야 한다.">
+          <cl:group std:sid="group-baf4ca65" id="grp29">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-e24a680c" id="grp18">
+              <cl:verticaldata std:sid="v-data-e87d7868" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-5fc0e4a8" value="준수 기준 : 웹페이지로 제공되는 전자출판문서에 대해 콘텐츠의 확대/축소 등으로 서식이 변경되거나 임의의 페이지로 이동하더라도 각 페이지로 이동할 수 있는 기능과 현재 위치 정보가 일관되게 제공·유지되는 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-6df95208" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-961f9244" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-42547525"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-e6b2cced" title="항목 21. (단일 포인터 입력 지원) 다중 포인터 또는 경로기반 동작을 통한 입력은 단일 포인터 입력으로도 조작할 수 있어야 한다.">
+          <cl:group std:sid="group-fbd8a2d3" id="grp30">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-fe64e4f4" id="grp26">
+              <cl:verticaldata std:sid="v-data-d8fe62b4" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-7d3cfadf" value="준수 기준 : 다중 포인터 또는 경로 기반 동작 수행을 제공할 때 동일 결과를 얻기 위한 단일 포인터 입력 방식의 컨트롤을 병행하여 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-5f1e6b59" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-ab62d623" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-6150bdef"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-827476f9" title="항목 22. (포인터 입력 취소) 단일 포인터 입력으로 실행되는 기능은 취소할 수 있어야 한다.">
+          <cl:group std:sid="group-27eed5c6" id="grp35">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-a8104323" id="grp67">
+              <cl:verticaldata std:sid="v-data-ce39e4a3" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-250e12ed" value="준수 기준 : 단일 포인터 입력으로 실행되는 기능은 해당 입력이 실수로 실행되는 것을 방지하기 위해 취소할 수 있는 기능을 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-4509a67a" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-eab04ad7" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-287208be"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-647f8eba" title="항목 23. (레이블과 네임) 텍스트 또는 텍스트 이미지가 포함된 레이블이 있는 사용자 인터페이스 구성요소는 네임에 시각적으로 표시되는 해당 텍스트를 포함해야 한다.">
+          <cl:group std:sid="group-889947bd" id="grp56">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-580da58b" id="grp69">
+              <cl:verticaldata std:sid="v-data-df4b44a0" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-789a0f15" value="준수 기준 : 시각적으로 보이는 레이블에 대한 네임(name)을 적절하게 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-8e0ed1b8" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-4007f4b0" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-ecd54a52"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-6d13ad6e" title="항목 24. (동작 기반 작동) 동작 기반으로 작동하는 기능은 사용자 인터페이스 구성요소로 조작할 수 있고, 동작 기반 기능을 비활성화할 수 있어야 한다.">
+          <cl:group std:sid="group-02a15eb4" id="grp64">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-2b5c2264" id="grp70">
+              <cl:verticaldata std:sid="v-data-4944dd75" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-ae27cbb9" value="준수 기준 : 동작 기반으로 작동하는 기능은 사용자 인터페이스 구성요소로 조작할 수 있고, 동작 기반 작동에 대한 비활성화 기능을 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-97066686" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-c4f91205" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-5ef96e2d"/>
+          </cl:group>
+        </cl:sectionitem>
+      </cl:accordion>
+      <cl:verticallayout std:sid="v-layout-1371f41e" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group comment="2.운용의 용이성" std:sid="group-e8576db1" id="grpRule3" class="pb-content wa-guideline">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-5effda80" width="1280px" height="738px" autosize="height"/>
+      <cl:udc std:sid="ud-control-2c90ae1e" id="sectiontitle2" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-01ebaadb" width="1180px" height="29px" autosize="none"/>
+        <cl:property name="title" value="원칙 3. 이해의 용이성 (Understandable)" type="string"/>
+      </cl:udc>
+      <cl:accordion std:sid="accordion-aa768572" id="acdGuideLine3" class="guideLine" multiple="true">
+        <std:metadata>
+          <std:property key="active-index" value="9"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-6e16d12d" width="1180px" height="600px" autosize="height"/>
+        <cl:sectionitem std:sid="s-item-59428ed2" selected="true" title="항목 25. (기본 언어 표시) 주로 사용하는 언어를 명시해야 한다.">
+          <cl:group std:sid="group-9604ae16" id="grp4">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-d6d55532" id="grp5">
+              <cl:verticaldata std:sid="v-data-179dc7ac" width="1178px" height="48px" autosize="height"/>
+              <cl:output std:sid="output-f0f33cda" value="준수 기준 : 기본 언어 표시 속성을 사용하여 언어를 명시한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-077d454a" width="1148px" height="30px" autosize="none"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-5cdbb788" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-135a710c"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-e332b7fe" selected="true" title="항목 26. (사용자 요구에 따른 실행) 사용자가 의도하지 않은 기능(새 창, 초점 변화 등)은 실행되지 않아야 한다.">
+          <cl:group std:sid="group-8209f5d7" id="grp6">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-5980e83f" id="grp7">
+              <cl:verticaldata std:sid="v-data-39f8a1f3" width="1158px" height="248px" autosize="height"/>
+              <cl:output std:sid="output-0283fdc6" value="준수 기준 :  사용자가 의도하지 않은 기능이 실행되지 않도록 한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-078b0973" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:grid std:sid="grid-03ab2d5a" id="grd18" datasetid="dv26" autofit="3" autorowheight="all" suppressedcelltype="merged">
+                <cl:listener std:sid="listener-217a16ac" name="cell-click" handler="onGrdCellClick"/>
+                <cl:verticaldata std:sid="v-data-5cf91a5b" width="1158px" height="200px" autosize="height"/>
+                <cl:gridcolumn std:sid="g-column-129dfcc3" width="80px"/>
+                <cl:gridcolumn std:sid="g-column-586ed223" width="160px"/>
+                <cl:gridcolumn std:sid="g-column-2d937ab9" width="150px"/>
+                <cl:gridcolumn std:sid="g-column-79bec52d" width="326px"/>
+                <cl:gridcolumn std:sid="g-column-e565b6b6" width="120px"/>
+                <cl:gridheader std:sid="gh-band-742dedc5">
+                  <cl:gridrow std:sid="g-row-58ed238d" height="36px"/>
+                  <cl:gridcell std:sid="gh-cell-90bf180b" rowindex="0" colindex="1" class="fw-bold" targetcolumnname="control" sortable="false" filterable="false" text="컨트롤"/>
+                  <cl:gridcell std:sid="gh-cell-7244238b" rowindex="0" colindex="2" class="fw-bold" targetcolumnname="property" sortable="false" filterable="false" text="속성"/>
+                  <cl:gridcell std:sid="gh-cell-fdcbb872" rowindex="0" colindex="3" class="fw-bold" targetcolumnname="description" sortable="true" filterable="false" text="설명"/>
+                  <cl:gridcell std:sid="gh-cell-b795c04e" rowindex="0" colindex="4" class="fw-bold" text="가이드 바로가기"/>
+                  <cl:gridcell std:sid="gh-cell-e2b2bc28" rowindex="0" colindex="0" class="fw-bold" targetcolumnname="required" sortable="false" filterable="true" text="필수"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-bce90287">
+                  <cl:gridrow std:sid="g-row-c5fa511a" height="37px"/>
+                  <cl:gridcell std:sid="gd-cell-5bbe02a6" rowindex="0" colindex="1" columnname="control">
+                    <cl:output std:sid="output-71c2e7c2" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-e231568c"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-f3d65603" rowindex="0" colindex="2" columnname="property">
+                    <cl:output std:sid="output-331b86ea" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-4d19a641"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-a809745c" rowindex="0" colindex="3" columnname="description" suppressible="true" keepmerged="true">
+                    <cl:output std:sid="output-33ed2dfb" value="Output">
+                      <cl:celldata std:sid="c-data-a2b8d47a"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-59fdbd86" rowindex="0" colindex="4">
+                    <cl:button std:sid="button-26e5efd6" id="btn10" value="바로가기">
+                      <cl:celldata std:sid="c-data-109a2fbc"/>
+                    </cl:button>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-bdce53c3" rowindex="0" colindex="0" columnname="required">
+                    <cl:output std:sid="output-842f133f">
+                      <cl:expbind property="class" category="CLASS" expression="required.toLowerCase() == &quot;true&quot; ? &quot;wa-required text-transparent&quot; : &quot;text-transparent&quot;"/>
+                      <cl:celldata std:sid="c-data-ecf18748" halign="FILL"/>
+                    </cl:output>
+                  </cl:gridcell>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:verticallayout std:sid="v-layout-10d4bfef" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-a18c1e92"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-c0728c3f" title="항목 27. (찾기 쉬운 도움 정보) 도움 정보가 제공되는 경우, 각 페이지에서 동일한 상대적인 순서로 접근할 수 있어야 한다.">
+          <cl:group std:sid="group-9a6ddec2" id="grp10">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-6aed3222" id="grp71">
+              <cl:verticaldata std:sid="v-data-04021de3" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-527a4c8d" value="준수 기준 : 도움 정보를 제공할 때 각 페이지에서 일관된 위치와 순서로 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-ba5f23e7" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-e8efc63c" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-66749a40"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-b2aedce1" selected="true" title="항목 28. (오류 정정) 입력 오류를 정정할 수 있는 방법을 제공해야 한다.">
+          <cl:group std:sid="group-4acd6eb1" id="grp33">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-53838fea" id="grp34">
+              <cl:verticaldata std:sid="v-data-39c9b1d0" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-bd29c77a" value="준수 기준 : 입력 오류를 정정할 수 있는 방법을 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-539884bb" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-27878a47" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-a2fa36c4"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-22052255" selected="true" title="항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-95befc56" id="grp31">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-92213016" id="grp32">
+              <cl:verticaldata std:sid="v-data-05706e70" width="1178px" height="247px" autosize="height"/>
+              <cl:output std:sid="output-8d7bf37a" value="준수 기준 : 입력 서식에 대응하는 레이블을 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-01b43101" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:grid std:sid="grid-d4ff8e7c" id="grd21" datasetid="dv29" autofit="3" autorowheight="all" suppressedcelltype="merged">
+                <cl:listener std:sid="listener-7bc6b35d" name="cell-click" handler="onGrdCellClick"/>
+                <cl:verticaldata std:sid="v-data-5d976091" width="1158px" height="200px" autosize="height"/>
+                <cl:gridcolumn std:sid="g-column-1d464113" width="80px"/>
+                <cl:gridcolumn std:sid="g-column-e15fb171" width="160px"/>
+                <cl:gridcolumn std:sid="g-column-4aa9258a" width="150px"/>
+                <cl:gridcolumn std:sid="g-column-b7a466bd" width="326px"/>
+                <cl:gridcolumn std:sid="g-column-b521eb29" width="120px"/>
+                <cl:gridheader std:sid="gh-band-0368cd66">
+                  <cl:gridrow std:sid="g-row-544a3ed2" height="36px"/>
+                  <cl:gridcell std:sid="gh-cell-f49b44a3" rowindex="0" colindex="1" class="fw-bold" targetcolumnname="control" sortable="false" filterable="false" text="컨트롤"/>
+                  <cl:gridcell std:sid="gh-cell-4f71b2d0" rowindex="0" colindex="2" class="fw-bold" targetcolumnname="property" sortable="false" filterable="false" text="속성"/>
+                  <cl:gridcell std:sid="gh-cell-701efad9" rowindex="0" colindex="3" class="fw-bold" targetcolumnname="description" sortable="true" filterable="false" text="설명"/>
+                  <cl:gridcell std:sid="gh-cell-5ef96acc" rowindex="0" colindex="4" class="fw-bold" text="가이드 바로가기"/>
+                  <cl:gridcell std:sid="gh-cell-d9bfe8d7" rowindex="0" colindex="0" class="fw-bold" targetcolumnname="required" sortable="false" filterable="true" text="필수"/>
+                </cl:gridheader>
+                <cl:griddetail std:sid="gd-band-28215ca8">
+                  <cl:gridrow std:sid="g-row-7df05581" height="37px"/>
+                  <cl:gridcell std:sid="gd-cell-be5714ea" rowindex="0" colindex="1" columnname="control">
+                    <cl:output std:sid="output-7313d673" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-733d3cde"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-244293b4" rowindex="0" colindex="2" columnname="property">
+                    <cl:output std:sid="output-165393d6" class="text-center" value="Output">
+                      <cl:celldata std:sid="c-data-11088efe"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-7e262813" rowindex="0" colindex="3" columnname="description" suppressible="true" keepmerged="true">
+                    <cl:output std:sid="output-d75c76ac" value="Output">
+                      <cl:celldata std:sid="c-data-b53856c1"/>
+                    </cl:output>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-299b8252" rowindex="0" colindex="4">
+                    <cl:button std:sid="button-62237f2f" id="btn12" value="바로가기">
+                      <cl:celldata std:sid="c-data-0a81080d"/>
+                    </cl:button>
+                  </cl:gridcell>
+                  <cl:gridcell std:sid="gd-cell-0b59a697" rowindex="0" colindex="0" columnname="required">
+                    <cl:output std:sid="output-d13544eb">
+                      <cl:expbind property="class" category="CLASS" expression="required.toLowerCase() == &quot;true&quot; ? &quot;wa-required text-transparent&quot; : &quot;text-transparent&quot;"/>
+                      <cl:celldata std:sid="c-data-be94bbab" halign="FILL"/>
+                    </cl:output>
+                  </cl:gridcell>
+                </cl:griddetail>
+              </cl:grid>
+              <cl:verticallayout std:sid="v-layout-694ac5b5" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-777392b8"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-557f280d" title="항목 30. (접근 가능한 인증) 인증 과정은 인지 기능 테스트에만 의존해서는 안 된다.">
+          <cl:group std:sid="group-b7d341b8" id="grp24">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-a8b25db3" id="grp72">
+              <cl:verticaldata std:sid="v-data-466d7694" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-865f8f1c" value="준수 기준 : 사용자 인증 과정에서 인지 기능 테스트에 의존할 때, 인지 기능 테스트에 의존하지 않는 인증방식을 함께 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-b56c389a" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-95c6936b" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-3c4887ea"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-649e29cd" title="항목 31. (반복 입력 정보) 반복되는 입력 정보는 자동 입력 또는 선택 입력할 수 있어야 한다.">
+          <cl:group std:sid="group-cdeccab7" id="grp25">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-366c79d6" id="grp73">
+              <cl:verticaldata std:sid="v-data-63b36b6a" width="1178px" height="43px" autosize="height"/>
+              <cl:output std:sid="output-eb056033" value="준수 기준 : 반복되는 입력 정보에 대한 자동 입력 또는 선택 입력 기능을 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-9fb866cd" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-d98bf5eb" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-810bb051"/>
+          </cl:group>
+        </cl:sectionitem>
+      </cl:accordion>
+      <cl:verticallayout std:sid="v-layout-2918d623" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group comment="2.운용의 용이성" std:sid="group-e8c68f9b" id="grpRule4" class="pb-content wa-guideline">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-ff43962e" width="1280px" height="420px" autosize="height"/>
+      <cl:udc std:sid="ud-control-35b1f4ec" id="sectiontitle3" type="udc.pb.SectionTitle">
+        <cl:verticaldata std:sid="v-data-a0cbc0e4" width="1180px" height="29px" autosize="none"/>
+        <cl:property name="title" value="원칙 4. 견고성 (Robust)" type="string"/>
+      </cl:udc>
+      <cl:accordion std:sid="accordion-c1a67fe7" id="acdGuideLine4" class="guideLine" multiple="true">
+        <std:metadata>
+          <std:property key="active-index" value="11"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-53264fec" width="1180px" height="252px" autosize="height"/>
+        <cl:sectionitem std:sid="s-item-fedee2ea" selected="true" title="항목 32. (마크업 오류 방지) 마크업 언어의 요소는 열고 닫음, 중첩 관계 및 속성 선언에 오류가 없어야 한다.">
+          <cl:group std:sid="group-55fe23c1" id="grp19">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-ba2f242a" id="grp20">
+              <cl:verticaldata std:sid="v-data-e4f784f8" width="1178px" height="48px" autosize="height"/>
+              <cl:output std:sid="output-ec3082ed" value="준수 기준 : 마크업 언어 요소의 열고 닫음, 중첩 관계 및 속성 선언에 대한 문법 오류 없이 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-6b48f6df" width="1148px" height="30px" autosize="none"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-9562f5b6" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-925fe1a4"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-0ae3504f" selected="true" title="항목 33. (웹 애플리케이션 접근성 준수) 콘텐츠에 포함된 웹 애플리케이션은 접근성이 있어야 한다.">
+          <cl:group std:sid="group-232baa5a" id="grp21">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-db898c13" id="grp22">
+              <cl:verticaldata std:sid="v-data-d956f997" width="1158px" height="37px" autosize="height"/>
+              <cl:output std:sid="output-60f329ee" value="준수 기준 : 웹 애플리케이션의 자체 접근성을 준수하였거나 대체 콘텐츠를 제공한 경우, 준수한 것으로 인정">
+                <cl:verticaldata std:sid="v-data-2963c589" width="1180px" height="18px" autosize="height"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-984584eb" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-e2cc42ac"/>
+          </cl:group>
+        </cl:sectionitem>
+      </cl:accordion>
+      <cl:verticallayout std:sid="v-layout-79637577" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-825d53f9" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

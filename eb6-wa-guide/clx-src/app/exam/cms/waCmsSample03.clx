@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d1be6ade" version="1.0.3655">
+  <head std:sid="head-f5366450">
+    <screen std:sid="screen-ce58163d" id="default" name="default" minwidth="1280px" width="1280px" height="768px"/>
+    <screen std:sid="screen-3db9205e" id="tablet" name="tablet" minwidth="1024px" maxwidth="1279px" width="1024px" height="667px"/>
+    <screen std:sid="screen-1585f6b7" id="mobile" name="mobile" maxwidth="1023px" width="720px" height="525px"/>
+    <cl:model std:sid="model-b7477132">
+      <cl:dataset std:sid="d-set-267d742b" id="dsPropView">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="필터조건(같은 숫자에 대해서만 필터하여 내용을 보여준다)" std:sid="d-column-5941843b" name="keyNum" datatype="string"/>
+          <cl:datacolumn comment="컨트롤명(영문)" std:sid="d-column-4cd817ad" name="control"/>
+          <cl:datacolumn comment="속성명" std:sid="d-column-a67ff141" name="propNm"/>
+          <cl:datacolumn comment="속성값" std:sid="d-column-309a35a3" name="propVal"/>
+          <cl:datacolumn comment="관련 웹접근성 지침" std:sid="d-column-d6e23689" name="relatedWaInst"/>
+          <cl:datacolumn std:sid="d-column-4a5e554b" name="code"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[optH1]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[outputType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[h1]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 18. (제목 제공) 페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[imgStep1]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[image]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[alt]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[스텝1 약관동의]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[imgStep2]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[image]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[alt]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[스텝2 본인확인]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[imgStep3]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[image]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[alt]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[스텝3 회원정보입력]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[imgStep4]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[image]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[alt]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[스텝4 가입완료]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[imgStepArrow]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[image]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[alt]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[다음]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 1. (적절한 대체 텍스트 제공) 텍스트 아닌 콘텐츠는 그 의미나 용도를 인식할 수 있도록 대체 텍스트를 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[optTitleH2]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[outputType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[h2]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 18. (제목 제공) 페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[cbxAgreeAll]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[checkbox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[약관 전체 동의]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[acdItem]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[아코디언 섹션 아이템]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[exp:// (getSectionItems().indexOf(this)+1)+ "번째 아코디언 아이템 "+title]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[rdbAgree1]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[radiobutton]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[회원약관 확인(필수)]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+            <cl:datavalue columnname="code"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[rdbAgree2]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[radiobutton]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[개인정보 수집 및 이용 동의(필수)]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+            <cl:datavalue columnname="code"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[rdbAgree3]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[radiobutton]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[개인정보 수집 및 이용 동의(선택)]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnCancel]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnNext]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="회원가입_약관동의"/>
+  </head>
+  <body std:sid="body-9dddea34">
+    <cl:listener std:sid="listener-08f14024" name="screen-change" handler="onBodyScreenChange"/>
+    <cl:group std:sid="group-665e6df3" id="grpTitleWrap">
+      <cl:verticaldata std:sid="v-data-a31cf645" width="400px" height="57px" autosize="height"/>
+      <cl:output std:sid="output-cd3f89f8" style="font-size:44px;" class="main-title" value="회원가입" outputtype="h1">
+        <cl:attribute name="wa-prop-key" value="optH1"/>
+        <cl:verticaldata std:sid="v-data-bbd3ffaf" width="1280px" height="57px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-948195ce" bottommargin="0"/>
+    </cl:group>
+    <cl:group std:sid="group-9067ef18" id="grpStepWrap" class="step-wrap" clipcontent="false">
+      <cl:attribute name="mobile-column-count" value="2"/>
+      <cl:verticaldata std:sid="v-data-eb1cf6e2" width="1100px" height="60px" autosize="height"/>
+      <cl:group std:sid="group-fd6e48b4" id="grp2" class="active" clipcontent="false">
+        <cl:attribute name="mobile-column-count" value="1"/>
+        <cl:flowlayoutdata std:sid="f-data-ea400b35" width="208px" height="60px" autosize="none"/>
+        <cl:group std:sid="group-0d45d0d6" id="grp3">
+          <cl:formdata std:sid="f-data-1ef97fe2" row="0" col="0" rowspan="2" colspan="2"/>
+          <cl:img std:sid="image-866ffd80" id="imgStep" style="padding-top:13px; padding-left:12px; padding-bottom:12px; padding-right:12px;" class="ico-step step01" alt="현재 단계 스텝1 약관동의">
+            <cl:attribute name="wa-prop-key" value="imgStep1"/>
+            <cl:formdata std:sid="f-data-3a2df417" halign="CENTER" valign="CENTER" width="45" height="45" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:img>
+          <cl:output std:sid="output-32e26856" class="step-txt" value="Step1">
+            <cl:formdata std:sid="f-data-7e295bb1" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-59b92ed3" class="step-info" value="약관동의">
+            <cl:formdata std:sid="f-data-ad084033" row="1" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-3fdd8810" scrollable="false" hspace="11px" vspace="0px">
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="true" hidden="false" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:img std:sid="image-b41620eb" id="imgStepArrow1" style="padding-top:10px;" class="arrow" alt="다음">
+          <cl:attribute name="wa-prop-key" value="imgStepArrow"/>
+          <cl:formdata std:sid="f-data-0c13d477" halign="RIGHT" valign="CENTER" width="8" height="36" row="0" col="2" rowspan="2" colspan="1"/>
+        </cl:img>
+        <cl:formlayout std:sid="f-layout-e19d82b4" scrollable="false" hspace="11px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="45" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="40" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-e431b74e" id="grp5" clipcontent="false">
+        <cl:attribute name="mobile-column-count" value="1"/>
+        <cl:flowlayoutdata std:sid="f-data-db131718" width="208px" height="60px" autosize="none"/>
+        <cl:group std:sid="group-2193fd43" id="grp11">
+          <cl:formdata std:sid="f-data-650958f3" row="0" col="0" rowspan="2" colspan="2"/>
+          <cl:img std:sid="image-8ce1969c" id="imgStep2" style="padding-top:13px; padding-left:12px; padding-bottom:12px; padding-right:12px;" class="ico-step step02-user" alt="스텝2 본인확인">
+            <cl:attribute name="wa-prop-key" value="imgStep2"/>
+            <cl:formdata std:sid="f-data-77e26646" halign="CENTER" valign="CENTER" width="45" height="45" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:img>
+          <cl:output std:sid="output-9c97bdc7" class="step-txt" value="Step2">
+            <cl:formdata std:sid="f-data-e8eb874a" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-89da8d73" class="step-info" value="본인확인">
+            <cl:formdata std:sid="f-data-97e821a8" row="1" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-a33af4b6" scrollable="false" hspace="11px" vspace="0px">
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:img std:sid="image-577f8c83" id="imgStepArrow2" style="padding-top:10px;" class="arrow" alt="다음">
+          <cl:attribute name="wa-prop-key" value="imgStepArrow"/>
+          <cl:formdata std:sid="f-data-9cb96043" halign="RIGHT" valign="CENTER" width="8" height="36" row="0" col="2" rowspan="2" colspan="1"/>
+        </cl:img>
+        <cl:formlayout std:sid="f-layout-094dd96c" scrollable="false" hspace="11px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="45" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="40" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-1b99853c" id="grp12" clipcontent="false">
+        <cl:attribute name="mobile-column-count" value="1"/>
+        <cl:flowlayoutdata std:sid="f-data-2d538872" width="208px" height="60px" autosize="none"/>
+        <cl:group std:sid="group-be6c5f98" id="grp15" clipcontent="false">
+          <cl:formdata std:sid="f-data-465b2690" row="0" col="0" rowspan="2" colspan="2"/>
+          <cl:img std:sid="image-aaf98a89" id="imgStep3" style="padding-top:13px; padding-left:12px; padding-bottom:12px; padding-right:12px;" class="ico-step step03" alt="스텝3 회원정보입력">
+            <cl:attribute name="wa-prop-key" value="imgStep3"/>
+            <cl:formdata std:sid="f-data-bb8d5de8" halign="CENTER" valign="CENTER" width="45" height="45" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:img>
+          <cl:output std:sid="output-81e5ca86" class="step-txt" value="Step3">
+            <cl:formdata std:sid="f-data-37fb1979" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-31fcd24a" class="step-info" value="회원정보입력">
+            <cl:formdata std:sid="f-data-224b06ff" row="1" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-935c5df7" scrollable="false" hspace="11px" vspace="0px">
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false" hidden="false" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:img std:sid="image-d0f957c8" id="imgStepArrow3" style="padding-top:10px;" class="arrow" alt="다음">
+          <cl:attribute name="wa-prop-key" value="imgStepArrow"/>
+          <cl:formdata std:sid="f-data-67e8319a" halign="RIGHT" valign="CENTER" width="8" height="36" row="0" col="2" rowspan="2" colspan="1"/>
+        </cl:img>
+        <cl:formlayout std:sid="f-layout-5d5897d5" scrollable="false" hspace="11px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="45" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="40" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-ee53919b" id="grp16">
+        <cl:attribute name="mobile-column-count" value="1"/>
+        <cl:flowlayoutdata std:sid="f-data-58c2e939" width="208px" height="60px" autosize="none"/>
+        <cl:group std:sid="group-cc2fffa9" id="grp19" clipcontent="false">
+          <cl:formdata std:sid="f-data-fd68d630" row="0" col="0" rowspan="2" colspan="2"/>
+          <cl:img std:sid="image-cf574b10" id="imgStep4" style="padding-top:13px; padding-left:12px; padding-bottom:12px; padding-right:12px;" class="ico-step step04" alt="스텝4 가입완료">
+            <cl:attribute name="wa-prop-key" value="imgStep4"/>
+            <cl:formdata std:sid="f-data-072b3ac5" halign="CENTER" valign="CENTER" width="45" height="45" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:img>
+          <cl:output std:sid="output-7bf5e91c" class="step-txt" value="Step4">
+            <cl:formdata std:sid="f-data-ef9d553a" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-741feb1c" class="step-info" value="가입완료">
+            <cl:formdata std:sid="f-data-e686f5a9" row="1" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-3c91ca39" scrollable="false" hspace="11px" vspace="0px">
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-71cb9fff" scrollable="false" hspace="11px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="45" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:flowlayout std:sid="f-layout-6d89de6e" scrollable="false" hspacing="50" vspacing="10" halign="center"/>
+    </cl:group>
+    <cl:group std:sid="group-48c1eaaa">
+      <cl:verticaldata std:sid="v-data-a14ad194" width="400px" height="813px" autosize="height"/>
+      <cl:group std:sid="group-5b23d4f2" id="grp20">
+        <cl:verticaldata std:sid="v-data-8a5d0341" width="1100px" height="60px" autosize="none"/>
+        <cl:output std:sid="output-f09cf149" id="optH2" class="sub-title" value="약관동의" outputtype="h2">
+          <cl:attribute name="wa-prop-key" value="optTitleH2"/>
+          <cl:flowlayoutdata std:sid="f-data-2cd37376" width="185px" height="60px" autosize="both"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-e429c62e"/>
+      </cl:group>
+      <cl:group std:sid="group-0608aa82" class="form-info">
+        <cl:verticaldata std:sid="v-data-8ac57722" width="400px" height="60px" autosize="height"/>
+        <cl:output std:sid="output-01a3ab16" class="info-txt" value="- 이용약관 및 개인정보 수집 및 이용 안내를 확인해 주세요.">
+          <cl:formdata std:sid="f-data-49efa1b9" valign="FILL" row="0" col="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-0cbb11ca" scrollable="false" top-margin="20px" right-margin="24px" bottom-margin="20px" left-margin="24px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-bd8435cc" class="form-box-1px">
+        <cl:verticaldata std:sid="v-data-21b4cd62" width="400px" height="73px"/>
+        <cl:checkbox std:sid="c-box-3ce7c78e" id="cbxAgreeAll" fieldLabel="약관 전체 동의" value="false" falsevalue="false" text="전체동의">
+          <cl:listener std:sid="listener-d09f7a1d" name="value-change" handler="onCbxAgreeAllValueChange"/>
+          <cl:attribute name="wa-prop-key" value="cbxAgreeAll"/>
+          <cl:formdata std:sid="f-data-32f7ccba" halign="LEFT" valign="CENTER" row="0" col="0"/>
+        </cl:checkbox>
+        <cl:formlayout std:sid="f-layout-21f5fb82" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="30px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:accordion std:sid="accordion-3ba7c6c0" id="acd1" fieldLabel="아코디언" multiple="true" item-displayexp="title.slice(-4,title.length) == &quot;(필수)&quot; ? &#xD;&#xA;title.substring(0, title.length-4)+sstr(&quot; (필수)&quot;, &quot;text-red&quot;) &#xD;&#xA;: title.substring(0, title.length-4)+sstr(&quot; (선택)&quot;, &quot;text-blue&quot;) ">
+        <std:metadata>
+          <std:property key="active-index" value="2"/>
+        </std:metadata>
+        <cl:attribute name="wa-prop-key" value="acdItem"/>
+        <cl:verticaldata std:sid="v-data-763c0464" width="200px" height="589px" autosize="height"/>
+        <cl:sectionitem std:sid="s-item-9ee1bc00" selected="true" title="회원약관 확인(필수)" fieldLabel="회원약관 확인(필수)">
+          <cl:expbind property="fieldLabel" category="PROPERTY" expression="(getSectionItems().indexOf(this)+1)+ &quot;번째 아코디언 아이템 &quot;+title"/>
+          <cl:group std:sid="group-e7aae4d3" id="grp6">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-5c7fd448" id="grp10" class="form-box-1px">
+              <cl:formdata std:sid="f-data-102c7353" row="0" col="0"/>
+              <cl:group std:sid="group-f80003d1" id="grpTextWrap2" class="form-box-1px">
+                <cl:formdata std:sid="f-data-5b1a16e6" row="0" col="0"/>
+                <cl:output std:sid="output-242559a7" value="제 1장. 총칙&#xD;&#xA;제 1 조 (목적)&#xD;&#xA;본 약관은 (주)TEST(이하 “회사”라 합니다)이 운영하는 웹사이트 ‘WEB-TEST’ (www.website.com) (이하 “웹사이트”라 합니다)에서 제공하는 온라인 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버몰과 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.&#xD;&#xA;&#xD;&#xA;제 2 조 (용어의 정의)&#xD;&#xA;본 약관에서 사용하는 용어는 다음과 같이 정의한다.&#xD;&#xA;&#xD;&#xA;“웹사이트”란 회사가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 또는 용역을 거래 할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.&#xD;&#xA;“이용자”란 “웹사이트”에 접속하여 서비스를 이용하는 회원 및 비회원을 말합니다.&#xD;&#xA;“회원”이라 함은 “웹사이트”에 개인정보를 제공하여 회원등록을 한 자로서, “웹사이트”의 정보를 지속적으로 제공받으며, “웹사이트”이 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.&#xD;&#xA;“비회원”이라 함은 회원에 가입하지 않고, “웹사이트”이 제공하는 서비스를 이용하는 자를 말합니다.&#xD;&#xA;“ID”라 함은 이용자가 회원가입당시 등록한 사용자 “개인이용문자”를 말합니다.&#xD;&#xA;“멤버십”이라 함은 회원등록을 한 자로서, 별도의 온/오프라인 상에서 추가 서비스를 제공 받을 수 있는 회원을 말합니다.&#xD;&#xA;&#xD;&#xA;제 3 조 (약관의 공시 및 효력과 변경)&#xD;&#xA;본 약관은 회원가입 화면에 게시하여 공시하며 회사는 사정변경 및 영업상 중요한 사유가 있을 경우 약관을 변경할 수 있으며 변경된 약관은 공지사항을 통해 공시한다&#xD;&#xA;본 약관 및 차후 회사사정에 따라 변경된 약관은 이용자에게 공시함으로써 효력을 발생한다.&#xD;&#xA;&#xD;&#xA;제 4 조 (약관 외 준칙)&#xD;&#xA;본 약관에 명시되지 않은 사항이 전기통신기본법, 전기통신사업법, 정보통신촉진법, ‘전자상거래등에서의 소비자 보호에 관한 법률’, ‘약관의 규제에관한법률’, ‘전자거래기본법’, ‘전자서명법’, ‘정보통신망 이용촉진등에 관한 법률’, ‘소비자보호법’ 등 기타 관계 법령에 규정되어 있을 경우에는 그 규정을 따르도록 한다.&#xD;&#xA;&#xD;&#xA;제 2 장. 이용계약&#xD;&#xA;&#xD;&#xA;제 5 조 (이용신청)&#xD;&#xA;이용신청자가 회원가입 안내에서 본 약관과 개인정보보호정책에 동의하고 등록절차(회사의 소정 양식의 가입 신청서 작성)를 거쳐 ‘확인’ 버튼을 누르면 이용신청을 할 수 있다.&#xD;&#xA;이용신청자는 반드시 실명과 실제 정보를 사용해야 하며 1개의 생년월일에 대하여 1건의 이용신청을 할 수 있다.&#xD;&#xA;실명이나 실제 정보를 입력하지 않은 이용자는 법적인 보호를 받을 수 없으며, 서비스 이용에 제한을 받을 수 있다.&#xD;&#xA;&#xD;&#xA;제 6 조 (이용신청의 승낙)&#xD;&#xA;회사는 제5조에 따른 이용신청자에 대하여 제2항 및 제3항의 경우를 예외로 하여 서비스 이용을 승낙한다.&#xD;&#xA;회사는 아래 사항에 해당하는 경우에 그 제한사유가 해소될 때까지 승낙을 유보할 수 있다.&#xD;&#xA;가. 서비스 관련 설비에 여유가 없는 경우&#xD;&#xA;나. 기술상 지장이 있는 경우&#xD;&#xA;다. 기타 회사 사정상 필요하다고 인정되는 경우&#xD;&#xA;회사는 아래 사항에 해당하는 경우에 승낙을 하지 않을 수 있다.&#xD;&#xA;가. 다른 사람의 명의를 사용하여 신청한 경우&#xD;&#xA;나. 이용자 정보를 허위로 기재하여 신청한 경우&#xD;&#xA;다. 사회의 안녕질서 또는 미풍양속을 저해할 목적으로 신청한 경우&#xD;&#xA;라. 기타 회사가 정한 이용신청 요건이 미비한 경우&#xD;&#xA;제 3 장 계약 당사자의 의무&#xD;&#xA;&#xD;&#xA;제 7 조 (회사의 의무)&#xD;&#xA;회사는 사이트를 안정적이고 지속적으로 운영할 의무가 있다.&#xD;&#xA;회사는 이용자로부터 제기되는 의견이나 불만이 정당하다고 인정될 경우에는 즉시 처리해야 한다. 단, 즉시 처리가 곤란한 경우에는 이용자에게 그 사유와 처리일정을 공지사항 또는 전자우편을 통해 통보해야 한다.&#xD;&#xA;제1항의 경우 수사상의 목적으로 관계기관 및 정보통신윤리위원회의 요청이 있거나 영장 제시가 있는 경우, 기타 관계 법령에 의한 경우는 예외로 한다.&#xD;&#xA;&#xD;&#xA;제 8 조 (이용자의 의무)&#xD;&#xA;이용자는 본 약관 및 회사의 공지사항, 사이트 이용안내 등을 숙지하고 준수해야 하며 기타 회사의 업무에 방해되는 행위를 해서는 안된다.&#xD;&#xA;이용자는 회사의 사전 승인 없이 본 사이트를 이용해 어떠한 영리행위도 할 수 없다.&#xD;&#xA;이용자는 본 사이트를 통해 얻는 정보를 회사의 사전 승낙 없이 복사, 복제, 변경, 번역, 출판, 방송 및 기타의 방법으로 사용하거나 이를 타인에게 제공할 수 없다.&#xD;&#xA;&#xD;&#xA;제 4 장. 서비스의 제공 및 이용&#xD;&#xA;&#xD;&#xA;제 9 조 (서비스 이용)&#xD;&#xA;이용자는 본 약관의 규정된 사항을 준수해 사이트를 이용한다.&#xD;&#xA;본 약관에 명시되지 않은 서비스 이용에 관한 사항은 회사가 정해 ‘공지사항’에 게시하거나 또는 별도로 공지하는 내용에 따른다.&#xD;&#xA;&#xD;&#xA;제 10 조 (정보의 제공)&#xD;&#xA;회사는 회원이 서비스 이용 중 필요하다고 인정되는 다양한 정보에 대하여 전자메일이나 서신우편 등의 방법으로 회원에게 정보를 제공할 수 있다.&#xD;&#xA;&#xD;&#xA;제 11 조 (광고게재)&#xD;&#xA;회사는 서비스의 운용과 관련하여 서비스 화면, 홈페이지, 전자우편 등에 광고 등을 게재할 수 있다.&#xD;&#xA;회사는 사이트에 게재되어 있는 광고주의 판촉활동에 회원이 참여하거나 교신 또는 거래의 결과로서 발생하는 모든 손실 또는 손해에 대해 책임을 지지 않는다.&#xD;&#xA;&#xD;&#xA;제 12 조 (서비스 이용의 제한)&#xD;&#xA;본 사이트 이용 및 행위가 다음 각 항에 해당하는 경우 회사는 해당 이용자의 이용을 제한할 수 있다.&#xD;&#xA;&#xD;&#xA;공공질서 및 미풍양속, 기타 사회질서를 해하는 경우&#xD;&#xA;범죄행위를 목적으로 하거나 기타 범죄행위와 관련된다고 객관적으로 인정되는 경우&#xD;&#xA;타인의 명예를 손상시키거나 타인의 서비스 이용을 현저히 저해하는 경우&#xD;&#xA;타인의 의사에 반하는 내용이나 광고성 정보 등을 지속적으로 전송하는 경우&#xD;&#xA;해킹 및 컴퓨터 바이러스 유포 등으로 서비스의 건전한 운영을 저해하는 경우&#xD;&#xA;다른 이용자 또는 제3자의 지적재산권을 침해하거나 지적재산권자가 지적 재산권의 침해를 주장할 수 있다고 판단되는 경우&#xD;&#xA;타인의 아이디 및 비밀번호를 도용한 경우&#xD;&#xA;기타 관계 법령에 위배되는 경우 및 회사가 이용자로서 부적당하다고 판단한 경우&#xD;&#xA;&#xD;&#xA;제 13 조 (서비스 제공의 중지)&#xD;&#xA;회사는 다음 각 호에 해당하는 경우 서비스의 전부 또는 일부의 제공을 중지할 수 있다.&#xD;&#xA;&#xD;&#xA;전기통신사업법 상에 규정된 기간통신 사업자 또는 인터넷 망 사업자가 서비스를 중지했을 경우&#xD;&#xA;정전으로 서비스 제공이 불가능할 경우&#xD;&#xA;설비의 이전, 보수 또는 공사로 인해 부득이한 경우&#xD;&#xA;서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 정상적인 서비스 제공이 어려운 경우&#xD;&#xA;전시, 사변, 천재지변 또는 이에 준하는 국가비상사태가 발생하거나 발생할 우려가 있는 경우&#xD;&#xA;&#xD;&#xA;제 14 조 (게시물 관리)&#xD;&#xA;회사는 건전한 통신문화 정착과 효율적인 사이트 운영을 위하여 이용자가 게시하거나 제공하는 자료가 제12조에 해당한다고 판단되는 경우에 임의로 삭제, 자료이동, 등록거부를 할 수 있다.&#xD;&#xA;&#xD;&#xA;제 15 조 (서비스 이용 책임)&#xD;&#xA;이용자는 회사에서 권한 있는 사원이 서명한 명시적인 서면에 구체적으로 허용한 경우를 제외하고는 서비스를 이용하여 불법상품을 판매하는 영업활동을 할 수 없으며 특히 해킹, 돈벌기 광고, 음란 사이트를 통한 상업행위, 상용 S/W 불법제공 등을 할 수 없다. 이를 어기고 발생한 영업활동의 결과 및 손실, 관계기관에 의한 구속 등 법적 조치 등에 관해서는 회사가 책임을 지지 않는다.&#xD;&#xA;&#xD;&#xA;">
+                  <cl:verticaldata std:sid="v-data-6ed39320" width="799px" height="311px" autosize="height"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-c8a6e3c6" leftmargin="40" rightmargin="40" topmargin="28" bottommargin="28"/>
+              </cl:group>
+              <cl:group std:sid="group-6512e62e" id="grp13">
+                <cl:attribute name="mobile-column-count" value="1"/>
+                <cl:formdata std:sid="f-data-01f20ccf" row="1" col="0"/>
+                <cl:output std:sid="output-d2ed4346" value="홈페이지 이용약관에 동의하십니까?">
+                  <cl:formdata std:sid="f-data-04d8cecd" valign="FILL" row="0" col="0"/>
+                </cl:output>
+                <cl:radiobutton std:sid="r-button-6368f6ee" id="rdb1" fieldLabel="회원약관 확인(필수)" value="disagree" fixedwidth="false" hspacing="26" vspacing="12">
+                  <cl:attribute name="wa-prop-key" value="rdbAgree1"/>
+                  <cl:formdata std:sid="f-data-13379004" halign="RIGHT" valign="FILL" width="250" row="0" col="1"/>
+                  <cl:item std:sid="item-808041fa" label="동의함" value="agree"/>
+                  <cl:item std:sid="item-81b8e52f" label="동의하지않음" value="disagree"/>
+                </cl:radiobutton>
+                <cl:formlayout std:sid="f-layout-acc73843" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="28px" bottom-margin="0px" left-margin="28px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="251" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-c93285c9" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px">
+                <cl:rows length="362" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="73" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:formlayout std:sid="f-layout-55f3369f" scrollable="false" hspace="5px" vspace="5px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-dea31d1b" selected="true" title="개인정보 수집 및 이용 동의(필수)">
+          <cl:expbind property="fieldLabel" category="PROPERTY" expression="(getSectionItems().indexOf(this)+1)+ &quot;번째 아코디언 아이템 &quot;+title"/>
+          <cl:group std:sid="group-e11cc5ff" id="grp8">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-c929cb95" id="grp1" class="form-box-1px">
+              <cl:formdata std:sid="f-data-ce1c974c" row="0" col="0"/>
+              <cl:group std:sid="group-02478ec4" id="grpTextWrap4" class="form-box-1px">
+                <cl:formdata std:sid="f-data-d4241f43" row="0" col="0"/>
+                <cl:group comment="표시순 정렬 X" std:sid="group-588260d2" id="grp7" class="form-base form-box-1px">
+                  <cl:verticaldata std:sid="v-data-5720006d" width="400px" height="200px"/>
+                  <cl:output std:sid="output-77b1b4d5" class="text-center fw-medium" value="항목">
+                    <cl:formdata std:sid="f-data-b2a46660" row="0" col="0"/>
+                  </cl:output>
+                  <cl:output std:sid="output-158af497" class="text-center" value="이름, 아이디, 비밀번호, 휴대전화번호, 이메일, 중복가입확인정보(DI)">
+                    <cl:formdata std:sid="f-data-df4ec6ef" row="1" col="0"/>
+                  </cl:output>
+                  <cl:output std:sid="output-3b6120b6" class="text-center fw-medium" value="수집 목적">
+                    <cl:formdata std:sid="f-data-7bd9092a" row="0" col="1"/>
+                  </cl:output>
+                  <cl:output std:sid="output-405fb2a6" class="text-center" value="회원가입 시 본인 확인">
+                    <cl:formdata std:sid="f-data-69205ebe" row="1" col="1"/>
+                  </cl:output>
+                  <cl:output std:sid="output-4a162f5c" class="text-center fw-medium" value="보유·이용 기간">
+                    <cl:formdata std:sid="f-data-35f44560" row="0" col="2"/>
+                  </cl:output>
+                  <cl:output std:sid="output-16fc7bcc" class="text-center" value="회원 탈퇴시까지&#xD;&#xA;(개인회원 : 2년단위 재동의)">
+                    <cl:formdata std:sid="f-data-4a7bd97d" row="1" col="2"/>
+                  </cl:output>
+                  <cl:formlayout std:sid="f-layout-2c6c1b96" scrollable="false" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+                    <cl:rows length="50" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS"/>
+                    <cl:rows length="1" unit="FRACTION"/>
+                    <cl:columns length="1" unit="FRACTION"/>
+                    <cl:columns length="1" unit="FRACTION"/>
+                    <cl:columns length="1" unit="FRACTION"/>
+                  </cl:formlayout>
+                </cl:group>
+                <cl:output std:sid="output-86542a75" value="※ 귀하는 상기 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 회원가입이 불가함을 알려드립니다.">
+                  <cl:verticaldata std:sid="v-data-bf6674de" width="1018px" height="18px" autosize="none"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-1c705db2" leftmargin="40" rightmargin="40" topmargin="30" bottommargin="30"/>
+              </cl:group>
+              <cl:group std:sid="group-cc008812" id="grp4">
+                <cl:attribute name="mobile-column-count" value="1"/>
+                <cl:formdata std:sid="f-data-c4649fb9" row="1" col="0"/>
+                <cl:output std:sid="output-9236173a" value="개인정보보호법 제 15조에 따라 개인정보 처리에 동의하십니까?">
+                  <cl:formdata std:sid="f-data-9f309e5a" valign="FILL" row="0" col="0"/>
+                </cl:output>
+                <cl:radiobutton std:sid="r-button-bc57e1b9" id="rdb2" fieldLabel="개인정보 수집 및 이용 동의(필수)" value="disagree" fixedwidth="false" hspacing="26" vspacing="12">
+                  <cl:attribute name="wa-prop-key" value="rdbAgree2"/>
+                  <cl:formdata std:sid="f-data-f2dbf3e6" halign="RIGHT" valign="FILL" width="250" row="0" col="1"/>
+                  <cl:item std:sid="item-89a3560c" label="동의함" value="agree"/>
+                  <cl:item std:sid="item-b8d09328" label="동의하지않음" value="disagree"/>
+                </cl:radiobutton>
+                <cl:formlayout std:sid="f-layout-5a59bc28" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="28px" bottom-margin="0px" left-margin="28px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="429" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-633872e0" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px">
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="73" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:formlayout std:sid="f-layout-a6b1c2d1" scrollable="false" hspace="5px" vspace="5px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-0ba66d3b" selected="true" title="개인정보 수집 및 이용 동의(선택)">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:expbind property="fieldLabel" category="PROPERTY" expression="(getSectionItems().indexOf(this)+1)+ &quot;번째 아코디언 아이템 &quot;+title"/>
+          <cl:group std:sid="group-6e098db0" id="grp9">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-42155357" id="grp14" class="form-box-1px">
+              <cl:formdata std:sid="f-data-cec4f1fd" row="0" col="0"/>
+              <cl:group std:sid="group-38833575" id="grpTextWrap6" class="form-box-1px">
+                <cl:formdata std:sid="f-data-ad058d1d" row="0" col="0"/>
+                <cl:group comment="표시순 정렬X " std:sid="group-03204237" id="grp17" class="form-base form-box-1px">
+                  <cl:verticaldata std:sid="v-data-399ea1b4" width="400px" height="200px"/>
+                  <cl:output std:sid="output-ab2dd969" class="text-center fw-medium" value="항목">
+                    <cl:formdata std:sid="f-data-944ed2fa" row="0" col="0"/>
+                  </cl:output>
+                  <cl:output std:sid="output-9e5bfba7" class="text-center" value="이메일 수신 여부">
+                    <cl:formdata std:sid="f-data-d7c81e78" row="1" col="0"/>
+                  </cl:output>
+                  <cl:output std:sid="output-dff99a66" class="text-center fw-medium" value="수집 목적">
+                    <cl:formdata std:sid="f-data-30282bbc" row="0" col="1"/>
+                  </cl:output>
+                  <cl:output std:sid="output-e06c72f9" class="text-center" value="사이트 소식 및 정보 제공">
+                    <cl:formdata std:sid="f-data-1dd3f3e5" row="1" col="1"/>
+                  </cl:output>
+                  <cl:output std:sid="output-c519e1b8" class="text-center fw-medium" value="보유·이용 기간">
+                    <cl:formdata std:sid="f-data-59dace32" row="0" col="2"/>
+                  </cl:output>
+                  <cl:output std:sid="output-dd4ed9ca" class="text-center" value="회원 탈퇴시까지&#xD;&#xA;(개인회원 : 2년단위 재동의)">
+                    <cl:formdata std:sid="f-data-7d4b3d08" row="1" col="2"/>
+                  </cl:output>
+                  <cl:formlayout std:sid="f-layout-d113a0a4" scrollable="false" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+                    <cl:rows length="50" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS"/>
+                    <cl:rows length="1" unit="FRACTION"/>
+                    <cl:columns length="1" unit="FRACTION"/>
+                    <cl:columns length="1" unit="FRACTION"/>
+                    <cl:columns length="1" unit="FRACTION"/>
+                  </cl:formlayout>
+                </cl:group>
+                <cl:output std:sid="output-91f11b52" value="※ 귀하는 상기 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 사이트 소식 및 정보 제공이 제한될 수 있습니다.">
+                  <cl:verticaldata std:sid="v-data-e0f05044" width="100px" height="18px"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-c95fd6b2" leftmargin="40" rightmargin="40" topmargin="30" bottommargin="30"/>
+              </cl:group>
+              <cl:group std:sid="group-2fecd4af" id="grp18">
+                <cl:attribute name="mobile-column-count" value="1"/>
+                <cl:formdata std:sid="f-data-3d1cf6b0" row="1" col="0"/>
+                <cl:output std:sid="output-12c20c7a" value="개인정보보호법 제 15조에 따라 개인정보 처리에 동의하십니까?">
+                  <cl:formdata std:sid="f-data-6a7e9dd1" valign="FILL" row="0" col="0"/>
+                </cl:output>
+                <cl:radiobutton std:sid="r-button-a4f78d7c" id="rdb3" fieldLabel="개인정보 수집 및 이용 동의(선택)" value="disagree" fixedwidth="false" hspacing="26" vspacing="12">
+                  <cl:attribute name="wa-prop-key" value="rdbAgree3"/>
+                  <cl:formdata std:sid="f-data-6fdbc53e" halign="RIGHT" valign="FILL" width="250" row="0" col="1"/>
+                  <cl:item std:sid="item-f1641840" label="동의함" value="agree"/>
+                  <cl:item std:sid="item-23157a0d" label="동의하지않음" value="disagree"/>
+                </cl:radiobutton>
+                <cl:formlayout std:sid="f-layout-485b95f1" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="28px" bottom-margin="0px" left-margin="28px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="430" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-23919298" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px">
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="73" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:formlayout std:sid="f-layout-a188c669" scrollable="false" hspace="5px" vspace="5px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+        </cl:sectionitem>
+      </cl:accordion>
+      <cl:verticallayout std:sid="v-layout-3272f2f9" spacing="15" topmargin="0" bottommargin="25"/>
+    </cl:group>
+    <cl:group std:sid="group-978c4ed8" id="grpBtnWrap">
+      <cl:verticaldata std:sid="v-data-26de6d43" width="1280px" height="60px" autosize="none"/>
+      <cl:button std:sid="button-25201145" class="btn-gray-300" value="취소">
+        <cl:attribute name="wa-prop-key" value="btnCancel"/>
+        <cl:formdata std:sid="f-data-550e7378" row="0" col="0"/>
+      </cl:button>
+      <cl:button std:sid="button-b2bfd2bc" class="btn-secondary" value="다음">
+        <cl:attribute name="wa-prop-key" value="btnNext"/>
+        <cl:formdata std:sid="f-data-1a3ecf4f" row="0" col="1"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-b88f11cd" scrollable="false" hspace="10px" vspace="10px" right-margin="1fr" bottom-margin="0px" left-margin="1fr">
+        <cl:rows length="60" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="210" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="210" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-c8fce993" spacing="30" leftmargin="90" rightmargin="90" topmargin="90" bottommargin="90"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

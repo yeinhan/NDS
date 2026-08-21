@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cef46dd2" version="1.0.4034">
+  <head std:sid="head-113497c5">
+    <screen std:sid="screen-490c9470" id="default" name="default" minwidth="1644px" width="1644px" height="903px" useCustomWidth="true" useCustomHeight="true" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-e167c802" id="tablet" name="tablet" maxwidth="1643px" width="1541px" height="903px"/>
+    <cl:model std:sid="model-4726e863"/>
+    <cl:appspec title="일반 팝업"/>
+  </head>
+  <body std:sid="body-54776a71">
+    <cl:group std:sid="group-8c2ec5d0">
+      <cl:formdata std:sid="f-data-48a3c37c" row="0" col="0"/>
+      <cl:output std:sid="output-c8bbfb5b" class="text-center" value="다이얼로그 제목" outputtype="h3">
+        <cl:xylayoutdata std:sid="xyl-data-7e73c999" top="20px" left="208px" width="300px" height="78px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:output>
+      <cl:xylayout std:sid="xylayout-db645956"/>
+    </cl:group>
+    <cl:group std:sid="group-5163a58e">
+      <cl:formdata std:sid="f-data-8d0fcc40" row="1" col="0"/>
+      <cl:button std:sid="button-bd3dd4d3" class="btn-primary" value="선택">
+        <cl:listener std:sid="listener-857d973a" name="click" handler="onButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-adcd667b" width="60px" height="32px"/>
+      </cl:button>
+      <cl:button std:sid="button-8955cf36" value="닫기">
+        <cl:listener std:sid="listener-5c77225b" name="click" handler="onButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-1774a7a3" width="60px" height="32px"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-b12e8af1" scrollable="false" hspacing="6" vspacing="0" halign="center"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-945c4382" scrollable="false" hspace="20px" vspace="20px" top-margin="20px" right-margin="20px" bottom-margin="20px" left-margin="20px">
+      <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+      <cl:rows length="32" unit="PIXEL"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

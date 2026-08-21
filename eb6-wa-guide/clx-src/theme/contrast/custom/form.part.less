@@ -1,0 +1,144 @@
+@import "../../custom-settings.part.less";
+
+/************************************************
+ * 일반 폼
+ ************************************************/
+ .high-contrast{
+.cl-container.cl-form-group {
+	background-color: @form-background-color;
+	border: @form-border-base;
+	border-radius: @form-border-radius;
+	
+	.cl-output.label {
+		text-align: center;
+	}
+	
+	&.vertical {
+		.cl-output.label {
+			text-align: center;
+		}
+	}
+}
+
+/************************************************
+ * 기본 폼
+ ************************************************/
+ 
+.cl-container.form-base {
+	background-color: @form-background-color;
+	border: @form-border-contrast;
+	border-top-color: @gray-800;
+	border-width: 1px 0px;
+	border-radius: @form-border-radius;
+	
+	.cl-output.label {
+		color: @dark;
+		font-weight: @font-weight-medium;
+		
+		.cl-text {
+			padding: @input-padding-0 @input-padding-x;
+		}
+		
+//		&.required {
+//			.cl-text:before {
+//				content: "*";
+//				position: absolute;
+//				color: @danger;
+//				font-size: @font-size-sm;
+//				top: calc(50% - 6px);
+//				left: 3px;
+//			}
+//		}
+	}
+	
+	&.vertical {
+		.cl-output.label {
+			text-align: center;
+			
+		}
+	}
+}
+
+
+/************************************************
+ * 스플리터
+ ************************************************/
+
+.splitter {
+	&.cl-formlayout-vertical-separator,
+	&.cl-formlayout-horizontal-separator {
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	&.cl-formlayout-vertical-separator {
+		background-image: url("../../images/controls/container/splitter_v.png");
+		background-color: @secondary-dim;
+	}
+	
+	&.cl-formlayout-horizontal-separator {
+		background-image: url("../../images/controls/container/splitter_h.png");
+		background-color: @secondary-dim;
+	}
+}
+
+
+/************************************************
+ * 조회 폼
+ ************************************************/
+ 
+.cl-container.search-box {
+	background-color: @gray-200;
+	border-radius: @component-border-radius;
+	
+	.cl-output.label {
+		color: @dark;
+		font-weight: @font-weight-medium;
+		text-align: right;
+		&:not(.cl-first-column) {
+			margin-left: 22px;
+		}
+		
+	}
+	
+	.cl-button.btn-i-search {
+		margin-left: 0px;
+		
+		.cl-icon {
+			background-image: url("../../images/controls/button/ic_btn_search2_w.png") !important;
+		}
+	}
+	
+	.cl-container.search-button-area {
+		.cl-button.btn-i-search {
+			margin-left: 0px;
+		}
+	}
+}
+
+.cl-checkbox.toggle {
+	background-color: @btn-background-color;
+	border: @btn-border-contrast;
+	border-radius: @btn-border-radius;
+	color: @transparent;
+	font-size: 0px;
+	text-align: center;
+	
+	.cl-checkbox-icon {
+		background-image: url("../../images/controls/checkbox/ic_btn_down.png");
+		width: 30px;
+		height: 30px;
+		margin: 0px;
+	}
+	
+	&.cl-checked {
+		.cl-checkbox-icon {
+			background-image: url("../../images/controls/checkbox/ic_btn_up.png");
+		}
+	}
+	
+	&.cl-focus {
+		border-color: @btn-focus-border-color-contrast;
+	}
+}
+}

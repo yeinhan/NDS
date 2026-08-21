@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-aefac33d" version="1.0.3736">
+  <head std:sid="head-14877270">
+    <screen std:sid="screen-a2fb4c45" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-4ec9b58c" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-658b0fce" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-647dd50a" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-ac971301">
+      <cl:dataset std:sid="d-set-b7466145" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b0689ea6" name="headerNm"/>
+          <cl:datacolumn std:sid="d-column-98ce32ba" name="column"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="그리드 틀고정">
+      <cl:property name="grid" type="control"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-07802da1" style="top:0px; left:0px; width:300px; height:300px;" class="bg-white border">
+    <cl:listener std:sid="listener-1d8baff5" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-7e7ebbec" name="click" handler="onBodyClick"/>
+    <cl:output std:sid="output-f2c10782" id="opt1" class="data-title" value="틀고정">
+      <cl:formdata std:sid="f-data-003cd673" row="0" col="0" rowspan="1" colspan="4"/>
+    </cl:output>
+    <cl:group std:sid="group-ed5a0474" id="grp1" class="form-box">
+      <cl:formdata std:sid="f-data-1858891a" row="1" col="0" rowspan="1" colspan="4"/>
+      <cl:output std:sid="output-d041f6cb" value="좌측">
+        <cl:formdata std:sid="f-data-8f406d74" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-c36a5e69" value="우측">
+        <cl:listener std:sid="listener-7abda158" name="value-change" handler="onOutputValueChange"/>
+        <cl:listener std:sid="listener-f5568a9b" name="value-change" handler="onOutputValueChange2"/>
+        <cl:formdata std:sid="f-data-823797a4" row="1" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-846717e5" value="상단">
+        <cl:formdata std:sid="f-data-510aad97" row="2" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-1fa9a4b2" value="하단">
+        <cl:formdata std:sid="f-data-189d24ab" row="3" col="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-7d08f713" id="cmbLeft">
+        <cl:formdata std:sid="f-data-7451780f" row="0" col="1"/>
+        <cl:item std:sid="t-item-d12ee432" label="선택안함" value="0" checked="false"/>
+        <cl:itemset datasetid="ds1" label="headerNm" value="column"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-077cfce3" id="cmbRight">
+        <cl:formdata std:sid="f-data-b56d3314" row="1" col="1"/>
+        <cl:item std:sid="t-item-8afa679a" label="선택안함" value="0"/>
+        <cl:itemset datasetid="ds1" label="headerNm" value="column"/>
+      </cl:combobox>
+      <cl:numbereditor std:sid="n-editor-e8fbf8ba" id="nbeTop" min="0.0" spinbutton="false">
+        <cl:formdata std:sid="f-data-8037d376" row="2" col="1"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-2a6b2644" id="nbeBottom" min="0.0" spinbutton="false">
+        <cl:listener std:sid="listener-6f46921d" name="value-change" handler="onNbe2ValueChange"/>
+        <cl:formdata std:sid="f-data-2ee79722" row="3" col="1"/>
+      </cl:numbereditor>
+      <cl:formlayout std:sid="f-layout-1b15613e" scrollable="false" hspace="5px" vspace="5px">
+        <cl:rows length="30" unit="PIXEL"/>
+        <cl:rows length="30" unit="PIXEL"/>
+        <cl:rows length="30" unit="PIXEL"/>
+        <cl:rows length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-5886cd24" id="btnOk" class="btn-primary" value="확인">
+      <cl:listener std:sid="listener-a6052d3d" name="click" handler="onBtn1Click"/>
+      <cl:formdata std:sid="f-data-7c9395ff" row="2" col="1"/>
+    </cl:button>
+    <cl:button std:sid="button-d704f7af" id="btnCancel" class="btn-dark" value="취소">
+      <cl:listener std:sid="listener-d28aebf5" name="click" handler="onBtn2Click"/>
+      <cl:formdata std:sid="f-data-e0c7d937" row="2" col="2"/>
+    </cl:button>
+    <cl:formlayout std:sid="f-layout-26a44afd" scrollable="false" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+      <cl:rows length="24" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="135" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" minlength="0"/>
+      <cl:columns length="70" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="70" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler>
+      <std:guide position="114"/>
+    </std:hruler>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

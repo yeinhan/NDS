@@ -1,0 +1,172 @@
+@import "../custom-settings.part.less";
+
+ /* 페이지 인덱서 */
+.cl-pageindexer {
+	font: @font-base;
+	color: @component-text-color;
+	padding: 0px;
+	
+	.cl-pageindexer-index-area,
+	.cl-pageindexer-first,
+	.cl-pageindexer-last,
+	.cl-pageindexer-prev,
+	.cl-pageindexer-next,
+	.cl-pageindexer-index,
+	.cl-text-wrapper {
+		min-height: 20px;
+	}
+	
+	/* 페이지 인덱서 버튼 공통 */
+	.cl-pageindexer-first,
+	.cl-pageindexer-last,
+	.cl-pageindexer-prev,
+	.cl-pageindexer-next,
+	.cl-pageindexer-index {
+		&:focus {
+			outline: none;
+			color: @gray-900;
+		}
+	}
+
+	/* navigationType="text"으로 표현되는 페이지 정보 텍스트 */
+	.cl-pageindexer-text {
+	}
+
+	.cl-pageindexer-first,
+	.cl-pageindexer-last,
+	.cl-pageindexer-prev,
+	.cl-pageindexer-next {
+		background-color: @transparent;
+		border: none;
+		border-radius: @component-border-radius-0;
+		margin: 0px;
+		width: 20px;
+	}
+
+	/* 페이지 인덱서 처음으로 버튼 */
+	.cl-pageindexer-first{
+		background-image: url("../images/controls/pageindexer/ic_btn_first.png");
+	}
+
+	/* 페이지 인덱서 이전 버튼 */
+	.cl-pageindexer-prev {
+		background-image: url("../images/controls/pageindexer/ic_btn_prev.png");
+		margin-left: 6px;
+	}
+
+	/* 페이지 인덱서 다음 버튼 */
+	.cl-pageindexer-next{
+		background-image: url("../images/controls/pageindexer/ic_btn_next.png");
+		margin-right: 6px;
+	}
+
+	/* 페이지 인덱서 마지막으로 버튼 */
+	.cl-pageindexer-last {
+		background-image: url("../images/controls/pageindexer/ic_btn_last.png");
+	}
+	
+	.cl-pageindexer-index-area {
+		padding: 0px 12px;
+	}
+	
+	/* navigationType="button"으로 표현되는 페이지 인덱스 버튼 */
+	.cl-pageindexer-index {
+		background-color: @transparent;
+		border: none;
+		margin: 0px 12px;
+		width: auto !important;
+		
+		/* 페이지 인덱서 선택된 페이지 */
+		&.cl-selected {
+			background-color: @transparent;
+			color: @primary;
+			font-weight: @font-weight-medium;
+		}
+	}
+
+	/* 페이지 인덱서 - disabled */
+	&.cl-disabled {
+		color: @component-disabled-text-color;
+	}
+}
+
+.cl-pageindexer:not(.cl-disabled){
+	.cl-pageindexer-first ,
+	.cl-pageindexer-last ,
+	.cl-pageindexer-prev ,
+	.cl-pageindexer-next,
+	.cl-pageindexer-index {
+		&:not(.cl-selected){
+			/* 페이지 인덱서 버튼 공통 - 호버 */
+			&.cl-hover, 
+			&:hover{
+				background-color:@transparent;
+			}
+			
+			&:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	/* 페이지 인덱서 처음으로 버튼 - 액티브 */
+	.cl-pageindexer-first:active {
+		background-image: url("../images/controls/pageindexer/ic_btn_first_on.png");
+	}
+
+	/* 페이지 인덱서 이전 버튼 - 액티브 */
+	.cl-pageindexer-prev:active {
+		background-image: url("../images/controls/pageindexer/ic_btn_prev_on.png");
+	}
+
+	/* 페이지 인덱서 다음 버튼 - 액티브 */
+	.cl-pageindexer-next:active {
+		background-image: url("../images/controls/pageindexer/ic_btn_next_on.png");
+	}
+
+	/* 페이지 인덱서 마지막으로 버튼 - 액티브 */
+	.cl-pageindexer-last:active {
+		background-image: url("../images/controls/pageindexer/ic_btn_last_on.png");
+	}
+}
+
+.cl-pageindexer.cl-disabled {
+	/* 페이지 인덱서 버튼 공통 - disabled */
+	.cl-pageindexer-first ,
+	.cl-pageindexer-last ,
+	.cl-pageindexer-prev ,
+	.cl-pageindexer-next,
+	.cl-pageindexer-index {
+		background-color: @transparent; //@component-disabled-background-color;
+	}
+	
+	.cl-pageindexer-first{
+		background-image: url("../images/controls/pageindexer/ic_btn_first_off.png");
+	}
+
+	.cl-pageindexer-prev {
+		background-image: url("../images/controls/pageindexer/ic_btn_prev_off.png");
+		margin-left: 6px;
+	}
+
+	.cl-pageindexer-next{
+		background-image: url("../images/controls/pageindexer/ic_btn_next_off.png");
+		margin-right: 6px;
+	}
+
+	.cl-pageindexer-last {
+		background-image: url("../images/controls/pageindexer/ic_btn_last_off.png");
+	}
+
+	/* 페이지 인덱서 버튼 공통 - disabled, selected */
+	.cl-pageindexer-index {
+		background-color: @transparent;
+		color: @component-disabled-text-color;
+		text-shadow: none;
+				
+		&.cl-selected {
+			background-color: @transparent;
+			color: @component-disabled-selected-text-color;
+		}
+	}
+}

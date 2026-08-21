@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-df4092ec" version="1.0.4120">
+  <head std:sid="head-3f39a4ab">
+    <screen std:sid="screen-c3b9aba0" id="default" name="default" minwidth="1560px" width="1560px" height="760px"/>
+    <screen std:sid="screen-6414a3db" id="tablet" name="tablet" minwidth="800px" maxwidth="1559px" width="800px" height="760px" active="false"/>
+    <screen std:sid="screen-71529302" id="mobile" name="mobile" maxwidth="799px" width="360px" height="760px" active="false"/>
+    <cl:model std:sid="model-850d2e87">
+      <cl:dataset std:sid="d-set-24157672" id="dsMn">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-3f9dacea" name="label"/>
+          <cl:datacolumn std:sid="d-column-78b9bb09" name="value"/>
+          <cl:datacolumn std:sid="d-column-967b9479" name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴1</cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+            <cl:datavalue columnname="parent"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+            <cl:datavalue columnname="parent"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+            <cl:datavalue columnname="parent"/>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+            <cl:datavalue columnname="parent">value1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+            <cl:datavalue columnname="parent">value1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value6</cl:datavalue>
+            <cl:datavalue columnname="parent">value1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value7</cl:datavalue>
+            <cl:datavalue columnname="parent">value2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value8</cl:datavalue>
+            <cl:datavalue columnname="parent">value2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value9</cl:datavalue>
+            <cl:datavalue columnname="parent">value2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value10</cl:datavalue>
+            <cl:datavalue columnname="parent">value3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value11</cl:datavalue>
+            <cl:datavalue columnname="parent">value3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value12</cl:datavalue>
+            <cl:datavalue columnname="parent">value3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value13</cl:datavalue>
+            <cl:datavalue columnname="parent">value4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value14</cl:datavalue>
+            <cl:datavalue columnname="parent">value4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value15</cl:datavalue>
+            <cl:datavalue columnname="parent">value5</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value16</cl:datavalue>
+            <cl:datavalue columnname="parent">value7</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value17</cl:datavalue>
+            <cl:datavalue columnname="parent">value7</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value18</cl:datavalue>
+            <cl:datavalue columnname="parent">value9</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value19</cl:datavalue>
+            <cl:datavalue columnname="parent">value10</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value20</cl:datavalue>
+            <cl:datavalue columnname="parent">value10</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value21</cl:datavalue>
+            <cl:datavalue columnname="parent">value11</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value22</cl:datavalue>
+            <cl:datavalue columnname="parent">value12</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value23</cl:datavalue>
+            <cl:datavalue columnname="parent">value12</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value24</cl:datavalue>
+            <cl:datavalue columnname="parent">value13</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value25</cl:datavalue>
+            <cl:datavalue columnname="parent">value14</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value26</cl:datavalue>
+            <cl:datavalue columnname="parent">value14</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value27</cl:datavalue>
+            <cl:datavalue columnname="parent">value15</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value28</cl:datavalue>
+            <cl:datavalue columnname="parent">value15</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value29</cl:datavalue>
+            <cl:datavalue columnname="parent">value15</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">메뉴</cl:datavalue>
+            <cl:datavalue columnname="value">value30</cl:datavalue>
+            <cl:datavalue columnname="parent">value13</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label31</cl:datavalue>
+            <cl:datavalue columnname="value">value31</cl:datavalue>
+            <cl:datavalue columnname="parent">value30</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset comment="메가 메뉴" std:sid="d-set-a1e801ff" id="dsAllMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b7d0e3e2" name="MENU_NM"/>
+          <cl:datacolumn std:sid="d-column-1a75e7e3" name="MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-ce8bf8b8" name="UP_MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-18380ef4" name="TOP_MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-b7879d44" name="CALL_PAGE"/>
+          <cl:datacolumn std:sid="d-column-9bdc2fe6" name="PGM_ID"/>
+          <cl:datacolumn std:sid="d-column-4c100870" name="ICON"/>
+          <cl:datacolumn std:sid="d-column-a2bd6f9f" name="MENU_KEY"/>
+          <cl:datacolumn std:sid="d-column-1d8b7278" name="MOBILE_YN"/>
+          <cl:datacolumn std:sid="d-column-7bb4293e" name="DESC"/>
+          <cl:datacolumn std:sid="d-column-f1e3e1d7" name="CLASS"/>
+          <cl:datacolumn std:sid="d-column-2c745f4c" name="TAG"/>
+          <cl:datacolumn std:sid="d-column-6ff93346" name="MENU_LVL"/>
+          <cl:datacolumn std:sid="d-column-a5f7493c" name="MENU_DESC" datatype="expression" expression="&quot;[&quot; + MENU_NM + &quot;] &quot; + DESC&#xD;&#xA;"/>
+          <cl:datacolumn std:sid="d-column-e7bfcd7b" name="MENU_LOWERCASE" datatype="expression" expression="doLowerCase(MENU_NM)"/>
+          <cl:datacolumn std:sid="d-column-48c5ffc5" name="DESC_LOWERCASE" datatype="expression" expression="doLowerCase(DESC)"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-527aebaf" id="datamap1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-960df56c" name="column1" defaultvalue="1"/>
+          <cl:datacolumn std:sid="d-column-8713cf76" name="column2" defaultvalue="2"/>
+          <cl:datacolumn std:sid="d-column-208da036" name="column3" defaultvalue="3"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-63d2cca5" id="subOnLoad" action="app/exam/data/main.json" mediatype="application/x-www-form-urlencoded;simple">
+        <cl:responsedata dataid="dsAllMenu" isadd="false"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="대시보드"/>
+  </head>
+  <body std:sid="body-c7843cba" class="dashboard">
+    <cl:group std:sid="group-bbb35588" id="grp4">
+      <cl:verticaldata std:sid="v-data-de199a14" width="1440px" height="93px" autosize="height"/>
+      <cl:udc std:sid="ud-control-926aa350" id="udccomappheader1" type="udc.com.udcComAppHeader">
+        <cl:verticaldata std:sid="v-data-3c72dc14" width="800px" height="30px" autosize="height"/>
+        <cl:property name="title" value="eXBuilder6 웹 접근성 가이드" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-480fe782" class="pl-2" value="eXBuilder6 로 구현한 화면을 대상으로 웹 접근성을 준수하는 방법에 대한 가이드를 제공합니다.">
+        <cl:verticaldata std:sid="v-data-33878bf0" width="100px" height="45px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-961568da" spacing="20"/>
+    </cl:group>
+    <cl:group std:sid="group-dadec3e9" id="grp1">
+      <cl:verticaldata std:sid="v-data-632d9f9c" width="1440px" height="180px" autosize="height"/>
+      <cl:group std:sid="group-0817681c" id="grpGuideLine" style="border-radius:20px;" class="card card-guideline">
+        <cl:formdata std:sid="f-data-d194d4b8" row="0" col="0"/>
+        <cl:output std:sid="output-ee124e25" class="pl-2" value="웹 접근성 지침 33개 항목과 각 지침 내용에 해당되는 컨트롤 목록을 확인할 수 있습니다.">
+          <cl:formdata std:sid="f-data-bbbac422" row="1" col="1"/>
+        </cl:output>
+        <cl:button std:sid="button-4b64b0d8" id="btn1" value="바로가기">
+          <cl:listener std:sid="listener-3f03f484" name="click" handler="onBtn1Click"/>
+          <cl:formdata std:sid="f-data-b0f2781f" halign="LEFT" width="120" row="2" col="1"/>
+        </cl:button>
+        <cl:img std:sid="image-af4d7979" id="img7" src="../../theme/images/dashboard/imgGuideLine01.png" alt="접근성 지침 목록">
+          <cl:formdata std:sid="f-data-06c4fba1" halign="CENTER" valign="CENTER" height="100" row="0" col="0" rowspan="3" colspan="1"/>
+        </cl:img>
+        <cl:output std:sid="output-2b8168b6" class="fw-bold" value="접근성 지침 목록" outputtype="h4">
+          <cl:formdata std:sid="f-data-3ab57964" row="0" col="1"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-41d28595" scrollable="false" hspace="20px" vspace="20px" top-margin="20px" right-margin="20px" bottom-margin="20px" left-margin="20px">
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="150" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-a5854ca9" id="grpGuideDoc" style="border-radius:20px;" class="card card-guidedoc">
+        <cl:formdata std:sid="f-data-26fc50d2" row="0" col="1"/>
+        <cl:output std:sid="output-812d8517" class="pl-2" value="웹 접근성 가이드 내용을 문서로 다운로드할 수 있습니다.">
+          <cl:formdata std:sid="f-data-08ec1fcf" row="1" col="1"/>
+        </cl:output>
+        <cl:button std:sid="button-0e3066e0" id="btn2" value="바로가기">
+          <cl:listener std:sid="listener-4a5611e6" name="click" handler="onBtn2Click"/>
+          <cl:formdata std:sid="f-data-342241eb" halign="LEFT" width="120" row="2" col="1"/>
+        </cl:button>
+        <cl:img std:sid="image-f2eccdb6" id="img8" src="../../theme/images/dashboard/imgGuideDocs01.png" alt="가이드 문서 다운로드">
+          <cl:formdata std:sid="f-data-056e719f" halign="CENTER" valign="CENTER" height="100" row="0" col="0" rowspan="3" colspan="1"/>
+        </cl:img>
+        <cl:output std:sid="output-0a95520a" class="fw-bold" value="가이드 문서 다운로드" outputtype="h4">
+          <cl:formdata std:sid="f-data-0714cdbc" row="0" col="1"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-5d8ba106" scrollable="false" hspace="20px" vspace="20px" top-margin="20px" right-margin="20px" bottom-margin="20px" left-margin="20px">
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="150" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-52b6ac10" scrollable="false" hspace="20px" vspace="20px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-738b17c3" id="grp3" class="card">
+      <cl:verticaldata std:sid="v-data-e7dd3e3a" width="1440px" height="205px" autosize="height"/>
+      <cl:udc std:sid="ud-control-3e103de7" id="udccomformtitle1" type="udc.com.udcComFormTitle">
+        <cl:verticaldata std:sid="v-data-b0af077b" width="800px" height="30px" autosize="height"/>
+        <cl:property name="title" value="화면 내 적용된 웹 접근성 관련 속성 확인 방법" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-67cacf98" value="" displayexp="sstr(&quot;메인화면의 우측 상단의 햄버거 버튼(≡)&quot;, [&quot;text-secondary&quot;, &quot;text-underline&quot;, &quot;fw-bold&quot;]) +  &quot;을 클릭하면, 현재 화면에 적용된 전체적인 웹 접근성 관련 설정 정보에 대해서 확인 할 수 있습니다.\n&quot;&#xD;&#xA;+ &quot;(우측 그리드를 통해 리스트 확인 가능)\n&quot;&#xD;&#xA;+ &quot;※ 우측 그리드의 행을 더블클릭 시 해당하는 컨트롤 ID가 복사됩니다. &quot;">
+        <cl:verticaldata std:sid="v-data-59c40ff8" width="1398px" height="52px" autosize="height"/>
+      </cl:output>
+      <cl:output std:sid="output-8ff0bb3a" value="" displayexp="&quot;그리드의 각 행을 선택하면, 선택한 컨트롤의 위치를 확인 할 수 있습니다.\n&quot;&#xD;&#xA;+&quot;해당 컨트롤에 대해 보다 더 자세한 정보를 확인하기 위해서는, &quot; &#xD;&#xA;+ sstr(&quot;컨트롤의 우측 상단의 빨간색 영역 (&quot;, [&quot;text-secondary&quot;, 'text-underline', &quot;fw-bold&quot;])&#xD;&#xA;+ sstr(&quot;◥&quot;, [&quot;text-red&quot;])&#xD;&#xA;+ sstr(&quot;) 영역을 클릭&quot;, [&quot;text-secondary&quot;, 'text-underline', &quot;fw-bold&quot;]) + &quot;하면 확인이 가능합니다.&quot;">
+        <cl:verticaldata std:sid="v-data-e27a9c05" width="1440px" height="42px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-4e00c0ee" spacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-e053849a" id="grp5" class="card">
+      <cl:verticaldata std:sid="v-data-b3ede76a" width="1440px" height="426px" autosize="height"/>
+      <cl:udc std:sid="ud-control-b6343ce9" id="udccomformtitle3" type="udc.com.udcComFormTitle">
+        <cl:verticaldata std:sid="v-data-ae38c862" width="800px" height="30px" autosize="height"/>
+        <cl:property name="title" value="접근성 검토 모드 사용법" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-2762e593" value="" displayexp="sstr(&quot;상단의 접근성 검토모드 체크박스&quot;, [&quot;text-secondary&quot;, &quot;text-underline&quot;, &quot;fw-bold&quot;]) &#xD;&#xA;+ &quot;를 체크/해제하여, 현재 화면에 적용된 접근성 속성 적용 여부를 확인 할 수 있습니다.\n&quot;&#xD;&#xA;+ sstr(&quot;※ 모든 접근성 준수여부를 검사하는 것이 아닌 공통적으로 적용되는 fieldLabel, tooltip, alt 속성에 대한 검사를 진행합니다.\n\n&quot;, [&quot;text-red&quot;, &quot;fw-bold&quot;])&#xD;&#xA;&#xD;&#xA;+ sstr(&quot;접근성 핸들에 마우스를 올려서(hover)&quot;, [&quot;text-secondary&quot;, 'text-underline', &quot;fw-bold&quot;]) &#xD;&#xA;+ &quot; 어떤 속성에 대한 내용인지 확인 할 수 있습니다.\n&quot;&#xD;&#xA;+ &quot; ※ 디스플레이 크기 및 컨트롤 위치로 인해 내용 확인이 어려운 경우, tooltip으로도 내용을 확인할 수 있습니다.&quot;">
+        <cl:verticaldata std:sid="v-data-2a5bdc1b" width="1440px" height="104px" autosize="height"/>
+      </cl:output>
+      <cl:group std:sid="group-7bd49b20" id="grp6" class="cl-form-group">
+        <cl:verticaldata std:sid="v-data-bfdfa078" width="400px" height="172px" autosize="both"/>
+        <cl:output std:sid="output-6e5f5a32" class="fw-bold" value="접근성 준수(hover)">
+          <cl:formdata std:sid="f-data-5331f9e3" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-f87f2055" class="fw-bold" value="접근성 미준수(hover)">
+          <cl:formdata std:sid="f-data-bbe43f0c" row="1" col="2"/>
+        </cl:output>
+        <cl:img std:sid="image-06afc83f" id="img1" style="padding-left:20px;" src="../control/웹접근성 캡쳐 이미지/0. 공통/4.0.0.1_접근성 검토모드-checked.PNG" alt="접근성 준수">
+          <cl:formdata std:sid="f-data-8312639c" halign="LEFT" valign="FILL" width="270" height="45" row="0" col="1"/>
+        </cl:img>
+        <cl:img std:sid="image-92303de8" id="img2" style="padding-left:20px;" src="../control/웹접근성 캡쳐 이미지/0. 공통/4.0.0.1_접근성 검토모드-unchecked.PNG">
+          <cl:formdata std:sid="f-data-98188812" halign="LEFT" valign="FILL" width="270" height="45" row="0" col="3"/>
+        </cl:img>
+        <cl:img std:sid="image-d57b5230" id="img3" style="padding-left:20px;" src="../control/웹접근성 캡쳐 이미지/0. 공통/4.0.0.1_접근성 검토모드-unchecked-hover.PNG">
+          <cl:formdata std:sid="f-data-7a45792f" halign="LEFT" valign="FILL" width="270" height="45" row="1" col="3"/>
+        </cl:img>
+        <cl:img std:sid="image-7c13009c" id="img4" style="padding-left:20px;" src="../control/웹접근성 캡쳐 이미지/0. 공통/4.0.0.1_접근성 검토모드-checked-hover.PNG" alt="접근성 준수(hover)">
+          <cl:formdata std:sid="f-data-7f568006" halign="LEFT" valign="FILL" width="270" height="45" row="1" col="1"/>
+        </cl:img>
+        <cl:output std:sid="output-766f7ccd" class="fw-bold" value="접근성 미준수">
+          <cl:formdata std:sid="f-data-559d7809" row="0" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-f15c26f5" class="fw-bold" value="접근성 준수">
+          <cl:formdata std:sid="f-data-d3a4a70b" row="0" col="0"/>
+        </cl:output>
+        <cl:img std:sid="image-ab2fad88" id="img5" style="padding-left:20px;" src="../control/웹접근성 캡쳐 이미지/0. 공통/4.0.0.1_접근성 검토모드-checked-tooltip.PNG" alt="접근성 준수(tooltip)">
+          <cl:formdata std:sid="f-data-bd177ccc" halign="LEFT" valign="FILL" width="270" height="54" row="2" col="1"/>
+        </cl:img>
+        <cl:output std:sid="output-915dea8a" class="fw-bold" value="접근성 준수(tooltip)">
+          <cl:formdata std:sid="f-data-257b0ea6" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-990431ff" class="fw-bold" value="접근성 미준수(tooltip)">
+          <cl:formdata std:sid="f-data-14ae625e" row="2" col="2"/>
+        </cl:output>
+        <cl:img std:sid="image-362a741a" id="img6" style="padding-left:20px;" src="../control/웹접근성 캡쳐 이미지/0. 공통/4.0.0.1_접근성 검토모드-unchecked-tooltip.PNG">
+          <cl:formdata std:sid="f-data-cdb853c0" halign="LEFT" width="270" row="2" col="3"/>
+        </cl:img>
+        <cl:formlayout std:sid="f-layout-579b7235" scrollable="false" hspace="10px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="50" autoSizing="true" shadetype="NONE" shadecolor="transparent"/>
+          <cl:rows length="50" autoSizing="true"/>
+          <cl:rows length="50" autoSizing="true"/>
+          <cl:columns length="140" unit="PIXEL" shadetype="BY_CLASS"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="140" unit="PIXEL" shadetype="BY_CLASS"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:output std:sid="output-3f9dfa8d" class="text-red" value="※ 위 기능은 eXBuilder6의 [접근성 검토] 기능과 유사한 형태로 웹 상에서 확인할 수 있도록 구현한 기능으로, eXBuilder6의 [접근성 검토] 기능과 차이가 있을 수 있습니다.">
+        <cl:verticaldata std:sid="v-data-5bbb53c6" width="100px" height="18px"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-134ae9f8" spacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-076035ea" spacing="50" leftmargin="60" rightmargin="60" topmargin="60" bottommargin="60"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

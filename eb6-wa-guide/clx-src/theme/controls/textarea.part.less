@@ -1,0 +1,34 @@
+@import "../custom-settings.part.less";
+
+/* 텍스트 에리어 */
+.cl-textarea {
+	font: @font-base;
+	background-image: @input-background-image;
+	background-color: @input-background-color;
+	border: @input-border-base;
+	border-radius: @input-border-radius;
+	color: @input-text-color;
+	
+	/* 텍스트 에리어 텍스트 */
+	.cl-text {
+		padding: @input-padding-y @input-padding-x !important;
+		
+		&.cl-placeholder {
+			color: @input-placeholder-text-color !important;
+			font-style: @input-placeholder-text-style;
+			font-weight: @input-placeholder-text-weight;
+		}
+	}
+
+	/* 텍스트 에리어 - disabled */
+	&.cl-disabled {
+		background-color: @input-disabled-background-color;
+		border-color: @input-disabled-border-color;
+		color: @input-disabled-text-color;
+	}
+
+	/* 텍스트 에리어 - focus*/
+	&.cl-focus {
+		border-color: @input-focus-border-color;
+	}
+}

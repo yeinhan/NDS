@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-f2dc98dc" id="default" name="default" width="1280px" height="760px"/>
+    <screen std:sid="screen-7e62588a" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-27e31d1a" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-90321062"/>
+    <cl:appspec title="[웹접근성가이드] 마스크 에디터"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="pb-body">
+    <cl:group std:sid="group-b655417b" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1644px" height="242px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="마스크 에디터" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-75a1799d" class="text-red" value="※ 기타 지시문 작성">
+        <cl:verticaldata std:sid="v-data-c42713a6" width="100px" height="20px" syncminheight="true" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-4f00ff31" id="grp1" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-6d77e5b7" width="1280px" height="925px" autosize="height"/>
+      <cl:group std:sid="group-ad00495f" id="grp2">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-3ed7c833" width="1544px" height="825px" autosize="height"/>
+        <cl:udc std:sid="ud-control-392b571a" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-4508bfac" width="1544px" height="29px"/>
+          <cl:property name="title" value="마스크 에디터 – fieldLabel" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-bedd990d" id="grp13" class="pb-table wa-table">
+          <cl:verticaldata std:sid="v-data-2e6e8d4c" width="1544px" height="782px" autosize="height"/>
+          <cl:output std:sid="output-320c8d70" class="pb-label" value="1. fieldLabel 속성에 마스크에디터에 입력될 내용의 설명이 작성되어야 한다.">
+            <cl:formdata std:sid="f-data-f4fce933" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-fe39a97e" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-a5011ccb" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-6bac81bf" value="fieldLabel" unselectable="false">
+            <cl:formdata std:sid="f-data-705476ed" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-6834a164" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-4098967f" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-05f938b4" value="-" unselectable="false">
+            <cl:formdata std:sid="f-data-10f77d72" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-667fd02b" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-5170d53c" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-d30cf35f" value="항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-ae3a19e0" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-90bf151d" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-bf4d6266" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-b50def24" value="시각 장애&#xD;&#xA;사용 환경으로 인해 시각 기능 일시적 사용 불능 및 저하 (운전중, 조명등)" unselectable="false">
+            <cl:formdata std:sid="f-data-e43a9b8b" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-16382fbb" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-614165d4" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ab56ca87" value="마스크에디터에 대응하는 레이블을 aria-label 에 제공합니다.&#xD;&#xA;&#xD;&#xA;※ 필수입력 항목인 경우 fieldLabel에 &quot;필수입력&quot;을 함께 입력해야합니다. &#xD;&#xA;" displayexp="text+sstr(&quot;ex) fieldLabel = '비밀번호 필수입력'&quot;, [&quot;text-primary&quot;])" unselectable="false">
+            <cl:formdata std:sid="f-data-cc8a39c3" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-2641a5fc" class="pb-label" value="마스크에디터 속성 지정">
+            <cl:formdata std:sid="f-data-0edec3d4" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-53630583" id="grp8">
+            <cl:formdata std:sid="f-data-d0361c6c" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-89c67c86" id="img1" src="../웹접근성 캡쳐 이미지/4. 인풋 계열/4.1.4.4_마스크에디터-fieldLabel_Properties.png" alt="마스크에디터 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-8b6745a3" width="507px" height="272px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-547b46c5" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-960fe1ee" class="pb-label" value="DOM 내용 확인">
+            <cl:formdata std:sid="f-data-d680777e" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-d15960ab" id="grp9">
+            <cl:formdata std:sid="f-data-b8a75a96" row="7" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-c2a0ad22" id="img2" src="../웹접근성 캡쳐 이미지/4. 인풋 계열/4.1.4.4_마스크에디터-fieldLabel_DOM.png" alt="DOM 내용 확인">
+              <cl:flowlayoutdata std:sid="f-data-2fa27d52" width="555px" height="129px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-a35672ab" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-bc3c0650" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-f8bf149f" row="8" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-8dbb6592" id="grp14">
+            <cl:formdata std:sid="f-data-80dc0e85" row="8" col="1"/>
+            <cl:maskeditor std:sid="m-editor-d9696338" id="mse1" fieldLabel="주민등록번호" mask="000000-*******">
+              <cl:flowlayoutdata std:sid="f-data-79872c56" width="160px" height="30px"/>
+            </cl:maskeditor>
+            <cl:flowlayout std:sid="f-layout-f6b0298b" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-51ff4709" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-683247c0" row="8" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-10c4d9b1" id="grp17">
+            <cl:formdata std:sid="f-data-dacfd59f" row="8" col="3"/>
+            <cl:maskeditor std:sid="m-editor-781e0594" id="mse2" mask="000000-*******">
+              <cl:flowlayoutdata std:sid="f-data-b345cad2" width="160px" height="30px" autosize="none"/>
+            </cl:maskeditor>
+            <cl:flowlayout std:sid="f-layout-57a19a21" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-a8d12b64" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="284" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="135" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8fa8b39c" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-44042cc3" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:group std:sid="group-65fcbf5a" id="grp3" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-0bec8100" width="1280px" height="778px" autosize="height"/>
+      <cl:group std:sid="group-044c4f89" id="grp4">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-64063d4c" width="1544px" height="678px" autosize="height"/>
+        <cl:udc std:sid="ud-control-aea3f22b" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-57d134a1" width="1544px" height="29px"/>
+          <cl:property name="title" value="마스크 에디터 – buttonFocusable" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-0da2202d" id="grp5" class="pb-table wa-table">
+          <cl:verticaldata std:sid="v-data-e117fe1f" width="1544px" height="635px" autosize="height"/>
+          <cl:output std:sid="output-4bfb9639" class="pb-label" value="2. buttonFocusable=true 인 경우, TAB 키를 통해 clear 버튼으로 초점을 이동 할 수 있다.&#xD;">
+            <cl:formdata std:sid="f-data-f2bf03a5" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-8be5d84b" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-1e790fb5" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-8b46c3d5" value="buttonFocusable" unselectable="false">
+            <cl:formdata std:sid="f-data-528c8887" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-36a918ab" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-0f132139" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-18fdc116" value="1.0.3010" unselectable="false">
+            <cl:formdata std:sid="f-data-59f1c586" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-de2f1bb8" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-4e89116a" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-64492e24" value="항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다.&#xD;&#xA;항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-246f1598" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-722c8562" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-b3d94ab2" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-274d31b2" value="지체 장애, 고령자" unselectable="false">
+            <cl:formdata std:sid="f-data-19fdb89f" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-59d9cd45" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-6dc14c77" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-5c5c69cc" value="showClearButton=true 일 경우, 탭 키를 통해 clear 버튼으로 포커스를 이동 할 수 있습니다.&#xD;&#xA;초점이 clear 버튼에 있을 때, space 키 또는 enter 키를 눌러 값을 초기화 할 수 있습니다" unselectable="false">
+            <cl:formdata std:sid="f-data-06c06eda" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-1cbfa70a" class="pb-label" value="마스크에디터 속성 지정">
+            <cl:formdata std:sid="f-data-7bbff5af" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-5d710250" id="grp10">
+            <cl:formdata std:sid="f-data-b6eacdcb" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-e0370d0d" id="img3" src="../웹접근성 캡쳐 이미지/4. 인풋 계열/4.1.4.4_마스크에디터-buttonFocusable_Properties.png" alt="마스크에디터 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-5db0dc9c" width="507px" height="272px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-784ae7b5" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-510cd140" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-e018806b" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-bd52d84e" id="grp6">
+            <cl:formdata std:sid="f-data-abf77e67" row="7" col="1"/>
+            <cl:maskeditor std:sid="m-editor-f1ca30c6" id="mse3" fieldLabel="적용" value="1234567898765" mask="000000-*******" showclearbutton="true" buttonfocusable="true">
+              <cl:flowlayoutdata std:sid="f-data-91d93c44" width="160px" height="30px"/>
+            </cl:maskeditor>
+            <cl:flowlayout std:sid="f-layout-56676303" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-1d6a7ebf" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-683c0865" row="7" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-7699fab2" id="grp7">
+            <cl:formdata std:sid="f-data-f6d8b7c5" row="7" col="3"/>
+            <cl:maskeditor std:sid="m-editor-d0e7ce8b" id="mse4" fieldLabel="미적용" value="1234567898765" mask="000000-*******" showclearbutton="true" buttonfocusable="false">
+              <cl:flowlayoutdata std:sid="f-data-60dd09ea" width="160px" height="30px" autosize="none"/>
+            </cl:maskeditor>
+            <cl:flowlayout std:sid="f-layout-f3587486" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-9eb9a3d3" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="288" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-086bb03a" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-f5744f37" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

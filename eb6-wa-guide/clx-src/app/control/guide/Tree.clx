@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-b7c4d8a4" id="default" name="default" width="1280px" height="760px" useCustomHeight="true" customHeight="2000" customWidth="800"/>
+    <screen std:sid="screen-b3d4a826" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-e0d24bcd" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-90321062">
+      <cl:dataset std:sid="d-set-6285c103" id="dsTree2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-3d326809" name="label"/>
+          <cl:datacolumn std:sid="d-column-93c9b373" name="value"/>
+          <cl:datacolumn std:sid="d-column-bf2e9b7a" name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[아이템]]></cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[아이템]]></cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[아이템]]></cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[아이템]]></cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[아이템]]></cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[아이템]]></cl:datavalue>
+            <cl:datavalue columnname="value">value6</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[아이템]]></cl:datavalue>
+            <cl:datavalue columnname="value">value7</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[아이템]]></cl:datavalue>
+            <cl:datavalue columnname="value">value8</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[아이템]]></cl:datavalue>
+            <cl:datavalue columnname="value">value9</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value7]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[아이템]]></cl:datavalue>
+            <cl:datavalue columnname="value">value10</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="[웹접근성가이드] 트리"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="pb-body">
+    <cl:group std:sid="group-b655417b" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1644px" height="242px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="트리" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-75a1799d" class="text-red" value="※ 기타 지시문 작성">
+        <cl:verticaldata std:sid="v-data-c42713a6" width="100px" height="20px" syncminheight="true" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-17ad9874" id="grp4" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="fdbcc0d6-39a3-42c8-844c-8837962272e7"/>
+        <std:property key="template-rev" value="4"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-f86e680e" width="984px" height="1254px" autosize="height"/>
+      <cl:group std:sid="group-75307058" id="grp5">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-93b047c1" width="984px" height="557px" autosize="height"/>
+        <cl:udc std:sid="ud-control-600be1dd" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-79b6ecd9" width="1544px" height="29px"/>
+          <cl:property name="title" value="트리 – 부모 아이템의 확대/축소" type="string"/>
+          <cl:property name="subTextStyle" value="text-red" type="enumeration"/>
+          <cl:property name="subText" value="※ 해당 항목은 웹 접근성 심사 시 필요한 사항일 경우에만 추가하십시오." type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-588c40af" id="grp7" class="pb-table wa-table">
+          <std:metadata>
+            <std:property key="template-uuid" value="12fd52d0-2f82-49b7-b410-9c01fde5e26f"/>
+            <std:property key="template-rev" value="5"/>
+          </std:metadata>
+          <cl:verticaldata std:sid="v-data-12b00902" width="1280px" height="515px" autosize="height"/>
+          <cl:output std:sid="output-0a741135" class="pb-label" value="1. 부모 아이템은 선택불가, 확장/축소만 가능하도록 설정한다.">
+            <cl:formdata std:sid="f-data-78745f15" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-ca0c8891" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-2fc054dd" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-b7077a1c" value=" -" unselectable="false">
+            <cl:formdata std:sid="f-data-970c9ff8" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-f7a40793" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-04e6d6ec" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-982fda12" value=" -" unselectable="false">
+            <cl:formdata std:sid="f-data-5adda47f" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-8e1d558a" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-fa72f81d" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-265d41d1" value="항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-0fe1f1ce" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-655bfcc9" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-cef03d02" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-9dcc3b2a" value="시각 장애, 지체 장애, 고령자" unselectable="false">
+            <cl:formdata std:sid="f-data-bca432b7" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-7fb439eb" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-597a62c1" row="5" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-276a8b20" id="grp11">
+            <cl:formdata std:sid="f-data-9170e1bb" row="5" col="1" rowspan="1" colspan="3"/>
+            <cl:output std:sid="output-e081186e" value="하위 아이템이 존재하는 부모 아이템의 경우, 선택하였을 때 확대/축소 할 수 있는 기능을 제공 할 수 있습니다.&#xD;&#xA;부모 아이템에서 스페이스 바 또는 엔터키를 통해 확대/축소 역할을 수행 할 수 있으며, 토글 기능으로 인해 선택을 할 수 없습니다.&#xD;&#xA;해당 기능은 아래 이벤트 (before-selection-change, item-click 이벤트) 를 통해 설정 할 수 있습니다.&#xD;&#xA;" unselectable="false">
+              <cl:formdata std:sid="f-data-0bc3dd4b" row="0" col="0" rowspan="1" colspan="3"/>
+            </cl:output>
+            <cl:udc std:sid="ud-control-ad921027" id="udcexamace1" style="padding-top:0px; padding-left:10px; padding-bottom:10px; padding-right:10px;" type="udc.exam.udcExamAce">
+              <cl:formdata std:sid="f-data-25bf1276" row="1" col="0" rowspan="1" colspan="3"/>
+              <cl:property name="value" value="// (1) 트리 before-selection-change 이벤트&#xD;&#xA;function treeBeforeSelectionChangeFunc(e) {&#xD;&#xA;&#x9;/**@type cpr.controls.Tree*/&#xD;&#xA;&#x9;var tre1 = e.control;&#xD;&#xA;&#x9;var item = e.newSelection[0];&#xD;&#xA; &#x9;e.newSelection.forEach(function(each) {&#xD;&#xA; &#x9;&#x9;if (each.children.length>0) {&#xD;&#xA; &#x9;&#x9;&#x9;e.preventDefault();&#xD;&#xA; &#x9;&#x9;&#x9;return;&#xD;&#xA; &#x9;&#x9;}&#x9;&#xD;&#xA;&#x9; });&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// (2) 트리 item-click 이벤트&#xD;&#xA;function treeItemClick(e) {&#xD;&#xA;&#x9;/**@type cpr.controls.Tree*/&#xD;&#xA;&#x9;var tre1 = e.control;&#xD;&#xA;&#x9;// 해당 아이템의 expand 상태를 전환합니다.&#xD;&#xA; &#x9;tre1.toggle(e.item);&#xD;&#xA;}" type="string"/>
+              <cl:property name="language" value="javascript" type="enumeration"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-1208627f" scrollable="false" hspace="8px" vspace="16px" hseparatorwidth="1" vseparatorwidth="1">
+              <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="1" unit="FRACTION" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="150" unit="PIXEL" shadecolor="transparent"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-1c9886a7" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-e371e75e" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-9877e075" id="grp8">
+            <cl:formdata std:sid="f-data-a314e4c3" row="6" col="1"/>
+            <cl:tree std:sid="tree-fc722a0f" id="tre1" fieldLabel="위, 아래 방향키로 아이템을 이동합니다. 왼쪽, 오른쪽 방향키로 아이템을 확장합니다. 스페이스, 엔터키를 이용하여 항목을 선택할 수 있습니다.">
+              <cl:listener std:sid="listener-69ead05e" name="before-selection-change" handler="onTre1BeforeSelectionChange"/>
+              <cl:listener std:sid="listener-58c31a54" name="item-click" handler="onTre1ItemClick"/>
+              <cl:formdata std:sid="f-data-e1b0e6a9" row="0" col="0"/>
+              <cl:treeitemset datasetid="dsTree2" label="label" value="value" parent="parent"/>
+            </cl:tree>
+            <cl:formlayout std:sid="f-layout-d28b59f3" scrollable="false" hspace="0px" vspace="0px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-16574ef0" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-4d09f710" row="6" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-3edaad16" id="grp9">
+            <cl:formdata std:sid="f-data-5aaee253" row="6" col="3"/>
+            <cl:tree std:sid="tree-f54bf3e6" id="tre2" fieldLabel="위, 아래 방향키로 아이템을 이동합니다. 왼쪽, 오른쪽 방향키로 아이템을 확장합니다. 스페이스, 엔터키를 이용하여 항목을 선택할 수 있습니다.">
+              <cl:formdata std:sid="f-data-afefd3ac" row="0" col="0"/>
+              <cl:treeitemset datasetid="dsTree2" label="label" value="value" parent="parent"/>
+            </cl:tree>
+            <cl:formlayout std:sid="f-layout-ca7de309" scrollable="false" hspace="0px" vspace="0px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-967004b9" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="129" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="240" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-045cb14e" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:group std:sid="group-c62ea604" id="grp2">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-ec890656" width="1180px" height="557px" autosize="height"/>
+        <cl:udc std:sid="ud-control-22123764" id="sectiontitle1" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-9e47d3a9" width="1544px" height="29px"/>
+          <cl:property name="title" value="트리 - 아이템 체크박스 사용" type="string"/>
+          <cl:property name="subTextStyle" value="text-red" type="enumeration"/>
+          <cl:property name="subText" value="※ 해당 항목은 웹 접근성 심사 시 필요한 사항일 경우에만 추가하십시오." type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-b92da5b3" id="grp3" class="pb-table wa-table">
+          <std:metadata>
+            <std:property key="template-uuid" value="12fd52d0-2f82-49b7-b410-9c01fde5e26f"/>
+            <std:property key="template-rev" value="5"/>
+          </std:metadata>
+          <cl:verticaldata std:sid="v-data-e1545b67" width="1280px" height="515px" autosize="height"/>
+          <cl:output std:sid="output-98e4bcac" class="pb-label" value="2. 트리아이템의 체크여부를 알 수 있도록 설정한다.">
+            <cl:formdata std:sid="f-data-292bfc0e" row="0" col="0" rowspan="1" colspan="2"/>
+          </cl:output>
+          <cl:output std:sid="output-930154da" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-5a72a29c" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-a4720b9e" value="showItemCheckBox" unselectable="false">
+            <cl:formdata std:sid="f-data-c2f91940" row="1" col="1" rowspan="1" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-bd903438" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-89124e10" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-4475e0eb" value="1.0.1495" unselectable="false">
+            <cl:formdata std:sid="f-data-a5dc85d5" row="2" col="1" rowspan="1" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-c93f1bac" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-0daee21b" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-8afcf800" value="항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-348e6730" row="3" col="1" rowspan="1" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-6e76a3f8" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-f39515c0" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ebbf1467" value="시각 장애, 지체 장애, 고령자" unselectable="false">
+            <cl:formdata std:sid="f-data-08478517" row="4" col="1" rowspan="1" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-736ee8c8" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-eca40669" row="5" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-03c5bd6d" id="grp6">
+            <cl:formdata std:sid="f-data-f2848683" row="5" col="1" rowspan="1" colspan="1"/>
+            <cl:output std:sid="output-c066e6f2" value="트리아이템의 체크박스를 사용하는 경우에는 showItemCheckBox=true 설정하는 것을 권장합니다.&#xD;&#xA;showItemCheckBox=true 로 설정하게 될 경우, 아이템 선택과 체크상태는 별도로 동작하게 되며,&#xD;&#xA;스크린리더 사용자들이 체크상자로 인식할 수 있어 사용편의성을 높힐 수 있습니다." unselectable="false">
+              <cl:formdata std:sid="f-data-8a4172d5" row="0" col="0" rowspan="1" colspan="3"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-12fcfaff" scrollable="false" hspace="8px" vspace="16px" hseparatorwidth="1" vseparatorwidth="1">
+              <cl:rows length="1" unit="FRACTION" autoSizing="true" hidden="false" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="150" unit="PIXEL" shadecolor="transparent"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-35623151" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-f7924aec" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-37473d94" id="grp10">
+            <cl:formdata std:sid="f-data-d8b243ea" row="6" col="1"/>
+            <cl:tree std:sid="tree-47e75525" id="tre3" fieldLabel="showItemCheckBox=true 인 트리" showitemcheckbox="true">
+              <cl:formdata std:sid="f-data-5deff90d" row="0" col="0"/>
+              <cl:treeitemset datasetid="dsTree2" label="label" value="value" parent="parent"/>
+            </cl:tree>
+            <cl:formlayout std:sid="f-layout-a8e89a2a" scrollable="false" hspace="0px" vspace="0px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-04d8c5fa" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="129" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="240" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-ad24d798" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-31d0bd6e" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

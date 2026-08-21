@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9702cc60" version="1.0.4034">
+  <head std:sid="head-9e0e2459">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/0.프레임/프레임_버티컬레이아웃.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-f2dc98dc" id="default" name="default" width="1280px" height="760px"/>
+    <screen std:sid="screen-7e62588a" id="tablet" name="tablet" width="800px" height="760px"/>
+    <screen std:sid="screen-27e31d1a" id="mobile" name="mobile" width="360px" height="760px"/>
+    <cl:model std:sid="model-90321062"/>
+    <cl:appspec title="[웹접근성가이드] 체크박스"/>
+  </head>
+  <body std:sid="body-a0c207fd" class="pb-body">
+    <cl:group std:sid="group-b655417b" class="pb-content">
+      <cl:verticaldata std:sid="v-data-bf2bf882" width="1644px" height="242px" autosize="height"/>
+      <cl:udc std:sid="ud-control-27c2a286" type="udc.pb.Breadcrumbs">
+        <cl:verticaldata std:sid="v-data-d3766577" width="1544px" height="174px" autosize="height"/>
+        <cl:property name="title" value="체크박스" type="string"/>
+      </cl:udc>
+      <cl:output std:sid="output-75a1799d" class="text-red" value="※ 기타 지시문 작성">
+        <cl:verticaldata std:sid="v-data-c42713a6" width="100px" height="20px" syncminheight="true" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-30aa5659" scrollable="false" spacing="20" leftmargin="50" rightmargin="50" topmargin="0" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-4f00ff31" id="grp1" class="pb-content">
+      <std:metadata>
+        <std:property key="template-uuid" value="4c47bcf2-65a6-4b06-ab79-7d49dd903fce"/>
+        <std:property key="template-rev" value="1"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-6d77e5b7" width="1280px" height="804px" autosize="height"/>
+      <cl:group std:sid="group-9445ac3c" id="grp5">
+        <std:metadata>
+          <std:property key="template-uuid" value="f07b9449-b471-4d94-b69e-78b08a168d46"/>
+          <std:property key="template-rev" value="1"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-0553dd67" width="1280px" height="705px" autosize="height"/>
+        <cl:udc std:sid="ud-control-3aa44ee5" id="sectiontitle1" type="udc.pb.SectionTitle">
+          <cl:verticaldata std:sid="v-data-65fd4373" width="1544px" height="29px"/>
+          <cl:property name="title" value="체크박스 – fieldLabel" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-78ba4ffa" id="grp6" class="pb-table wa-table">
+          <std:metadata>
+            <std:property key="template-uuid" value="12fd52d0-2f82-49b7-b410-9c01fde5e26f"/>
+            <std:property key="template-rev" value="2"/>
+          </std:metadata>
+          <cl:verticaldata std:sid="v-data-a247ef66" width="984px" height="663px" autosize="height"/>
+          <cl:output std:sid="output-3ceb2c92" class="pb-label" value="1. fieldLabel 속성에 체크박스로 선택될 내용의 설명을 작성한다.">
+            <cl:formdata std:sid="f-data-c24ad8c8" row="0" col="0" rowspan="1" colspan="4"/>
+          </cl:output>
+          <cl:output std:sid="output-67618673" class="pb-label" value="컨트롤 속성">
+            <cl:formdata std:sid="f-data-1fa1d46e" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-aa1a5ad0" value="fieldLabel" unselectable="false">
+            <cl:formdata std:sid="f-data-132915ff" row="1" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-d65dfd8e" class="pb-label" value="최소버전">
+            <cl:formdata std:sid="f-data-e06babdd" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ba4bb76d" value=" -" unselectable="false">
+            <cl:formdata std:sid="f-data-4b898bc2" row="2" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-bbc74fc4" class="pb-label" value="관련 웹접근성 지침">
+            <cl:formdata std:sid="f-data-f9d6b4d5" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-3e23deb6" value="항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다." unselectable="false">
+            <cl:formdata std:sid="f-data-510f1f41" row="3" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-d5a61306" class="pb-label" value="적용 대상">
+            <cl:formdata std:sid="f-data-c11e7d53" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-e3492ef8" value="시각 장애 (전맹)&#xD;&#xA;사용 환경으로 인해 시각 기능 일시적 사용 불능 및 저하 (운전중, 조명등)" unselectable="false">
+            <cl:formdata std:sid="f-data-604788bd" row="4" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-866771de" class="pb-label" value="설명">
+            <cl:formdata std:sid="f-data-e9876e80" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-e1490043" value="체크박스에 대응하는 레이블을 aria-label 에 제공합니다." unselectable="false">
+            <cl:formdata std:sid="f-data-660670a8" row="5" col="1" rowspan="1" colspan="3"/>
+          </cl:output>
+          <cl:output std:sid="output-5eedc64a" class="pb-label" value="체크박스 속성 지정">
+            <cl:formdata std:sid="f-data-c4795c0b" row="6" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-76d4b862" id="grp21">
+            <cl:formdata std:sid="f-data-076c2f73" row="6" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-fdb91c59" id="img5" src="../웹접근성 캡쳐 이미지/3. 셀렉션 계열/4.1.3.8_체크박스-fieldLabel_Properties.png" alt="체크박스 속성 지정">
+              <cl:flowlayoutdata std:sid="f-data-fad69517" width="506px" height="271px" autosize="both"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-c3092928" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-91207f15" class="pb-label" value="DOM 내용 확인">
+            <cl:formdata std:sid="f-data-820aff25" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-79ebede6" id="grp3">
+            <cl:formdata std:sid="f-data-aa9f2eb4" row="7" col="1" rowspan="1" colspan="3"/>
+            <cl:img std:sid="image-e588844c" id="img2" src="../웹접근성 캡쳐 이미지/3. 셀렉션 계열/4.1.3.8_체크박스-fieldLabel_DOM.png" alt="DOM 내용 확인">
+              <cl:flowlayoutdata std:sid="f-data-00516ad6" width="427px" height="313px"/>
+            </cl:img>
+            <cl:flowlayout std:sid="f-layout-f5fd18ae" scrollable="false"/>
+          </cl:group>
+          <cl:output std:sid="output-8296ef96" class="pb-label" value="적용">
+            <cl:formdata std:sid="f-data-cc5c1b26" row="8" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-910b5dd7" id="grp9">
+            <cl:formdata std:sid="f-data-4de80ae0" row="8" col="1"/>
+            <cl:checkbox std:sid="c-box-fd92d7af" id=" cbxBookMark" class="bookmark" fieldLabel="북마크" value="true" truevalue="true" falsevalue="false" text="">
+              <cl:flowlayoutdata std:sid="f-data-2fd2ceef" width="20px" height="20px"/>
+            </cl:checkbox>
+            <cl:flowlayout std:sid="f-layout-aed80b24" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:output std:sid="output-848d5693" class="pb-label" value="미적용">
+            <cl:formdata std:sid="f-data-51dd50bf" row="8" col="2"/>
+          </cl:output>
+          <cl:group std:sid="group-315e8277" id="grp2">
+            <cl:formdata std:sid="f-data-c1506f60" row="8" col="3"/>
+            <cl:checkbox std:sid="c-box-d5159424" id="cbx2" class="bookmark" text="">
+              <cl:flowlayoutdata std:sid="f-data-af3ed368" width="20px" height="20px"/>
+            </cl:checkbox>
+            <cl:flowlayout std:sid="f-layout-adaff04e" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-6c8eb2d4" scrollable="false" hspace="8px" vspace="16px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="28" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="200" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" shadetype="BY_CLASS"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-22c94a47" scrollable="false" spacing="14"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-44042cc3" scrollable="false" spacing="40" leftmargin="50" rightmargin="50" topmargin="50" bottommargin="50"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5f3cdbe3" spacing="14"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="740"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

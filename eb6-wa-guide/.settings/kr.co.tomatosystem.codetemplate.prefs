@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="nsk.code" deleted\="false" description\="\uACF5\uD1B5\uC11C\uBE0C\uBBF8\uC158" enabled\="true" name\="send">util.Submit.send(app, "", function(pbSuccess){&\#13;\r\n\tif(pbSuccess){&\#13;\r\n\t\t\t\t&\#13;\r\n\t}&\#13;\r\n});</template></templates>

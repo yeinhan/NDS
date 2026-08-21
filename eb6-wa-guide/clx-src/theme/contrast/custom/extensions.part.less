@@ -1,0 +1,773 @@
+@import "../../custom-settings.part.less";
+
+.high-contrast{
+	
+/************************************************
+ * [컨트롤] 체크박스
+ ************************************************/
+.img-approval{
+	background-image: url("../../images/img/approval.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.wa-highlight{
+	border: 3px dashed @danger-contrast !important;
+	background-color: @danger-dim-contrast !important;
+	
+	&.btn-primary, &.btn-secondary, &.btn-release, &.btn-notice {
+		color : @danger-contrast !important;
+		.cl-icon {
+			border-radius: 5px;
+			margin: 2px;
+			background-color: @danger-dim-contrast !important;
+		}
+	}
+}
+.wa-highlight-hover{
+	box-shadow: 0px 0px 0px 1px @danger-contrast inset;
+	background-color: @danger-dim-contrast !important;
+	&.btn-primary, &.btn-secondary, &.btn-release, &.btn-notice {
+		color : @danger-contrast !important;
+		.cl-icon {
+			border-radius: 5px;
+			margin: 2px;
+			background-color: @danger-dim-contrast!important;
+		}
+	}
+}
+
+.cl-checkbox.switch {
+	background-color: @gray-300;
+	border-radius: @border-radius-circle;
+	color: @white;
+	font-weight: @font-weight-bold-contrast;
+	text-align: right;
+	
+	.cl-text {
+		padding: 0px 8px 0px 31px;
+	}
+	
+	.cl-checkbox-field {
+		height: 100%;
+	}
+	
+	&:before {
+		content: "";
+		position: absolute;
+		right: calc(100% - 23px);
+		top: calc(50% - 10px);
+		width: 20px;
+		height: 20px;
+		background-color: @white;
+		border-radius: @border-radius-circle;
+		pointer-events: none;
+		transition: right .5s ease;
+	}
+	
+	&.cl-checked {
+		background-color: @primary-contrast;
+		text-align: left;	
+
+		.cl-text {
+			padding: 0px 31px 0px 8px;
+		}
+
+		&:before {
+			left: unset;
+			right: 3px;
+		}
+	}
+	
+	&.cl-focus {
+		&.cl-iconalign-none {
+			.cl-text {
+				outline: none;
+			}
+		}
+	}
+}
+
+// 그리드 내에 배치하는 경우 기본 클레오파트라 CSS로 인해 간섭이 일어나 해당 스타일 추가
+.cl-grid {
+	.cl-checkbox.switch {
+		background-color: @gray-300 !important;
+		color: @white !important;
+		
+		&.cl-checked {
+			background-color: @primary-contrast !important;
+		}
+	}
+}
+
+
+/************************************************
+ * [컨트롤] 라디오버튼
+ ************************************************/
+
+.cl-radiobutton.switch-button {
+	border-radius: @btn-border-radius;
+	box-shadow: inset 0px 0px 0px 1px @component-border-color-contrast;
+	color: @gray-600;
+	
+	.cl-radiobutton-item {
+		border: 1px solid @transparent;
+		min-height: 30px;
+		text-align: center;
+		
+		&:not(.cl-first-column) {
+			box-shadow: inset 1px 0px 0px 0px @component-border-color-contrast;
+		}
+		
+		.cl-text {
+			padding: 0px 10px;
+		}
+		
+		.cl-radiobutton-field {
+			width: 100%;
+			height: 100%;
+		}
+		
+		&.cl-selected {
+			border-color: @primary-contrast;
+			box-shadow: none;
+			color: @primary-contrast;
+			
+			+ .cl-radiobutton-item {
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+/************************************************
+ * [컨트롤] 프로그래스 (숫자표기)
+ ************************************************/
+ 
+.cl-progress.progress {
+	background-color: @gray-900;
+	box-shadow: none;
+}
+
+
+/************************************************
+ * [UDC] udcComLoadMask
+ * --> udc/com/udcComLoadMask
+ ************************************************/
+ 
+.spinner-overlay {
+	background-color: @transparent;
+}
+ 
+.spinner {
+	@spinner-size: 64px;
+	@balls-spacing: 3px;
+	@color: @primary-contrast;
+
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: @spinner-size;
+	height: @spinner-size;
+
+	&:before, &:after {
+		content: "";
+		flex: 0 0 auto;
+		display: block;
+		width: @spinner-size / 3 - @balls-spacing * 2;
+		height: @spinner-size / 3 - @balls-spacing * 2;
+		border-radius: 50px;
+		background-color: @color;
+		transform-origin: center;
+		margin: @balls-spacing;
+
+		@keyframes spinner-anim-02 {
+			0% {
+				transform: scale(1) translateX((@spinner-size * -1) / 3); // 공이 튄 후 뒤로 미는 동작
+			}
+			50% {
+				transform: scale(1) translateX(0);
+			}
+		}
+
+		animation: spinner-anim-02 0.8s infinite;
+	}
+
+	span {
+		position: absolute;
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		height: @spinner-size / 3;
+		margin: auto;
+		transform-origin: center;
+
+		&:before {
+			content: "";
+			flex: 0 0 auto;
+			display: block;
+			width: @spinner-size / 3 - @balls-spacing * 2;
+			height: @spinner-size / 3 - @balls-spacing * 2;
+			border-radius: 50px;
+			background-color: @color;
+			margin: @balls-spacing;
+		}
+
+		@keyframes spinner-anim-01 {
+			0% {
+				transform: rotate(0);
+				animation-timing-function: cubic-bezier(0,.59,1,.68);
+			}
+			80% {
+				transform: rotate(-180deg) translateY(20%); // 제자리에서 튀는 속도
+				animation-timing-function: ease-in;
+			}
+			50%, 85%, 100% {
+				transform: rotate(-180deg) translateY(0);
+				animation-timing-function: ease;
+			}
+		}
+
+		animation: spinner-anim-01 0.8s infinite;
+	}
+}
+
+/************************************************
+ * [UDC] AppHeader
+ * --> udc.cmn.AppHeader
+ ************************************************/
+
+.cl-container.app-header {
+	.cl-container.breadcrumbs {
+		.cl-output.breadcrumb-item {
+			color: @gray-900;
+			font-size: 13px;
+			
+			.cl-text:before {
+				background-image: url("../../images/com/slide/ico_btn_arrow_right.png");
+				background-repeat: no-repeat;
+				background-position: 100% 50%;
+				background-size: 7px;
+				content: "　"; // "ㄱ"+ 한자[1] 공백특수문자 사용
+				font-size: 1px;
+				color: @transparent;
+			}
+		}
+		
+		.cl-layout-wrap:last-child {
+			.cl-output.breadcrumb-item {
+				color: @secondary-contrast;
+			}
+		}
+	}
+}
+
+/************************************************
+ * [화면] 예제 서브페이지
+ ************************************************/
+
+.cl-container.subpage {
+	.cl-output.section-tit {
+		font-size: @h4-font-size;
+		font-weight: @headings-font-weight;
+	}
+	
+	.cl-container.content-box {
+		background-color: #f5f8fa;
+		
+		.cl-output.content-tit {
+			font-size: @h5-font-size;
+			font-weight: @headings-font-weight;
+			color: @primary-contrast;
+		}
+		
+		.cl-container.box {
+			background-color: @white;
+			border: @component-border-contrast;
+			
+			.cl-output.box-tit {
+				background-color: @secondary-dim-contrast;
+				font-size: @h6-font-size;
+				font-weight: @headings-font-weight;
+				text-align: center;
+			}
+		}
+	}
+	
+	.cl-container.card {
+		border-radius: @component-border-radius-0;
+	}
+	
+	.cl-button.btn-txt {
+		text-decoration: underline;
+		
+		&:not(.cl-disabled):hover,
+		&:focus, &.cl-focus {
+			color: #0c57c1;
+		}
+		
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			color: #2372e3;
+		}
+	}
+}
+
+/************************************************
+ * [화면] 에러페이지
+ ************************************************/
+
+.cl-container.errorpage {
+	.cl-output.tit {
+		color: #1e90ff;
+		font-size: 55px;
+	}
+}
+
+/************************************************
+ * [컴포넌트] ck에디터5
+ ************************************************/
+.ck-content {
+	strong{
+		font-weight: bold;
+	}
+	
+	ul, ol {
+		padding-left: 30px;		
+	}
+	
+	i {
+		font-style: italic;
+	}
+	
+	pre{
+		background: hsla(0,0%,96%,.3) !important;
+		
+		code{
+			letter-spacing :0.1px;
+			line-height: 120%;
+		}
+	}
+}
+
+/************************************************
+ * 이미지슬라이더  ImgSlide.clx 
+ ************************************************/
+.cl-button {
+	&.slide-button {
+		background-image: none;
+		background-color: transparent;
+		border-radius: 0px;
+		border: none;
+		color: white;
+		text-shadow: none;
+		background-position: center center;
+		background-repeat: no-repeat;
+		
+		&.slide-prev-button {
+			background-image: url(../images/ext/mdl/slide/prev.png), linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0,0, 0, 0));
+		}
+		
+		&.slide-next-button {
+			background-image: url(../images/ext/mdl/slide/next.png), linear-gradient(to right, rgba(0,0, 0, 0), rgba(0, 0, 0, 0.2));
+		}
+		
+		&:hover , &.cl-hover {
+			background-color: rgba(0, 0, 0, 0.2);
+			border-radius: 0px;
+			border: none;
+			color: white;
+			text-shadow: none;
+		}
+
+		&:active , &.cl-ativated {
+			background-color: rgba(0, 0, 0, 0.3);
+			border-radius: 0px;
+			border: none;
+			color: white;
+			text-shadow: none;
+		}
+	}
+}
+
+
+.cl-button.slide-page-button {
+	background-image: none;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	min-width : 5px;
+	min-height: 5px;
+	max-height: 5px;
+	border-radius: 5px;
+	
+	&.active {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+/************************************************
+ * badge 스타일 설정
+ ************************************************/
+ .badge1 {
+	background-color: #7400FF;
+	color: white;
+	padding: 0px;
+	border-radius: 8px;
+	height: 20px;
+	min-width: 20px;
+	display: inline-block;
+	text-align: center;
+	padding: 0px 4px;
+	margin-left: 0.5em;
+}
+
+/************************************************
+ * 토글 버튼
+ ************************************************/
+
+/* 토글 버튼을 감싸는 컨테이너 스타일 */
+.cl-container.toggle-wrap {
+	background-color: #D4DADD;
+	border-radius: 5px;
+	
+	/* 토글 버튼 스타일 */
+	.cl-checkbox.toggle {
+		text-align: center;
+		padding: 0px;
+		
+		.cl-icon-wrapper {
+			vertical-align: middle;
+		}
+		
+		.cl-checkbox-icon {
+			border-radius: 3px;
+			background-color: white;
+			background-image: none;
+		}
+		
+		&:hover,
+		&.cl-hover {
+			.cl-checkbox-icon {
+				background-color: white;
+				background-image: none;
+			}
+		}
+		
+		&.cl-checked {
+			.cl-checkbox-icon {
+				background-color: white;
+				background-image: none;
+			}
+			
+			&:hover,
+			&.cl-hover {
+				.cl-checkbox-icon {
+					background-color: white;
+					background-image: none;
+				}
+			}
+		}
+		
+		&.cl-focus {
+			.cl-checkbox-icon {
+				outline: none;
+			}
+		}
+	}
+	
+	/* 토글되어 ON 상태가 되었을 때 */
+	&.on {
+		background-color: #3f87fd;
+	}
+	
+	&.round {
+		border-radius: 21px;
+		
+		.cl-checkbox.toggle {
+			.cl-checkbox-icon {
+				border-radius: 21px;
+			}
+		}
+	}
+	
+	.cl-output.hint {
+		font-size: 13px;
+		color: white;
+		
+		&.off {
+			text-align: right;	
+			color: #B5B5B5;
+		}
+		
+		&.on {
+			text-align: left;
+		}
+	}
+}
+
+/***********************************
+ * 화면 분할 / 닫기
+ ***********************************/
+.cl-container.dropdown-menu {
+	background-color: white;
+	border: 1px solid #BABFC7;
+	border-radius: 3px;
+	box-shadow: 0 3px 12px 1px rgba(44,55,130,0.15);
+	
+	&.dropdown-menu-s1 {
+		border-top: 3px solid #3f87fd;
+	}
+	
+	&.dropdown-menu-s2 {
+		border-top: 3px solid #307bd8;
+	}
+}
+
+/**************************************************************************
+ * eXCFrame-sample 프로젝트 내비게이션 바 accessiblemegamenu 스타일 설정
+ **************************************************************************/
+ .accessible.cl-container {
+ 	z-index: 1;
+ }
+ 
+/************************************************
+ * 웹접근성 속성 확인영역 스타일 설정
+ ************************************************/
+  span.wa-area {
+ 	position: absolute;
+ 	top: 0px;
+ 	right: 0px;
+ 	border-bottom: 5px solid @transparent;
+    border-top: 5px solid @red;
+    border-left: 5px solid @transparent;
+    border-right: 5px solid @red;
+ 	cursor: pointer;
+ }
+ 
+ .text-hidden{
+ 	display : none;
+ }
+ .form-box-1px{
+	border-top : solid 1px @gray-900;
+	border-right : solid 1px @gray-900;
+	border-bottom : solid 1px @gray-900;
+	border-left : solid 1px @gray-900;
+	.title-output{
+		font-size: 26px; 
+		font-weight: 700;
+	}
+	.form-inbox {
+//		border-top : solid 1px @gray-900;
+		border-bottom : solid 1px @gray-900;
+	}
+}
+
+.cl-container.login-box{
+	border: solid 1px;
+	border-color: @gray-900
+	.title-output{
+		font-size: 26px;
+		font-weight: bold;
+	}
+	.btn-output{
+		font-size: 16px;
+	}
+}
+ /************************************************
+ * CMS 스텝
+ ************************************************/
+ .cl-container.step-wrap {
+ 	
+ 	.ico-step {
+ 		border-radius : @border-radius-circle;
+ 		background-color : @gray-600;
+ 		background-size : auto;
+ 		background-repeat : no-repeat;
+ 		background-position : center;
+
+	 	&.step01 {
+	 		background-image : url("../../images/controls/output/ico_step_01.png");
+	 	}
+	 	&.step02-comp {
+	 		background-image : url("../../images/controls/output/ico_step_02_company.png");
+	 	}
+	 	
+	 	&.step02-user {
+	 		background-image : url("../../images/controls/output/ico_step_02_user.png");
+	 	}
+	 	
+	 	&.step03 {
+	 		background-image : url("../../images/controls/output/ico_step_03.png");
+	 	}
+	 	
+	 	&.step04 {
+	 		background-image : url("../../images/controls/output/ico_step_04.png");
+	 	}
+ 	}
+ 	
+ 	.cl-output.step-txt {
+	  font-size: 20px;
+	  font-weight: @font-weight-light-contrast;
+	  color : @component-text-color-contrast;
+	  line-height: 1.7;
+	  vertical-align: bottom;
+ 	}
+ 	
+ 	.cl-output.step-info {
+	  font-size: 18px;
+	  font-weight: @font-weight-bold-contrast;
+	  color : @component-text-color-contrast;
+	  vertical-align: top;
+ 	}
+ 	
+ 	.cl-output.arrow {
+ 		background-image : url("../../images/controls/output/ico_step_arrow.png");
+ 		background-size : auto;
+ 		background-repeat : no-repeat;
+ 		background-position : center;
+ 	}
+ 	
+ 	.cl-image.arrow {
+ 		background-image : url("../../images/controls/output/ico_step_arrow.png");
+ 		background-size : auto;
+ 		background-repeat : no-repeat;
+ 		background-position : center;
+ 	}
+ 	
+ 	.active {
+ 		.ico-step {
+ 			background-color: @purple;
+ 		}
+ 		.arrow {
+ 			background-image : url("../../images/controls/output/ico_step_arrow_on.png");
+ 		}
+ 		.step-txt,
+ 		.step-info {
+	 		color : @black;
+	 	}
+ 	}
+ }
+ 
+ 
+ /**********************************************
+  *  CMS 사이트맵 서식
+  **********************************************/
+  
+  .cl-container.cms-sitemap {
+		.cl-sidenavigation {
+			border: none;
+			border-radius: @component-border-radius-0;
+			
+			.cl-sidenavigation-item {
+				color: #444444;
+				min-height: 26px;
+				padding: 10px 20px 10px 30px;
+				position: relative;
+										
+				.cl-icon, .cl-expand-icon {
+					display: none;
+				}
+				
+				.cl-text {
+					padding: 0px;
+				}
+				
+				// LESS for loop
+				.loop-item(@n, @i : 3) when (@i <= @n) {
+					&.cl-level-@{i} {
+						font-size: 16px - @i;
+						padding-top: 5px;
+						padding-bottom: 5px;
+						
+						.cl-text {
+							padding-left: 10px * (@i - 2);
+							
+							&:before {
+								content: "";
+								position: absolute;
+								top: 15px - @i + 2;
+								left: 30px + (10px * (@i - 3));
+							}
+						}
+					}
+					.loop-item(@n, (@i + 1));
+				}
+				
+				.loop-item(5);
+				
+				&.cl-level-1 {
+					background-color: @secondary; //#7ea2c2;
+					color: @white;
+					text-align: center;
+					font-size: 22px;
+					font-weight: @font-weight-bold;
+					min-height: 80px;
+					&:hover, &.cl-hover,&:focus,
+					&.cl-selected {
+						color: @white;
+					}
+					+ .cl-list {
+//						border-bottom: 1px dashed @secondary; //#7ea2c2;
+					}
+				}
+				
+				&.cl-level-2 {
+					background-color: #E7EBFC; //#f2f6f9;
+					font-size: 20px;
+					font-weight: @font-weight-medium;
+					min-height: 60px;
+					&.cl-first {
+				 		&:before {
+				 			content: "";
+				 			position: absolute;
+				 			top: 0px;
+				 			left: 30px;
+				 			border-left: 6px solid transparent;
+				 			border-right: 6px solid transparent;
+				 			border-top: 6px solid @secondary; //#7ea2c2;
+				 		}
+				 			border-bottom: 1px solid @secondary-contrast;
+					}
+					
+					&:not(.cl-first) {
+						border-top: 1px solid @secondary-contrast;
+						border-bottom: 1px solid @secondary-contrast;
+					}
+					
+					+ .cl-list {
+						padding: 10px 0px;
+					}
+				}
+				
+				&.cl-level-3 {
+					font-size: 18px;
+					min-height: 28px;
+					
+					.cl-text {
+						&:before {
+							display: none;
+						}
+					}
+					
+					&:hover, &.cl-hover,&:focus,
+					&.cl-selected {
+						color : @white !important;
+						background-color: @primary-contrast !important;
+					}
+					
+				}
+				
+				&.cl-level-4, &.cl-level-5 {
+					.cl-text {
+						&:before {
+							width: 4px;
+							height: 1px;
+							background-color: #444444;
+						}
+					}
+				}
+			}
+		}
+	}
+}//high-contrast End
+ 

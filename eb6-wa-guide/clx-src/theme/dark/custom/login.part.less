@@ -1,0 +1,41 @@
+@import "../../custom-settings.part.less";
+.is-dark {
+	
+	.cl-container.login-box {
+		background-color: @black;
+		border: 1px solid @gray-700;
+		box-shadow: -2px 0px 12px rgba(255, 255, 255, .12);
+		
+		.cl-container.login-body {
+			
+			.cl-inputbox {
+				font-size: @h6-font-size;
+				
+				.cl-text {
+					padding: 0px 12px;
+				}
+			}
+			
+			.cl-button.btn-login {
+				background-color: @gray-300;
+				border-color: @white;
+				color: @black;
+				font-size: @h6-font-size;
+			}
+		}
+		.cl-text {
+			color : @white;
+		}
+	}
+	.cl-container.login-wrap {
+		.cl-button.btn-dark-mode {
+			background-color: @gray-300;
+			border-color: @white;
+			color: @black;
+			font-size: @h6-font-size;
+		}
+	}
+	.cl-container.login-wrap {
+		background-color: @gray-900; //#fdeeeb; //#e6e9fc;
+	}
+}

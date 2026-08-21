@@ -1,0 +1,187 @@
+@import "../custom-settings.part.less";
+
+/************************************************
+ * 수정불가
+ ************************************************/
+.cl-inputbox,
+.cl-searchinput,
+.cl-maskeditor,
+.cl-fileinput,
+.cl-numbereditor,
+.cl-dateinput,
+.cl-textarea,
+.cl-combobox {
+	&.no-status {
+		background-color : @transparent;
+		border: none !important;
+		text-align: center !important;
+		color : @component-text-color !important;
+	}
+}
+.cl-inputbox,
+.cl-searchinput,
+.cl-maskeditor,
+.cl-fileinput,
+.cl-numbereditor,
+.cl-dateinput,
+.cl-textarea,
+.cl-combobox {
+	&.cl-readonly {
+		background-color: @lighter;
+	}
+}
+
+.cl-linkedcombobox{
+	&.cl-readonly { 
+		.cl-linkedcombobox-combo{
+			background-color: @lighter;
+		}
+	}
+}
+.cl-checkbox.cl-readonly {
+	.cl-checkbox-icon {
+		
+	}
+	
+	&:hover, &.cl-hover {
+		.cl-checkbox-icon {
+			background-image: url("../images/controls/checkbox/ic_checkbox.png");
+		}
+	}
+	
+	&.cl-checked {
+		&:hover, &.cl-hover {
+			.cl-checkbox-icon {
+				background-image: url("../images/controls/checkbox/ic_checkbox_on.png");
+			}
+		}
+	}
+}
+
+.cl-checkboxgroup.cl-readonly {
+	.cl-checkbox {
+		.cl-checkbox-icon {
+			
+		}
+		
+		&:hover, &.cl-hover {
+			.cl-checkbox-icon {
+				background-image: url("../images/controls/checkbox/ic_checkbox.png");
+			}
+		}
+		
+		&.cl-checked {
+			&:hover, &.cl-hover {
+				.cl-checkbox-icon {
+					background-image: url("../images/controls/checkbox/ic_checkbox_on.png");
+				}
+			}
+		}
+	}
+}
+
+.cl-radiobutton.cl-readonly {
+	.cl-radiobutton-item {
+		.cl-radiobutton-icon {
+			
+		}
+		
+		&:hover, &.cl-hover {
+			.cl-radiobutton-icon {
+				background-image: url("../images/controls/radiobutton/ic_radio.png");
+			}
+		}
+		
+		&.cl-selected {
+			&:hover, &.cl-hover {
+				.cl-radiobutton-icon {
+					background-image: url("../images/controls/radiobutton/ic_radio_on.png");
+				}
+			}
+		}
+	}
+}
+
+/************************************************
+ * 필수입력
+ ************************************************/
+ 
+.cl-inputbox,
+.cl-searchinput,
+.cl-maskeditor,
+.cl-numbereditor,
+.cl-dateinput,
+.cl-textarea,
+.cl-combobox {
+	&.required {
+		background: url("../images/controls/inputbox/ic_require.png") no-repeat 2px 2px;
+	}
+}
+
+.cl-fileinput.required {
+	background: url("../images/controls/inputbox/ic_require.png") no-repeat 2px 2px,
+				url("../images/controls/inputbox/ic_file.png") no-repeat calc(100% - 8px) center !important;
+				
+	&.cl-foucs {
+		background: url("../images/controls/inputbox/ic_require.png") no-repeat 2px 2px / auto,
+					url("../images/controls/inputbox/ic_file_on.png") no-repeat calc(100% - 8px) center !important;
+	}
+}
+
+// 그리드 내 인풋계열 컨트롤
+.cl-grid {
+	.cl-grid-cell {
+		.cl-inputbox,
+		.cl-maskeditor,
+		.cl-numbereditor,
+		.cl-dateinput,
+		.cl-searchinput,
+		.cl-fileinput,
+		.cl-textarea,
+		.cl-combobox {
+			&.required {
+				background: url("../images/controls/inputbox/ic_require.png") no-repeat 2px 2px;
+			}
+		}
+	}
+}
+
+.cl-checkbox.required {
+	.cl-checkbox-icon {
+		background-image: url("../images/controls/checkbox/ic_checkbox_e.png");
+	}
+	
+	&.cl-checked {
+		.cl-checkbox-icon {
+			background-image: url("../images/controls/checkbox/ic_checkbox_e_on.png");
+		}
+	}
+}
+
+.cl-checkboxgroup.required {
+	.cl-checkbox {
+		.cl-checkbox-icon {
+			background-image: url("../images/controls/checkbox/ic_checkbox_e.png");
+		}
+		
+		&.cl-checked {
+			.cl-checkbox-icon {
+				background-image: url("../images/controls/checkbox/ic_checkbox_e_on.png");
+			}
+		}
+	}
+}
+
+.cl-radiobutton.required {
+	.cl-radiobutton-item {
+		.cl-radiobutton-icon {
+			background-image: url("../images/controls/radiobutton/ic_radio_e.png");
+		}
+		
+		&.cl-selected {
+			.cl-radiobutton-icon {
+				background-image: url("../images/controls/radiobutton/ic_radio_e_on.png");
+			}
+		}
+	}
+}

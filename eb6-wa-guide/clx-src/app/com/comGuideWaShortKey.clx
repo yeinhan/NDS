@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b04faf94" version="1.0.4954">
+  <head std:sid="head-8b003cd1">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반화면/3_상세페이지/상세페이지_폼.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-1622421c" id="default" name="default" width="1140px" height="1080px" useCustomWidth="true" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-e902309b" id="pop" name="pop" width="960px" height="960px" useCustomHeight="true" customHeight="3000" customWidth="800"/>
+    <cl:model std:sid="model-bd8ccff7"/>
+    <cl:appspec dev-comment="※ 본 페이지 확인 대상자 : 스크린리더 사용자&#xD;&#xA;&#xD;&#xA;[확인사항]&#xD;&#xA;- 스크린리더에서 나오는 명칭을 중심으로 설명 작성&#xD;&#xA;- 이미지는 프로젝트 별 커스텀이 다양하게 되어 있어, 각 프로젝트 별 공수가 커질 것을 대비해 제외함.&#xD;&#xA;   타 접근성 단축키 안내페이지를 확인해본 결과, 조합키와 설명 위주로 진행되고 있음을 확인.&#xD;&#xA;   &#xD;&#xA;[메뉴제공]&#xD;&#xA;- 해당 화면은 화면 최상단 또는 최하단에 메뉴로 제공할 것을 권고함." title="웹 접근성 단축키 안내"/>
+  </head>
+  <body std:sid="body-ac3e94ec" class="content-wrapper">
+    <cl:udc std:sid="ud-control-9a15e300" id="breadcrumbs1" type="udc.pb.Breadcrumbs">
+      <cl:verticaldata std:sid="v-data-58995799" width="1644px" height="174px" autosize="height"/>
+      <cl:property name="title" value="웹 접근성 단축키 안내" type="string"/>
+    </cl:udc>
+    <cl:group std:sid="group-cb428e66" id="grpHeader" class="bg-primary-dim">
+      <cl:verticaldata std:sid="v-data-f1612dd8" width="1068px" height="60px" autosize="height"/>
+      <cl:output std:sid="output-7e2ea6fc" value="본 화면에서는 다양한 단축키 조합을 제공합니다.&#xD;&#xA;아래 단축키 조합을 통해 원하는 곳으로 이동 실행이 가능합니다.">
+        <cl:verticaldata std:sid="v-data-4d296f25" width="100px" height="40px" autosize="height"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-c0ed8d63" spacing="20" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+    </cl:group>
+    <cl:group std:sid="group-07080bef" id="grpData" class="content-body">
+      <cl:verticaldata std:sid="v-data-fb89d79c" width="740px" height="3864px" autosize="height"/>
+      <cl:group comment="메인" std:sid="group-1564da05" id="grp2" class="content">
+        <cl:verticaldata std:sid="v-data-ffab368a" width="1066px" height="347px" autosize="height"/>
+        <cl:group std:sid="group-594a507b" id="grp7">
+          <cl:verticaldata std:sid="v-data-3dc145ef" width="740px" height="78px" autosize="height"/>
+          <cl:output std:sid="output-ad0e484f" class="tit h3" value="메인 화면" outputtype="h3">
+            <cl:verticaldata std:sid="v-data-7b4e3ab2" width="300px" height="36px" autosize="height"/>
+          </cl:output>
+          <cl:output std:sid="output-dfdefb74" value="메인 화면의 주요 영역으로 포커스를 이동합니다.">
+            <cl:verticaldata std:sid="v-data-3ef99ac6" width="100px" height="26px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-5528d1ee"/>
+        </cl:group>
+        <cl:group std:sid="group-dbf9831e" id="grp3" class="form-base">
+          <cl:verticaldata std:sid="v-data-6f3653a9" width="1068px" height="259px" autosize="height"/>
+          <cl:output std:sid="output-fd1e24ea" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-f766498e" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-b1a37d7b" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-43441f7e" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-f93d14dd" class="label" value="Ctrl + Alt + I">
+            <cl:formdata std:sid="f-data-5966a11b" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-da1c6a6d" value="대메뉴로 이동">
+            <cl:formdata std:sid="f-data-d47be212" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-a46bb78b" class="label" value="Ctrl + Alt + J">
+            <cl:formdata std:sid="f-data-02827cbd" row="2" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-23caf177" value="하위메뉴로 이동 (서브페이지에서만 활성화되며, 본문 내 좌측 메뉴로 이동)">
+            <cl:formdata std:sid="f-data-a7eb1ca1" row="2" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-f49d87ec" class="label" value="Ctrl + Alt + L">
+            <cl:formdata std:sid="f-data-05cde7e1" row="3" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-dd3c702b" value="본문으로 이동">
+            <cl:formdata std:sid="f-data-a9e33b0d" row="3" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-3bf36c64" class="label" value="Ctrl + Alt  + ,(콤마)">
+            <cl:formdata std:sid="f-data-a11e79c1" row="4" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-1e8f4e9e" value="화면 하단 영역으로 이동">
+            <cl:formdata std:sid="f-data-b7278b6a" row="4" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-17cebfc9" class="label" value="Ctrl + Alt + K">
+            <cl:formdata std:sid="f-data-96ca151c" row="5" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-53444284" value="메인 단축키에서 제공하는 포커스 순환이동">
+            <cl:formdata std:sid="f-data-4d5fd36d" row="5" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-2b27aa99" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-16c5a333" spacing="16"/>
+      </cl:group>
+      <cl:group comment="내비게이션바" std:sid="group-4e2aed4b" id="grp12" class="content">
+        <cl:verticaldata std:sid="v-data-0dc15845" width="740px" height="182px" autosize="height"/>
+        <cl:output std:sid="output-11ff47f2" class="tit h3" value="대메뉴, 하위메뉴" outputtype="h3">
+          <cl:verticaldata std:sid="v-data-dd5532e7" width="300px" height="36px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-c34e1748" id="grp13" class="form-base">
+          <cl:verticaldata std:sid="v-data-ab998fc2" width="740px" height="130px" autosize="height"/>
+          <cl:output std:sid="output-c9646582" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-6b894378" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-e4a810a5" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-d6d02fc5" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-e83d96e1" class="label" value="Tab / Shift + Tab">
+            <cl:formdata std:sid="f-data-cc3b86e6" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-2962c2eb" value="메뉴 항목 간 이동">
+            <cl:formdata std:sid="f-data-906cecd2" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-2e636227" class="label" value="Enter">
+            <cl:formdata std:sid="f-data-44212168" row="2" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-77c7cf46" value="메뉴 항목 선택">
+            <cl:formdata std:sid="f-data-a722a96a" row="2" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-6346ca86" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-be816c06" spacing="16"/>
+      </cl:group>
+      <cl:group comment="탭폴더" std:sid="group-f6e4de5e" id="grp30" class="content">
+        <cl:verticaldata std:sid="v-data-d381cad0" width="740px" height="182px" autosize="height"/>
+        <cl:output std:sid="output-fe1497f6" class="tit h3" value="탭" outputtype="h3">
+          <cl:verticaldata std:sid="v-data-ce683aff" width="300px" height="36px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-f1c63d11" id="grp31" class="form-base">
+          <cl:verticaldata std:sid="v-data-b0294031" width="740px" height="130px" autosize="height"/>
+          <cl:output std:sid="output-160dc08b" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-ebcb8211" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-ec90e494" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-50261cff" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-7cf36096" class="label" value="⬅(좌) / ➡(우)">
+            <cl:formdata std:sid="f-data-63c2e802" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-bd757cae" value="페이지 탭 선택 이동">
+            <cl:formdata std:sid="f-data-62520519" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-f9aa1d38" class="label" value="Tab">
+            <cl:formdata std:sid="f-data-b923c1d0" row="2" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-fc34fec8" value="페이지 탭 내부 첫 번째 항목으로 포커스 이동">
+            <cl:formdata std:sid="f-data-f996e975" row="2" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-80788be8" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-2b5af491" spacing="16"/>
+      </cl:group>
+      <cl:group comment="그리드" std:sid="group-85ab48f8" id="grp4" class="content">
+        <cl:verticaldata std:sid="v-data-1a7e9b10" width="740px" height="984px" autosize="height"/>
+        <cl:group std:sid="group-243f9abe" id="grp6">
+          <cl:verticaldata std:sid="v-data-cd7f7b14" width="740px" height="94px" autosize="height"/>
+          <cl:output std:sid="output-34bedbc3" class="tit h3" value="그리드" outputtype="h3">
+            <cl:verticaldata std:sid="v-data-b74db4e1" width="300px" height="36px" autosize="height"/>
+          </cl:output>
+          <cl:output std:sid="output-f289eedd" value="" displayexp="&quot;본 화면에서는 테이블을 사용하지 않고, 테이블과 동일한 형태인 그리드를 사용합니다.\n&quot;&#xD;&#xA;+ &quot;사용 방법은 테이블과 유사하지만 일부 다른 동작을 수행하는 단축키를 제공합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+ sstr(&quot;(1) 스크린리더 - 가상커서 사용 여부\n&quot;, [&quot;text-danger&quot;])&#xD;&#xA;+ &quot;스크린리더를 사용하는 경우 그리드는 &quot;+sstr(&quot;가상커서를 해제&quot;, [&quot;text-primary&quot;])+&quot;하고 사용하는 것을 권장합니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+ sstr(&quot;(2) 스크린리더 내용\n&quot;, [&quot;text-danger&quot;])&#xD;&#xA;+&quot;그리드 최초 진입 시 : &quot; + sstr(&quot;그리드 시작\n&quot;, [&quot;text-primary&quot;])&#xD;&#xA;+&quot;그리드 탐색 종료 시 : &quot; + sstr(&quot;그리드 종료\n\n&quot;, [&quot;text-primary&quot;])&#xD;&#xA;&#xD;&#xA;+ sstr(&quot;(3) 그리드 모드\n&quot;, [&quot;text-danger&quot;])&#xD;&#xA;+&quot;• 읽기모드 : 방향키로 이동하며 커서가 위치하는 셀의 정보만 알 수 있습니다.\n&quot;&#xD;&#xA;+&quot;• 편집모드 : Tab 키로 이동하며 커서가 위치하는 셀에서 값을 수정 할 수 있습니다.\n\n&quot;&#xD;&#xA;&#xD;&#xA;+&quot;그리드에서 사용 가능한 단축키는 다음을 확인해주세요.&quot;">
+            <cl:verticaldata std:sid="v-data-ac1fab42" width="1068px" height="42px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-5c9c31cf"/>
+        </cl:group>
+        <cl:group std:sid="group-8a755af8" id="grp5" class="form-base">
+          <cl:verticaldata std:sid="v-data-0228ab68" width="740px" height="874px" autosize="height"/>
+          <cl:output std:sid="output-e902ca74" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-5dd62624" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-9912d10b" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-7cc07f60" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-bc35cd87" class="label" value="Enter">
+            <cl:formdata std:sid="f-data-924462ae" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-f5965421" displayexp="&quot;그리드 모드 전환\n&quot;&#xD;&#xA;+ sstr(&quot;※ 편집모드에서 읽기모드로 전환 시, 수정된 값은 저장됩니다.&quot;, [&quot;text-danger&quot;])">
+            <cl:formdata std:sid="f-data-a5a29992" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-7b224380" class="label" value="Tab">
+            <cl:formdata std:sid="f-data-84293bce" row="2" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-a9849f42" value="▹ 읽기모드 : 그리드 밖 다음 영역으로 포커스 이동&#xD;&#xA;▹ 편집모드 : 그리드 내 기능이 동작하는 요소로 포커스 이동">
+            <cl:formdata std:sid="f-data-a8eaf818" row="2" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-7c6bb9a9" class="label" value="Shift + Tab">
+            <cl:formdata std:sid="f-data-514094ad" row="3" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-b192cfdc" value="▹ 읽기모드 : 그리드 밖 이전 영역으로 포커스 이동&#xD;&#xA;▹ 편집모드 : 그리드 내 기능이 동작하는 요소로 포커스 이동">
+            <cl:formdata std:sid="f-data-73ff02f8" row="3" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-87b4d2df" class="label" value="ESC">
+            <cl:formdata std:sid="f-data-ce8e836c" row="4" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-fe3585ec" displayexp="&quot;읽기모드로 전환\n&quot;&#xD;&#xA;+ sstr(&quot;※ 편집모드에서 읽기모드로 전환 시, 수정된 값은 저장되지 않습니다.&quot;, [&quot;text-danger&quot;])">
+            <cl:formdata std:sid="f-data-b73b3f5a" row="4" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-23111070" class="label" value="Space">
+            <cl:formdata std:sid="f-data-ba1ee231" row="5" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-2c283d0d" value="그리드 내 요소 클릭">
+            <cl:formdata std:sid="f-data-33c3c53b" row="5" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-b697d1f0" class="label" value="Ctrl + Alt + U">
+            <cl:formdata std:sid="f-data-83a64f8d" row="6" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-b4942904" value="그리드 밖 이전 영역으로 포커스 이동">
+            <cl:formdata std:sid="f-data-fb31e93d" row="6" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-2e55567c" class="label" value="Ctrl + Alt + O">
+            <cl:formdata std:sid="f-data-6a14d50f" row="7" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-127a1f42" value="그리드 밖 이후 영역으로 포커스 이동">
+            <cl:formdata std:sid="f-data-7f606506" row="7" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-38cef9ea" class="label" value="Ctrl + Alt + T">
+            <cl:formdata std:sid="f-data-76247607" row="8" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-107e8c8c" value="현재 위치한 셀 정보 확인">
+            <cl:formdata std:sid="f-data-1930e7e4" row="8" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-58c7a5f9" class="label" value="Ctrl + Alt + PageUp">
+            <cl:formdata std:sid="f-data-4158df93" row="9" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-3bc5ae2a" value="현재 열 첫번째 셀로 이동">
+            <cl:formdata std:sid="f-data-3b461240" row="9" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-4dfe5d97" class="label" value="Ctrl + Alt + PageDown">
+            <cl:formdata std:sid="f-data-cc1dda07" row="10" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-d47ed842" value="현재 열 마지막 셀로 이동">
+            <cl:formdata std:sid="f-data-12eff962" row="10" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-9da955e9" class="label" value="Ctrl + Alt + ⬆(상)">
+            <cl:formdata std:sid="f-data-92039468" row="11" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-88200f57" value="위 셀로 이동">
+            <cl:formdata std:sid="f-data-8d7c587d" row="11" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-2daffe21" class="label" value="Ctrl + Alt + ⬇(하)">
+            <cl:formdata std:sid="f-data-aa397ae3" row="12" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-8592b0fe" value="아래 셀로 이동">
+            <cl:formdata std:sid="f-data-b2b0ad7c" row="12" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-815264aa" class="label" value="Ctrl + Alt + ⬅(좌)">
+            <cl:formdata std:sid="f-data-bf1b5e70" row="13" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-4c37e844" value="왼쪽 셀로 이동">
+            <cl:formdata std:sid="f-data-bbebe2b8" row="13" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-ecfd088a" class="label" value="Ctrl + Alt + ➡(우)">
+            <cl:formdata std:sid="f-data-51a66e1b" row="14" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-bec4445f" value="오른쪽 셀로 이동">
+            <cl:formdata std:sid="f-data-37625b3c" row="14" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-a589be40" class="label" value="Ctrl + Alt + Home">
+            <cl:formdata std:sid="f-data-e49c80c4" row="15" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-c5d5eaa6" value="현재 행 첫번째 셀로 이동">
+            <cl:formdata std:sid="f-data-c372dff5" row="15" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-42354cae" class="label" value="Ctrl + Alt + End">
+            <cl:formdata std:sid="f-data-a35508ee" row="16" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-eaeb82e1" value="현재 행 마지막 셀로 이동">
+            <cl:formdata std:sid="f-data-69e33297" row="16" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-116b5337" class="label" value="Ctrl + ⬅(좌)">
+            <cl:formdata std:sid="f-data-6a32cacc" row="17" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-df6ab74d" value="그룹 접기">
+            <cl:formdata std:sid="f-data-fc431cdb" row="17" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-013c4bf5" class="label" value="Ctrl + ➡(우)">
+            <cl:formdata std:sid="f-data-80fc1d8a" row="18" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-194ffa1a" value="그룹 펼치기">
+            <cl:formdata std:sid="f-data-fd1b4721" row="18" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-39345b28" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="40" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="40" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="40" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="40" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8a6ffcd6" spacing="16"/>
+      </cl:group>
+      <cl:group comment="페이지 인덱서" std:sid="group-32e9cda2" id="grp34" class="content">
+        <cl:verticaldata std:sid="v-data-46762d4c" width="1066px" height="182px" autosize="height"/>
+        <cl:output std:sid="output-c10de170" class="tit h3" value="페이징 버튼" outputtype="h3">
+          <cl:verticaldata std:sid="v-data-70d98d3d" width="300px" height="36px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-36926077" id="grp35" class="form-base">
+          <cl:verticaldata std:sid="v-data-a725f7ee" width="1068px" height="130px" autosize="height"/>
+          <cl:output std:sid="output-b280ca1d" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-6268e2e0" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-ba920e59" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-fa8864f1" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-b7a9a5f2" class="label" value="Tab 또는 Shift + Tab">
+            <cl:formdata std:sid="f-data-758832ce" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-cacdf636" value="페이징 버튼 간 포커스 이동">
+            <cl:formdata std:sid="f-data-7552e62d" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-7af5a4ba" class="label" value="Enter 또는 Space">
+            <cl:formdata std:sid="f-data-1438a34f" row="2" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-2c43cf57" value="페이징 버튼 선택">
+            <cl:formdata std:sid="f-data-a2844fab" row="2" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-b7d8368a" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-e8b6acb9" spacing="16"/>
+      </cl:group>
+      <cl:group comment="트리" std:sid="group-5e975668" id="grp10" class="content">
+        <cl:verticaldata std:sid="v-data-2360951e" width="1066px" height="268px" autosize="height"/>
+        <cl:output std:sid="output-e58b0394" class="tit h3" value="트리뷰 (트리 메뉴)" outputtype="h3">
+          <cl:verticaldata std:sid="v-data-e738a5dd" width="300px" height="36px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-ed178d4e" id="grp11" class="form-base">
+          <cl:verticaldata std:sid="v-data-0b217b31" width="1068px" height="216px" autosize="height"/>
+          <cl:output std:sid="output-d6bcae8f" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-bd1a4b11" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-de731b67" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-2f415e43" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-4ab1b2f3" class="label" value="⬆(상) / ⬇(하)">
+            <cl:formdata std:sid="f-data-1c2c3996" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-959e520d" value="트리 항목 간 이동">
+            <cl:formdata std:sid="f-data-9c607c92" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-28729b50" class="label" value="⬅(좌)">
+            <cl:formdata std:sid="f-data-7c1cc434" row="2" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-395396f6" value="상위 폴더 접기">
+            <cl:formdata std:sid="f-data-4e085121" row="2" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-a3aa176f" class="label" value="➡(우)">
+            <cl:formdata std:sid="f-data-5d028a97" row="3" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-adcdd33c" value="상위 폴더 펼치기">
+            <cl:formdata std:sid="f-data-960ad887" row="3" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-949163b3" class="label" value="Enter">
+            <cl:formdata std:sid="f-data-db714ce7" row="4" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-aa2e3021" value="트리 항목 선택&#xD;&#xA;&#xD;&#xA;트리 아이템의 체크박스 선택 또는 선택 해제">
+            <cl:formdata std:sid="f-data-b61d7ed4" row="4" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-11bd666f" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-e3087e67" spacing="16"/>
+      </cl:group>
+      <cl:group comment="메뉴" std:sid="group-d22822fb" id="grp26" class="content">
+        <cl:verticaldata std:sid="v-data-e627cdba" width="740px" height="182px" autosize="height"/>
+        <cl:output std:sid="output-2fb99447" class="tit h3" value="풀다운 메뉴" outputtype="h3">
+          <cl:verticaldata std:sid="v-data-2da5dca1" width="300px" height="36px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-99ec4565" id="grp27" class="form-base">
+          <cl:verticaldata std:sid="v-data-06f232ee" width="740px" height="130px" autosize="height"/>
+          <cl:output std:sid="output-c4631425" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-e14fa24f" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-a9af91de" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-95f4ae88" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-9c1ea30a" class="label" value="⬆(상) / ⬇(하)">
+            <cl:formdata std:sid="f-data-2efa263a" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-855e3a39" value="메뉴 항목 간 이동">
+            <cl:formdata std:sid="f-data-c9457c8a" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-4675d1a7" class="label" value="Enter">
+            <cl:formdata std:sid="f-data-4b518f35" row="2" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-1b6704f0" value="메뉴 항목 선택">
+            <cl:formdata std:sid="f-data-1b976ce5" row="2" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-2386c5d9" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-860b56d8" spacing="16"/>
+      </cl:group>
+      <cl:group comment="리스트박스" std:sid="group-0abdb279" id="grp28" class="content">
+        <cl:verticaldata std:sid="v-data-c7511442" width="1066px" height="139px" autosize="height"/>
+        <cl:output std:sid="output-23520d39" class="tit h3" value="목록상자" outputtype="h3">
+          <cl:verticaldata std:sid="v-data-37b0b02a" width="300px" height="36px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-557d471b" id="grp29" class="form-base">
+          <cl:verticaldata std:sid="v-data-d33738cc" width="1068px" height="87px" autosize="height"/>
+          <cl:output std:sid="output-2b178c37" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-6fced9df" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-9360d81e" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-f1ef5480" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-1cd0fcee" class="label" value="⬆(상) / ⬇(하)">
+            <cl:formdata std:sid="f-data-47f5e2ce" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-617c8e4a" value="메뉴 항목 간 선택이동">
+            <cl:formdata std:sid="f-data-a643f17b" row="1" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-83b1911b" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-05189f33" spacing="16"/>
+      </cl:group>
+      <cl:group comment="콤보박스" std:sid="group-2956ccda" id="grp8" class="content">
+        <cl:verticaldata std:sid="v-data-bf37a757" width="740px" height="199px" autosize="height"/>
+        <cl:output std:sid="output-2518c765" class="tit h3" value="콤보상자 (드롭다운 메뉴)" outputtype="h3">
+          <cl:verticaldata std:sid="v-data-fe209234" width="300px" height="36px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-f2b1ca31" id="grp9" class="form-base">
+          <cl:verticaldata std:sid="v-data-37db5217" width="740px" height="147px" autosize="height"/>
+          <cl:output std:sid="output-ff5f7f1c" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-77200bca" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-08765181" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-715d71df" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-78b9c98a" class="label" value="Enter">
+            <cl:formdata std:sid="f-data-cc426992" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-8c250c92" value="▹ 드롭다운 메뉴에서 : 드롭다운 리스트 펼치기&#xD;&#xA;▹ 드롭다운 리스트에서 : 메뉴항목 선택">
+            <cl:formdata std:sid="f-data-94850db1" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-521de392" class="label" value="⬆(상) / ⬇(하)">
+            <cl:formdata std:sid="f-data-fa6765a8" row="2" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-b7e7a9a5" value="메뉴항목 이동">
+            <cl:formdata std:sid="f-data-265ba0d3" row="2" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-2b9fd86e" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="43" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-d38fbd03" spacing="16"/>
+      </cl:group>
+      <cl:group comment="라디오 버튼" std:sid="group-6ac15283" id="grp16" class="content">
+        <cl:verticaldata std:sid="v-data-682581a1" width="1066px" height="139px" autosize="height"/>
+        <cl:output std:sid="output-ba01ede0" class="tit h3" value="라디오버튼" outputtype="h3">
+          <cl:verticaldata std:sid="v-data-f14da035" width="300px" height="36px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-c771db7d" id="grp17" class="form-base">
+          <cl:verticaldata std:sid="v-data-71e0d789" width="1068px" height="87px" autosize="height"/>
+          <cl:output std:sid="output-611c300b" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-f7065021" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-1878c4f9" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-9f38b474" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-733e2518" class="label" value="⬆(상) / ⬇(하) / ⬅(좌) / ➡(우)">
+            <cl:formdata std:sid="f-data-27a1c44d" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-78b120fb" value="라디오버튼 선택 이동">
+            <cl:formdata std:sid="f-data-7f30e021" row="1" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-cf70a13d" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-24f53823" spacing="16"/>
+      </cl:group>
+      <cl:group comment="체크박스,체크박스그룹" std:sid="group-8fef39f9" id="grp20" class="content">
+        <cl:verticaldata std:sid="v-data-3d3ad43c" width="1066px" height="182px" autosize="height"/>
+        <cl:output std:sid="output-5e1c8cb8" class="tit h3" value="체크상자" outputtype="h3">
+          <cl:verticaldata std:sid="v-data-f4ddf78b" width="300px" height="36px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-22c68f51" id="grp21" class="form-base">
+          <cl:verticaldata std:sid="v-data-e8c58a9a" width="1068px" height="130px" autosize="height"/>
+          <cl:output std:sid="output-c2077b7f" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-4ac5c12d" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-dff88bbf" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-8f09a4d6" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-0652b304" class="label" value="Space">
+            <cl:formdata std:sid="f-data-931aef72" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-9ded8643" value="선택/선택 해제">
+            <cl:formdata std:sid="f-data-82deba75" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-7f89de21" class="label" value="Tab 또는 Shift + Tab">
+            <cl:formdata std:sid="f-data-6be95f47" row="2" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-a626dfdb" value="체크상자 항목 이동">
+            <cl:formdata std:sid="f-data-8e214761" row="2" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-0e3de83d" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-f9f974e4" spacing="16"/>
+      </cl:group>
+      <cl:group comment="캘린더" std:sid="group-3b722612" id="grp22" class="content">
+        <cl:verticaldata std:sid="v-data-d2e2246c" width="740px" height="240px" autosize="height"/>
+        <cl:group std:sid="group-c5c7235c" id="grp1">
+          <cl:verticaldata std:sid="v-data-a2ee02bc" width="740px" height="94px" autosize="height"/>
+          <cl:output std:sid="output-3dcd23b0" class="tit h3" value="캘린더" outputtype="h3">
+            <cl:verticaldata std:sid="v-data-f77e9d30" width="300px" height="36px" autosize="height"/>
+          </cl:output>
+          <cl:output std:sid="output-fd7263f2" value="" displayexp="&quot;캘린더는 &quot;+sstr(&quot;TAB키&quot;, [&quot;fw-bold&quot;, &quot;text-underline&quot;])+&quot; 와 &quot;+sstr(&quot;방향키&quot;, [&quot;fw-bold&quot;, &quot;text-underline&quot;])+&quot; 사용을 지원합니다.\n&quot;&#xD;&#xA;+ &quot;기본적으로 TAB 키를 통해 캘린더 내부를 이동하며, 날짜 이동은 방향키를 통해 이동합니다.&quot;">
+            <cl:verticaldata std:sid="v-data-6408986e" width="740px" height="42px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-6a557e47"/>
+        </cl:group>
+        <cl:group std:sid="group-b8a7b99a" id="grp23" class="form-base">
+          <cl:verticaldata std:sid="v-data-652ccf50" width="740px" height="130px" autosize="height"/>
+          <cl:output std:sid="output-967f9454" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-5e46b04d" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-f8cb91e5" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-a5f1647e" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-849f58dc" class="label" value="Tab 또는 Shift + Tab">
+            <cl:formdata std:sid="f-data-064403dc" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-444ffa3c" value="캘린더 내부 항목 이동">
+            <cl:formdata std:sid="f-data-e5fc182c" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-e82f2598" class="label" value="⬆(상) / ⬇(하) / ⬅(좌) / ➡(우)">
+            <cl:formdata std:sid="f-data-7118762f" row="2" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-f9dca764" value="날짜 이동">
+            <cl:formdata std:sid="f-data-d43d3205" row="2" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-181e2555" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-9a38a3e4" spacing="16"/>
+      </cl:group>
+      <cl:group comment="아코디언" std:sid="group-c658a78e" id="grp32" class="content">
+        <cl:verticaldata std:sid="v-data-f3cc35c7" width="1066px" height="206px" autosize="height"/>
+        <cl:output std:sid="output-10b62560" class="tit h3" value="확장/축소 패널" outputtype="h3">
+          <cl:verticaldata std:sid="v-data-cd78b2ed" width="300px" height="36px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-83b3fff5" id="grp33" class="form-base">
+          <cl:verticaldata std:sid="v-data-3548238b" width="1068px" height="154px" autosize="height"/>
+          <cl:output std:sid="output-c54c16f0" class="label text-center" value="단축키">
+            <cl:formdata std:sid="f-data-192be33f" row="0" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-d9c1152c" class="label text-center" value="설명">
+            <cl:formdata std:sid="f-data-f571b916" row="0" col="1" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-a6ea89ec" class="label" value="Enter 또는 Space">
+            <cl:formdata std:sid="f-data-5502fe17" row="1" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-1578c067" value="패널 확장 또는 축소">
+            <cl:formdata std:sid="f-data-d3388de1" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-c4b71d21" class="label" value="Tab">
+            <cl:formdata std:sid="f-data-ebea9008" row="2" col="0" ignore-layout-spacing="true"/>
+          </cl:output>
+          <cl:output std:sid="output-fdf5de5f" value="▹ 패널이 축소된 경우 : 다음 패널으로 이동&#xD;&#xA;▹ 패널이 확장된 경우 : 패널 내 첫 번째 항목으로 포커스 이동">
+            <cl:formdata std:sid="f-data-f7c8e815" row="2" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-c2058e2f" scrollable="false" hspace="32px" vspace="17px" top-margin="8px" right-margin="16px" bottom-margin="8px" left-margin="16px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+            <cl:rows length="26" unit="PIXEL" autoSizing="false" minlength="0" syncminlength="true"/>
+            <cl:rows length="26" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:rows length="50" unit="PIXEL" autoSizing="true" minlength="0" syncminlength="false"/>
+            <cl:columns length="126" unit="PIXEL" autoSizing="true"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-6c97518b" spacing="16"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-4d5237c8" spacing="36"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-faf556fd" scrollable="true" spacing="30" leftmargin="30" rightmargin="30" topmargin="0" bottommargin="30"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,108 @@
+{
+    "dsPostList": [
+        {
+            "CATEGORY": "Technology",
+            "TITLE": "Introduction to AI",
+            "WRI_DT": "20230825",
+            "HIT_CNT": 1200,
+            "FILE": true,
+            "CONTENT": "AI basics: learn about neural networks and machine learning."
+        },
+        {
+            "CATEGORY": "Travel",
+            "TITLE": "Exploring Bali Beaches",
+            "WRI_DT": "20230710",
+            "HIT_CNT": 750,
+            "FILE": false,
+            "CONTENT": "Sun, sand, and adventures: Bali's stunning beaches await."
+        },
+        {
+            "CATEGORY": "Food",
+            "TITLE": "Homemade Pizza Recipes",
+            "WRI_DT": "20230105",
+            "HIT_CNT": 2200,
+            "FILE": true,
+            "CONTENT": "Create delicious pizzas at home with these easy recipes."
+        },
+        {
+            "CATEGORY": "Books",
+            "TITLE": "Mind-Bending Thrillers",
+            "WRI_DT": "20230508",
+            "HIT_CNT": 1250,
+            "FILE": false,
+            "CONTENT": "Twists and turns await in these gripping thriller novels."
+        },
+        {
+            "CATEGORY": "Music",
+            "TITLE": "Electronic Dance Music",
+            "WRI_DT": "20230620",
+            "HIT_CNT": 890,
+            "FILE": true,
+            "CONTENT": "Dive into the energetic world of electronic dance music."
+        },
+        {
+            "CATEGORY": "Travel",
+            "TITLE": "Cultural Festivals Worldwide",
+            "WRI_DT": "20230915",
+            "HIT_CNT": 2100,
+            "FILE": false,
+            "CONTENT": "Experience diverse cultures through global festivals."
+        },
+        {
+            "CATEGORY": "Food",
+            "TITLE": "Savoring Exotic Flavors",
+            "WRI_DT": "20230305",
+            "HIT_CNT": 1100,
+            "FILE": false,
+            "CONTENT": "Journey through global cuisine and its unique flavors."
+        },
+        {
+            "CATEGORY": "Technology",
+            "TITLE": "Ethical Hacking Insights",
+            "WRI_DT": "20230120",
+            "HIT_CNT": 2980,
+            "FILE": true,
+            "CONTENT": "Unveil the world of ethical hacking and cybersecurity."
+        },
+        {
+            "CATEGORY": "Health",
+            "TITLE": "Work-Life Balance",
+            "WRI_DT": "20230720",
+            "HIT_CNT": 1420,
+            "FILE": true,
+            "CONTENT": "Prioritize well-being while managing a busy lifestyle."
+        },
+        {
+            "CATEGORY": "Fashion",
+            "TITLE": "Vintage Fashion Trends",
+            "WRI_DT": "20230410",
+            "HIT_CNT": 540,
+            "FILE": false,
+            "CONTENT": "Rediscover timeless fashion trends from past decades."
+        },
+        {
+            "CATEGORY": "Science",
+            "TITLE": "Dinosaur Evolution",
+            "WRI_DT": "20230215",
+            "HIT_CNT": 3650,
+            "FILE": true,
+            "CONTENT": "Journey through the ages of dinosaur evolution."
+        },
+        {
+            "CATEGORY": "Books",
+            "TITLE": "Inspirational Self-Help Books",
+            "WRI_DT": "20230528",
+            "HIT_CNT": 970,
+            "FILE": true,
+            "CONTENT": "Transform your life with these motivational self-help reads."
+        },
+        {
+            "CATEGORY": "Music",
+            "TITLE": "Jazz and Blues Journey",
+            "WRI_DT": "20230615",
+            "HIT_CNT": 690,
+            "FILE": false,
+            "CONTENT": "Explore the soulful rhythms of jazz and blues music."
+        }
+    ]
+}

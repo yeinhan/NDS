@@ -1,0 +1,86 @@
+@import "../../custom-settings.part.less";
+.high-contrast{
+	
+/* 리스트 박스 */
+.cl-listbox {
+	font: @font-base;
+	border: @list-border-contrast;
+	border-radius: @list-border-radius;
+	color: @list-text-color-contrast;
+
+	/* 리스트 박스 내 아이템 목록 박스 */
+	.cl-listbox-list {
+		
+		/* 아이템 목록 박스 내 각 아이템 */
+		.cl-listbox-item {
+			background-repeat: no-repeat;
+			padding: @list-item-padding-y (@list-item-padding-x * 2.5) @list-item-padding-y @list-item-padding-x;
+			height: auto;
+			min-height: @list-item-height;
+		
+			/* 아이템 드래그시 아이템의 마우스가 아래에 위치할때 표시 */
+			&.cl-dropbottom {
+				// box-shadow: inset 0 -2px 0 @default-border-color;
+			}
+			/* 아이템 드래그시 아이템의 마우스가 위에 위치할때 표시 */
+			&.cl-droptop {
+				// box-shadow: inset 0 2px 0 @default-border-color;
+			}
+			/* 선택된 아이템 */
+			&.cl-selected {
+				background-color: @list-item-selected-background-color-contrast;
+				color: @list-item-selected-text-color-contrast;
+				
+				background-image: url("../../images/controls/menu/ic_check.png");
+				background-position: calc(100% - @list-item-padding-x) center;
+			}
+			/* 아이템 아이콘 */
+			.cl-icon {
+			}
+			/* 아이템 텍스트 */
+			.cl-text {
+			}
+			/* 아이템의 뱃지 스타일*/
+			.cl-badge {
+			}
+		}
+	}
+}
+
+.cl-listbox:not(.cl-disabled) {
+	.cl-listbox-item:not(.cl-disabled) {
+		
+		&:not(.cl-selected){
+			/* 포커스된 아이템 */
+			&:focus{
+				background-color: @list-item-hover-background-color-contrast;
+				color: @list-item-hover-text-color-contrast;
+			}
+			/* 호버된 아이템 */
+			&.cl-hover,
+			&:hover{
+				background-color: @list-item-hover-background-color-contrast;
+				color: @list-item-hover-text-color-contrast;
+			}
+		}
+	}
+}
+
+/* disabled 상태 */
+.cl-listbox.cl-disabled {
+	color: @list-item-disabled-text-color-contrast;
+
+	/* disabled 상태에서 선택된 아이템들 */
+	.cl-listbox-item.cl-selected {
+		background-color:  @list-item-disabled-selected-background-color-contrast;
+		color: @list-item-disabled-selected-text-color-contrast;
+		
+		background-image: url("../../images/controls/menu/ic_check_off.png");
+	}
+}
+
+/* 포커스 상태 */
+.cl-listbox.cl-focus {
+	border-color: @list-focus-border-color-contrast;
+}
+}

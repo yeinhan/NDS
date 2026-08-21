@@ -1,0 +1,121 @@
+@import "../../custom-settings.part.less";
+.high-contrast{
+		
+	/* 아코디언 */
+	.cl-accordion {
+		font: @font-base;
+		background-color: @list-background-color;
+		border: none; //@list-border-base;
+		border-radius: @list-border-radius;
+		color: @list-text-color;
+		padding: 0px;
+	
+		/** 아코디언의 각 헤더 */
+		.cl-accordion-header {
+			background-color: @component-background-color;
+			border: @component-border-contrast;
+			border-radius: @component-border-radius-0;
+			color: @component-text-color;
+			font-size: @h5-font-size;
+			padding: 10px 20px;
+			z-index: 0;
+			
+			/** 아코디언 펼침 버튼 */
+			.cl-accordion-expander {
+				background-image: url("../../images/controls/accordion/ic_btn_down.png");
+				background-size: auto;
+				width: 24px;
+			}
+	
+			/* 아코디언 헤더에 마우스가 호버되었을 떄의 스타일 */
+			&:hover:not(.cl-disabled):not(.cl-activated) {			
+				background-color: @transparent;
+				border-color: @component-border-color-contrast;
+				color: @component-text-color;
+			}
+			
+			&.cl-title-collapse:focus {
+				text-decoration: none;
+			}
+	
+			&.cl-disabled {
+				background-color: @component-disabled-background-color;
+				border-color: @component-border-color-contrast;
+				color: @component-text-color;
+			}
+			
+			/* 아코디언 헤더를 클릭했을 때의 스타일 */
+			&.cl-activated {
+				background-color: @component-background-color;
+				border-color: @primary-contrast;
+				color: @primary-contrast; //@component-text-color;
+				font-weight: @font-weight-medium;
+				
+				/* 클릭된 헤더의 펼침 버튼 아이콘 */
+				.cl-accordion-expander {
+					background-image: url("../../images/controls/accordion/ic_btn_up_on.png");
+				}
+			}
+		}
+	
+		.cl-accordion-section:not(.cl-accordion-placeholder) {
+			/* 아코디언 컨텐츠 */
+			.cl-accordion-content {
+				background-color: @component-background-color;
+				border: none; //@component-border-base;
+			}
+			
+			&.cl-last {
+				.cl-accordion-content {
+				}
+			}
+		}
+	
+		.cl-accordion-section+.cl-accordion-header{
+			/* 아코디언 섹션간의 간격 */
+			margin-top: -1px;
+			
+			&.cl-first{
+				// margin-top: 0px;
+			}
+		}	
+	}
+	
+	/* Disabled 상태의 아코디언 */
+	.cl-accordion.cl-disabled {
+		/* 선택된 헤더 */
+		.cl-accordion-header {
+			background-color: @component-disabled-background-color;
+			border-color: @component-border-color-contrast;
+			color: @component-text-color;
+	
+			.cl-accordion-expander {
+				background-image: url("../../images/controls/accordion/ic_btn_down_off.png");
+			}
+				
+			&.cl-activated {
+				background-color: @component-disabled-selected-background-color;
+				border-color: @component-border-color-contrast;
+				color: @component-text-color;
+	
+				.cl-accordion-expander {
+					background-image: url("../../images/controls/accordion/ic_btn_up_off.png");
+				}
+			}
+			
+			&:hover:not(.cl-activated) {
+//				background-color: RED;
+				background-color: @component-disabled-background-color;
+				border-color: @component-border-color-contrast;
+				color: @component-text-color;
+			}
+		}
+	
+		.cl-accordion-section:not(.cl-accordion-placeholder) {
+			/* 선택된 바디 */
+			.cl-accordion-content {
+				border-color: @component-border-contrast;
+			}
+		}
+	}
+}

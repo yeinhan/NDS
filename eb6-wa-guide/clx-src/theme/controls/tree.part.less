@@ -1,0 +1,254 @@
+@import "../custom-settings.part.less";
+
+/* 트리 */
+.cl-tree {
+	font: @font-base;
+	background-color: @list-background-color;
+	border: @list-border-base;
+	border-radius: @list-border-radius;
+	color: @list-text-color;
+
+	/* 트리 아이템 */
+	.cl-tree-item {
+		min-height: @list-item-height;
+		
+		/* 트리 아이템 체크박스 아이콘 */
+		.cl-checkbox {
+			background-image: url("../images/controls/checkbox/ic_checkbox.png");
+			background-size: 12px;
+			width: 20px;
+			
+			&.cl-checked {
+				background-image: url("../images/controls/checkbox/ic_checkbox_on.png");
+			}
+			&.cl-partialchecked {
+				background-image: url("../images/controls/checkbox/ic_partial.png");
+			}
+		}
+		/* 트리 셀렉션 체크박스 아이콘 */
+		.cl-tree-checkbox {
+			background-image: url("../images/controls/checkbox/ic_checkbox.png");
+			background-size: 12px;
+			width: 20px;
+		}
+
+		/* 트리 아이템 아이콘 영역 */
+		.cl-tree-itemicon {
+			background-image: url("../images/controls/tree/ic_file.png");
+			background-size: auto;
+			width: 16px;
+		}
+
+		/* 트리 아이템의 펼치고 접혀지는 아이콘 영역*/
+		.cl-tree-treeicon {
+			background-size: auto;
+			width: 20px;
+		}
+
+		/* 트리 아이템 텍스트 */
+		.cl-text {
+			padding: @input-padding-0 @input-padding-0 @input-padding-0 (@input-padding-x / 2);
+		}
+		/*텍스트 편집 상자*/
+		.cl-texteditor {
+
+		}
+		/*트리아이템 뱃지 스타일*/
+		.cl-badge {
+			width: 15px;
+			height: 15px;
+		}
+
+		&.cl-checked {
+			/* 트리 아이템 체크박스 아이콘 - 선택됨*/
+			> .cl-tree-checkbox {
+				background-image: url("../images/controls/checkbox/ic_checkbox_on.png");
+			}
+		}
+
+		&.cl-partialchecked {
+			/* 트리 아이템 체크박스 아이콘 - 부분 선택됨 */
+			> .cl-tree-checkbox {
+				background-image: url("../images/controls/checkbox/ic_partial.png");
+			}
+		}
+
+		&.cl-folder {
+			/* 트리 아이템 폴더 아이콘*/
+			.cl-tree-itemicon {
+				background-image: url("../images/controls/tree/ic_folder.png");
+			}
+
+			/* 트리 아이템 폴더 아이콘 - 펼쳐짐*/
+			&.cl-expanded > .cl-tree-treeicon {
+				background-image: url("../images/controls/tree/ic_expanded.png");
+			}
+
+			/* 트리 아이템 폴더 아이콘 - 접힘 */
+			&.cl-collapsed > .cl-tree-treeicon {
+				background-image: url("../images/controls/tree/ic_collapsed.png");
+			}
+		}
+
+		/* 트리 아이템 - disabled */
+		&.cl-disabled {
+			color: @list-item-disabled-text-color;
+			
+			/* 트리 아이템 - disabled, selected */
+			&.cl-selected {
+				background-color:  @list-item-disabled-selected-background-color;
+				color: @list-item-disabled-selected-text-color;
+			}
+		}
+
+		/* 트리 아이템 - selected */
+		&.cl-selected {
+			background-color: @list-item-selected-background-color;
+			color: @list-item-selected-text-color;
+
+			&.cl-folder {
+				/* 트리 아이템 폴더 펼쳐짐 아이콘 - selected */
+				&.cl-expanded > .cl-tree-treeicon {
+					background-image: url("../images/controls/tree/ic_expanded.png");
+				}
+	
+				/* 트리 아이템 폴더 점힘 아이콘 - selected */
+				&.cl-collapsed > .cl-tree-treeicon {
+					background-image: url("../images/controls/tree/ic_collapsed.png");
+				}
+			}
+		}
+	}
+
+	/* 트리 - focus */
+	&.cl-focus {
+		border-color: @list-focus-border-color;
+	}
+
+	/* 트리 다중 선택 */
+	&.cl-multi-select{
+		.cl-tree-item{
+			&.cl-checked{
+				
+				&.cl-selected.cl-hover{
+					background-color: @list-item-selected-background-color;
+					color: @list-item-selected-text-color;
+				}
+			}
+		}
+	}
+	
+	/* 트리 아이템간 라인*/
+	&.cl-tree-lines{
+		
+		.cl-tree-item{
+			// padding: 0px 10px 0px 0px;
+			
+			.cl-tree-treeicon {
+				background-size: auto;
+			}
+			
+			&.cl-expanded > .cl-tree-treeicon {
+				background-image: url("../images/controls/tree/ic_minus.png");
+			}
+			&.cl-expanded.cl-selected > .cl-tree-treeicon {
+				background-image: url("../images/controls/tree/ic_minus.png");
+			}
+			&.cl-collapsed > .cl-tree-treeicon {
+				background-image: url("../images/controls/tree/ic_plus.png");
+			}
+			&.cl-collapsed.cl-selected > .cl-tree-treeicon {
+				background-image: url("../images/controls/tree/ic_plus.png");
+			}
+			.cl-tree-line {
+				background-image: url("../images/controls/tree/ic_treeline.png");
+			}
+			.cl-tree-iconline {
+				background-image: url("../images/controls/tree/ic_treeline_child.png");
+			}
+			
+			&.cl-last {
+				.cl-tree-iconline {
+					background-image: url("../images/controls/tree/ic_treeline_last.png");
+				}
+			}
+			
+			&.cl-first{
+				.cl-tree-iconline {
+					background-image: url("../images/controls/tree/ic_treeline_first.png");
+				}
+			}
+			
+			&.cl-first.cl-last {
+				.cl-tree-iconline {
+					background-image: url("../images/controls/tree/ic_treeline_alone.png");
+				}
+			}
+			
+			.cl-text {
+				padding: @input-padding-0 @input-padding-0 @input-padding-0 (@input-padding-x / 2);
+			}
+			
+			.cl-tree-line,.cl-tree-treeicon {
+				padding: 0px;
+			}
+		}
+	}
+}
+
+.cl-tree:not(.cl-disabled) {
+	.cl-tree-item:not(.cl-disabled){
+
+		/* 트리 아이템 - hover */
+		&:not(.cl-selected).cl-hover, &:not(.cl-selected):hover {
+			background-color: @list-item-hover-background-color;
+			color: @list-item-hover-text-color;
+		}
+
+		/* 드래그 아이템 위치에 따른 표시 */
+		&.cl-dropbottom {
+			// box-shadow: inset 0 -2px 0 @default-border-color;
+		}
+		/* 드래그 아이템 위치에 따른 표시 */
+		&.cl-dropmiddle, &:not(.cl-selected).cl-dropmiddle {
+			// background-color: @default-border-color;
+		}
+		/* 드래그 아이템 위치에 따른 표시 */
+		&.cl-droptop {
+			// box-shadow: inset 0 2px 0 @default-border-color;
+		}
+	}
+}
+
+/* 트리 - disabled */
+.cl-tree.cl-disabled {
+	background-color: @list-disabled-background-color;
+	border-color: @list-disabled-border-color;
+	color: @list-disabled-text-color;
+
+	/* 트리 아이템 - disabled, selected */
+	.cl-tree-item {
+		.cl-tree-itemicon {
+			background-image: url("../images/controls/tree/ic_file_off.png");
+		}
+		
+		&.cl-folder {
+			.cl-tree-itemicon {
+				background-image: url("../images/controls/tree/ic_folder_off.png");
+			}
+
+			&.cl-expanded > .cl-tree-treeicon {
+				background-image: url("../images/controls/tree/ic_expanded_off.png");
+			}
+
+			&.cl-collapsed > .cl-tree-treeicon {
+				background-image: url("../images/controls/tree/ic_collapsed_off.png");
+			}
+		}
+		
+		&.cl-selected {
+			background-color:  @list-item-disabled-selected-background-color;
+			color: @list-item-disabled-selected-text-color;
+		}
+	}
+}

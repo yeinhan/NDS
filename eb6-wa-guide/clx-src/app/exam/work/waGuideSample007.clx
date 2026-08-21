@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d67a0efd" version="1.0.4034">
+  <head std:sid="head-013fdfa5">
+    <screen std:sid="screen-ce918f61" id="default" name="default" minwidth="1280px" width="1280px" height="760px"/>
+    <screen std:sid="screen-3fcc8c18" id="tablet" name="tablet" minwidth="800px" maxwidth="1279px" width="800px" height="760px"/>
+    <screen std:sid="screen-a2d0bee2" id="mobile" name="mobile" maxwidth="799px" width="360px" height="760px"/>
+    <cl:model std:sid="model-66847912">
+      <cl:dataset std:sid="d-set-cb604f7c" id="dsSettle">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="결제일" std:sid="d-column-48fd609c" name="Payment Date"/>
+          <cl:datacolumn comment="결제수단" std:sid="d-column-9d98dea1" name="Payment method"/>
+          <cl:datacolumn comment="정산일" std:sid="d-column-fbb5544f" name="Settlement Date"/>
+          <cl:datacolumn comment="구분" std:sid="d-column-216b438b" name="Classification"/>
+          <cl:datacolumn comment="결제 금액" std:sid="d-column-cc545344" name="Payment Amount"/>
+          <cl:datacolumn comment="총 수수료" std:sid="d-column-d1d623a9" name="Total Fees"/>
+          <cl:datacolumn comment="정산 금액" std:sid="d-column-f145b819" name="Settlement Amount"/>
+          <cl:datacolumn comment="공제금액" std:sid="d-column-643005f2" name="Deduction Amount"/>
+          <cl:datacolumn comment="실정산금액" std:sid="d-column-78d116f8" name="Actual Amount"/>
+          <cl:datacolumn comment="의뢰건수" std:sid="d-column-b2814584" name="Number of Requests"/>
+          <cl:datacolumn comment="결제건수" std:sid="d-column-024c865c" name="Number of Payments"/>
+          <cl:datacolumn comment="정산여부" std:sid="d-column-28a17535" name="Settlement Status"/>
+          <cl:datacolumn comment="의뢰" std:sid="d-column-0ee488d7" name="Request"/>
+          <cl:datacolumn comment="결제" std:sid="d-column-f558daf0" name="Payment"/>
+          <cl:datacolumn comment="부가세" std:sid="d-column-2ed9a4ab" name="VAT"/>
+          <cl:datacolumn comment="비고" std:sid="d-column-f7c03fff" name="Note"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="Payment Date"><![CDATA[20220105]]></cl:datavalue>
+            <cl:datavalue columnname="Payment method"><![CDATA[CMS]]></cl:datavalue>
+            <cl:datavalue columnname="Settlement Date"><![CDATA[20220112]]></cl:datavalue>
+            <cl:datavalue columnname="Classification"><![CDATA[결제]]></cl:datavalue>
+            <cl:datavalue columnname="Payment Amount"><![CDATA[1000]]></cl:datavalue>
+            <cl:datavalue columnname="Total Fees"><![CDATA[31]]></cl:datavalue>
+            <cl:datavalue columnname="Settlement Amount"><![CDATA[969]]></cl:datavalue>
+            <cl:datavalue columnname="Deduction Amount"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="Actual Amount"><![CDATA[969]]></cl:datavalue>
+            <cl:datavalue columnname="Number of Requests"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="Number of Payments"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="Settlement Status"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="Note"><![CDATA[일반등급 수수료 적용]]></cl:datavalue>
+            <cl:datavalue columnname="Request"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="Payment"><![CDATA[28]]></cl:datavalue>
+            <cl:datavalue columnname="VAT"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-a8706751" id="dsSettleDetail">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-08b06d9c" name="member_number"/>
+          <cl:datacolumn std:sid="d-column-eddaf0a2" name="member_name"/>
+          <cl:datacolumn std:sid="d-column-1caba7d7" name="billing_month"/>
+          <cl:datacolumn std:sid="d-column-c9179a4b" name="mobile_phone"/>
+          <cl:datacolumn std:sid="d-column-0739f1ed" name="product"/>
+          <cl:datacolumn std:sid="d-column-562ec25a" name="payment_status"/>
+          <cl:datacolumn std:sid="d-column-919b3165" name="payment_method"/>
+          <cl:datacolumn std:sid="d-column-7583ea67" name="settlement_date"/>
+          <cl:datacolumn std:sid="d-column-1e9530c8" name="payment_date"/>
+          <cl:datacolumn std:sid="d-column-5e91602b" name="remarks"/>
+          <cl:datacolumn std:sid="d-column-fa068208" name="approval_number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="member_number"><![CDATA[00000087]]></cl:datavalue>
+            <cl:datavalue columnname="member_name"><![CDATA[홍길동]]></cl:datavalue>
+            <cl:datavalue columnname="billing_month"><![CDATA[2023/01]]></cl:datavalue>
+            <cl:datavalue columnname="mobile_phone"><![CDATA[010-0123-3210]]></cl:datavalue>
+            <cl:datavalue columnname="product"><![CDATA[청소용구]]></cl:datavalue>
+            <cl:datavalue columnname="payment_status"><![CDATA[결제완료]]></cl:datavalue>
+            <cl:datavalue columnname="payment_method"><![CDATA[CMS]]></cl:datavalue>
+            <cl:datavalue columnname="settlement_date"><![CDATA[2023/01/25]]></cl:datavalue>
+            <cl:datavalue columnname="payment_date"><![CDATA[2023/01/12]]></cl:datavalue>
+            <cl:datavalue columnname="remarks"><![CDATA[-]]></cl:datavalue>
+            <cl:datavalue columnname="approval_number"><![CDATA[20230112132833]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="member_number"><![CDATA[00000087]]></cl:datavalue>
+            <cl:datavalue columnname="member_name"><![CDATA[홍길동]]></cl:datavalue>
+            <cl:datavalue columnname="billing_month"><![CDATA[2023/01]]></cl:datavalue>
+            <cl:datavalue columnname="mobile_phone"><![CDATA[010-0123-3210]]></cl:datavalue>
+            <cl:datavalue columnname="product"><![CDATA[주방용품]]></cl:datavalue>
+            <cl:datavalue columnname="payment_status"><![CDATA[결제취소]]></cl:datavalue>
+            <cl:datavalue columnname="payment_method"><![CDATA[CMS]]></cl:datavalue>
+            <cl:datavalue columnname="settlement_date"><![CDATA[2023/01/25]]></cl:datavalue>
+            <cl:datavalue columnname="payment_date"><![CDATA[2023/01/12]]></cl:datavalue>
+            <cl:datavalue columnname="remarks"><![CDATA[반품]]></cl:datavalue>
+            <cl:datavalue columnname="approval_number"><![CDATA[20230112133125]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-267d742b" id="dsPropView">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="필터조건(같은 숫자에 대해서만 필터하여 내용을 보여준다)" std:sid="d-column-5941843b" name="keyNum" datatype="string"/>
+          <cl:datacolumn comment="컨트롤명(영문)" std:sid="d-column-4cd817ad" name="control"/>
+          <cl:datacolumn comment="속성명" std:sid="d-column-a67ff141" name="propNm"/>
+          <cl:datacolumn comment="속성값" std:sid="d-column-309a35a3" name="propVal"/>
+          <cl:datacolumn comment="관련 웹접근성 지침" std:sid="d-column-d6e23689" name="relatedWaInst"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[cmbCond1]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[combobox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[검색 기간 조회 필터]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[dtiDateB]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[dateinput]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[검색기간 시작]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[dtiDateB]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[dateinput]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[buttonFocusable]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[true]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[dtiDateB]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[dateinput]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[buttonFocusable]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[true]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[dtiDateB]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[dateinput]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[preventInput]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[false]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 12. (조작 가능) 사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[dtiDateE]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[dateinput]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[검색기간 종료]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[dtiDateE]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[dateinput]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[buttonFocusable]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[true]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 10. (키보드 사용 보장) 모든 기능은 키보드만으로도 사용할 수 있어야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[dtiDateE]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[dateinput]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[buttonFocusable]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[true]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 11. (초점 이동과 표시) 키보드에 의한 초점은 논리적으로 이동해야 하며, 시각적으로 구별할 수 있어야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[dtiDateE]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[dateinput]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[preventInput]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[false]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 12. (조작 가능) 사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnToday]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[검색 기간 지정 오늘]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnToday]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnLastM]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[검색 기간 지정 전월]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnLastM]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnThisM]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[검색 기간 지정 당월]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnThisM]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btn3M]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[검색 기간 지정 3개월]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btn3M]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btn6M]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[검색 기간 지정 6개월]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btn6M]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[cmbCond2]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[combobox]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[결제 수단]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 29. (레이블 제공) 입력 서식에는 대응하는 레이블을 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnSearch]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnExcelD]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[btnSave]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[ariaButtonType]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[button]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 19. (적절한 링크 텍스트) 링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[grdSettle]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[grid]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[일별 정산 내역]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optPD]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[결제일]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optPM]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[결제수단]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optSD]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[정산일]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optC]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[구분]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optPA]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[결제금액]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optTF]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[총수수료]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optSA]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[정산금액]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optDA]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[공제금액]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optAA]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[실정산금액]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optNR]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[의뢰건수]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optNP]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[결제건수]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optSS]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[정산여부]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optR]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[수수료상세-의뢰]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optP]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[수수료상세-결제]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optVAT]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[수수료상세-부가세]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g-optN]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[비고]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[grdDetail]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[grid]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[결제일 상세 결제 내역]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g2-optAN]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[승인번호]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g2-optMN]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[회원번호]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g2-optMNm]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[회원명]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g2-optBM]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[결제연월]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g2-optMP]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[연락처]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g2-optP]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[상품명]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g2-optPS]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[결제 상태]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g2-optPM]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[결제 수단]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g2-optSD]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[정산 일자]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g2-optPD]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[결제 일자]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="keyNum"><![CDATA[g2-optR]]></cl:datavalue>
+            <cl:datavalue columnname="control"><![CDATA[output]]></cl:datavalue>
+            <cl:datavalue columnname="propNm"><![CDATA[fieldLabel]]></cl:datavalue>
+            <cl:datavalue columnname="propVal"><![CDATA[비고]]></cl:datavalue>
+            <cl:datavalue columnname="relatedWaInst"><![CDATA[항목 3. (표의 구성) 표는 이해하기 쉽게 구성해야 한다.]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-ba970e30" id="subSettle" action="app/exam/work/sampleData.json">
+        <cl:responsedata dataid="dsSettle"/>
+        <cl:responsedata dataid="dsSettleDetail"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="그리드+그리드_상하배치"/>
+  </head>
+  <body std:sid="body-79ef8043">
+    <cl:listener std:sid="listener-cef26c6b" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-30cb9135" id="udcComAppHeader" type="udc.com.udcComAppHeader">
+      <cl:verticaldata std:sid="v-data-db70765e" width="1240px" height="35px" autosize="height"/>
+    </cl:udc>
+    <cl:group std:sid="group-bccd66e9" id="grpSearch" class="search-box">
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:verticaldata std:sid="v-data-23453fff" width="1240px" height="54px" autosize="height"/>
+      <cl:output std:sid="output-c5b3cbf7" class="label" value="검색 기간">
+        <cl:formdata std:sid="f-data-d1306916" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-bed7b080" id="grp2">
+        <cl:formdata std:sid="f-data-e3268d35" row="0" col="1" rowspan="1" colspan="1"/>
+        <cl:combobox std:sid="c-box-b22b83cb" id="cmbCond1" fieldLabel="검색 기간 조회 필터" value="1">
+          <cl:attribute name="wa-prop-key" value="cmbCond1"/>
+          <cl:formdata std:sid="f-data-c79ca278" row="0" col="0"/>
+          <cl:item std:sid="t-item-85644b44" label="결제일자" value="1"/>
+          <cl:item std:sid="t-item-36d79791" label="정산일자" value="2"/>
+        </cl:combobox>
+        <cl:group std:sid="group-fdc61b2a" id="grp5" class="form-inside">
+          <std:metadata>
+            <std:property key="template-uuid" value="3289ea65-e22b-4a7a-a441-cbc620de4085"/>
+            <std:property key="template-rev" value="1"/>
+          </std:metadata>
+          <cl:formdata std:sid="f-data-b5259910" row="0" col="1"/>
+          <cl:dateinput std:sid="d-input-c0292dbd" id="dtiDateB" fieldLabel="검색기간 시작">
+            <cl:attribute name="wa-prop-key" value="dtiDateB"/>
+            <cl:formdata std:sid="f-data-458ef8dd" row="0" col="0"/>
+          </cl:dateinput>
+          <cl:output std:sid="output-25c39405" class="text-center" value="-">
+            <cl:formdata std:sid="f-data-48fee2a3" row="0" col="1"/>
+          </cl:output>
+          <cl:dateinput std:sid="d-input-5432ba64" id="dtiDateE" fieldLabel="검색기간 종료">
+            <cl:attribute name="wa-prop-key" value="dtiDateE"/>
+            <cl:formdata std:sid="f-data-df94db00" row="0" col="2"/>
+          </cl:dateinput>
+          <cl:formlayout std:sid="f-layout-709f899d" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="20" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-c9b809ea" scrollable="false" hspace="8px" vspace="4px">
+          <cl:rows length="30"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-647bced0" id="grp1">
+        <cl:formdata std:sid="f-data-023dd4c3" row="0" col="2" rowspan="1" colspan="1"/>
+        <cl:button std:sid="button-27d0710f" id="btnToday" fieldLabel="검색 기간 지정 오늘" value="오늘">
+          <cl:listener std:sid="listener-8d7a704f" name="click" handler="onBtn15Click"/>
+          <cl:attribute name="wa-prop-key" value="btnToday"/>
+          <cl:flowlayoutdata std:sid="f-data-8732c45e" width="55px" height="30px" autosize="width"/>
+        </cl:button>
+        <cl:button std:sid="button-a7d2c412" id="btnLastM" fieldLabel="검색 기간 지정 전월" value="전월">
+          <cl:listener std:sid="listener-8128e9e4" name="click" handler="onBtn16Click"/>
+          <cl:attribute name="wa-prop-key" value="btnLastM"/>
+          <cl:flowlayoutdata std:sid="f-data-b7e33ed1" width="55px" height="30px" autosize="width"/>
+        </cl:button>
+        <cl:button std:sid="button-0563ef57" id="btnThisM" fieldLabel="검색 기간 지정 당월" value="당월">
+          <cl:listener std:sid="listener-6169874a" name="click" handler="onBtn17Click"/>
+          <cl:attribute name="wa-prop-key" value="btnThisM"/>
+          <cl:flowlayoutdata std:sid="f-data-f0e10f92" width="55px" height="30px" autosize="width"/>
+        </cl:button>
+        <cl:button std:sid="button-23bd657c" id="btn3M" fieldLabel="검색 기간 지정 3개월" value="3개월">
+          <cl:listener std:sid="listener-6bbae81c" name="click" handler="onBtn18Click"/>
+          <cl:attribute name="wa-prop-key" value="btn3M"/>
+          <cl:flowlayoutdata std:sid="f-data-6bafda2a" width="55px" height="30px" autosize="width"/>
+        </cl:button>
+        <cl:button std:sid="button-57bfccbb" id="btn6M" fieldLabel="검색 기간 지정 6개월" value="6개월">
+          <cl:listener std:sid="listener-7d6fe807" name="click" handler="onBtn19Click"/>
+          <cl:attribute name="wa-prop-key" value="btn6M"/>
+          <cl:flowlayoutdata std:sid="f-data-ce9ecd8c" width="55px" height="30px" autosize="width"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-f6e9688f"/>
+      </cl:group>
+      <cl:output std:sid="output-42f3de32" class="label required" value="결제 수단">
+        <cl:formdata std:sid="f-data-b52ab53f" row="0" col="3"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-5831870c" id="cmbCond2" fieldLabel="결제 수단">
+        <cl:attribute name="wa-prop-key" value="cmbCond2"/>
+        <cl:formdata std:sid="f-data-a046d824" row="0" col="4"/>
+        <cl:item std:sid="t-item-2354f017" label="CMS" value="CMS"/>
+        <cl:item std:sid="t-item-a3edf507" label="신용카드" value="신용카드"/>
+        <cl:item std:sid="t-item-cfa3b5cc" label="계좌이체" value="계좌이체"/>
+        <cl:item std:sid="t-item-6e380a18" label="페이팔" value="페이팔"/>
+      </cl:combobox>
+      <cl:button std:sid="button-dc8947b8" id="btnSearch" class="btn-secondary btn-i-search" value="조회" icon="/theme/images/controls/button/ic_btn.png">
+        <cl:listener std:sid="listener-04c7a347" name="click" handler="onBtnSearchClick"/>
+        <cl:attribute name="wa-prop-key" value="btnSearch"/>
+        <cl:formdata std:sid="f-data-e664e06d" row="0" col="5"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-90fb00c1" scrollable="false" hspace="8px" vspace="4px" top-margin="12px" right-margin="20px" bottom-margin="12px" left-margin="20px">
+        <cl:rows length="30" autoSizing="true"/>
+        <cl:columns length="61" autoSizing="true" syncminlength="false"/>
+        <cl:columns length="2" unit="FRACTION"/>
+        <cl:columns length="200" unit="PIXEL" autoSizing="true"/>
+        <cl:columns length="120" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="77" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" minlength="90"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-925ec067" id="grpData" class="data-box">
+      <cl:verticaldata std:sid="v-data-e6600d21" width="1240px" height="855px" autosize="height"/>
+      <cl:group std:sid="group-661a7c03" id="grpContent1">
+        <cl:verticaldata std:sid="v-data-411e1604" width="1280px" height="450px" autosize="height"/>
+        <cl:group std:sid="group-87225470" id="grp3">
+          <cl:attribute name="mobile-column-count" value="1"/>
+          <cl:verticaldata std:sid="v-data-1a8e4e28" width="1240px" height="30px" autosize="height"/>
+          <cl:udc std:sid="ud-control-0ae2fc61" id="udccomgridtitle1" type="udc.com.udcComGridTitle">
+            <cl:attribute name="needs-auto-height" value="true"/>
+            <cl:formdata std:sid="f-data-5ee94e03" row="0" col="0"/>
+            <cl:property name="title" value="" type="string"/>
+            <cl:property name="ctrl" value="grdSettle" type="control"/>
+          </cl:udc>
+          <cl:group std:sid="group-f3d7a659" id="grp4">
+            <cl:formdata std:sid="f-data-3605042f" row="0" col="1"/>
+            <cl:button std:sid="button-3d7eff20" id="btnExcelD" class="btn-outline-primary btn-i-excel" value="엑셀내려받기" icon="../../theme/images/controls/button/ic_btn.png">
+              <cl:attribute name="wa-prop-key" value="btnExcelD"/>
+              <cl:flowlayoutdata std:sid="f-data-ee3282f4" width="122px" height="30px" autosize="width"/>
+            </cl:button>
+            <cl:output std:sid="output-cd01988a">
+              <cl:flowlayoutdata std:sid="f-data-12fcb618" width="0px" height="30px"/>
+            </cl:output>
+            <cl:button std:sid="button-5e5bbaf8" id="btnSave" class="btn-primary btn-i-save" value="저장" icon="../../theme/images/controls/button/ic_btn.png">
+              <cl:listener std:sid="listener-21721b24" name="click" handler="onBtn7Click"/>
+              <cl:attribute name="wa-prop-key" value="btnSave"/>
+              <cl:flowlayoutdata std:sid="f-data-0bf04ff0" width="74px" height="30px" autosize="width"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-1364edba" scrollable="false" hspacing="6" vspacing="6" halign="right"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-41d5814a" scrollable="false" hspace="6px" vspace="6px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-a9f6bd1d" id="grdSettle" fieldLabel="일별 정산 내역" datasetid="dsSettle" autofit="3, 5, 6, 7, 8, 9, 10, 13, 17">
+          <cl:listener std:sid="listener-11fd938c" name="selection-change" handler="onGrdSettleSelectionChange"/>
+          <cl:attribute name="wa-prop-key" value="grdSettle"/>
+          <cl:verticaldata std:sid="v-data-75ed6470" width="1240px" height="400px" autosize="none"/>
+          <cl:gridcolumn std:sid="g-column-3d24ada8" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-78ed9fff" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-69391975" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-c83deaa8" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-3c551b45" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-f3b71620" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-85e3b303" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-4d477e7a" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-fb486664" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-e50849a5" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-bd0517dc" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-2a099ba5" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-3860958b" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-122a0930" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-b568aa9d" width="80px"/>
+          <cl:gridcolumn std:sid="g-column-22dae709" width="80px"/>
+          <cl:gridcolumn std:sid="g-column-e4f4c7b2" width="80px"/>
+          <cl:gridcolumn std:sid="g-column-038a318c" width="200px"/>
+          <cl:gridheader std:sid="gh-band-0f2d4b42">
+            <cl:gridrow std:sid="g-row-570004f8" height="36px"/>
+            <cl:gridrow std:sid="g-row-f7ca474d" height="36px"/>
+            <cl:gridcell std:sid="gh-cell-58182126" rowindex="0" colindex="0" rowspan="2" colspan="1" sortable="false" filterable="false" columntype="checkbox"/>
+            <cl:gridcell std:sid="gh-cell-767362b9" rowindex="0" colindex="1" rowspan="2" colspan="1" sortable="false" filterable="false"/>
+            <cl:gridcell std:sid="gh-cell-221d68a4" rowindex="0" colindex="2" rowspan="2" colspan="1" targetcolumnname="Payment Date" sortable="false" filterable="false" text="결제일"/>
+            <cl:gridcell std:sid="gh-cell-2d8af213" rowindex="0" colindex="3" rowspan="2" colspan="1" targetcolumnname="Payment method" sortable="true" filterable="false" text="결제수단"/>
+            <cl:gridcell std:sid="gh-cell-32e822af" rowindex="0" colindex="4" rowspan="2" colspan="1" targetcolumnname="Settlement Date" sortable="false" filterable="false" text="정산일"/>
+            <cl:gridcell std:sid="gh-cell-81e27248" rowindex="0" colindex="5" rowspan="2" colspan="1" targetcolumnname="Classification" sortable="false" filterable="false" text="구분"/>
+            <cl:gridcell std:sid="gh-cell-aeb82642" rowindex="0" colindex="6" rowspan="2" colspan="1" targetcolumnname="Payment Amount" sortable="false" filterable="false" text="결제 금액"/>
+            <cl:gridcell std:sid="gh-cell-6ef7986d" rowindex="0" colindex="7" rowspan="2" colspan="1" targetcolumnname="Total Fees" sortable="false" filterable="false" text="총 수수료"/>
+            <cl:gridcell std:sid="gh-cell-5246cef5" rowindex="0" colindex="8" rowspan="2" colspan="1" targetcolumnname="Settlement Amount" sortable="false" filterable="false" text="정산 금액"/>
+            <cl:gridcell std:sid="gh-cell-f0902ee9" rowindex="0" colindex="9" rowspan="2" colspan="1" targetcolumnname="Deduction Amount" sortable="false" filterable="false" text="공제금액"/>
+            <cl:gridcell std:sid="gh-cell-9e809a43" rowindex="0" colindex="10" rowspan="2" colspan="1" targetcolumnname="Actual Amount" sortable="false" filterable="false" text="실정산금액"/>
+            <cl:gridcell std:sid="gh-cell-44376690" rowindex="0" colindex="11" rowspan="2" colspan="1" targetcolumnname="Number of Requests" sortable="false" filterable="false" text="의뢰건수"/>
+            <cl:gridcell std:sid="gh-cell-d947421f" rowindex="0" colindex="12" rowspan="2" colspan="1" targetcolumnname="Number of Payments" sortable="false" filterable="false" text="결제건수"/>
+            <cl:gridcell std:sid="gh-cell-449b4942" rowindex="0" colindex="13" rowspan="2" colspan="1" targetcolumnname="Settlement Status" sortable="false" filterable="false" text="정산여부"/>
+            <cl:gridcell std:sid="gh-cell-b5f467bb" rowindex="1" colindex="14" targetcolumnname="Request" sortable="false" filterable="false" text="의뢰"/>
+            <cl:gridcell std:sid="gh-cell-9606cac7" rowindex="1" colindex="15" targetcolumnname="Payment" sortable="false" filterable="false" text="결제"/>
+            <cl:gridcell std:sid="gh-cell-7ad99fbc" rowindex="1" colindex="16" targetcolumnname="VAT" sortable="false" filterable="false" text="부가세"/>
+            <cl:gridcell std:sid="gh-cell-93a77601" rowindex="0" colindex="17" rowspan="2" colspan="1" targetcolumnname="Note" sortable="false" filterable="false" text="비고"/>
+            <cl:gridcell std:sid="gh-cell-f72b5ce6" rowindex="0" colindex="14" rowspan="1" colspan="3" text="수수료 상세"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-08db392d">
+            <cl:gridrow std:sid="g-row-055137aa" height="37px"/>
+            <cl:gridcell std:sid="gd-cell-0aad7ae6" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-da041d34" rowindex="0" colindex="1" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-9cb4df50" rowindex="0" colindex="2" columnname="Payment Date">
+              <cl:output std:sid="output-d8e35f77" class="text-center" fieldLabel="결제일" value="Output" datatype="date" dateValueFormat="YYYYMMDD" format="YYYY-MM-DD">
+                <cl:attribute name="wa-prop-key" value="g-optPD"/>
+                <cl:celldata std:sid="c-data-c121bd62"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-5868558f" rowindex="0" colindex="3" columnname="Payment method">
+              <cl:output std:sid="output-bcee1171" class="text-center" fieldLabel="결제수단" value="Output">
+                <cl:attribute name="wa-prop-key" value="g-optPM"/>
+                <cl:celldata std:sid="c-data-13e8caee"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-c3101ca4" rowindex="0" colindex="4" columnname="Settlement Date">
+              <cl:output std:sid="output-557d146c" class="text-center" fieldLabel="정산일" value="Output" datatype="date" dateValueFormat="YYYYMMDD" format="YYYY-MM-DD">
+                <cl:attribute name="wa-prop-key" value="g-optSD"/>
+                <cl:celldata std:sid="c-data-c0a92300"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-09be2ad7" rowindex="0" colindex="5" columnname="Classification">
+              <cl:output std:sid="output-ab8d2256" class="text-center" fieldLabel="구분" value="Output">
+                <cl:attribute name="wa-prop-key" value="g-optC"/>
+                <cl:celldata std:sid="c-data-0a28bfc9"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-75241816" rowindex="0" colindex="6" columnname="Payment Amount">
+              <cl:output std:sid="output-74c36cc1" fieldLabel="결제 금액" value="Output" datatype="number" format="s#,##0" displayexp="text+&quot;￦&quot;">
+                <cl:attribute name="wa-prop-key" value="g-optPA"/>
+                <cl:celldata std:sid="c-data-12941a4c"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-a2f8573f" rowindex="0" colindex="7" columnname="Total Fees">
+              <cl:output std:sid="output-28b8cf2f" fieldLabel="총 수수료" value="Output" datatype="number" format="s#,##0" displayexp="text+&quot;￦&quot;">
+                <cl:attribute name="wa-prop-key" value="g-optTF"/>
+                <cl:celldata std:sid="c-data-434b8457"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-f9fe4c90" rowindex="0" colindex="8" columnname="Settlement Amount">
+              <cl:output std:sid="output-b478de75" fieldLabel="정산 금액" value="Output" datatype="number" format="s#,##0" displayexp="text+&quot;￦&quot;">
+                <cl:attribute name="wa-prop-key" value="g-optSA"/>
+                <cl:celldata std:sid="c-data-81271ee1"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-4ca5d4ae" rowindex="0" colindex="9" columnname="Deduction Amount">
+              <cl:output std:sid="output-b821f02d" fieldLabel="공제금액" value="Output" datatype="number" format="s#,##0" displayexp="text+&quot;￦&quot;">
+                <cl:attribute name="wa-prop-key" value="g-optDA"/>
+                <cl:celldata std:sid="c-data-26253d1b"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-179041e9" rowindex="0" colindex="10" columnname="Actual Amount">
+              <cl:output std:sid="output-17148aaf" fieldLabel="실정산금액" value="Output" datatype="number" format="s#,##0" displayexp="text+&quot;￦&quot;">
+                <cl:attribute name="wa-prop-key" value="g-optAA"/>
+                <cl:celldata std:sid="c-data-94f0a458"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-d3a065ec" rowindex="0" colindex="11" columnname="Number of Requests">
+              <cl:output std:sid="output-e0a42786" class="text-center" fieldLabel="의뢰건수" value="Output">
+                <cl:attribute name="wa-prop-key" value="g-optNR"/>
+                <cl:celldata std:sid="c-data-a11b9f6e"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-78f77fb9" rowindex="0" colindex="12" columnname="Number of Payments">
+              <cl:output std:sid="output-946b8388" class="text-center" fieldLabel="결제건수" value="Output">
+                <cl:attribute name="wa-prop-key" value="g-optNP"/>
+                <cl:celldata std:sid="c-data-1ba905b5"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-178a6955" rowindex="0" colindex="13" columnname="Settlement Status">
+              <cl:output std:sid="output-b09e4fef" class="text-center" fieldLabel="정산여부" value="Output">
+                <cl:attribute name="wa-prop-key" value="g-optSS"/>
+                <cl:celldata std:sid="c-data-c7f1a8c5"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-b6187f37" rowindex="0" colindex="14" columnname="Request">
+              <cl:output std:sid="output-36720a30" fieldLabel="수수료 상세 의뢰" value="Output" datatype="number" format="s#,##0" displayexp="text+&quot;￦&quot;">
+                <cl:attribute name="wa-prop-key" value="g-optR"/>
+                <cl:celldata std:sid="c-data-0e5441a9"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-a5115862" rowindex="0" colindex="15" columnname="Payment">
+              <cl:output std:sid="output-fbe89c5f" fieldLabel="수수료 상세 결제" value="Output" datatype="number" format="s#,##0" displayexp="text+&quot;￦&quot;">
+                <cl:attribute name="wa-prop-key" value="g-optP"/>
+                <cl:celldata std:sid="c-data-96cd3d23"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-bb9a91ca" rowindex="0" colindex="16" columnname="VAT">
+              <cl:output std:sid="output-d9ec3e59" fieldLabel="수수료 상세 부가세" value="Output" datatype="number" format="s#,##0" displayexp="text+&quot;￦&quot;">
+                <cl:attribute name="wa-prop-key" value="g-optVAT"/>
+                <cl:celldata std:sid="c-data-c2408028"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-867b7c95" rowindex="0" colindex="17" columnname="Note">
+              <cl:output std:sid="output-60a67018" fieldLabel="비고" value="Output">
+                <cl:attribute name="wa-prop-key" value="g-optN"/>
+                <cl:celldata std:sid="c-data-2353b8ce"/>
+              </cl:output>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:verticallayout std:sid="v-layout-0285f01e" scrollable="false" spacing="10"/>
+      </cl:group>
+      <cl:group std:sid="group-226402bb" id="grpContent2">
+        <cl:verticaldata std:sid="v-data-1694aea1" width="1280px" height="360px" autosize="height"/>
+        <cl:group std:sid="group-71c1f2b6" id="grp6">
+          <cl:attribute name="mobile-column-count" value="1"/>
+          <cl:verticaldata std:sid="v-data-d6ac476d" width="1240px" height="30px" autosize="height"/>
+          <cl:udc std:sid="ud-control-c3d469b9" id="udccomgridtitle2" type="udc.com.udcComGridTitle">
+            <cl:attribute name="needs-auto-height" value="true"/>
+            <cl:formdata std:sid="f-data-2ab5d614" row="0" col="0"/>
+            <cl:property name="title" value="" type="string"/>
+            <cl:property name="ctrl" value="grdDetail" type="control"/>
+          </cl:udc>
+          <cl:group std:sid="group-316737c7" id="grp7">
+            <cl:formdata std:sid="f-data-48650c4d" row="0" col="1"/>
+            <cl:button std:sid="button-a9fc9bf3" id="btnExcelD2" class="btn-outline-primary btn-i-excel" value="엑셀내려받기" icon="../../theme/images/controls/button/ic_btn.png">
+              <cl:attribute name="wa-prop-key" value="btnExcelD"/>
+              <cl:flowlayoutdata std:sid="f-data-ba6a3e19" width="122px" height="30px" autosize="width"/>
+            </cl:button>
+            <cl:output std:sid="output-6fa06368">
+              <cl:flowlayoutdata std:sid="f-data-d9f93b7b" width="0px" height="30px"/>
+            </cl:output>
+            <cl:button std:sid="button-095dde50" id="btnSave2" class="btn-primary btn-i-save" value="저장" icon="../../theme/images/controls/button/ic_btn.png">
+              <cl:attribute name="wa-prop-key" value="btnSave"/>
+              <cl:flowlayoutdata std:sid="f-data-7d9f53ef" width="74px" height="30px" autosize="width"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-c58c6370" scrollable="false" hspacing="6" vspacing="6" halign="right"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-d22ea4e5" scrollable="false" hspace="6px" vspace="6px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-ced735f9" id="grdDetail" fieldLabel="결제일 상세 결제 내역" datasetid="dsSettleDetail">
+          <cl:attribute name="wa-prop-key" value="grdDetail"/>
+          <cl:verticaldata std:sid="v-data-93140617" width="1240px" height="250px" syncminheight="true" autosize="height"/>
+          <cl:gridcolumn std:sid="g-column-fd53226e" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-afc434c2" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-abbee5d4" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-e2e463f9" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-7a67a817" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-9cfbb98a" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-b950fbcc" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-521619f7" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-326a5513" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-1be55b69" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-18416034" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-e2579329" width="120px"/>
+          <cl:gridcolumn std:sid="g-column-74478da9" width="120px"/>
+          <cl:gridheader std:sid="gh-band-dd5a4646">
+            <cl:gridrow std:sid="g-row-85236528" height="36px"/>
+            <cl:gridcell std:sid="gh-cell-602ea590" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+            <cl:gridcell std:sid="gh-cell-eacebe43" rowindex="0" colindex="1" sortable="false" filterable="false"/>
+            <cl:gridcell std:sid="gh-cell-5223818b" rowindex="0" colindex="2" targetcolumnname="approval_number" sortable="false" filterable="false" text="승인번호"/>
+            <cl:gridcell std:sid="gh-cell-02ed5e1e" rowindex="0" colindex="3" targetcolumnname="member_number" sortable="true" filterable="false" text="회원번호"/>
+            <cl:gridcell std:sid="gh-cell-2a4ba321" rowindex="0" colindex="4" targetcolumnname="member_name" sortable="false" filterable="false" text="회원명"/>
+            <cl:gridcell std:sid="gh-cell-7f56d33c" rowindex="0" colindex="5" targetcolumnname="billing_month" sortable="false" filterable="false" text="결제연월"/>
+            <cl:gridcell std:sid="gh-cell-3a9645ee" rowindex="0" colindex="6" targetcolumnname="mobile_phone" sortable="false" filterable="false" text="연락처"/>
+            <cl:gridcell std:sid="gh-cell-61c559ee" rowindex="0" colindex="7" targetcolumnname="product" sortable="false" filterable="false" text="상품명"/>
+            <cl:gridcell std:sid="gh-cell-b6cfefd3" rowindex="0" colindex="8" targetcolumnname="payment_status" sortable="false" filterable="false" text="결제 상태"/>
+            <cl:gridcell std:sid="gh-cell-3cd02c1e" rowindex="0" colindex="9" targetcolumnname="payment_method" sortable="false" filterable="false" text="결제 수단"/>
+            <cl:gridcell std:sid="gh-cell-5187af81" rowindex="0" colindex="10" targetcolumnname="settlement_date" sortable="false" filterable="false" text="정산 일자"/>
+            <cl:gridcell std:sid="gh-cell-6bacdef5" rowindex="0" colindex="11" targetcolumnname="payment_date" sortable="false" filterable="false" text="결제 일자"/>
+            <cl:gridcell std:sid="gh-cell-a6b468a9" rowindex="0" colindex="12" targetcolumnname="remarks" sortable="false" filterable="false" text="비고"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-3bf88f47">
+            <cl:gridrow std:sid="g-row-f8080626" height="37px"/>
+            <cl:gridcell std:sid="gd-cell-798e4945" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-33a1ca60" rowindex="0" colindex="1" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-13f3724b" rowindex="0" colindex="2" columnname="approval_number">
+              <cl:output std:sid="output-2c6fdfd5" class="text-center" fieldLabel="승인번호" value="Output">
+                <cl:attribute name="wa-prop-key" value="g2-optAN"/>
+                <cl:celldata std:sid="c-data-5eeedd38"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-ba60f9e0" rowindex="0" colindex="3" columnname="member_number">
+              <cl:output std:sid="output-750f32e7" class="text-center" fieldLabel="회원번호" value="Output">
+                <cl:attribute name="wa-prop-key" value="g2-optMN"/>
+                <cl:celldata std:sid="c-data-30916945"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-4034c468" rowindex="0" colindex="4" columnname="member_name">
+              <cl:output std:sid="output-b58e067d" class="text-center" fieldLabel="회원명" value="Output">
+                <cl:attribute name="wa-prop-key" value="g2-optMNm"/>
+                <cl:celldata std:sid="c-data-7e3d8d0c"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-069dd68a" rowindex="0" colindex="5" columnname="billing_month">
+              <cl:output std:sid="output-7039a5a9" class="text-center" fieldLabel="결제연월" value="Output" datatype="date" dateValueFormat="YYYYMMDD" format="YYYY-MM">
+                <cl:attribute name="wa-prop-key" value="g2-optBM"/>
+                <cl:celldata std:sid="c-data-1d2b2170"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-66a02e41" rowindex="0" colindex="6" columnname="mobile_phone">
+              <cl:output std:sid="output-8505f455" class="text-center" fieldLabel="연락처" value="Output">
+                <cl:attribute name="wa-prop-key" value="g2-optMP"/>
+                <cl:celldata std:sid="c-data-f207ad51"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-5b02f7fb" rowindex="0" colindex="7" columnname="product">
+              <cl:output std:sid="output-b6a97b11" class="text-center" fieldLabel="상품명" value="Output">
+                <cl:attribute name="wa-prop-key" value="g2-optP"/>
+                <cl:celldata std:sid="c-data-bf985d19"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-db0ddff2" rowindex="0" colindex="8" columnname="payment_status">
+              <cl:output std:sid="output-7a5065ed" class="text-center" fieldLabel="결제창태" value="Output">
+                <cl:attribute name="wa-prop-key" value="g2-optPS"/>
+                <cl:celldata std:sid="c-data-38e057c6"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-0723f0aa" rowindex="0" colindex="9" columnname="payment_method">
+              <cl:output std:sid="output-191738a9" class="text-center" fieldLabel="결제수단" value="Output">
+                <cl:attribute name="wa-prop-key" value="g2-optPM"/>
+                <cl:celldata std:sid="c-data-9d17a79b"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-862033ba" rowindex="0" colindex="10" columnname="settlement_date">
+              <cl:output std:sid="output-04e50509" class="text-center" fieldLabel="정산일자" value="Output" datatype="date" dateValueFormat="YYYYMMDD" format="YYYY-MM-DD">
+                <cl:attribute name="wa-prop-key" value="g2-optSD"/>
+                <cl:celldata std:sid="c-data-a7d3ca12"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-17780ba4" rowindex="0" colindex="11" columnname="payment_date">
+              <cl:output std:sid="output-b4e6a416" class="text-center" fieldLabel="결제일자" value="Output" datatype="date" dateValueFormat="YYYYMMDD" format="YYYY-MM-DD">
+                <cl:attribute name="wa-prop-key" value="g2-optPD"/>
+                <cl:celldata std:sid="c-data-94f639d8"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-4292e22d" rowindex="0" colindex="12" columnname="remarks">
+              <cl:output std:sid="output-9e91e184" class="text-center" fieldLabel="비고" value="Output">
+                <cl:attribute name="wa-prop-key" value="g2-optR"/>
+                <cl:celldata std:sid="c-data-4272b6d1"/>
+              </cl:output>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:verticallayout std:sid="v-layout-3ed9e1e0" scrollable="false" spacing="10"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-ab4a098b" spacing="10"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-2ab65207" spacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
