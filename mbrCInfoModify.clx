@@ -5,7 +5,7 @@
     <screen std:sid="screen-05e8fb8c" id="tablet" name="tablet" width="760px" height="820px"/>
     <screen std:sid="screen-6af82eba" id="mobile" name="mobile" width="360px" height="525px"/>
     <cl:model std:sid="model-4b07e39a"/>
-    <cl:appspec title="회원정보 수정"/>
+    <cl:appspec dev-comment="/* 신규 반응형 레이아웃 적용 */&#xA;        _app.getContainer().getAllRecursiveChildren(true).filter(function(each) {&#xA;          return Responsive.isTarget(each); // rl-* 속성이 하나라도 있으면 true&#xA;        }).forEach(function(each) {&#xA;          Responsive.attach(each);&#xA;        });" title="회원정보 수정"/>
   </head>
   <body std:sid="body-0d5a08c2" class="mypage">
     <cl:group std:sid="group-3e2b53af">
