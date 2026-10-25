@@ -1,0 +1,1050 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-029f2526" version="1.0.6209">
+  <head std:sid="head-364367fd">
+    <screen std:sid="screen-f059c4c4" id="KSPO-FULL" name="KSPO-FULL" width="1280px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="1080" customWidth="1920" active="true"/>
+    <screen std:sid="screen-fd505889" id="KSPO-POP" name="KSPO-POP" width="896px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="768" customWidth="1024"/>
+    <screen std:sid="screen-86113905" id="KSPO-DIV" name="KSPO-DIV" width="768px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-861d1fb1" id="KSPO-MOBILE" name="KSPO-MOBILE" width="320px" height="768px" useCustomWidth="false" useCustomHeight="false" customHeight="768" customWidth="1024"/>
+    <cl:model std:sid="model-6bc280d6">
+      <cl:dataset std:sid="d-set-96b7e0b4" id="dsRace">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="경주" std:sid="d-column-2d28e515" name="column1"/>
+          <cl:datacolumn comment="발매시작" std:sid="d-column-b9df3b82" name="column2"/>
+          <cl:datacolumn comment="발매중" std:sid="d-column-13013f29" name="column3"/>
+          <cl:datacolumn comment="발매마감" std:sid="d-column-4ee95c57" name="column4"/>
+          <cl:datacolumn comment="환급완료" std:sid="d-column-a6281177" name="column5"/>
+          <cl:datacolumn comment="경주별 매출액 전년평균" std:sid="d-column-04ceb309" name="column6" datatype="number"/>
+          <cl:datacolumn comment="경주별 매출액 전전회" std:sid="d-column-3102bd25" name="column7" datatype="number"/>
+          <cl:datacolumn comment="경주별 매출액 전회" std:sid="d-column-86af85e6" name="column8" datatype="number"/>
+          <cl:datacolumn comment="경주별 매출액 금회" std:sid="d-column-ddcfc29a" name="column9" datatype="number"/>
+          <cl:datacolumn comment="경주별 증감 전년평균" std:sid="d-column-c49ba2ce" name="column10" datatype="number"/>
+          <cl:datacolumn comment="경주별 증감 전전회" std:sid="d-column-0fc18357" name="column11" datatype="number"/>
+          <cl:datacolumn comment="경주별 증감 전회" std:sid="d-column-be067553" name="column12" datatype="number"/>
+          <cl:datacolumn comment="누적 경주별 매출액 전년평균" std:sid="d-column-a7849635" name="column13" datatype="number"/>
+          <cl:datacolumn comment="누적 경주별 매출액 전전회" std:sid="d-column-8f03a32b" name="column14" datatype="number"/>
+          <cl:datacolumn comment="누적 경주별 매출액 전회" std:sid="d-column-163f48dd" name="column15" datatype="number"/>
+          <cl:datacolumn comment="누적 경주별 매출액 금회" std:sid="d-column-56a9c4f4" name="column16" datatype="number"/>
+          <cl:datacolumn comment="누적 경주별 증감 전년평균" std:sid="d-column-e0a20bcd" name="column17" datatype="number"/>
+          <cl:datacolumn comment="누적 경주별 증감 전전회" std:sid="d-column-8323d658" name="column18" datatype="number"/>
+          <cl:datacolumn comment="누적 경주별 증감 전회" std:sid="d-column-da23f777" name="column19" datatype="number"/>
+          <cl:datacolumn comment="경주상태(DONE/ING/WAIT)" std:sid="d-column-ee0e0d7b" name="column20"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 01]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[317]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[376]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[294]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[277]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[-12.6]]></cl:datavalue>
+            <cl:datavalue columnname="column11"><![CDATA[-26.3]]></cl:datavalue>
+            <cl:datavalue columnname="column12"><![CDATA[-5.8]]></cl:datavalue>
+            <cl:datavalue columnname="column13"><![CDATA[317]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[376]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[294]]></cl:datavalue>
+            <cl:datavalue columnname="column16"><![CDATA[277]]></cl:datavalue>
+            <cl:datavalue columnname="column17"><![CDATA[-12.6]]></cl:datavalue>
+            <cl:datavalue columnname="column18"><![CDATA[-26.3]]></cl:datavalue>
+            <cl:datavalue columnname="column19"><![CDATA[-5.8]]></cl:datavalue>
+            <cl:datavalue columnname="column20"><![CDATA[DONE]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 02]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[339]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[387]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[306]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[398]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[17.4]]></cl:datavalue>
+            <cl:datavalue columnname="column11"><![CDATA[2.8]]></cl:datavalue>
+            <cl:datavalue columnname="column12"><![CDATA[30.1]]></cl:datavalue>
+            <cl:datavalue columnname="column13"><![CDATA[656]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[763]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[600]]></cl:datavalue>
+            <cl:datavalue columnname="column16"><![CDATA[675]]></cl:datavalue>
+            <cl:datavalue columnname="column17"><![CDATA[2.9]]></cl:datavalue>
+            <cl:datavalue columnname="column18"><![CDATA[-11.5]]></cl:datavalue>
+            <cl:datavalue columnname="column19"><![CDATA[12.5]]></cl:datavalue>
+            <cl:datavalue columnname="column20"><![CDATA[DONE]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 03]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[358]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[394]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[324]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[330]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[-7.8]]></cl:datavalue>
+            <cl:datavalue columnname="column11"><![CDATA[-16.2]]></cl:datavalue>
+            <cl:datavalue columnname="column12"><![CDATA[1.9]]></cl:datavalue>
+            <cl:datavalue columnname="column13"><![CDATA[1014]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[1157]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[924]]></cl:datavalue>
+            <cl:datavalue columnname="column16"><![CDATA[1005]]></cl:datavalue>
+            <cl:datavalue columnname="column17"><![CDATA[-0.9]]></cl:datavalue>
+            <cl:datavalue columnname="column18"><![CDATA[-13.1]]></cl:datavalue>
+            <cl:datavalue columnname="column19"><![CDATA[8.8]]></cl:datavalue>
+            <cl:datavalue columnname="column20"><![CDATA[DONE]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 04]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[373]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[438]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[331]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[316]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[-15.3]]></cl:datavalue>
+            <cl:datavalue columnname="column11"><![CDATA[-27.9]]></cl:datavalue>
+            <cl:datavalue columnname="column12"><![CDATA[-4.5]]></cl:datavalue>
+            <cl:datavalue columnname="column13"><![CDATA[1387]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[1595]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[1255]]></cl:datavalue>
+            <cl:datavalue columnname="column16"><![CDATA[1321]]></cl:datavalue>
+            <cl:datavalue columnname="column17"><![CDATA[-4.8]]></cl:datavalue>
+            <cl:datavalue columnname="column18"><![CDATA[-17.2]]></cl:datavalue>
+            <cl:datavalue columnname="column19"><![CDATA[5.3]]></cl:datavalue>
+            <cl:datavalue columnname="column20"><![CDATA[DONE]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 05]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[390]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[435]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[393]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[441]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[13.1]]></cl:datavalue>
+            <cl:datavalue columnname="column11"><![CDATA[1.4]]></cl:datavalue>
+            <cl:datavalue columnname="column12"><![CDATA[12.2]]></cl:datavalue>
+            <cl:datavalue columnname="column13"><![CDATA[1777]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[2030]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[1648]]></cl:datavalue>
+            <cl:datavalue columnname="column16"><![CDATA[1762]]></cl:datavalue>
+            <cl:datavalue columnname="column17"><![CDATA[-0.8]]></cl:datavalue>
+            <cl:datavalue columnname="column18"><![CDATA[-13.2]]></cl:datavalue>
+            <cl:datavalue columnname="column19"><![CDATA[6.9]]></cl:datavalue>
+            <cl:datavalue columnname="column20"><![CDATA[DONE]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 06]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[424]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[453]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[363]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[357]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[-15.8]]></cl:datavalue>
+            <cl:datavalue columnname="column11"><![CDATA[-21.2]]></cl:datavalue>
+            <cl:datavalue columnname="column12"><![CDATA[-1.7]]></cl:datavalue>
+            <cl:datavalue columnname="column13"><![CDATA[2201]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[2483]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[2011]]></cl:datavalue>
+            <cl:datavalue columnname="column16"><![CDATA[2119]]></cl:datavalue>
+            <cl:datavalue columnname="column17"><![CDATA[-3.7]]></cl:datavalue>
+            <cl:datavalue columnname="column18"><![CDATA[-14.7]]></cl:datavalue>
+            <cl:datavalue columnname="column19"><![CDATA[5.4]]></cl:datavalue>
+            <cl:datavalue columnname="column20"><![CDATA[DONE]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 07]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[진행중]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[439]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[476]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[423]]></cl:datavalue>
+            <cl:datavalue columnname="column9"/>
+            <cl:datavalue columnname="column10"/>
+            <cl:datavalue columnname="column11"/>
+            <cl:datavalue columnname="column12"/>
+            <cl:datavalue columnname="column13"><![CDATA[2640]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[2959]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[2434]]></cl:datavalue>
+            <cl:datavalue columnname="column16"/>
+            <cl:datavalue columnname="column17"/>
+            <cl:datavalue columnname="column18"/>
+            <cl:datavalue columnname="column19"/>
+            <cl:datavalue columnname="column20"><![CDATA[ING]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 08]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[448]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[514]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[448]]></cl:datavalue>
+            <cl:datavalue columnname="column9"/>
+            <cl:datavalue columnname="column10"/>
+            <cl:datavalue columnname="column11"/>
+            <cl:datavalue columnname="column12"/>
+            <cl:datavalue columnname="column13"><![CDATA[3088]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[3473]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[2882]]></cl:datavalue>
+            <cl:datavalue columnname="column16"/>
+            <cl:datavalue columnname="column17"/>
+            <cl:datavalue columnname="column18"/>
+            <cl:datavalue columnname="column19"/>
+            <cl:datavalue columnname="column20"><![CDATA[WAIT]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 09]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[503]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[498]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[447]]></cl:datavalue>
+            <cl:datavalue columnname="column9"/>
+            <cl:datavalue columnname="column10"/>
+            <cl:datavalue columnname="column11"/>
+            <cl:datavalue columnname="column12"/>
+            <cl:datavalue columnname="column13"><![CDATA[3591]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[3971]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[3329]]></cl:datavalue>
+            <cl:datavalue columnname="column16"/>
+            <cl:datavalue columnname="column17"/>
+            <cl:datavalue columnname="column18"/>
+            <cl:datavalue columnname="column19"/>
+            <cl:datavalue columnname="column20"><![CDATA[WAIT]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 10]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[507]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[468]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[452]]></cl:datavalue>
+            <cl:datavalue columnname="column9"/>
+            <cl:datavalue columnname="column10"/>
+            <cl:datavalue columnname="column11"/>
+            <cl:datavalue columnname="column12"/>
+            <cl:datavalue columnname="column13"><![CDATA[4098]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[4439]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[3781]]></cl:datavalue>
+            <cl:datavalue columnname="column16"/>
+            <cl:datavalue columnname="column17"/>
+            <cl:datavalue columnname="column18"/>
+            <cl:datavalue columnname="column19"/>
+            <cl:datavalue columnname="column20"><![CDATA[WAIT]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 11]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[519]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[560]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[456]]></cl:datavalue>
+            <cl:datavalue columnname="column9"/>
+            <cl:datavalue columnname="column10"/>
+            <cl:datavalue columnname="column11"/>
+            <cl:datavalue columnname="column12"/>
+            <cl:datavalue columnname="column13"><![CDATA[4617]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[4999]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[4237]]></cl:datavalue>
+            <cl:datavalue columnname="column16"/>
+            <cl:datavalue columnname="column17"/>
+            <cl:datavalue columnname="column18"/>
+            <cl:datavalue columnname="column19"/>
+            <cl:datavalue columnname="column20"><![CDATA[WAIT]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 12]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[525]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[548]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[494]]></cl:datavalue>
+            <cl:datavalue columnname="column9"/>
+            <cl:datavalue columnname="column10"/>
+            <cl:datavalue columnname="column11"/>
+            <cl:datavalue columnname="column12"/>
+            <cl:datavalue columnname="column13"><![CDATA[5142]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[5547]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[4731]]></cl:datavalue>
+            <cl:datavalue columnname="column16"/>
+            <cl:datavalue columnname="column17"/>
+            <cl:datavalue columnname="column18"/>
+            <cl:datavalue columnname="column19"/>
+            <cl:datavalue columnname="column20"><![CDATA[WAIT]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 13]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[528]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[548]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[488]]></cl:datavalue>
+            <cl:datavalue columnname="column9"/>
+            <cl:datavalue columnname="column10"/>
+            <cl:datavalue columnname="column11"/>
+            <cl:datavalue columnname="column12"/>
+            <cl:datavalue columnname="column13"><![CDATA[5670]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[6095]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[5219]]></cl:datavalue>
+            <cl:datavalue columnname="column16"/>
+            <cl:datavalue columnname="column17"/>
+            <cl:datavalue columnname="column18"/>
+            <cl:datavalue columnname="column19"/>
+            <cl:datavalue columnname="column20"><![CDATA[WAIT]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 14]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[525]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[538]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[490]]></cl:datavalue>
+            <cl:datavalue columnname="column9"/>
+            <cl:datavalue columnname="column10"/>
+            <cl:datavalue columnname="column11"/>
+            <cl:datavalue columnname="column12"/>
+            <cl:datavalue columnname="column13"><![CDATA[6195]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[6633]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[5709]]></cl:datavalue>
+            <cl:datavalue columnname="column16"/>
+            <cl:datavalue columnname="column17"/>
+            <cl:datavalue columnname="column18"/>
+            <cl:datavalue columnname="column19"/>
+            <cl:datavalue columnname="column20"><![CDATA[WAIT]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 15]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[559]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[549]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[507]]></cl:datavalue>
+            <cl:datavalue columnname="column9"/>
+            <cl:datavalue columnname="column10"/>
+            <cl:datavalue columnname="column11"/>
+            <cl:datavalue columnname="column12"/>
+            <cl:datavalue columnname="column13"><![CDATA[6754]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[7182]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[6216]]></cl:datavalue>
+            <cl:datavalue columnname="column16"/>
+            <cl:datavalue columnname="column17"/>
+            <cl:datavalue columnname="column18"/>
+            <cl:datavalue columnname="column19"/>
+            <cl:datavalue columnname="column20"><![CDATA[WAIT]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 16]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[613]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[625]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[502]]></cl:datavalue>
+            <cl:datavalue columnname="column9"/>
+            <cl:datavalue columnname="column10"/>
+            <cl:datavalue columnname="column11"/>
+            <cl:datavalue columnname="column12"/>
+            <cl:datavalue columnname="column13"><![CDATA[7367]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[7807]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[6718]]></cl:datavalue>
+            <cl:datavalue columnname="column16"/>
+            <cl:datavalue columnname="column17"/>
+            <cl:datavalue columnname="column18"/>
+            <cl:datavalue columnname="column19"/>
+            <cl:datavalue columnname="column20"><![CDATA[WAIT]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[광명 17]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[미완료]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[598]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[611]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[520]]></cl:datavalue>
+            <cl:datavalue columnname="column9"/>
+            <cl:datavalue columnname="column10"/>
+            <cl:datavalue columnname="column11"/>
+            <cl:datavalue columnname="column12"/>
+            <cl:datavalue columnname="column13"><![CDATA[7965]]></cl:datavalue>
+            <cl:datavalue columnname="column14"><![CDATA[8418]]></cl:datavalue>
+            <cl:datavalue columnname="column15"><![CDATA[7238]]></cl:datavalue>
+            <cl:datavalue columnname="column16"/>
+            <cl:datavalue columnname="column17"/>
+            <cl:datavalue columnname="column18"/>
+            <cl:datavalue columnname="column19"/>
+            <cl:datavalue columnname="column20"><![CDATA[WAIT]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="[퍼블리싱 코멘트]&#xA;- 경졍인 경우 optTbTit의 value를 &quot;🛥️ 경주 진행 현황&quot;로 설정합니다." title="메인홈화면"/>
+  </head>
+  <body std:sid="body-b50397dc" class="_dashboard">
+    <cl:listener std:sid="listener-a6b9c96b" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-80cfb023" name="unload" handler="onBodyUnload"/>
+    <cl:group std:sid="group-85c185ba">
+      <cl:formdata std:sid="f-data-7e07285b" row="0" col="0"/>
+      <cl:group std:sid="group-9cffbfd6" class="dash-card head-card today">
+        <cl:formdata std:sid="f-data-e98feca4" row="0" col="0"/>
+        <cl:output std:sid="output-58d0bc5e" class="head-icon today">
+          <cl:formdata std:sid="f-data-6600edb9" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-80b34cbc" class="head-text" value="2026-10-11(일)" displayexp="&quot;오늘 &quot; + sstr(text, [&quot;strong&quot;])">
+          <cl:formdata std:sid="f-data-28e810a8" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-c1ed2080" class="head-sub" value="40회 3일">
+          <cl:formdata std:sid="f-data-2c9acffc" row="0" col="2"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-790b4d57" scrollable="false" hspace="12px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="40" unit="PIXEL"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-6f4c2147" class="dash-card head-card race">
+        <cl:formdata std:sid="f-data-e5ac455d" row="0" col="1"/>
+        <cl:output std:sid="output-7c99b371" class="head-icon race">
+          <cl:formdata std:sid="f-data-9544a67d" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-f1215607" class="head-text" value="광명 제7경주" displayexp="&quot;지금, &quot; + sstr(text, [&quot;strong&quot;]) + &quot; 진행중&quot;">
+          <cl:formdata std:sid="f-data-d496db6f" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-4465e684" class="head-sub warning" value="발매마감 30분 전">
+          <cl:formdata std:sid="f-data-410b5122" row="0" col="2"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-5e7e8f9c" scrollable="false" hspace="12px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="40" unit="PIXEL"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-55d73319" class="dash-card head-card weather">
+        <cl:formdata std:sid="f-data-4915c0d7" row="0" col="2"/>
+        <cl:output std:sid="output-139f9fc9" class="head-icon weather">
+          <cl:formdata std:sid="f-data-d5264f45" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-0b132239" class="head-text" value="맑음 21℃" displayexp="&quot;광명스피돔 날씨 &quot; + sstr(text, [&quot;strong&quot;])">
+          <cl:formdata std:sid="f-data-d7a67e7a" row="0" col="1"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-6b5ecba9" scrollable="false" hspace="12px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="40" unit="PIXEL"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-dadc6c60" class="dash-card head-card update">
+        <cl:formdata std:sid="f-data-0f7e984c" row="0" col="3"/>
+        <cl:output std:sid="output-2404eefe" class="head-icon update">
+          <cl:formdata std:sid="f-data-dc901dd2" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-4f7e2e83" class="head-text" value="13시 30분" displayexp="&quot;데이터 갱신 &quot; + sstr(text, [&quot;strong&quot;])">
+          <cl:formdata std:sid="f-data-b9eee9d2" row="0" col="1"/>
+        </cl:output>
+        <cl:button std:sid="button-80a0f998" id="btnRefresh" class="btn-base btn-refresh" fieldLabel="데이터 갱신" value="갱신">
+          <cl:formdata std:sid="f-data-298722c4" valign="CENTER" height="36" row="0" col="3"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-220901b2" scrollable="false" hspace="12px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="40" unit="PIXEL"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="56" unit="PIXEL"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-d9fcfff2" scrollable="false" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-d97dac8d">
+      <cl:formdata std:sid="f-data-6d3b8663" row="1" col="0"/>
+      <cl:group std:sid="group-451f6358" class="dash-title-box">
+        <cl:verticaldata std:sid="v-data-ed095b04" width="100px" height="36px" autosize="height"/>
+        <cl:output std:sid="output-71e9faf1" class="dash-title" value="🏁 경주 준비 사항">
+          <cl:formdata std:sid="f-data-ee741971" row="0" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-16599cf3" class="dash-legend">
+          <cl:formdata std:sid="f-data-5e35a478" row="0" col="1"/>
+          <cl:output std:sid="output-3d7661d5" class="legend done" value="완료">
+            <cl:flowlayoutdata std:sid="f-data-ad348ca4" width="40px" height="18px" autosize="width"/>
+          </cl:output>
+          <cl:output std:sid="output-942d1cd6" class="legend ing" value="진행중">
+            <cl:flowlayoutdata std:sid="f-data-088b3ad9" width="40px" height="18px" autosize="width"/>
+          </cl:output>
+          <cl:output std:sid="output-d473caea" class="legend none" value="미완료">
+            <cl:flowlayoutdata std:sid="f-data-8e181dfb" width="40px" height="18px" autosize="width"/>
+          </cl:output>
+          <cl:flowlayout std:sid="f-layout-4fb048d7" hspacing="0" vspacing="0" halign="right"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-fb2f71f2" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-512eb15d" class="prep-row">
+        <cl:verticaldata std:sid="v-data-7529ca10" width="400px" height="61px"/>
+        <cl:group std:sid="group-0e6c54e6" class="dash-card prep-card">
+          <cl:formdata std:sid="f-data-dfdd32ff" row="0" col="0"/>
+          <cl:output std:sid="output-e38e8cd8" class="prep-count" value="2/10" displayexp="sstr(&quot;본장&quot;, [&quot;strong&quot;]) + &quot; &quot; + text">
+            <cl:formdata std:sid="f-data-095e894d" row="0" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-6732cc71" class="prep-tags">
+            <cl:formdata std:sid="f-data-31cca851" row="0" col="1"/>
+            <cl:output std:sid="output-14b44594" class="prep-tag none" value="공정팀">
+              <cl:flowlayoutdata std:sid="f-data-7f93a7d1" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-7dd773b3" class="prep-tag none" value="방송팀">
+              <cl:flowlayoutdata std:sid="f-data-a15204a4" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-c604b942" class="prep-tag ing" value="사업기획팀">
+              <cl:flowlayoutdata std:sid="f-data-8f8b5368" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-1de57f87" class="prep-tag ing" value="경륜심판팀">
+              <cl:flowlayoutdata std:sid="f-data-88fc8aaa" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-0c51d4a4" class="prep-tag done" value="발매전산팀">
+              <cl:flowlayoutdata std:sid="f-data-a9660396" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-7ea8986b" class="prep-tag done" value="정보지원팀">
+              <cl:flowlayoutdata std:sid="f-data-ff1329b3" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-2f92ef59" class="prep-tag ing" value="영업총괄팀">
+              <cl:flowlayoutdata std:sid="f-data-5a56c56b" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-b32e44ef" class="prep-tag none" value="홍보마케팅팀">
+              <cl:flowlayoutdata std:sid="f-data-b27fd92a" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-fc129559" class="prep-tag ing" value="경륜기획팀">
+              <cl:flowlayoutdata std:sid="f-data-b8f58117" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-3e9d7b4d" class="prep-tag none" value="경륜선수지원팀">
+              <cl:flowlayoutdata std:sid="f-data-f9bef39d" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:flowlayout std:sid="f-layout-034fb124" hspacing="4" vspacing="4"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-0e9400d7" scrollable="false" hspace="16px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="60" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-865e439f" class="dash-card prep-card">
+          <cl:formdata std:sid="f-data-00b9dd9c" row="0" col="1"/>
+          <cl:output std:sid="output-68eaa700" class="prep-count" value="5/12" displayexp="sstr(&quot;지사&quot;, [&quot;strong&quot;]) + &quot; &quot; + text">
+            <cl:formdata std:sid="f-data-13b03aa5" row="0" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-49c3d1ea" class="prep-tags">
+            <cl:formdata std:sid="f-data-dbabdaab" row="0" col="1"/>
+            <cl:output std:sid="output-df7edc3c" class="prep-tag none" value="장안">
+              <cl:flowlayoutdata std:sid="f-data-c896c749" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-85d34f4f" class="prep-tag done" value="분당">
+              <cl:flowlayoutdata std:sid="f-data-2cb18656" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-2b8e42c6" class="prep-tag ing" value="관악">
+              <cl:flowlayoutdata std:sid="f-data-0e20b301" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-77aa9244" class="prep-tag done" value="시흥">
+              <cl:flowlayoutdata std:sid="f-data-b943f663" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-85dfacde" class="prep-tag ing" value="성북">
+              <cl:flowlayoutdata std:sid="f-data-2c4e4d2e" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-9e9bbdae" class="prep-tag ing" value="강남">
+              <cl:flowlayoutdata std:sid="f-data-439fde68" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-b088a20f" class="prep-tag none" value="천안">
+              <cl:flowlayoutdata std:sid="f-data-6870ad30" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-8ff08ca4" class="prep-tag ing" value="의정부">
+              <cl:flowlayoutdata std:sid="f-data-1baf3893" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-a30bc156" class="prep-tag done" value="동대문">
+              <cl:flowlayoutdata std:sid="f-data-3bfe6a6b" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-4c86756e" class="prep-tag done" value="수원">
+              <cl:flowlayoutdata std:sid="f-data-edb4a36f" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-2f7f1442" class="prep-tag done" value="부천">
+              <cl:flowlayoutdata std:sid="f-data-a9b4b940" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-3d19db2a" class="prep-tag ing" value="산본">
+              <cl:flowlayoutdata std:sid="f-data-0dc562c0" width="50px" height="37px" autosize="width"/>
+            </cl:output>
+            <cl:flowlayout std:sid="f-layout-8c33d888" hspacing="4" vspacing="4"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-8bae7101" scrollable="false" hspace="16px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="60" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-254aa52e" scrollable="false" hspace="10px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1041" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-b6d72af4" spacing="10"/>
+    </cl:group>
+    <cl:group std:sid="group-9f962025">
+      <cl:formdata std:sid="f-data-a5c6b9df" row="2" col="0"/>
+      <cl:group std:sid="group-af2de104" class="dash-title-box">
+        <cl:verticaldata std:sid="v-data-c49edfba" width="100px" height="36px" autosize="height"/>
+        <cl:output std:sid="output-8242ac54" class="dash-title" value="📈 오늘의 운영 현황">
+          <cl:formdata std:sid="f-data-aed19158" row="0" col="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-7310d7b0" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-eabde4f8">
+        <cl:verticaldata std:sid="v-data-cabcfa06" width="400px" height="74px"/>
+        <cl:group std:sid="group-a44c0df3" class="dash-card ops-card">
+          <cl:formdata std:sid="f-data-c3e163a5" row="0" col="0"/>
+          <cl:output std:sid="output-f9077f28" class="ops-label" value="예상 매출액 (단위 : 천원)">
+            <cl:formdata std:sid="f-data-69a81f2e" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-fffbb382" class="ops-value" value="7615664" datatype="number" format="#,##0" displayexp="text + &quot;천원&quot;">
+            <cl:formdata std:sid="f-data-8e8a43a0" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-9d61b9ba" scrollable="false" hspace="0px" vspace="4px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="17" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-42f53913" class="dash-card ops-card">
+          <cl:formdata std:sid="f-data-480d76ec" row="0" col="1"/>
+          <cl:output std:sid="output-cd71854e" class="ops-label" value="입장객">
+            <cl:formdata std:sid="f-data-20091bb8" row="0" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-e03b881a" class="ops-value-row">
+            <cl:formdata std:sid="f-data-37279823" row="1" col="0"/>
+            <cl:output std:sid="output-d7733e43" class="ops-value" value="18937" datatype="number" format="#,##0" displayexp="text + &quot;명&quot;">
+              <cl:flowlayoutdata std:sid="f-data-bf316a94" width="90px" height="27px" autosize="both"/>
+            </cl:output>
+            <cl:output std:sid="output-c55bdc87" class="ops-cmp" value="전회차">
+              <cl:flowlayoutdata std:sid="f-data-236f7e7f" width="40px" height="27px" autosize="both"/>
+            </cl:output>
+            <cl:output std:sid="output-f1553079" class="ops-diff up" value="+1,976">
+              <cl:flowlayoutdata std:sid="f-data-ad8cd5af" width="51px" height="27px" autosize="both"/>
+            </cl:output>
+            <cl:output std:sid="output-8511f3ae" class="ops-rate up" value="+12%">
+              <cl:flowlayoutdata std:sid="f-data-89cb81f6" width="50px" height="22px" autosize="both"/>
+            </cl:output>
+            <cl:output std:sid="output-aa8e4b23" class="ops-divider">
+              <cl:flowlayoutdata std:sid="f-data-8fccc9be" width="1px" height="27px" autosize="height"/>
+            </cl:output>
+            <cl:output std:sid="output-61909406" class="ops-cmp" value="전년도">
+              <cl:flowlayoutdata std:sid="f-data-b8587e65" width="40px" height="27px" autosize="both"/>
+            </cl:output>
+            <cl:output std:sid="output-11c2cf8d" class="ops-diff up" value="+1,321">
+              <cl:flowlayoutdata std:sid="f-data-2d52e338" width="51px" height="27px" autosize="both"/>
+            </cl:output>
+            <cl:output std:sid="output-83380529" class="ops-rate up" value="+7%">
+              <cl:flowlayoutdata std:sid="f-data-78a8f94c" width="50px" height="22px" autosize="both"/>
+            </cl:output>
+            <cl:flowlayout std:sid="f-layout-3c5e26e8" hspacing="8" vspacing="0"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-66886d0f" scrollable="false" hspace="0px" vspace="4px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="17" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-52a76360" class="dash-card ops-card">
+          <cl:formdata std:sid="f-data-8747b80e" row="0" col="2"/>
+          <cl:output std:sid="output-ddaf0f0a" class="ops-label" value="매출액 (단위 : 천원)">
+            <cl:formdata std:sid="f-data-b88aa53c" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-732b2c27" class="ops-value" value="1827713" datatype="number" format="#,##0" displayexp="&quot;광명 &quot; + text + &quot;천원&quot;">
+            <cl:formdata std:sid="f-data-619e5498" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-22293f8e" scrollable="false" hspace="0px" vspace="4px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="17" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-b05d1b21" class="dash-card ops-card notice-card">
+          <cl:formdata std:sid="f-data-5fb4a9c3" row="0" col="3"/>
+          <cl:group std:sid="group-41e957b2" class="notice-head">
+            <cl:formdata std:sid="f-data-f5b4f3a1" row="0" col="0"/>
+            <cl:output std:sid="output-620cd9be" class="ops-label notice-title" value="특이사항">
+              <cl:flowlayoutdata std:sid="f-data-5c77732a" width="50px" height="17px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-5f03b3cb" class="notice-more" visible="false" value="+1건">
+              <cl:flowlayoutdata std:sid="f-data-d84a80ad" width="30px" height="17px" autosize="width"/>
+            </cl:output>
+            <cl:flowlayout std:sid="f-layout-e5cb458d" hspacing="8" vspacing="0"/>
+          </cl:group>
+          <cl:group std:sid="group-d1c66c59" class="notice-list">
+            <cl:formdata std:sid="f-data-a0f5765a" row="1" col="0"/>
+            <cl:output std:sid="output-47a88007" class="notice-item" value="가을비 대차게 내림(2025-10-11)">
+              <cl:flowlayoutdata std:sid="f-data-8a72b2b8" width="200px" height="26px" autosize="width"/>
+            </cl:output>
+            <cl:output std:sid="output-5692af6d" class="notice-item today" value="5경주 낙차사고 발생 경주지연(2026-10-11)">
+              <cl:flowlayoutdata std:sid="f-data-a64b4c0a" width="200px" height="26px" autosize="width"/>
+            </cl:output>
+            <cl:flowlayout std:sid="f-layout-48511730" scrollable="true" hspacing="24" vspacing="0"/>
+          </cl:group>
+          <cl:button std:sid="button-1971a9f8" id="btnNoticeReg" class="btn-base" fieldLabel="특이사항 등록" value="등록">
+            <cl:formdata std:sid="f-data-336bac09" valign="CENTER" height="36" row="0" col="1" rowspan="2"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-ba973e15" scrollable="false" hspace="12px" vspace="4px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="17" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="56" unit="PIXEL"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-20c8fd28" scrollable="false" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="209" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="508" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+          <cl:columns length="248" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-562aa467" spacing="10"/>
+    </cl:group>
+    <cl:group std:sid="group-8bed3d2a">
+      <cl:formdata std:sid="f-data-2a45989a" row="3" col="0"/>
+      <cl:group std:sid="group-c9387ea3" class="dash-title-box">
+        <cl:formdata std:sid="f-data-3e5c3dc9" row="0" col="0"/>
+        <cl:output std:sid="output-b01aaf9a" id="optTbTit" class="dash-title" value="🚴 경주 진행 현황">
+          <cl:formdata std:sid="f-data-c0126bb8" row="0" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-dbb36644" class="dash-legend">
+          <cl:formdata std:sid="f-data-83d16f4e" row="0" col="1"/>
+          <cl:output std:sid="output-b9f5ee2a" class="legend done" value="완료">
+            <cl:flowlayoutdata std:sid="f-data-8eb26430" width="40px" height="18px" autosize="width"/>
+          </cl:output>
+          <cl:output std:sid="output-ae9e011c" class="legend ing" value="진행중">
+            <cl:flowlayoutdata std:sid="f-data-b5794f52" width="40px" height="18px" autosize="width"/>
+          </cl:output>
+          <cl:output std:sid="output-07e647e2" class="legend wait" value="예정">
+            <cl:flowlayoutdata std:sid="f-data-dea14170" width="40px" height="18px" autosize="width"/>
+          </cl:output>
+          <cl:flowlayout std:sid="f-layout-e0f333f0" hspacing="0" vspacing="0" halign="right"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-bdea443e" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-db72c73d" class="dash-card race-card" clipcontent="false">
+        <cl:formdata std:sid="f-data-056689cc" row="1" col="0"/>
+        <cl:group std:sid="group-9215039c" id="grpRaceBtns" clipcontent="false">
+          <cl:formdata std:sid="f-data-583caa3a" row="0" col="0"/>
+          <cl:output std:sid="output-12a764ea" class="race-btn done" value="광명&#xA;01">
+            <cl:formdata std:sid="f-data-3069436c" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-df4662cb" class="race-btn done" value="광명&#xA;02">
+            <cl:formdata std:sid="f-data-7e3043e9" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-65b0e2f0" class="race-btn done" value="광명&#xA;03">
+            <cl:formdata std:sid="f-data-cc1a93b7" row="0" col="2"/>
+          </cl:output>
+          <cl:output std:sid="output-00ea094b" class="race-btn done" value="광명&#xA;04">
+            <cl:formdata std:sid="f-data-b24e154f" row="0" col="3"/>
+          </cl:output>
+          <cl:output std:sid="output-00aa4ef2" class="race-btn done" value="광명&#xA;05">
+            <cl:formdata std:sid="f-data-ccfdc4bb" row="0" col="4"/>
+          </cl:output>
+          <cl:output std:sid="output-82af1792" class="race-btn done" value="광명&#xA;06">
+            <cl:formdata std:sid="f-data-7272a8f9" row="0" col="5"/>
+          </cl:output>
+          <cl:output std:sid="output-1784cfe6" class="race-btn ing" value="광명&#xA;07">
+            <cl:formdata std:sid="f-data-3cda20dd" row="0" col="6"/>
+          </cl:output>
+          <cl:output std:sid="output-7198362f" class="race-btn wait" value="광명&#xA;08">
+            <cl:formdata std:sid="f-data-00326cd8" row="0" col="7"/>
+          </cl:output>
+          <cl:output std:sid="output-4ecad166" class="race-btn wait" value="광명&#xA;09">
+            <cl:formdata std:sid="f-data-eec3f727" row="0" col="8"/>
+          </cl:output>
+          <cl:output std:sid="output-692aceca" class="race-btn wait" value="광명&#xA;10">
+            <cl:formdata std:sid="f-data-1b442aaf" row="0" col="9"/>
+          </cl:output>
+          <cl:output std:sid="output-5a5024ce" class="race-btn wait" value="광명&#xA;11">
+            <cl:formdata std:sid="f-data-dcabc409" row="0" col="10"/>
+          </cl:output>
+          <cl:output std:sid="output-42ae9401" class="race-btn wait" value="광명&#xA;12">
+            <cl:formdata std:sid="f-data-04f5852c" row="0" col="11"/>
+          </cl:output>
+          <cl:output std:sid="output-b6748273" class="race-btn wait" value="광명&#xA;13">
+            <cl:formdata std:sid="f-data-198cbd0b" row="0" col="12"/>
+          </cl:output>
+          <cl:output std:sid="output-b43ef744" class="race-btn wait" value="광명&#xA;14">
+            <cl:formdata std:sid="f-data-3985ac3b" row="0" col="13"/>
+          </cl:output>
+          <cl:output std:sid="output-f79f94dd" class="race-btn wait" value="광명&#xA;15">
+            <cl:formdata std:sid="f-data-bc9340d9" row="0" col="14"/>
+          </cl:output>
+          <cl:output std:sid="output-706a22e2" class="race-btn wait" value="광명&#xA;16">
+            <cl:formdata std:sid="f-data-19a29702" row="0" col="15"/>
+          </cl:output>
+          <cl:output std:sid="output-24e334e0" class="race-btn wait" value="광명&#xA;17">
+            <cl:formdata std:sid="f-data-0881b23e" row="0" col="16"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-5383d2be" scrollable="false" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-8c0b3ea0" id="grdRace" fieldLabel="경주 진행 현황" readonly="true" datasetid="dsRace" autofit="all" vscroll="hidden" hscroll="hidden">
+          <cl:formdata std:sid="f-data-0dac30d7" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-0a955146" width="80px"/>
+          <cl:gridcolumn std:sid="g-column-6be61a67" width="81px"/>
+          <cl:gridcolumn std:sid="g-column-7f076cf0" width="81px"/>
+          <cl:gridcolumn std:sid="g-column-6719e2ed" width="81px"/>
+          <cl:gridcolumn std:sid="g-column-ac1e8a29" width="81px"/>
+          <cl:gridcolumn std:sid="g-column-b7dd249c" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-71b0ad7b" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-8c6b13a4" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-5d1bd470" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-d264a743" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-85d30e13" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-6e84b268" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-589721db" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-8650eab5" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-c3c195ef" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-6e952b95" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-3e7be737" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-59225ca6" width="104px"/>
+          <cl:gridcolumn std:sid="g-column-f754cc90" width="104px"/>
+          <cl:gridheader std:sid="gh-band-5a54f53e">
+            <cl:gridrow std:sid="g-row-3fe70399" height="21px"/>
+            <cl:gridrow std:sid="g-row-d4c46ac7" height="21px"/>
+            <cl:gridcell std:sid="gh-cell-53901274" rowindex="0" colindex="0" rowspan="2" targetcolumnname="column1" sortable="false" filterable="false" text="경주"/>
+            <cl:gridcell std:sid="gh-cell-1c3cec57" rowindex="0" colindex="1" rowspan="2" targetcolumnname="column2" sortable="false" filterable="false" text="발매시작"/>
+            <cl:gridcell std:sid="gh-cell-92e54da4" rowindex="0" colindex="2" rowspan="2" targetcolumnname="column3" sortable="false" filterable="false" text="발매중"/>
+            <cl:gridcell std:sid="gh-cell-e4d95859" rowindex="0" colindex="3" rowspan="2" targetcolumnname="column4" sortable="false" filterable="false" text="발매마감"/>
+            <cl:gridcell std:sid="gh-cell-6914ccbd" rowindex="0" colindex="4" rowspan="2" targetcolumnname="column5" sortable="false" filterable="false" text="환급완료"/>
+            <cl:gridcell std:sid="gh-cell-5dbd9340" rowindex="0" colindex="5" colspan="4" class="grp-race" sortable="false" filterable="false" text="경주별 매출액 (단위: 백만원)"/>
+            <cl:gridcell std:sid="gh-cell-764134a2" rowindex="0" colindex="9" colspan="3" class="grp-race" sortable="false" filterable="false" text="경주별 증감"/>
+            <cl:gridcell std:sid="gh-cell-9efe246f" rowindex="0" colindex="12" colspan="4" class="grp-acc" sortable="false" filterable="false" text="누적 경주별 매출액 (단위: 백만원)"/>
+            <cl:gridcell std:sid="gh-cell-d51b8d6d" rowindex="0" colindex="16" colspan="3" class="grp-acc" sortable="false" filterable="false" text="누적 경주별 증감"/>
+            <cl:gridcell std:sid="gh-cell-d3a6854a" rowindex="1" colindex="5" class="grp-race" targetcolumnname="column6" sortable="false" filterable="false" text="전년평균"/>
+            <cl:gridcell std:sid="gh-cell-b4b80547" rowindex="1" colindex="6" class="grp-race" targetcolumnname="column7" sortable="false" filterable="false" text="전전회"/>
+            <cl:gridcell std:sid="gh-cell-2603c00e" rowindex="1" colindex="7" class="grp-race" targetcolumnname="column8" sortable="false" filterable="false" text="전회"/>
+            <cl:gridcell std:sid="gh-cell-46e0deb1" rowindex="1" colindex="8" class="grp-race cur" targetcolumnname="column9" sortable="false" filterable="false" text="금회"/>
+            <cl:gridcell std:sid="gh-cell-785b7b5e" rowindex="1" colindex="9" class="grp-race" targetcolumnname="column10" sortable="false" filterable="false" text="전년평균"/>
+            <cl:gridcell std:sid="gh-cell-0304d3b6" rowindex="1" colindex="10" class="grp-race" targetcolumnname="column11" sortable="false" filterable="false" text="전전회"/>
+            <cl:gridcell std:sid="gh-cell-ad679bba" rowindex="1" colindex="11" class="grp-race" targetcolumnname="column12" sortable="false" filterable="false" text="전회"/>
+            <cl:gridcell std:sid="gh-cell-aaa159c2" rowindex="1" colindex="12" class="grp-acc" targetcolumnname="column13" sortable="false" filterable="false" text="전년평균"/>
+            <cl:gridcell std:sid="gh-cell-9a99eac6" rowindex="1" colindex="13" class="grp-acc" targetcolumnname="column14" sortable="false" filterable="false" text="전전회"/>
+            <cl:gridcell std:sid="gh-cell-614c7108" rowindex="1" colindex="14" class="grp-acc" targetcolumnname="column15" sortable="false" filterable="false" text="전회"/>
+            <cl:gridcell std:sid="gh-cell-498ffcd8" rowindex="1" colindex="15" class="grp-acc cur" targetcolumnname="column16" sortable="false" filterable="false" text="금회"/>
+            <cl:gridcell std:sid="gh-cell-d101a5ab" rowindex="1" colindex="16" class="grp-acc" targetcolumnname="column17" sortable="false" filterable="false" text="전년평균"/>
+            <cl:gridcell std:sid="gh-cell-2dc59779" rowindex="1" colindex="17" class="grp-acc" targetcolumnname="column18" sortable="false" filterable="false" text="전전회"/>
+            <cl:gridcell std:sid="gh-cell-b4659d52" rowindex="1" colindex="18" class="grp-acc" targetcolumnname="column19" sortable="false" filterable="false" text="전회"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-dd9d9588">
+            <cl:gridrow std:sid="g-row-a48ee2a3" height="30px"/>
+            <cl:gridcell std:sid="gd-cell-84a3a7e7" rowindex="0" colindex="0" columnname="column1">
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-63b00494" rowindex="0" colindex="1" columnname="column2">
+              <cl:output std:sid="output-3dcbc5a1" class="race-sts" fieldLabel="발매시작" displayexp="sstr(text, [&quot;sts-chip&quot;])">
+                <cl:expbind property="class" category="CLASS" expression="column2 == &quot;완료&quot; ? &quot;race-sts done&quot; : (column2 == &quot;진행중&quot; ? &quot;race-sts ing&quot; : &quot;race-sts none&quot;)"/>
+                <cl:celldata std:sid="c-data-16a3e0b4" valign="CENTER" height="23"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-01ac8cab" rowindex="0" colindex="2" columnname="column3">
+              <cl:output std:sid="output-29362a28" class="race-sts" fieldLabel="발매중" displayexp="sstr(text, [&quot;sts-chip&quot;])">
+                <cl:expbind property="class" category="CLASS" expression="column3 == &quot;완료&quot; ? &quot;race-sts done&quot; : (column3 == &quot;진행중&quot; ? &quot;race-sts ing&quot; : &quot;race-sts none&quot;)"/>
+                <cl:celldata std:sid="c-data-1f198379" valign="CENTER" height="23"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-dc072184" rowindex="0" colindex="3" columnname="column4">
+              <cl:output std:sid="output-a458a83e" class="race-sts" fieldLabel="발매마감" displayexp="sstr(text, [&quot;sts-chip&quot;])">
+                <cl:expbind property="class" category="CLASS" expression="column4 == &quot;완료&quot; ? &quot;race-sts done&quot; : (column4 == &quot;진행중&quot; ? &quot;race-sts ing&quot; : &quot;race-sts none&quot;)"/>
+                <cl:celldata std:sid="c-data-180b8ac1" valign="CENTER" height="23"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-f9b84d80" rowindex="0" colindex="4" columnname="column5">
+              <cl:output std:sid="output-089a14a1" class="race-sts" fieldLabel="환급완료" displayexp="sstr(text, [&quot;sts-chip&quot;])">
+                <cl:expbind property="class" category="CLASS" expression="column5 == &quot;완료&quot; ? &quot;race-sts done&quot; : (column5 == &quot;진행중&quot; ? &quot;race-sts ing&quot; : &quot;race-sts none&quot;)"/>
+                <cl:celldata std:sid="c-data-a9f5065e" valign="CENTER" height="23"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-5239a679" rowindex="0" colindex="5" columnname="column6">
+              <cl:output std:sid="output-b22c6629" class="num" fieldLabel="경주별 매출액 전년평균" datatype="number" format="#,##0" displayexp="column6 == &quot;&quot; ? &quot;-&quot; : text">
+                <cl:celldata std:sid="c-data-c62c4d6d"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-dd6dd709" rowindex="0" colindex="6" columnname="column7">
+              <cl:output std:sid="output-3b4811f7" class="num" fieldLabel="경주별 매출액 전전회" datatype="number" format="#,##0" displayexp="column7 == &quot;&quot; ? &quot;-&quot; : text">
+                <cl:celldata std:sid="c-data-ad51b50d"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-4337683f" rowindex="0" colindex="7" columnname="column8">
+              <cl:output std:sid="output-340e2527" class="num" fieldLabel="경주별 매출액 전회" datatype="number" format="#,##0" displayexp="column8 == &quot;&quot; ? &quot;-&quot; : text">
+                <cl:celldata std:sid="c-data-ecd91e2b"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-c4f6deab" rowindex="0" colindex="8" columnname="column9">
+              <cl:output std:sid="output-5745e50d" class="num cur" fieldLabel="경주별 매출액 금회" datatype="number" format="#,##0" displayexp="column9 == &quot;&quot; ? &quot;-&quot; : text">
+                <cl:celldata std:sid="c-data-02b6a691"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-3c331c22" rowindex="0" colindex="9" columnname="column10">
+              <cl:output std:sid="output-812b1685" class="num" fieldLabel="경주별 증감 전년평균" datatype="number" format="s#,##0.0" displayexp="column10 == &quot;&quot; ? &quot;-&quot; : (column10 > 0 ? &quot;+&quot; : &quot;&quot;) + text + &quot;%&quot;">
+                <cl:expbind property="class" category="CLASS" expression="column10 > 0 ? &quot;num up&quot; : (column10 &lt; 0 ? &quot;num down&quot; : &quot;num&quot;)"/>
+                <cl:celldata std:sid="c-data-6e4edd89"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-f7699493" rowindex="0" colindex="10" columnname="column11">
+              <cl:output std:sid="output-4969df0e" class="num" fieldLabel="경주별 증감 전전회" datatype="number" format="s#,##0.0" displayexp="column11 == &quot;&quot; ? &quot;-&quot; : (column11 > 0 ? &quot;+&quot; : &quot;&quot;) + text + &quot;%&quot;">
+                <cl:expbind property="class" category="CLASS" expression="column11 > 0 ? &quot;num up&quot; : (column11 &lt; 0 ? &quot;num down&quot; : &quot;num&quot;)"/>
+                <cl:celldata std:sid="c-data-4e006e3d"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-3a9ea639" rowindex="0" colindex="11" columnname="column12">
+              <cl:output std:sid="output-ee4bf418" class="num" fieldLabel="경주별 증감 전회" datatype="number" format="s#,##0.0" displayexp="column12 == &quot;&quot; ? &quot;-&quot; : (column12 > 0 ? &quot;+&quot; : &quot;&quot;) + text + &quot;%&quot;">
+                <cl:expbind property="class" category="CLASS" expression="column12 > 0 ? &quot;num up&quot; : (column12 &lt; 0 ? &quot;num down&quot; : &quot;num&quot;)"/>
+                <cl:celldata std:sid="c-data-531ba93b"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-d41ef623" rowindex="0" colindex="12" columnname="column13">
+              <cl:output std:sid="output-3b75afea" class="num" fieldLabel="누적 경주별 매출액 전년평균" datatype="number" format="#,##0" displayexp="column13 == &quot;&quot; ? &quot;-&quot; : text">
+                <cl:celldata std:sid="c-data-06c41b11"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-f3162da1" rowindex="0" colindex="13" columnname="column14">
+              <cl:output std:sid="output-9c21c0d2" class="num" fieldLabel="누적 경주별 매출액 전전회" datatype="number" format="#,##0" displayexp="column14 == &quot;&quot; ? &quot;-&quot; : text">
+                <cl:celldata std:sid="c-data-a801e978"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-5ee196a5" rowindex="0" colindex="14" columnname="column15">
+              <cl:output std:sid="output-58f336c5" class="num" fieldLabel="누적 경주별 매출액 전회" datatype="number" format="#,##0" displayexp="column15 == &quot;&quot; ? &quot;-&quot; : text">
+                <cl:celldata std:sid="c-data-ce9e1c3b"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-9260804e" rowindex="0" colindex="15" columnname="column16">
+              <cl:output std:sid="output-df9dc439" class="num cur" fieldLabel="누적 경주별 매출액 금회" datatype="number" format="#,##0" displayexp="column16 == &quot;&quot; ? &quot;-&quot; : text">
+                <cl:celldata std:sid="c-data-8a7f808a"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-ff62ae13" rowindex="0" colindex="16" columnname="column17">
+              <cl:output std:sid="output-0c935bbb" class="num" fieldLabel="누적 경주별 증감 전년평균" datatype="number" format="s#,##0.0" displayexp="column17 == &quot;&quot; ? &quot;-&quot; : (column17 > 0 ? &quot;+&quot; : &quot;&quot;) + text + &quot;%&quot;">
+                <cl:expbind property="class" category="CLASS" expression="column17 > 0 ? &quot;num up&quot; : (column17 &lt; 0 ? &quot;num down&quot; : &quot;num&quot;)"/>
+                <cl:celldata std:sid="c-data-a8dada4d"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-a26cddbe" rowindex="0" colindex="17" columnname="column18">
+              <cl:output std:sid="output-91302f8d" class="num" fieldLabel="누적 경주별 증감 전전회" datatype="number" format="s#,##0.0" displayexp="column18 == &quot;&quot; ? &quot;-&quot; : (column18 > 0 ? &quot;+&quot; : &quot;&quot;) + text + &quot;%&quot;">
+                <cl:expbind property="class" category="CLASS" expression="column18 > 0 ? &quot;num up&quot; : (column18 &lt; 0 ? &quot;num down&quot; : &quot;num&quot;)"/>
+                <cl:celldata std:sid="c-data-2486a5f9"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-47d25eaa" rowindex="0" colindex="18" columnname="column19">
+              <cl:output std:sid="output-75ea3966" class="num" fieldLabel="누적 경주별 증감 전회" datatype="number" format="s#,##0.0" displayexp="column19 == &quot;&quot; ? &quot;-&quot; : (column19 > 0 ? &quot;+&quot; : &quot;&quot;) + text + &quot;%&quot;">
+                <cl:expbind property="class" category="CLASS" expression="column19 > 0 ? &quot;num up&quot; : (column19 &lt; 0 ? &quot;num down&quot; : &quot;num&quot;)"/>
+                <cl:celldata std:sid="c-data-09bc18c7"/>
+              </cl:output>
+              <cl:expbind property="class" category="CLASS" expression="column20 == &quot;ING&quot; ? &quot;row-ing&quot; : &quot;&quot;"/>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-9528326c" scrollable="false" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="51" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-d128a609" scrollable="false" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="26" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-b65291f6" scrollable="false" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="64" unit="PIXEL"/>
+      <cl:rows length="107" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="transparent" syncminlength="false"/>
+      <cl:rows length="120" unit="PIXEL" autoSizing="true" syncminlength="false"/>
+      <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
