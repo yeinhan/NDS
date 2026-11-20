@@ -1,0 +1,316 @@
+<title>비상주 퍼블리싱 요청 프로세스</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: 한 장짜리 프로세스 시트 — 상단 4단계 흐름, 하단 팀별 요청 카드 2열 */
+:root {
+  --bg: #f6f7f8;
+  --surface: #ffffff;
+  --ink: #1b2430;
+  --muted: #5c6875;
+  --line: #dde2e7;
+  --accent: #1f6f78;
+  --accent-soft: #e3f0f1;
+  --dev: #3b5bab;
+  --dev-soft: #e7ecf8;
+  --plan: #9a5a12;
+  --plan-soft: #f8eedf;
+  --pub: #1f6f78;
+  --pub-soft: #e3f0f1;
+  --font-sans: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12171c; --surface: #1a2128; --ink: #e6eaee; --muted: #9aa6b2; --line: #2c353e;
+    --accent: #5fb7c0; --accent-soft: #1c3236;
+    --dev: #8ea6e6; --dev-soft: #1f2840;
+    --plan: #e0a560; --plan-soft: #352a1b;
+    --pub: #5fb7c0; --pub-soft: #1c3236;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12171c; --surface: #1a2128; --ink: #e6eaee; --muted: #9aa6b2; --line: #2c353e;
+  --accent: #5fb7c0; --accent-soft: #1c3236;
+  --dev: #8ea6e6; --dev-soft: #1f2840;
+  --plan: #e0a560; --plan-soft: #352a1b;
+  --pub: #5fb7c0; --pub-soft: #1c3236;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 15px; line-height: 1.6;
+  word-break: keep-all;
+}
+.wrap {
+  max-width: 1080px; margin: 0 auto;
+  padding-block: 40px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 36px;
+}
+header { display: grid; gap: 8px; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .08em; color: var(--accent); }
+h1 { margin: 0; font-size: 28px; line-height: 1.3; font-weight: 700; text-wrap: balance; }
+.lead { margin: 0; color: var(--muted); max-width: 62ch; }
+h2 { margin: 0 0 14px; font-size: 18px; font-weight: 700; }
+
+/* 역할 칩 */
+.role { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 999px; white-space: nowrap; }
+.role.dev  { color: var(--dev);  background: var(--dev-soft); }
+.role.plan { color: var(--plan); background: var(--plan-soft); }
+.role.pub  { color: var(--pub);  background: var(--pub-soft); }
+
+/* 전체 흐름 */
+.flow { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+.step { position: relative; display: grid; gap: 8px; align-content: start; padding: 18px 22px 18px 18px; background: var(--surface); border: 1px solid var(--line); border-left-width: 0; min-width: 0; }
+.step:first-child { border-left-width: 1px; border-radius: 10px 0 0 10px; }
+.step:last-child { border-radius: 0 10px 10px 0; background: var(--accent-soft); border-color: var(--accent); }
+.step:not(:last-child)::after {
+  content: ""; position: absolute; top: 50%; right: -9px; width: 16px; height: 16px;
+  background: var(--surface); border-top: 1px solid var(--line); border-right: 1px solid var(--line);
+  transform: translateY(-50%) rotate(45deg); z-index: 1;
+}
+.step-no { font-family: var(--font-mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.step-title { font-size: 16px; font-weight: 700; }
+.step-desc { margin: 0; font-size: 13.5px; color: var(--muted); }
+.step .flag { margin-top: 4px; font-size: 12.5px; padding: 8px 10px; border-radius: 6px; border: 1px dashed var(--plan); color: var(--ink); background: var(--plan-soft); }
+
+/* 팀별 요청 */
+.teams { display: grid; grid-template-columns: 1.25fr 1fr; gap: 20px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 22px; display: grid; gap: 16px; align-content: start; min-width: 0; }
+.card-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.card-head h3 { margin: 0; font-size: 17px; font-weight: 700; }
+.card p { margin: 0; }
+.sub { font-size: 13px; color: var(--muted); }
+
+.docs { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.doc { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; }
+.check { width: 18px; height: 18px; margin-top: 3px; border: 1.5px solid var(--dev); border-radius: 4px; }
+.doc-name { font-weight: 600; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.doc-why { font-size: 13.5px; color: var(--muted); }
+.tag { font-size: 11.5px; font-weight: 600; padding: 1px 7px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); }
+.tag.cond { color: var(--plan); border-color: var(--plan); }
+code { font-family: var(--font-mono); font-size: 12.5px; padding: 1px 5px; border-radius: 4px; background: var(--bg); border: 1px solid var(--line); }
+
+.rule { border-top: 1px solid var(--line); padding-top: 14px; display: grid; gap: 8px; }
+.rule-title { font-size: 13px; font-weight: 700; }
+.date-rule { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; font-size: 14px; }
+.date-rule dt { font-weight: 600; color: var(--dev); white-space: nowrap; }
+.date-rule dd { margin: 0; }
+
+.choice { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.opt { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 2px; }
+.opt b { font-size: 15px; }
+.opt span { font-size: 13px; color: var(--muted); }
+.opt.yes { border-color: var(--plan); background: var(--plan-soft); }
+
+.seq { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.seq li { position: relative; display: grid; grid-template-columns: 26px 1fr; gap: 12px; padding-bottom: 18px; }
+.seq li:last-child { padding-bottom: 0; }
+.seq li:not(:last-child)::before { content: ""; position: absolute; left: 12.5px; top: 28px; bottom: 4px; width: 1px; background: var(--line); }
+.seq-no { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-family: var(--font-mono); font-size: 12.5px; color: var(--plan); border: 1.5px solid var(--plan); background: var(--surface); }
+.seq-send .seq-no { color: var(--surface); background: var(--plan); }
+.seq-body { display: grid; gap: 8px; min-width: 0; padding-top: 2px; }
+.seq-title { font-weight: 700; font-size: 15px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.seq-who { font-size: 11.5px; font-weight: 600; padding: 1px 7px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); }
+.send-items { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.send-items span:not(.plus) { font-size: 13.5px; font-weight: 600; padding: 5px 10px; border-radius: 6px; background: var(--plan-soft); border: 1px solid var(--plan); }
+.send-items .plus { color: var(--muted); }
+.path { margin-top: 8px; display: grid; gap: 2px; padding: 8px 10px; border-radius: 6px; background: var(--bg); font-size: 12.5px; }
+.path-label { font-weight: 600; color: var(--muted); }
+.path-val { overflow-wrap: anywhere; user-select: all; }
+.fix { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.fix-case { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 6px; align-content: start; min-width: 0; }
+.fix-case.yes { border-color: var(--accent); }
+.fix-cond { font-size: 12.5px; font-weight: 600; color: var(--muted); }
+.fix-case.yes .fix-cond { color: var(--accent); }
+.fix-result { font-size: 15px; }
+.fix-ex { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-top: 2px; }
+.fix-naming { margin-top: 14px; padding: 14px 18px; border-radius: 10px; background: var(--accent-soft); display: grid; gap: 6px; }
+.fix-naming .fix-cond { color: var(--accent); }
+.fix-ex .arrow { color: var(--muted); font-size: 13px; }
+@media (max-width: 640px) { .fix { grid-template-columns: 1fr; } }
+.mail { grid-template-columns: 1fr auto; align-items: center; }
+.mails { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.mails li { display: flex; align-items: center; gap: 10px; justify-content: space-between; padding: 8px 8px 8px 14px; border: 1px solid var(--line); border-radius: 8px; min-width: 0; }
+.addr { font-family: var(--font-mono); font-size: 14px; user-select: all; overflow-wrap: anywhere; }
+.copy { font: inherit; font-size: 12.5px; font-weight: 600; color: var(--accent); background: var(--accent-soft); border: 0; border-radius: 6px; padding: 5px 10px; cursor: pointer; white-space: nowrap; }
+.copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 640px) { .mail { grid-template-columns: 1fr; } }
+footer { font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+
+@media (max-width: 820px) {
+  .flow { grid-template-columns: 1fr; }
+  .step, .step:first-child, .step:last-child { border-width: 1px; border-top-width: 0; border-radius: 0; }
+  .step:first-child { border-top-width: 1px; border-radius: 10px 10px 0 0; }
+  .step:last-child { border-radius: 0 0 10px 10px; }
+  .step:not(:last-child)::after { top: auto; bottom: -9px; right: auto; left: 28px; transform: rotate(135deg); }
+  .teams { grid-template-columns: 1fr; }
+}
+@media (max-width: 420px) {
+  h1 { font-size: 23px; }
+  .choice { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">KRACE UI · 퍼블리싱 비상주 전환 안내</div>
+    <h1>비상주 퍼블리싱 요청 프로세스</h1>
+    <p class="lead">퍼블리셔 철수 이후 화면 추가·수정 요청은 아래 순서로 진행합니다. 각 팀은 해당 단계에서 필요한 문서를 함께 전달해 주세요.</p>
+  </header>
+
+  <section aria-labelledby="flow-title">
+    <h2 id="flow-title">전체 흐름</h2>
+    <ol class="flow">
+      <li class="step">
+        <span class="step-no">STEP 1</span>
+        <span class="role dev">개발팀</span>
+        <span class="step-title">개발 설계서 변경</span>
+        <p class="step-desc">추가·수정 사항을 설계서에 먼저 반영합니다.</p>
+      </li>
+      <li class="step">
+        <span class="step-no">STEP 2</span>
+        <span class="role dev">개발팀 → 기획팀</span>
+        <span class="step-title">기획 요청</span>
+        <p class="step-desc">변경된 설계서를 근거로 기획팀에 화면 기획을 요청합니다.</p>
+      </li>
+      <li class="step">
+        <span class="step-no">STEP 3</span>
+        <span class="role plan">기획팀 · 디자인팀</span>
+        <span class="step-title">기획서 완료</span>
+        <p class="step-desc">기획서 작성 완료 후 디자인에 착수합니다. 디자이너 판단에 따라 디자인은 생략될 수 있습니다.</p>
+        <div class="flag">기획서와 <b>디자인 필요 여부</b>를 한 번에 전달</div>
+      </li>
+      <li class="step">
+        <span class="step-no">STEP 4</span>
+        <span class="role pub">퍼블리셔</span>
+        <span class="step-title">퍼블리싱 작업 착수</span>
+        <p class="step-desc">전달받은 문서를 기준으로 일정을 잡고 작업을 시작합니다.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="teams-title">
+    <h2 id="teams-title">팀별로 보내주실 것</h2>
+    <div class="teams">
+      <article class="card">
+        <div class="card-head"><span class="role dev">개발팀</span><h3>추가·수정 요청 시</h3></div>
+        <p class="sub">아래 문서가 함께 와야 작업에 들어갈 수 있습니다.</p>
+        <ul class="docs">
+          <li class="doc">
+            <span class="check" aria-hidden="true"></span>
+            <div>
+              <div class="doc-name">설계서 <span class="tag">필수</span></div>
+              <div class="doc-why">변경 내용이 반영된 최신본</div>
+            </div>
+          </li>
+          <li class="doc">
+            <span class="check" aria-hidden="true"></span>
+            <div>
+              <div class="doc-name">퍼블리싱 일정 문서 <span class="tag">필수</span></div>
+              <div class="doc-why">요청 화면 목록을 일정 문서에 추가해서 전달해 주세요. 목록에는 <code>프로그램ID</code>와 <code>개발시작일</code>이 들어가야 합니다.</div>
+              <div class="path"><span class="path-label">기존 문서 위치</span><span class="path-val">프로젝트 / 2026 차세대 경주운영 관리시스템 구축 및 사업관리 / 구축 / 21. 팀별공유 / 05. UIUX팀 / 09.퍼블리싱 / 일정관리</span></div>
+            </div>
+          </li>
+          <li class="doc">
+            <span class="check" aria-hidden="true"></span>
+            <div>
+              <div class="doc-name">theme 폴더 <span class="tag cond">스타일 변경 시 권장</span></div>
+              <div class="doc-why">내부에서 theme이 변경된 경우, 새로 보내드리는 스타일 시트와 싱크가 맞지 않을 수 있습니다. 스타일 변경이 필요한 요청이라면 theme 폴더를 반출하여 함께 주시는 것을 추천드립니다.</div>
+              <div class="path"><span class="path-label">반출 경로</span><span class="path-val">krace-ui/clx-src/theme</span></div>
+            </div>
+          </li>
+        </ul>
+        <div class="rule">
+          <div class="rule-title">작업 기준일은 이렇게 정합니다</div>
+          <dl class="date-rule">
+            <dt>요청일 있음</dt><dd>요청서에 적힌 날짜 기준</dd>
+            <dt>요청일 없음</dt><dd>퍼블리싱 일정 문서의 <b>개발시작일</b> 기준</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><span class="role plan">기획팀 · 디자인팀</span><h3>기획서 전달 시</h3></div>
+        <ol class="seq">
+          <li>
+            <span class="seq-no">1</span>
+            <div class="seq-body">
+              <div class="seq-title">기획서 작성 완료</div>
+            </div>
+          </li>
+          <li>
+            <span class="seq-no">2</span>
+            <div class="seq-body">
+              <div class="seq-title">디자인 필요 여부 판단 <span class="seq-who">디자이너</span></div>
+              <div class="choice">
+                <div class="opt yes"><b>필요</b><span>디자인 착수</span></div>
+                <div class="opt"><b>불필요</b><span>디자인 생략</span></div>
+              </div>
+            </div>
+          </li>
+          <li class="seq-send">
+            <span class="seq-no">3</span>
+            <div class="seq-body">
+              <div class="seq-title">퍼블리셔에게 한 번에 전달</div>
+              <div class="send-items"><span>기획서 완료본</span><span class="plus">+</span><span>디자인 필요 여부</span></div>
+              <div class="sub">두 정보가 같이 와야 퍼블리싱을 빠르게 시작할 수 있습니다.</div>
+            </div>
+          </li>
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="fix-title">
+    <h2 id="fix-title">수정 요청 시 파일 처리</h2>
+    <p class="sub" style="margin:-6px 0 14px">개발하고 있는 clx 파일에 수정을 원하시면 해당 clx 파일을 함께 보내주세요. 보내주신 파일에 이어서 작업합니다.</p>
+    <div class="fix">
+      <div class="fix-case yes">
+        <div class="fix-cond">개발하고 있는 clx 파일에 수정을 원하는 경우</div>
+        <div class="fix-result">보내주신 <b>clx 파일에 이어서 수정</b>하고 파일명에 차수를 붙여 전달</div>
+      </div>
+      <div class="fix-case">
+        <div class="fix-cond">clx 파일을 보내지 않은 경우</div>
+        <div class="fix-result"><b>새 clx 파일</b>로 작업하고 파일명에 차수를 붙여 전달</div>
+      </div>
+    </div>
+    <div class="fix-naming">
+      <div class="fix-cond">공통 파일명 규칙 · 수정 차수</div>
+      <div class="fix-ex"><code>파일명_1.clx</code> <span class="arrow">→</span> <code>파일명_2.clx</code> <span class="arrow">→</span> <code>파일명_3.clx</code></div>
+      <div class="sub">두 경우 모두 clx 파일명 뒤에 수정 차수를 붙입니다. 수정 진척 관리를 위해 요청마다 1씩 올라갑니다.</div>
+    </div>
+  </section>
+
+  <section aria-labelledby="mail-title" class="card mail">
+    <div>
+      <h2 id="mail-title" style="margin-bottom:4px">요청 수신 메일</h2>
+      <p class="sub">요청 메일은 아래 두 주소로 함께 보내주세요.</p>
+    </div>
+    <ul class="mails">
+      <li><span class="addr">ryude@tomatosystem.co.kr</span><button type="button" class="copy" data-addr="ryude@tomatosystem.co.kr">복사</button></li>
+      <li><span class="addr">gore8637@tomatosystem.co.kr</span><button type="button" class="copy" data-addr="gore8637@tomatosystem.co.kr">복사</button></li>
+    </ul>
+  </section>
+
+  <footer>문서가 빠진 요청은 보완 요청 후 착수합니다.</footer>
+<script>
+document.querySelectorAll(".copy").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var done = function () { btn.textContent = "복사됨"; setTimeout(function () { btn.textContent = "복사"; }, 1500); };
+    var fallback = function () {
+      var r = document.createRange(); r.selectNodeContents(btn.previousElementSibling);
+      var s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    };
+    try { navigator.clipboard.writeText(btn.dataset.addr).then(done, fallback); } catch (e) { fallback(); }
+  });
+});
+</script>
+
+</div>
